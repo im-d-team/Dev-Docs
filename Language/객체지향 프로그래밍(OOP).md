@@ -169,4 +169,4 @@ console.log(sumArgs(10, 20, 30, 40)); // 100
 
 #### Reference
 
-* [객체 지향 프로그래밍(Object-Oriented Programming)이란?](https://nesoy.github.io/articles/2018-05/Object-Oriented-Programming)
+- [객체 지향 프로그래밍(Object-Oriented Programming)이란?](https://nesoy.github.io/articles/2018-05/Object-Oriented-Programming)
