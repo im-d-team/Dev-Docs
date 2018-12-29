@@ -30,7 +30,7 @@ console.log('c');
 그렇다면 a -> b -> c가 되어야 하는것 아닐까 할 수 있다. 이는 호출스택에서는 당연히 맞지만 자바스크립트에서는 그렇지 않다. 자바스크립트는 호출 스택만 사용하지 않기 때문이다. 자바스크립트는 호출스택, 백그라운드, 태스크 큐(es6+부터는 큐 관리방식이 변화되어 태스크 큐 이외도 존재)라는 개념이 존재한다.
 [자바스크립트 비동기 작업 3가지](./EventLoop_Advanced.md)
 
-![eventLoop](/assets/images/eventLoop.png)
+![eventLoop](/assets/images/EventLoop.png)
 
 이런 구조입니다. 자 이제 코드대로 생각을 해보자.
 

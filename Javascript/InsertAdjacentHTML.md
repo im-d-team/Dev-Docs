@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ---
 
-![insertAdjacentHTML_1](/assets/images/insertAdjacentHTML_1.png)
+![insertAdjacentHTML_1](/assets/images/insertAdjacentHTML_1.PNG)
 
-![insertAdjacentHTML_2](/assets/images/insertAdjacentHTML_2.png)
+![insertAdjacentHTML_2](/assets/images/insertAdjacentHTML_2.PNG)
 
 두 사진은 테스트 시 위와 아래의 각각 소요시간을 보여준다. 65초에서 1.3초정도로 엄청나게 줄어든 것을 확인 할 수 있다. 또한 위의 경우 parseHTML이 5000번이 실행되었다. anonymous 아래의 파랑색의 많은 칸이 parseHTML부분이다.
 
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ---
 
-![insertAdjacentHTML_3](/assets/images/insertAdjacentHTML_3.png)
+![insertAdjacentHTML_3](/assets/images/insertAdjacentHTML_3.PNG)
 
 훨씬 빨라진 것을 볼 수 있다. parseHTML은 5000번이 똑같이 호출되지만 전체를 수정하는 것이 아니라 확실히 성능이 향상되었다. 단순하게 아무것도 없는 html에 추가만 하는 테스트 코드인데도 이 정도의 성능 향상을 보였다. 복잡한 문서라면 더욱 드라마틱한 성능 향상을 보일 것으로 예상된다.
 
