@@ -110,7 +110,7 @@ el3
 var items = document.querySelectorAll('input');
 items.forEach(function(item) {
     item.addEventListener('click', function(e) {
-       console.log(e.currentTarget.id);
+       console.log(e.target.id);
     });
 });
 
