@@ -167,7 +167,7 @@ var setCookie = function (cname, cvalue) {
 }
 ```
 
-2. 동일한 토큰 값을 요청 파라미터(혹은 헤더)에도 저장하여 서버로 전송합니다.
+2. 동일한 토큰 값을 요청 파라미터(혹은 헤더)에도 저장하여 서버로 전송한다.
 ```js
 jQuery.ajaxSetup({ 
     beforeSend: function(xhr, settings) { 
