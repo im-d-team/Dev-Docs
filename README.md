@@ -26,6 +26,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <details>
 <summary> Browser </summary>
 
+<br/>
+
 - [웹 브라우저의 작동 원리](https://github.com/Im-D/Dev-Docs/blob/master/Browser/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
 - [HTTP2.0과 Web Socket](https://github.com/Im-D/Dev-Docs/blob/master/Browser/HTTP2_Websocket.md)
 - [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
@@ -34,6 +36,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 <details>
 <summary> Design Pattern </summary>
+
+<br/>
 
 - [MVC, MVP, MVVM](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/MVC_MVP_MVVM.md)
 - [Memoization](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Memoization.md)
@@ -44,6 +48,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <details>
 <summary> ECMAScript </summary>
 
+<br/>
+
 - [Aync-Await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Async-Await.md)
 - [디스트럭처링](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Destructuring_Assignment.md)
 - [Spread Operator](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Spread_Operator.md)
@@ -53,6 +59,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <details>
 <summary> HTML </summary>
 
+<br/>
+
 - [Head Meta](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Head_Meta.md)
 - [표준모드 vs 쿽스모드](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Standard%26QuirksMode.md)
 
@@ -60,6 +68,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 <details>
 <summary> Javascript </summary>
+
+<br/>
 
 - [AMD와 CommonJS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/AMD%EC%99%80%20CommonJS.md)
 - [Call By Value VS Call By Reference](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/CallByReference.md)
@@ -86,6 +96,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <details>
 <summary> Language </summary>
 
+<br/>
+
 - [Functinonal Programming](https://github.com/Im-D/Dev-Docs/blob/master/Language/Funtional.md)
 - [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reative.md)
 - [객체지향 프로그래밍(OOP)](https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D(OOP).md)
@@ -94,6 +106,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 <details>
 <summary> Performance </summary>
+
+<br/>
 
 - [CSS 애니메이션 vs JS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Performance/CSS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%20vs%20JS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md)
 - [Repaint와 Reflow](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Repaint%EC%99%80%20Reflow.md)
@@ -106,6 +120,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 <details>
 <summary> Security </summary>
+
+<br/>
 
 - [CORS(Cross-Origin Resource Sharing)](https://github.com/Im-D/Dev-Docs/blob/master/Security/CORS(Cross-Origin%20Resource%20Sharing).md)
 - [HTTPS와 SSL](https://github.com/Im-D/Dev-Docs/blob/master/Security/HTTPS%EC%99%80%20SSL.md)
