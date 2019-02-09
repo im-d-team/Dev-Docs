@@ -119,14 +119,12 @@ console.log(i18n`Hello ${name}, you have ${amount}:c in your bank account.`);
 
 Tagged Template Literals를 통해 HTML이나 CSS 파서등을 만들 수도 있을 것이다. 더 나아가 [XRegExp](http://xregexp.com/) 라고 정규표현식을 파싱한 라이브러리도 존재한다.
 
-## 참고자료
+---
+
+#### Reference
 
 [The magic behind 💅 styled-components](https://mxstbr.blog/2016/11/styled-components-magic-explained/)
-
 [Tagged Template literals — Its more than you think](https://codeburst.io/javascript-es6-tagged-template-literals-a45c26e54761)
-
 [ES2015 Tagged Template Literal](https://www.zerocho.com/category/ECMAScript/post/5aa7ecc772adcb001b2ed6f3)-zerocho
-
 [ES6 번역프로젝트 - 8.Template리터럴](https://github.com/ES678/Exploring-ES6/blob/master/08%20Template%20%EB%A6%AC%ED%84%B0%EB%9F%B4/README.md)
-
 [ES6 Tagged Template Literals](https://www.youtube.com/watch?v=c9j0avG5L4c&t=335s) - youtube video
