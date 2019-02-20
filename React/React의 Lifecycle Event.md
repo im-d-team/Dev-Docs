@@ -12,7 +12,7 @@
 
 `React v16.3`이전의 라이프사이클과 이후의 라이프사이클은 약간의 차이를 보인다. 우선 이전의 라이프 사이클을 전체적으로 보면 다음과 같다.
 
-![react_lifecylce](/assets/images/react_lifecycle.png)
+![react_lifecylce](/assets/images/react_lifecylce.png)
 
 <br/>
 
