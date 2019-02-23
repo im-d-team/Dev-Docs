@@ -21,7 +21,7 @@ React와 비교해서 라이프사이클이 외우기? 쉽고 간단하다. 또�
 
 ### Diagram
 
-[이미지 추가하기]
+![vue-lifecycle](/assets/images/Vue-lifecycle.png)
 
 <br/>
 
@@ -89,7 +89,7 @@ mounted() {
 
 `mounted` 훅이 호출되었다고 모든 컴포넌트가 마운트 되었다고 보장할 수 없다. (자식 컴포넌트까지 마운트가 되었다고 보장이 되지 않는다.) <- 이 부분은 React와의 차이점
 
-> [그림을 그려서 추가 할 것]
+![Parent_Child_workflow](/assets/images/Parent_Child_workflow.png)
 
 전체가 렌더링 보장된 상태에서 작업을 하기 위해서는 `$nextTick`을 사용해야 한다. (마지막 부록 부분 참고)
 
