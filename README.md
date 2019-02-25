@@ -55,6 +55,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [디스트럭처링](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Destructuring_Assignment.md)
 - [Spread Operator](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Spread_Operator.md)
 - [Tagged Template Literals](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Tagged_Template_Literals.md)
+- [Number_isNaN](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Number_isNaN.md)
+- [Includes_IndexOf](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Includes_IndexOf.md)
 
 </details>
 
@@ -80,7 +82,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [자바스크립트의 이벤트루프와 콜백함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/EventLoop.md)
 - [EventLoop_Advanced](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/EventLoop_Advanced.md)
 - [insertAdjacentHTML](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/InsertAdjacentHTML.md)
-- [Javascript_메모리관리](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B4%80%EB%A6%AC.md)
+- [Javascript\_메모리관리](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B4%80%EB%A6%AC.md)
 - [Javascript_Engine](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_Engine.md)
 - [Mouse Event](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/MouseEvent.md)
 - [Promise1](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise1.md)
