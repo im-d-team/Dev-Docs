@@ -97,6 +97,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Proxy Object](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Proxy.md)
 - [Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_BuildTool.md)
 - [JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
+- [throttling과 rAF](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/throttling%EA%B3%BC%20rAF.md)
 
 </details>
 
