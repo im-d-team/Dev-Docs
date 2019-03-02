@@ -71,6 +71,15 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 </details>
 
 <details>
+<summary> Java </summary>
+
+<br/>
+
+- [JVM(Java Virtual Machine)](https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md)
+
+</details>
+
+<details>
 <summary> Javascript </summary>
 
 <br/>
