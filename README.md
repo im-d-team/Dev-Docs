@@ -143,6 +143,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <br/>
 
 - [React의 Lifecycle Event](https://github.com/Im-D/Dev-Docs/blob/master/React/React%EC%9D%98%20Lifecycle%20Event.md)
+- [React.memo]([https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md](https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md))
 
 </details>
 
