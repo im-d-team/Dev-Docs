@@ -75,7 +75,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 <br/>
 
-- [JVM(Java Virtual Machine)](https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md)
+- [JVM(Java Virtual Machine)](<https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md>)
 
 </details>
 
@@ -109,6 +109,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_BuildTool.md)
 - [JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
 - [throttling과 rAF](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/throttling%EA%B3%BC%20rAF.md)
+- [Optional Chaining](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Optional_Chaining.md)
 
 </details>
 
@@ -143,7 +144,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <br/>
 
 - [React의 Lifecycle Event](https://github.com/Im-D/Dev-Docs/blob/master/React/React%EC%9D%98%20Lifecycle%20Event.md)
-- [React.memo]([https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md](https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md))
+- [React.memo](<[https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md](https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md)>)
 
 </details>
 
