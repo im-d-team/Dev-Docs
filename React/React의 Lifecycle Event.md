@@ -181,4 +181,5 @@ class ErrorComponent extends React.Component {
 #### Reference
 
 - [리액트 교과서 - 컴포넌트와 라이프사이클 이벤트](https://velog.io/@kyusung/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B5%90%EA%B3%BC%EC%84%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%EB%B2%A4%ED%8A%B8)
+- [라이프사이클 설명](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 - [react Docs - State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
