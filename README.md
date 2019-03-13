@@ -77,6 +77,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <br/>
 
 - [JVM(Java Virtual Machine)](<https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md>)
+- [Java Garbage Collection(GC)](https://github.com/Im-D/Dev-Docs/blob/master/Java/Java%20Garbage%20Collection(GC).md)
 
 </details>
 
