@@ -1,7 +1,5 @@
 # Java Garbage Collection(GC)
 
-<br/>
-
 ## Garbage란?
 
 프로그램을 실행하다보면 `Garbage` 즉, 쓰레기가 발생하게 되는데 이는 쉽게 말하자면 **정리되지 않은 메모리**, **유효하지 않은 주소**다.
