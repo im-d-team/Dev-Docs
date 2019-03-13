@@ -28,11 +28,26 @@ arr[2] = "Node.js";
 
 `Garbage Collector`가 담당하는 메모리 영역은 [JVM](https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md)에서 `Heap`영역을 다룬다.
 
-`Young`, `Tenured`, `Permanent` 세 영역으로 나뉘게 되며 이를 세분화 하면 총 4개의 영역으로 나뉘게 된다.
+`Young`, `Old`, `Permanent` 세 영역으로 나뉘게 되며 이를 세분화 하면 총 4개의 영역으로 나뉘게 된다.
 
 - **Young** : `Eden`, `Survivor`
 - **Old** : `Old`
 - **Permanent** : `Permanent(이하 Perm)`
+
+#### Perm 영역
+
+`Perm`영역에서 담고 있는 정보는 다음과 같다.
+
+- Class 의 Meta정보
+- Method의  Meta 정보
+- Class와 관련된 배열 객체 Meta 정보
+- Static 객체
+- 상수화된 String 객체
+- JVM 내부적인 객체들과 JIT의 최적화 정보
+
+프로젝트가 커지면 `perm gen`이 커서 에러가 나는데 이때 `MaxPermSize` 옵션을 JVM 옵션에 크게 주면 해결할 수 있다.
+
+Java 8에서는 고질적인 `perm gen space error`를 해결하기 위해서 perm 영역을 없애버렸고 이에 따라 `-XX:MaxPermSize` 설정이 사라지고 `-XX:MaxMetaspaceSize` 로 바뀌게 되었다.
 
 <br/>
 
