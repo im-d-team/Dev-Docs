@@ -77,7 +77,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <br/>
 
 - [JVM(Java Virtual Machine)](<https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md>)
-- [Java Garbage Collection(GC)](https://github.com/Im-D/Dev-Docs/blob/master/Java/Java%20Garbage%20Collection(GC).md)
+- [Java Garbage Collection(GC)](<https://github.com/Im-D/Dev-Docs/blob/master/Java/Java%20Garbage%20Collection(GC).md>)
 
 </details>
 
@@ -113,6 +113,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [throttling과 rAF](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/throttling%EA%B3%BC%20rAF.md)
 - [Optional Chaining](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Optional_Chaining.md)
 - [Sync & Async, Multi & Single Thread](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Sync%26Async_Multi%26Single_Thread.md)
+- [Some과 Every](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Some_Every.md)
 
 </details>
 
