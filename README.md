@@ -31,6 +31,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [웹 브라우저의 작동 원리](https://github.com/Im-D/Dev-Docs/blob/master/Browser/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
 - [HTTP2.0과 Web Socket](https://github.com/Im-D/Dev-Docs/blob/master/Browser/HTTP2_Websocket.md)
 - [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
+- [최신 브라우저의 내부 살펴보기](https://github.com/Im-D/Dev-Docs/blob/master/Browser/최신_브라우저의_내부_살펴보기.md)
 
 </details>
 
