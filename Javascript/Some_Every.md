@@ -54,10 +54,10 @@ callback에 들어가는 요소도 동일하다.
 var array = [10, 20, 30, 40, 50];
 
 var overThirty = function(element) {
-  return element > 30;
+  return element < 30;
 };
 
-console.log(array.some(overThirty)); // false
+console.log(array.every(overThirty)); // false
 ```
 
 모든 요소가 조건을 만족하면 true다. 즉 모든 경우가 N번 실행되게 된다. some과는 반대로 조건에 만족하지 않으면 그 즉시 true를 리턴한다. 위의 코드의 경우 3번 요소인 40까지만 callback이 실행되고 50은 실행되지 않는다.
