@@ -149,3 +149,21 @@ filterExample(arr, greaterThan(3));
 
 **위 코드는 실제 filter와는 다르다.** 단순 예제이다.
 함수를 리턴하여 추상화를 진행하였다. 위의 두 함수는 모르겠고 우리는 제일 아래 두 줄에 집중한다. arr을 만들고 3보다 큰지 안큰지만 알려달라고 행동을 추상화 했다.
+
+## 추가로...
+
+HOF는 함수형 프로그래밍과 연관된다. [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/Language/Funtional.md) 이란 순수함수와 immutable, side effect 최소화와 관련이 있다.
+
+자세한 설명은 위로 대체하고, 간단하게만 해보자.
+
+함수형 프로그래밍은 람다 계산법에서 출발했다. 이는 수학의 람다식처럼 함수를 조합한다. 함수가 조합되려면 함수가 인자로 취급되어야 한다. 즉 HOF의 형태다.
+
+Javascript는 함수가 일급객체기 때문에 HOF가 가능하며 HOF가 가능하기에 함수형 프로그래밍이 가능하다.
+
+---
+
+### 참고자료
+
+- [Eloquent JavaScript - higher order functions](http://eloquentjavascript.net/05_higher_order.html)
+- [poiemaweb 고차함수](https://poiemaweb.com/js-array-higher-order-function)
+- [Higher-Order Function 이란 무엇인가](https://medium.com/@la.place/higher-order-function-%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-1c61e0bea79)
