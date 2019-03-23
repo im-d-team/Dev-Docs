@@ -126,6 +126,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Functinonal Programming](https://github.com/Im-D/Dev-Docs/blob/master/Language/Funtional.md)
 - [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reative.md)
 - [객체지향 프로그래밍(OOP)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D(OOP).md>)
+- [Higher Order Functions](https://github.com/Im-D/Dev-Docs/blob/master/Language/Higher_Order_Functions.md)
 
 </details>
 
