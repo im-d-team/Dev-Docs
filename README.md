@@ -80,6 +80,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [JVM(Java Virtual Machine)](<https://github.com/Im-D/Dev-Docs/blob/master/Java/JVM(Java%20Virtual%20Machine).md>)
 - [Java Garbage Collection(GC)](<https://github.com/Im-D/Dev-Docs/blob/master/Java/Java%20Garbage%20Collection(GC).md>)
 - [String, StringBuilder, StringBuffer](https://github.com/Im-D/Dev-Docs/blob/master/Java/String%2C%20StringBuilder%2C%20StringBuffer.md)
+- [Comparable vs Comparator](https://github.com/Im-D/Dev-Docs/blob/master/Java/Comparable%20vs%20Comparator.md)
+- [ArrayList vs LinkedList 그리고 Vector](https://github.com/Im-D/Dev-Docs/blob/master/Java/ArrayList%20vs%20LinkedList%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Vector.md)
 
 </details>
 
@@ -130,6 +132,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reative.md)
 - [객체지향 프로그래밍(OOP)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D(OOP).md>)
 - [Higher Order Functions](https://github.com/Im-D/Dev-Docs/blob/master/Language/Higher_Order_Functions.md)
+- [Lamda](https://github.com/Im-D/Dev-Docs/blob/master/Language/Lamda.md)
 
 </details>
 
@@ -184,6 +187,15 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [HTTPS와 SSL](https://github.com/Im-D/Dev-Docs/blob/master/Security/HTTPS%EC%99%80%20SSL.md)
 - [XSS와 CSRF](https://github.com/Im-D/Dev-Docs/blob/master/Security/XSS%EC%99%80%20CSRF.md)
 - [리만가설과 소수정리, RSA](https://github.com/Im-D/Dev-Docs/blob/master/Security/%EB%A6%AC%EB%A7%8C%EA%B0%80%EC%84%A4%EA%B3%BC%20%EC%86%8C%EC%88%98%EC%A0%95%EB%A6%AC.md)
+
+</details>
+
+<details>
+<summary> Git </summary>
+
+<br/>
+
+- [.git으로 이해하는 GIT](https://github.com/Im-D/Dev-Docs/blob/master/Git/gitBy_.git.md)
 
 </details>
 
