@@ -120,6 +120,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Some과 Every](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Some_Every.md)
 - [CallStack](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/CallStack.md)
 - [Type](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Type.md)
+- [Function](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Function.md)
 
 </details>
 
