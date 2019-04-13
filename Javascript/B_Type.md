@@ -76,7 +76,7 @@ typeof new Number(123); //"object"
 typeof (new Number(123)).valueOf(); //"number"
 ```
 
-중간중간 이상하게 new를 사용하지 않고 사용하는 것들은 `window.Boolean`,  `window.String` 이런것으로 생각하면 되며, 이러한 Function은 해당 타입으로 parse하는 작업을 할 때 사용이 된다.
+중간중간 이상하게 new를 사용하지 않고 사용하는 것들은 `window.Boolean`,  `window.String` 이런것으로 생각하면 되며, 이러한 Function은 해당 타입으로 변환하는 작업을 할 때 사용이 된다.
 
 위에서 보게 되면 Literal로 생성한 것의 타입은 6가지 중 하나로 나오게 된다. 그런데 new를 사용하여 Wrapper Object로 만들게 되면 Object타입이 나오게 된다. 사용을 하려면 valueOf라는 Function을 사용해야만 입력한 값이 나오게 된다.
 
@@ -184,60 +184,67 @@ console.log(b); // 5
 ### Object는 참조타입이다.
 
 ```javascript
-    var a = { c: 13 }  // assign the reference of a new object to `a`
-    var b = a          // copy the reference of the object inside `a` to new variable `b`
-    b.c = 37           // modify the contents of the object `b` refers to
-    console.log(a)     // => { c: 37 }
+var a = { c: 13 }  // assign the reference of a new object to `a`
+var b = a          // copy the reference of the object inside `a` to new variable `b`
+b.c = 37           // modify the contents of the object `b` refers to
+console.log(a)     // => { c: 37 }
 ```
 
 원시타입과는 다르게 복사한 것을 변경을 했더니 a에도 영향이 간다. 이유는 당연하게 같은 값의 주소를 복사를 하여서 a에 들어있는 주소의 공간이 바뀌었으므로 a로 바뀐값을 불러오는 것이다.
 
 ```javascript
-    var a = {};
-    var b = a;
-    a.a = 1;
-    console.log(a); // {a: 1}
-    console.log(b); // {a: 1}
+var a = {};
+var b = a;
+
+a.a = 1;
+
+console.log(a); // {a: 1}
+console.log(b); // {a: 1}
 ```
 
 array의 경우에 있어도 예외는 없다.
 
 ```javascript
-    var a = [];
-    var b = a;
-    a.push(1);
-    console.log(a); // [1]
-    console.log(b); // [1]
-    console.log(a === b); // true
+var a = [];
+var b = a;
+
+a.push(1);
+
+console.log(a); // [1]
+console.log(b); // [1]
+console.log(a === b); // true
 ```
 
 ```javascript
-    function changeAgeImpure(person) {
-        person.age = 25;
-        return person;
-    }
-    var alex = {
-        name: 'Alex',
-        age: 30
-    };
-    var changedAlex = changeAgeImpure(alex);
-    console.log(alex); // -> { name: 'Alex', age: 25 }
-    console.log(changedAlex); // -> { name: 'Alex', age: 25 }
+function changeAgeImpure(person) {
+    person.age = 25;
+    return person;
+}
+var alex = {
+    name: 'Alex',
+    age: 30
+};
+var changedAlex = changeAgeImpure(alex);
+
+console.log(alex); // -> { name: 'Alex', age: 25 }
+console.log(changedAlex); // -> { name: 'Alex', age: 25 }
 ```
 
 ```javascript
-    function changeAgePure(person) {
-        var newPersonObj = JSON.parse(JSON.stringify(person));
-        newPersonObj.age = 25;
-        return newPersonObj;
-    }
-    var alex = {
-        name: 'Alex',
-        age: 30
-    };
-    var alexChanged = changeAgePure(alex);
-    console.log(alex); // -> { name: 'Alex', age: 30 }
-    console.log(alexChanged); // -> { name: 'Alex', age: 25 }
+function changeAgePure(person) {
+    var newPersonObj = JSON.parse(JSON.stringify(person));
+    newPersonObj.age = 25;
+    return newPersonObj;
+}
+    
+var alex = {
+    name: 'Alex',
+    age: 30
+};
+var alexChanged = changeAgePure(alex);
+
+console.log(alex); // -> { name: 'Alex', age: 30 }
+console.log(alexChanged); // -> { name: 'Alex', age: 25 }
 ```
 
 <br/>
