@@ -13,12 +13,13 @@
     - [x] Named Function Expression
 - [x] IIFE(Immediately Invoked Function Expression)
 
-자바스크립트에서의 Scope는 크게 2가지로 보면 된다.
+Function에 대해서 자세히 알아보기 전에 우리는 자바스크립트의 Scope에 대해서 알아보자
+자바스크립트에서의 Scope는 크게 2가지이다.
 
 - **Global Scope**
 - **Local Scope**
 
-함수안에서 정의가 된 변수들은 기본적으로 **Local Scope** 에서 선언이 되었다고 하며, 함수 외부에 정의된 변수는 **Global Scope** 에서 선언이 되었다고 한다. 함수 외부라고 하면 단순하게 중첩된 함수에서의 외부가 아닌 **함수 1개가 있다는 기준에서의 외부** 이다. 이렇게 완전한 외부를 우리는 **Window** 라고 하자.
+함수 안에서 정의가 된 변수들은 기본적으로 **Local Scope** 에서 선언이 되었다고 하면, 함수 외부에 정의된 변수는 **Global Scope** 에서 선언이 되었다고 한다. 함수 외부라고 하면 단순하게 중첩된 함수에서의 외부가 아닌 **함수 1개가 있다는 기준에서의 외부** 이다. 이렇게 완전한 외부를 우리는 **Window** 라고 하자.
 
 또한 각각의 함수들은 실행이 되면 내부적으로 New Scope를 생성하고 가지게 된다.
 <br/>
@@ -101,7 +102,7 @@ if (true) {
 console.log(name); // logs 'sseon'
 ```
 
-ECMAScript 6에서 `let`, `const`가 추가 되었다. 이 2개는 `var` 대용으로 사용된다. 그러나 그보다 더 중요한 개념이 들어간다. 바로 **Block Level Scope** 라는 것이다. 기존의 자바스크립트는 위에서 본 것처럼 **Functional Scope** 이다. 그러나 `let`, `const` 를 사용하게 되면 **Block Level Scope** 지원이 가능하다. 아래의 예제를 보자
+ECMAScript6에서 `let`, `const`가 추가 되었다. 이 2개는 `var` 대용으로 사용된다. 그러나 그보다 더 중요한 개념이 들어간다. 바로 **Block Level Scope** 라는 것이다. 기존의 자바스크립트는 위에서 본 것처럼 **Functional Scope** 이다. 그러나 `let`, `const` 를 사용하게 되면 **Block Level Scope** 지원이 가능하다. 아래의 예제를 보자
 
 ```javascript
 if (true) {
@@ -118,8 +119,7 @@ console.log(skills); // Uncaught ReferenceError: skills is not defined
 
 `var`와는 다르게 `let`, `const`는 Block Statement내에서 **Local Scope** 를 지원한다. 즉 이제 Scope가 가장 가까운 function에 붙는 것이 아닌 해당 Block에 붙게 되는 것이다.
 
-**Global Scope는 응용 프로그램이 살아있을 때까지 유효하며, Local Scope은 함수가 호출되고 실행되는 한 유지가 된다.**
-
+**Global Scope는 응용 프로그램이 살아있을 때까지 유효하며, Local Scope은 함수가 호출되고 실행되는한 유지가 된다.**
 <br/>
 
 ## **Lexical Scope**
@@ -162,7 +162,7 @@ function [name](param1, param2, ...param3) {
 }
 ```
 
-`[function name]` 앞에 `[function keyword]` 를 붙인다. 항상 앞에 function으로 시작하며 함수에 맞는 이름을 지어주어야한다. 그리고 선언식의 주요한 개념은 전체기능이 **호이스팅** 이 된다는 것이다. 
+`[function name]` 앞에 `[function keyword]` 를 붙인다. 항상 앞에 function으로 시작하며 함수의 이름을 지어주어야 한다. 그리고 선언식의 주요한 개념은 전체 기능이 **호이스팅** 이 된다는 것이다. 
 
 **이러한 호이스팅으로 인해서 함수를 선언하기전에 함수를 실행하는 코드를 넣어도 작동하는 것이다.**
 
@@ -190,7 +190,7 @@ var a = 100;
 var b = 'Hello World';
 ```
 
-함수표현식의 경우 이름이 없이 함수를 작성을 하며 변수에 할당을 한다.
+함수 표현식의 경우 이름이 없이 함수를 작성을 하며 변수에 할당을 한다.
 
 ```javascript
 var [name] = function(param1, param2, ...param3) {
@@ -222,6 +222,8 @@ var add = function(param1, param2) {
 }
 var result = add(num1, num2); // ==> 30
 ```
+
+<br/>
 
 ### 함수 표현식의 장점
 
@@ -268,16 +270,16 @@ var result = addVariable(num1, num2);
     1. 그러나 내부에서는 `addFunction` 을 사용할 수 있다.
 
 ```javascript
-    var num1 = 10;
-    var num2 = 20;
-    var addVariable = function addFunction(param1, param2) {
-       var res = param1 + param2;
-       if (res === 30) {
-            res = addFunction(res, 10);
-       }
-       return res;
+var num1 = 10;
+var num2 = 20;
+var addVariable = function addFunction(param1, param2) {
+    var res = param1 + param2;
+    if (res === 30) {
+        res = addFunction(res, 10);
     }
-    var result = addVariable(num1, num2); // ==> 40
+    return res;
+}
+var result = addVariable(num1, num2); // ==> 40
 ```
 
 결과가 30이 아니라 내부적으로 `addFunction` 이 한번 더 호출되어 40이 나오게 된다.
@@ -349,7 +351,7 @@ assignedVariable = foo()
 더 좋은 방법은 아래와 같이 작성하는 것이다.
 
 ```javascript
-const foo = foo () => {
+const foo = () => {
   return 14 //explicit return for readability
 }
     
@@ -357,7 +359,7 @@ assignedVariable = foo()
 ```
 
 ```javascript
-const foo = foo (n) => {
+const foo = (n) => {
     return n//explicit return for readability
 }
 
@@ -369,12 +371,12 @@ assignedVariable = foo(14)
 
 ## **Statements**
 
-명령문은 함수형 프로그래밍의 근간이다. 기본적으로 문장은 행동을 수행한다. 
+기본적으로 문장은 행동을 수행한다. 
 
 자바스크립트에서 값이 필요한 곳에서는 명령문을 사용할 수 없다. 그래서 함수의 인수, 할당의 오른쪽, 연산자, 피연산자, 반환값으로 사용할 수 없다.
 
 ```javascript
-foo(if () {return 2}) //js engine mind = blown
+foo(if () {return 2}) 
 ```
 
 명령문의 종류
@@ -393,7 +395,7 @@ foo(if () {return 2}) //js engine mind = blown
 브라우저 콘솔창에서 아래와 같이 입력을 치게 되면,
 
 ```javascript
-if (true) {9+9}
+if (true) { 9+9 }
 ```
 
 18을 반환한다. 그러나 원하는 곳에 사용은 할 수 없다. 명령문은 아무것도 반환하지 않기를 바란다. 우리가 그것을 사용할 수 없다면 반환된 값은 쓸모가 없어지기 때문이다.
@@ -425,7 +427,7 @@ ES6 이전에는 IIFE를 사용해서 외부에서 접근하지 못하도록 변
 ```javascript
 for (var i = 0; i < 5; i++) {
     setTimeout(function () {
-    console.log('index: ' + i);
+        console.log('index: ' + i);
     }, 1000);
 }
 ```
@@ -464,7 +466,7 @@ function foo () {return 2+2}
 foo(2+2;) //syntaxError
 ```
 
-세미콜론을 사용하면 여러줄을 한줄로 표현이 가능하다.
+세미콜론을 사용하면 여러 줄을 한 줄로 표현이 가능하다.
 
 ```javascript
 const a; function foo () {}; const b = 2
@@ -474,9 +476,7 @@ const a; function foo () {}; const b = 2
 
 ```javascript
 console.log( (1+2,3,4) ) //4
-    
 console.log( (2, 9/3, function () {}) ) // function (){}
-    
 console.log( (3, true ? 2+2 : 1+1) ) // 4
 ```
 
