@@ -30,7 +30,7 @@ divs.forEach(function(div) {
 });
 
 function bubbleEvent(e) {
-    console.log(e.currentTarget.className);
+    console.log(e.target.className);
 }
 
 
@@ -70,7 +70,7 @@ divs.forEach(function(div) {
 });
 
 function captureEvent(e) {
-    console.log(e.currentTarget.className);
+    console.log(e.target.className);
 }
 
 /*
@@ -127,7 +127,7 @@ items.forEach(function(item) {
 var items = document.querySelectorAll('input');
 items.forEach(function(item) {
     item.addEventListener('click', function(e) {
-       console.log(e.currentTarget.id);
+       console.log(e.target.id);
     });
 });
 */
@@ -135,7 +135,7 @@ items.forEach(function(item) {
 //이벤트 위임 방식으로 코드 변경
 var items = document.querySelector('.list');
 items.addEventListener('click', function(e) {
-    console.log(e.currentTarget.id);
+    console.log(e.target.id);
 });
 
 ```
