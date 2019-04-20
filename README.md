@@ -123,6 +123,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [B_Function](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Function.md)
 - [B_Module](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_Module.md)
 - [Scope와 This](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/scope_this.md)
+- [B_Async](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_Async.md)
 
 </details>
 
