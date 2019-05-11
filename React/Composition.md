@@ -50,6 +50,8 @@ ReactDOM.render(
 );
 ```
 
+<br/>
+
 ## 여러 개의 자식 엘리먼트
 
 ```js
@@ -93,6 +95,8 @@ ReactDOM.render(
 ```
 
 위와 같이 컴포넌트가 여러 개 필요할 경우, 위와 같이 각각의 자식 엘리먼트를 props로 전달하면 된다. `React`에서는 props로 전달할 수 있는 것에 제한이 없기 때문이다.
+
+<br/>
 
 ## Specialization
 
