@@ -36,6 +36,10 @@ value 프로퍼티는 값을 가져올때(get) element의 현재 값을 반환�
 >
 > <https://codepen.io/dae-hwa/pen/WBxxKK?editors=1011>
 
+MDN Docs는 `setAttribute()`가 일관성 없이 동작할 수 있기때문에 프로퍼티를 사용할 것을 권장한다.(e.g.`Element.value`)
+
+<br/>
+
 #### Reference
 
 - <https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#Notes>
