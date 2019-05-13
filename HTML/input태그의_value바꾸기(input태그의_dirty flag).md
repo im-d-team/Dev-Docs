@@ -36,6 +36,8 @@ MDN Docs는 `setAttribute()`가 일관성 없이 동작할 수 있기 때문에 
 
 <br/>
 
+---
+
 #### Reference
 
 - [MDN docs - Element.setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#Notes)
