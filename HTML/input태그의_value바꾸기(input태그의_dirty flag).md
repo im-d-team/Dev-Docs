@@ -28,9 +28,7 @@ document.getElementById("id").value="new value";
 
 value 프로퍼티는 값을 가져올때(get) element의 현재 값을 반환하고, **새 값으로 설정(set; =연산자 사용)할 경우 더티 플래그가 true로 바뀐다.**
 
-> 예시
->
-> <https://codepen.io/dae-hwa/pen/WBxxKK?editors=1011>
+> [예시](https://codepen.io/dae-hwa/pen/WBxxKK?editors=1011)
 
 MDN Docs는 `setAttribute()`가 일관성 없이 동작할 수 있기 때문에 프로퍼티를 사용할 것을 권장한다.(e.g.`Element.value`)
 
