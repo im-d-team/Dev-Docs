@@ -1,27 +1,26 @@
 # ARIA(Accessible Rich Internet Applications)
 
-ARIA란 웹 콘텐츠와 웹 어플리케이션을 제작할 때 누구든 쉽게 접근할수 있도록 하는 접근성 향상 방법 중 하나이다. ARIA를 사용하여 내비게이 랜션드마크, 위젯, 서식 힌트, 에러메시지,  실시간 콘텐츠 업데이트 등을 표현하여 **접근성**을 부여한다.
+ARIA란 웹 콘텐츠와 웹 어플리케이션을 제작할 때 누구든 쉽게 접근할수 있도록 하는 접근성 향상 방법 중 하나이다. ARIA를 사용하여 내비게이션 랜드마크, 위젯, 서식 힌트, 에러메시지, 실시간 콘텐츠 업데이트 등을 표현하여 **접근성**을 부여할 수 있다.
 
 ARIA는 접근성 관련 **속성(attribute)** 이며, HTML에 최적화 되어 있다. `role` 속성을 사용하여 객체(article, alert, slider 등등)의 일반 타입을 정의하고, 이 외 ARIA 속성을 추가로 사용하여 서식에 관한 설명이나 상태바의 현재 값을 제공하는 등 유용한 프로퍼티들을 제공한다.
 
 > [role 종류에 대해서 자세히 알아보기](https://www.w3.org/TR/wai-aria-1.1/#role_definitions) <br/>
 > [ARIA_Techniques - MDN 문서](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
 
-대부분의 브라우저들과 스크린 리더 기기는 ARIA를 지원한다. 그러나 구현방식이 상이해 지원을 하더라도, 오래된 기기 혹은 브라우저의 경우에는 제대로 적용되지 않는다. 애플리케이션의 기능을 우아하게 저하(degrades gracefully)하는 안전한 ARIA를 사용하거나, 사용자에게 기기를 최신 버전으로 업그레이드할 것을 요청해야 한다.
+대부분의 브라우저들과 스크린 리더 기기는 ARIA를 지원한다. 그러나 구현방식이 상이하여 지원을 하더라도, 오래된 기기 혹은 브라우저의 경우에는 제대로 적용되지 않는 경우가 있다. 애플리케이션의 기능을 우아한저하(degrades gracefully)를 하여 ARIA를 사용하거나, 사용자에게 기기를 최신 버전으로 업그레이드할 것을 요청해야 한다.
 
-**role** 속성은, **tabIndex**(접근성 향상 중 하나) 속성과 항상 같은 곳에서 적용되어야 한다. **그래야 설정된 role이 의도된 element에서 정확히 수행될 수 있다**. ARIA를 통해 바꿀 수 있는 것은 오직, **Accessibility Tree** 뿐이다. Element의 외형, 동작, focusability, keyboard event handling 등등 다른 것은 아무것도 바뀌지 않는다.
+**role** 속성은, **tabIndex** 속성과 항상 같은 곳에서 적용되어야 한다. **그래야 설정된 role이 의도된 element에서 정확히 수행될 수 있다**. ARIA를 통해 바꿀 수 있는 것은 오직, **Accessibility Tree** 뿐이다. Element의 외형, 동작, focusability, keyboard event handling 등등 다른 것은 아무것도 바뀌지 않는다.
 <br/>
 
 ## ARIA 레이블과 관계
 
 ### aria-label
 
-**`aria-label`** 을 사용하여 접근 가능한 label 문자열을 지정할 수 있다. aria-label은 **`label`** Element처럼 다른 네이티브 labeling 메커니즘을 모두 무시한다. 예를 들어, **`button`** 에 텍스트 콘텐츠와 **`aria-label`** 이 모두 있는 경우 **`aria-label`** 값만 사용된다.
+**`aria-label`** 을 사용하여 접근 가능한 label 문자열을 지정할 수 있다. **`aria-label`** 은 label Element처럼 네이티브 labelling을 모두 무시한다. 예를 들어, **`button`** 에 텍스트 콘텐츠와 **`aria-label`** 이 모두 있는 경우 **`aria-label`** 값만 사용된다.
 
-텍스트 대신 그래픽을 사용하는 버튼과 같이, Element의 목적을 시각적으로 표시할 때 **`aria-label`** 속성을 사용할 수 있다. 하지만 이미지만 사용하여 표시하는 버튼 같은 것은 시각적 인식할 수 없는 사용자를 위해 다른 방법으로 Element의 목적을 명확히 표시해야 한다.
+텍스트 대신 그래픽을 사용하는 버튼과 같이, Element의 목적을 시각적으로 표시할 때 **`aria-label`** 속성을 사용할 수 있다. 그러나 이미지만 사용하여 표시하는 버튼 같은 것은 시각적 인지할 수 없는 사용자를 위해 다른 방법으로 Element의 목적을 표시해야 한다.
 
 ![aria1](https://user-images.githubusercontent.com/24274424/57572191-f0a48e80-7451-11e9-9ff0-e426757e33c2.png)
-
 <br/>
 
 ### aria-labelledby
@@ -30,40 +29,38 @@ ARIA는 접근성 관련 **속성(attribute)** 이며, HTML에 최적화 되어 
 
 ![aria2](https://user-images.githubusercontent.com/24274424/57572192-f0a48e80-7451-11e9-88c5-8835061ee040.png)
 
-이것은 몇 가지 차이점이 있는 **`label`** Element라고 생각하면 된다.
+이것은 몇 가지 차이점이 있는 label Element이라고 생각하면 된다.
 
 1. **`aria-labelledby`** 는 레이블 지정 가능한 Element뿐 아니라 어떤 Element에서든 사용할 수 있다.
-2. **`label`** Element는 자신이 레이블을 지정하는 대상을 참조하지만 **`aria-labelledby`** 의 경우에는 관계가 다르다. 레이블을 지정하는 대상이 레이블을 지정하는 주체를 참조한다.
+2. **`label`** Element는 자신이 레이블을 지정하는 대상을 참조하지만 **`aria-labelledby`** 의 경우에는 관계가 다르다. 
 3. 한 레이블 Element만 레이블 지정 가능한 Element와 연결할 수 있지만, **`aria-labelledby`** 는 IDREF 목록을 선택하여 여러 Element에서 레이블을 작성할 수 있다. 레이블은 IDREF가 지정되는 순서대로 연결된다.
 4. **`aria-labelledby`** 를 사용하여 숨겨져 있거나 접근성 트리에 없는 Element를 참조할 수 있다. 예를 들어, 레이블을 지정하려는 Element 옆에 숨겨진 **`span`** 을 추가하고 **`aria-labelledby`** 로 참조할 수 있다.
-5. 하지만 ARIA는 접근성 트리에만 영향을 주므로 **`aria-labelledby`** 를 사용하면 **`label`** Element를 사용할 때처럼 레이블 클릭 동작을 구현할 수는 없다.
+5. 하지만 ARIA는 접근성 트리에만 영향을 주므로 **`aria-labelledby`** 를 사용하면 label Element를 사용할 때처럼 레이블 클릭 동작을 구현할 수는 없다.
 
-중요한 점은, **`aria-labelledby`** 가 한 Element에 대한 다른 **모든** 이름 소스를 재정의 한다. 예를 들어, 어떤 Element에 **`aria-labelledby`** 와 **`aria-label`** 이 모두 있거나 **`aria-labelledby`** 와 네이티브 HTML **`label`** 이 있는 경우에는 **`aria-labelledby`** **레이블이 항상 우선한다.**
+중요한 점은, **`aria-labelledby`** 한 Element에 대한 다른 **모든** 이름 소스를 재정의 한다. 예를 들어, 어떤 Element에 **`aria-labelledby`** 와 **`aria-label`** 이 모두 있거나 **`aria-labelledby`** 와 네이티브 label이 있는 경우에는 **`aria-labelledby`** **레이블이 항상 우선한다.**
 <br/>
 
 ## 관계
 
-**`aria-labelledby`** 는 *관계 속성*의 예이다. **관계 속성은 DOM 관계와는 무관하게 페이지에 있는 Element들 사이의 의미 체계 관계를 생성**한다. **`aria-labelledby`** 의 경우 의미 체계 관계는 이 Element가 저 Element에 레이블을 지정한다.
+**`aria-labelledby`** 는 *관계 속성*의 예이다. **관계 속성은 DOM 관계와는 무관하게 페이지에 있는 Element들 사이의 의미 체계 관계를 생성** 한다. **`aria-labelledby`** 의 경우 의미 체계 관계는 이 Element가 저 Element에 레이블을 지정한다.
 
-사양 중 6가지 **`aria-activedescendant`**, **`aria-controls`**, **`aria-describedby`**, **`aria-labelledby`**, **`aria-owns`** 는 하나 또는 그 이상의 Element를 참조하여 페이지에 있는 Element들 사이에 새로운 링크를 생성한다. 각각의 경우에 있어 링크의 의미와 사용자에게 표시되는 방식이 차이점이다.
+**`aria-activedescendant`**, **`aria-controls`**, **`aria-describedby`**, **`aria-labelledby`**, **`aria-owns`** 는 하나 또는 그 이상의 Element를 참조하여 페이지에 있는 Element들 사이에 새로운 링크를 생성한다.
 <br/>
 
 ### aria-owns
 
-**`aria-owns`** 는 가장 널리 사용되는 ARIA 관계 중 하나이다. 이 속성을 사용하여 DOM에 있는 별개의 Element를 현재 Element의 하위 Element로 처리해야 한다고 알려주거나 기존 하위 Element를 다른 순서로 재정렬할 수 있다. 예를 들어, 시각적으로는 어떤 팝업 하위 메뉴가 상위 메뉴 근처에 배치되어 있지만 시각적 표시에 영향을 주므로 DOM 상위 항목의 하위 항목일 수는 없는 경우에는 **`aria-owns`** 를 사용하여 하위 메뉴를 상위 메뉴의 하위 메뉴로 스크린 리더에 표시할 수 있다.
+**`aria-owns`** 는 가장 널리 사용되는 ARIA 관계 중 하나이다. 이 속성을 사용하여 DOM에 있는 별개의 Element를 현재 Element의 하위 Element로 처리해야 한다고 알려주거나 기존 하위 Element를 다른 순서로 재정렬할 수 있다.
 
 ![aria3](https://user-images.githubusercontent.com/24274424/57572193-f13d2500-7451-11e9-852a-dcd2ca642647.png)
-
 <br/>
 
 ### aria-activedescendant
 
-Element의 활성화된 하위 항목을 설정하여 상위  항목에 실제로 포커스가 있을 때 그 Element를 사용자에게 포커스된 Element로 표시해야 함을 알려줄 수 있다. 
+Element의 활성화된 하위 항목을 설정하여 상위 항목에 실제로 포커스가 있을 때 그 Element를 사용자에게 포커스된 Element로 표시해야 함을 알려줄 수 있다. 
 
 예를 들어, 목록 상자에서 목록 상자 컨테이너에 페이지 포커스를 남겨두고 싶지만 **`aria-activedescendant`** 속성은 현재 선택한 목록 항목에 맞춰 계속 업데이트 유지할 수도 있다. 이를 통해 현재 선택한 항목이 마치 포커스된 항목인 것처럼 나타나게 할 수 있다.
 
 ![aria4](https://user-images.githubusercontent.com/24274424/57572194-f13d2500-7451-11e9-81f6-e7c49d8d0cbe.png)
-
 <br/>
 
 ### aria-describedby
@@ -71,24 +68,22 @@ Element의 활성화된 하위 항목을 설정하여 상위  항목에 실제�
 **`aria-describedby`** 는 **`aria-labelledby`** 가 레이블을 제공하는 것과 똑같은 방식으로 액세스 가능한 설명을 제공한다. **`aria-labelledby`** 와 마찬가지로, **`aria-describedby`** 는 DOM에서 숨겨지거나 숨겨졌는지에 상관없이 다른 방법으로는 보이지 않는 Element를 참조한다. 이는 사용자에게만 적용되든 모든 사용자에게 적용되든 상관없이, 사용자에게 추가적인 설명문이 필요할 때 유용한 기법이다.
 
 ![aria5](https://user-images.githubusercontent.com/24274424/57572195-f13d2500-7451-11e9-9fb6-4774a8f7fe38.png)
-
 <br/>
 
 ### aria-posinset 및 aria-setsize
 
-나머지 관계 속성은 앞서 설명한 속성과는 약간 다르며 함께 사용한다. **`aria-posinset`** (position in set)와 **`aria-setsize`** (size of set)는 목록과 같이 집합을 이루고 있는 형제 Element 간의 관계를 정의하는 속성이다.
+나머지 관계 속성은 앞서 설명한 속성과는 약간 다르게 사용된다. **`aria-posinset`**과 **`aria-setsize`**는 목록과 같이 집합을 이루고 있는 형제 Element 간의 관계를 정의하는 속성이다.
 
 DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`aria-setsize`** 는 실제 집합 크기를 지정할 수 있고 **`aria-posinset`** 는 집합에서 Element의 위치를 지정할 수 있다. 예를 들어, Element 개수가 1,000개인 집합의 경우 DOM에서 특정 Element가 맨 처음에 나타나더라도 **`aria-posinset`** 가 857이라고 하고 동적 HTML 기술을 사용해 사용자가 필요할 때 전체 목록을 탐색하도록 할 수 있다.
 
 ![aria6](https://user-images.githubusercontent.com/24274424/57572196-f13d2500-7451-11e9-8649-9b65bbc90f54.png)
-
 <br/>
 
 ### aria-hidden
 
-사용자를 위한 사용 환경의 미세 조정에서 중요한 또 다른 기술은 페이지에서 관련 부분만 노출시키는 것입니다. DOM의 한 부분이 접근성 API에 노출되지 않도록 하는 방법은 여러 가지가 있다.
+사용자를 위한 사용 환경의 미세 조정에서 중요한 다른 기술은 페이지에서 관련 부분만 노출 시킨다. DOM의 한 부분이 접근성 API에 노출되지 않도록 하는 방법은 여러 가지가 있다.
 
-먼저 DOM에서 명시적으로 숨겨진 콘텐츠는 접근성 트리에도 포함되지 않습니다. 따라서 **`visibility: hidden`** 또는 **`display: none`** 의 CSS 스타일이 있거나 HTML5 **`hidden`** 속성을 사용하는 콘텐츠 역시 숨겨져 사용자가 인식할 수 없다.
+먼저 DOM에서 명시적으로 숨겨진 콘텐츠는 접근성 트리에도 포함되지 않느다. 따라서 **`visibility: hidden`** 또는 **`display: none`** 의 CSS 스타일이 있거나 HTML5 **`hidden`** 속성을 사용하는 콘텐츠 역시 숨겨져 사용자가 인식할 수 없다.
 
 하지만 시각적으로 렌더링되지 않지만 명시적으로 숨겨지지는 않는 Element는 여전히 접근성 트리에 포함된다. 한 가지 일반적인 기법은 절대 위치상 화면 밖에 있는 Element에 스크린 리더 전용 텍스트를 포함하는 것이다.
 
@@ -104,7 +99,7 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`ari
 
 또한, 다른 상황이었다면 숨겨지는 Element를 참조하는 **`aria-label`**, **`aria-labelledby`** 또는 **`aria-describedby`** 속성을 통해 스크린 리더 전용 텍스트를 제공할 수 있다.
 
-마지막으로, ARIA는 **`aria-hidden`** 속성을 사용하여 시각적으로 숨겨지지 않는 콘텐츠를 제외하기 위한 메커니즘을 제공한다. Element에 이 속성을 적용하면 사실상 Element와 *모든 하위 항목*이 접근성 트리에서 제거된다. **`aria-labelledby`** 또는 **`aria-describedby`** 속성이 참조하는 Element가 유일한 예외이다.
+마지막으로, ARIA는 **`aria-hidden`** 속성을 사용하여 시각적으로 숨겨지지 않는 콘텐츠를 제외하기 위한 메커니즘을 하는데, Element에 이 속성을 적용하면 사실상 Element와 *모든 하위 항목*이 접근성 트리에서 제거된다. **`aria-labelledby`** 또는 **`aria-describedby`** 속성이 참조하는 Element가 유일한 예외이다.
 
 ```html
 <div class="deck">  
@@ -121,7 +116,6 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`ari
 ```
 
 예를 들어, 기본 페이지에 대한 액세스를 차단하는 모달 UI를 생성하려는 경우 **`aria-hidden`** 을 사용할 수 있다. 이 경우 시력이 정상인 사용자에게는 페이지 대부분을 현재 사용할 수 없음을 나타내는 반투명 오버레이가 표시될 수 있겠지만, 스크린 리더 사용자는 페이지의 다른 부분을 계속 탐색할 수 있다. 
-
 <br/>
 
 ### aria-live
@@ -166,7 +160,6 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`ari
 - *all*: 모든 변경 사항이 관련성이 있다는 뜻이다. 하지만 **`aria-relevant`** 의 기본값은 **`additions text`** 인데, 이는 곧 **`aria-relevant`** 를 지정하지 않으면 Element에 추가되는 항목에 대해 사용자에게 표시되는 내용을 업데이트할 것이라는 의미이다.
 
 마지막으로, **`aria-busy`** 를 사용하면 Element에 대한 변경 사항을 일시적으로 무시해야 한다고 알려줄 수 있다(예: 로딩중일 때). 모든 절차를 끝낸 후 리더의 작동을 정상화하려면 **`aria-busy`** 를 `false`로 설정해야 한다.
-
 <br/>
 
 #### Reference
