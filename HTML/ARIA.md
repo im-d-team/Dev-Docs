@@ -1,13 +1,13 @@
 # ARIA(Accessible Rich Internet Applications)
 
-ARIA란 웹 콘텐츠와 웹 어플리케이션을 제작할 때 누구든 쉽게 접근할수 있도록 하는 접근성 향상 방법 중 하나이다. ARIA를 사용하여 내비게이션 랜드마크, 위젯, 서식 힌트, 에러메시지,  실시간 콘텐츠 업데이트 등을 표현하여 **접근성**을 부여한다.
+ARIA란 웹 콘텐츠와 웹 어플리케이션을 제작할 때 누구든 쉽게 접근할수 있도록 하는 접근성 향상 방법 중 하나이다. ARIA를 사용하여 내비게이 랜션드마크, 위젯, 서식 힌트, 에러메시지,  실시간 콘텐츠 업데이트 등을 표현하여 **접근성**을 부여한다.
 
-ARIA는 접근성 관련 **속성(attribute)**이며, HTML에 최적화 되어 있다. `role` 속성을 사용하여 객체(article, alert, slider 등등)의 일반 타입을 정의하고, 이 외 ARIA 속성을 추가로 사용하여 서식에 관한 설명이나 상태바의 현재 값을 제공하는 등 유용한 프로퍼티들을 제공한다.
+ARIA는 접근성 관련 **속성(attribute)** 이며, HTML에 최적화 되어 있다. `role` 속성을 사용하여 객체(article, alert, slider 등등)의 일반 타입을 정의하고, 이 외 ARIA 속성을 추가로 사용하여 서식에 관한 설명이나 상태바의 현재 값을 제공하는 등 유용한 프로퍼티들을 제공한다.
 
 > [role 종류에 대해서 자세히 알아보기](https://www.w3.org/TR/wai-aria-1.1/#role_definitions) <br/>
 > [ARIA_Techniques - MDN 문서](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
 
-대부분의 브라우저들과 스크린 리더 기기는 ARIA를 지원한다. 그러나 구현방식이 각각 상이해 지원을 하더라도, 오래된 기기 혹은 브라우저의 경우에는 제대로 적용되지 않는다. 애플리케이션의 기능을 우아하게 저하시키는 (degrades gracefully) 안전한 ARIA를 사용하거나, 사용자에게 기기를 최신 버전으로 업그레이드할 것을 요청해야 한다.
+대부분의 브라우저들과 스크린 리더 기기는 ARIA를 지원한다. 그러나 구현방식이 상이해 지원을 하더라도, 오래된 기기 혹은 브라우저의 경우에는 제대로 적용되지 않는다. 애플리케이션의 기능을 우아하게 저하(degrades gracefully)하는 안전한 ARIA를 사용하거나, 사용자에게 기기를 최신 버전으로 업그레이드할 것을 요청해야 한다.
 
 **role** 속성은, **tabIndex**(접근성 향상 중 하나) 속성과 항상 같은 곳에서 적용되어야 한다. **그래야 설정된 role이 의도된 element에서 정확히 수행될 수 있다**. ARIA를 통해 바꿀 수 있는 것은 오직, **Accessibility Tree** 뿐이다. Element의 외형, 동작, focusability, keyboard event handling 등등 다른 것은 아무것도 바뀌지 않는다.
 <br/>
@@ -26,11 +26,11 @@ ARIA는 접근성 관련 **속성(attribute)**이며, HTML에 최적화 되어 �
 
 ### aria-labelledby
 
-**`aria-labelledby`** 를 사용하면 어떤 Element의 레이블로서 DOM에 있는 다른 Element의 ID를 지정할 수 있다.
+**`aria-labelledby`** 를 사용하면 DOM에 있는 다른 Element의 ID를 해당 Element의 레이블로 지정할 수 있다.
 
 ![aria2](https://user-images.githubusercontent.com/24274424/57572192-f0a48e80-7451-11e9-88c5-8835061ee040.png)
 
-이는 마치 몇 가지 차이점이 있는 **`label`** Element를 사용하는 것과 같습니다.
+이것은 몇 가지 차이점이 있는 **`label`** Element라고 생각하면 된다.
 
 1. **`aria-labelledby`** 는 레이블 지정 가능한 Element뿐 아니라 어떤 Element에서든 사용할 수 있다.
 2. **`label`** Element는 자신이 레이블을 지정하는 대상을 참조하지만 **`aria-labelledby`** 의 경우에는 관계가 다르다. 레이블을 지정하는 대상이 레이블을 지정하는 주체를 참조한다.
@@ -38,12 +38,12 @@ ARIA는 접근성 관련 **속성(attribute)**이며, HTML에 최적화 되어 �
 4. **`aria-labelledby`** 를 사용하여 숨겨져 있거나 접근성 트리에 없는 Element를 참조할 수 있다. 예를 들어, 레이블을 지정하려는 Element 옆에 숨겨진 **`span`** 을 추가하고 **`aria-labelledby`** 로 참조할 수 있다.
 5. 하지만 ARIA는 접근성 트리에만 영향을 주므로 **`aria-labelledby`** 를 사용하면 **`label`** Element를 사용할 때처럼 레이블 클릭 동작을 구현할 수는 없다.
 
-중요한 점은, **`aria-labelledby`** 가 한 Element에 대한 다른 **모든** 이름 소스를 재정의한다는 점입니다. 예를 들어, 어떤 Element에 **`aria-labelledby`** 와 **`aria-label`** 이 모두 있거나 **`aria-labelledby`** 와 네이티브 HTML **`label`** 이 있는 경우에는 **`aria-labelledby`** **레이블이 항상 우선한다.**
+중요한 점은, **`aria-labelledby`** 가 한 Element에 대한 다른 **모든** 이름 소스를 재정의 한다. 예를 들어, 어떤 Element에 **`aria-labelledby`** 와 **`aria-label`** 이 모두 있거나 **`aria-labelledby`** 와 네이티브 HTML **`label`** 이 있는 경우에는 **`aria-labelledby`** **레이블이 항상 우선한다.**
 <br/>
 
 ## 관계
 
-**`aria-labelledby`** 는 *관계 속성*의 예이다. **관계 속성은 DOM 관계와는 무관하게 페이지에 있는 Element들 사이의 의미 체계 관계를 생성**한다. **`aria-labelledby`** 의 경우 의미 체계 관계는 '이 Element가 저 Element에 레이블을 지정한다`.
+**`aria-labelledby`** 는 *관계 속성*의 예이다. **관계 속성은 DOM 관계와는 무관하게 페이지에 있는 Element들 사이의 의미 체계 관계를 생성**한다. **`aria-labelledby`** 의 경우 의미 체계 관계는 이 Element가 저 Element에 레이블을 지정한다.
 
 사양 중 6가지 **`aria-activedescendant`**, **`aria-controls`**, **`aria-describedby`**, **`aria-labelledby`**, **`aria-owns`** 는 하나 또는 그 이상의 Element를 참조하여 페이지에 있는 Element들 사이에 새로운 링크를 생성한다. 각각의 경우에 있어 링크의 의미와 사용자에게 표시되는 방식이 차이점이다.
 <br/>
@@ -58,9 +58,9 @@ ARIA는 접근성 관련 **속성(attribute)**이며, HTML에 최적화 되어 �
 
 ### aria-activedescendant
 
-Element의 활성화된 하위 항목을 설정하여 상위  항목에실제로 포커스가 있을 때 그 Element를 사용자에게 포커스된 Element로 표시해야 함을 알려줄 수 있다. 
+Element의 활성화된 하위 항목을 설정하여 상위  항목에 실제로 포커스가 있을 때 그 Element를 사용자에게 포커스된 Element로 표시해야 함을 알려줄 수 있다. 
 
-예를 들어, 목록 상자에서 목록 상자 컨테이너에 페이지 포커스를 남겨두고 싶지만 **`aria-activedescendant`** 속성은 현재 선택한 목록 항목에 맞춰 계속 업데이트 유지할 수도 있다. 이를 통해 보현재 선택한 항목이 마치 포커스된 항목인 것처럼 나타나게 할 수 있다.
+예를 들어, 목록 상자에서 목록 상자 컨테이너에 페이지 포커스를 남겨두고 싶지만 **`aria-activedescendant`** 속성은 현재 선택한 목록 항목에 맞춰 계속 업데이트 유지할 수도 있다. 이를 통해 현재 선택한 항목이 마치 포커스된 항목인 것처럼 나타나게 할 수 있다.
 
 ![aria4](https://user-images.githubusercontent.com/24274424/57572194-f13d2500-7451-11e9-81f6-e7c49d8d0cbe.png)
 
@@ -70,8 +70,6 @@ Element의 활성화된 하위 항목을 설정하여 상위  항목에실제로
 
 **`aria-describedby`** 는 **`aria-labelledby`** 가 레이블을 제공하는 것과 똑같은 방식으로 액세스 가능한 설명을 제공한다. **`aria-labelledby`** 와 마찬가지로, **`aria-describedby`** 는 DOM에서 숨겨지거나 숨겨졌는지에 상관없이 다른 방법으로는 보이지 않는 Element를 참조한다. 이는 사용자에게만 적용되든 모든 사용자에게 적용되든 상관없이, 사용자에게 추가적인 설명문이 필요할 때 유용한 기법이다.
 
-일반적인 예로, 최소 비밀번호 요건을 설명하는 텍스트가 함께 제공되는 비밀번호 입력란이 있다고 하면, 이런 설명은 레이블과는 달리 사용자에게 표시될 수도, 표시되지 않을 수도 있다. 이런 설명에 액세스할지 선택권을 부여하거나, 다른 모든 정보 다음에 나오도록 하거나, 다른 내용이 먼저 그 자리에 표시되도록 할 수도 있다. 예를 들어, 사용자가 정보를 입력하면 입력 정보가 다시 에코되어 Element의 설명을 가로막을 수 있다. 따라서 설명은 필수 정보가 아니라 보충 정보를 전달하기에 훌륭한 방법이며, Element의 역할과 같이 더욱 중요한 정보를 전달하는 데 방해되지 않는다.
-
 ![aria5](https://user-images.githubusercontent.com/24274424/57572195-f13d2500-7451-11e9-9fb6-4774a8f7fe38.png)
 
 <br/>
@@ -80,7 +78,7 @@ Element의 활성화된 하위 항목을 설정하여 상위  항목에실제로
 
 나머지 관계 속성은 앞서 설명한 속성과는 약간 다르며 함께 사용한다. **`aria-posinset`** (position in set)와 **`aria-setsize`** (size of set)는 목록과 같이 집합을 이루고 있는 형제 Element 간의 관계를 정의하는 속성이다.
 
-DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때(예: 지연 렌더링을 사용하여 DOM에 있는 큰 목록을 모두 한 번에 포함하지 않도록 할 때) **`aria-setsize`**는 실제 집합 크기를 지정할 수 있고 **`aria-posinset`**는 집합에서 Element의 위치를 지정할 수 있다. 예를 들어, Element 개수가 1,000개인 집합의 경우 DOM에서 특정 Element가 맨 처음에 나타나더라도 **`aria-posinset`**가 857이라고 하고 동적 HTML 기술을 사용해 사용자가 필요할 때 전체 목록을 탐색하도록 할 수 있다.
+DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`aria-setsize`** 는 실제 집합 크기를 지정할 수 있고 **`aria-posinset`** 는 집합에서 Element의 위치를 지정할 수 있다. 예를 들어, Element 개수가 1,000개인 집합의 경우 DOM에서 특정 Element가 맨 처음에 나타나더라도 **`aria-posinset`** 가 857이라고 하고 동적 HTML 기술을 사용해 사용자가 필요할 때 전체 목록을 탐색하도록 할 수 있다.
 
 ![aria6](https://user-images.githubusercontent.com/24274424/57572196-f13d2500-7451-11e9-8649-9b65bbc90f54.png)
 
@@ -90,12 +88,18 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때(예: �
 
 사용자를 위한 사용 환경의 미세 조정에서 중요한 또 다른 기술은 페이지에서 관련 부분만 노출시키는 것입니다. DOM의 한 부분이 접근성 API에 노출되지 않도록 하는 방법은 여러 가지가 있다.
 
-먼저 DOM에서 명시적으로 숨겨진 콘텐츠는 접근성 트리에도 포함되지 않습니다. 따라서 **`visibility: hidden`** 또는 **`display: none`**의 CSS 스타일이 있거나 HTML5 **`hidden`** 속성을 사용하는 콘텐츠 역시 숨겨져 사용자가 인식할 수 없다.
+먼저 DOM에서 명시적으로 숨겨진 콘텐츠는 접근성 트리에도 포함되지 않습니다. 따라서 **`visibility: hidden`** 또는 **`display: none`** 의 CSS 스타일이 있거나 HTML5 **`hidden`** 속성을 사용하는 콘텐츠 역시 숨겨져 사용자가 인식할 수 없다.
 
-하지만 시각적으로 렌더링되지 않지만 명시적으로 숨겨지지는 않는 Element는 여전히 접근성 트리에 포함됩니다. 한 가지 일반적인 기법은 절대 위치상 화면 밖에 있는 Element에 '스크린 리더 전용 텍스트'를 포함하는 것입니다.
+하지만 시각적으로 렌더링되지 않지만 명시적으로 숨겨지지는 않는 Element는 여전히 접근성 트리에 포함된다. 한 가지 일반적인 기법은 절대 위치상 화면 밖에 있는 Element에 스크린 리더 전용 텍스트를 포함하는 것이다.
 
 ```css
-.sr-only {  position: absolute;  left: -10000px;  width: 1px;  height: 1px;  overflow: hidden;}
+.sr-only {  
+  position: absolute;  
+  left: -10000px;  
+  width: 1px;  
+  height: 1px;  
+  overflow: hidden;
+}
 ```
 
 또한, 다른 상황이었다면 숨겨지는 Element를 참조하는 **`aria-label`**, **`aria-labelledby`** 또는 **`aria-describedby`** 속성을 통해 스크린 리더 전용 텍스트를 제공할 수 있다.
@@ -138,7 +142,7 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때(예: �
   <div class="status" aria-live="polite">Your message has been sent.</div>
 ```
 
-**`aria-live`**에는 **`polite`**, **`assertive`**, **`off`**의 세 가지 값이 허용된다.
+**`aria-live`** 에는 **`polite`**, **`assertive`**, **`off`** 의 세 가지 값이 허용된다.
 
 - **`aria-live="polite"`** 는 현재 어떤 작업을 하고 있든 그 작업을 마치면 사용자에게 변경 사항을 알리도록 하는 역할을 한다. 긴급하지 않은 변경사항일 경우에 적합하며 **`aria-live`** 는 대부분 이런 용도로 사용된다.
 - **`aria-live="assertive"`** 는 수행 중인 작업이 무엇이든 중단하고 사용자에게 변경 사항을 **즉시 알리도록 하는 역할**을 한다. '서버 오류가 발생하여 변경 내용이 저장되지 않습니다. 페이지를 새로 고치세요' 같은 상태 메시지나  위젯에 있는 버튼처럼 사용자 작업의 직접적 결과로서 입력란이 업데이트되는 경우와 중요하고 긴급한 업데이트에 사용된다.
@@ -159,7 +163,7 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때(예: �
 - *additions*: 라이브 영역에 추가하는 Element가 중요하다는 뜻이다. 예를 들어, 상태 메시지의 기존 로그에 범위를 추가할 경우 이는 사용자에게 그 범위를 알려줄 것이라는 의미이다(**`aria-atomic`** 이 **`false`** 라고 가정).
 - *text*: 하위 노드에 추가하는 텍스트 콘텐츠가 관련성이 있다는 뜻이다. 예를 들어, 사용자설정 텍스트 필드의 **`textContent`** 속성을 수정하면 수정한 텍스트를 사용자에게 읽어주게 된다.
 - *removals*: 텍스트나 하위 노드 제거를 사용자에게 전달해야 한다는 뜻이다.
-- *all*: 모든 변경 사항이 관련성이 있다는 뜻이다. 하지만 **`aria-relevant`** 의 기본값은 **`additions text`** 인데, 이는 곧 **`aria-relevant`** 를 지정하지 않으면 Element에 추가되는 항목에 대해 사용자에게 표시되는 내용을 업데이트할 것이라는 의미이며, 이는 아마도 개발자 역시 원하는 바일 것입니다.
+- *all*: 모든 변경 사항이 관련성이 있다는 뜻이다. 하지만 **`aria-relevant`** 의 기본값은 **`additions text`** 인데, 이는 곧 **`aria-relevant`** 를 지정하지 않으면 Element에 추가되는 항목에 대해 사용자에게 표시되는 내용을 업데이트할 것이라는 의미이다.
 
 마지막으로, **`aria-busy`** 를 사용하면 Element에 대한 변경 사항을 일시적으로 무시해야 한다고 알려줄 수 있다(예: 로딩중일 때). 모든 절차를 끝낸 후 리더의 작동을 정상화하려면 **`aria-busy`** 를 `false`로 설정해야 한다.
 
@@ -167,9 +171,9 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때(예: �
 
 #### Reference
 
-- [ARIA - MDN]([https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA](https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA))
-- [왜 ARIA인가?]([https://starkying.tistory.com/entry/왜-ARIA인가](https://starkying.tistory.com/entry/%EC%99%9C-ARIA%EC%9D%B8%EA%B0%80))
-- [ARIA 레이블과 관계]([https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=ko](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=ko))
-- [콘텐츠 숨기기 및 업데이트]([https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content?hl=ko](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content?hl=ko))
-- [Why, How, and When to Use Semantic HTML and ARIA]([https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/](https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/))
-- [레진 WAI-ARIA 가이드라인 소개]([https://tech.lezhin.com/2018/04/20/wai-aria](https://tech.lezhin.com/2018/04/20/wai-aria))
+- [ARIA - MDN](https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA)
+- [왜 ARIA인가?](https://starkying.tistory.com/entry/%EC%99%9C-ARIA%EC%9D%B8%EA%B0%80)
+- [ARIA 레이블과 관계](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=ko)
+- [콘텐츠 숨기기 및 업데이트](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content?hl=ko)
+- [Why, How, and When to Use Semantic HTML and ARIA](https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/)
+- [레진 WAI-ARIA 가이드라인 소개](https://tech.lezhin.com/2018/04/20/wai-aria)
