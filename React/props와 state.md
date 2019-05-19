@@ -221,5 +221,5 @@ getCalendarData = () => {
 
 #### Reference
 
-- [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions#what-is-the-difference-between-element-and-component)
+- [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions#what-is-state-in-react)
 - [Velopert - 누구든지 하는 리액트 4편: props 와 state](https://velopert.com/3629)
