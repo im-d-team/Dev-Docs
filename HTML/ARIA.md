@@ -7,7 +7,7 @@ ARIA는 접근성 관련 **속성(attribute)** 이며, HTML에 최적화 되어 
 > [role 종류에 대해서 자세히 알아보기](https://www.w3.org/TR/wai-aria-1.1/#role_definitions) <br/>
 > [ARIA_Techniques - MDN 문서](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
 
-대부분의 브라우저들과 스크린 리더 기기는 ARIA를 지원한다. 그러나 구현방식이 상이하여 지원을 하더라도, 오래된 기기 혹은 브라우저의 경우에는 제대로 적용되지 않는 경우가 있다. 애플리케이션의 기능을 우아한저하(degrades gracefully)를 하여 ARIA를 사용하거나, 사용자에게 기기를 최신 버전으로 업그레이드할 것을 요청해야 한다.
+대부분의 브라우저들과 스크린 리더 기기는 ARIA를 지원한다. 그러나 구현방식이 상이하여 지원을 하더라도, 오래된 기기 혹은 브라우저의 경우에는 제대로 적용되지 않는 경우가 있다. 애플리케이션의 기능을 [우아한 하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EC%A0%90%EC%A7%84%EC%A0%81%ED%96%A5%EC%83%81_%EC%9A%B0%EC%95%84%ED%95%9C%ED%95%98%ED%96%A5.md)를 하여 ARIA를 사용하거나, 사용자에게 기기를 최신 버전으로 업그레이드할 것을 요청해야 한다.
 
 **role** 속성은, **tabIndex** 속성과 항상 같은 곳에서 적용되어야 한다. **그래야 설정된 role이 의도된 element에서 정확히 수행될 수 있다**. ARIA를 통해 바꿀 수 있는 것은 오직, **Accessibility Tree** 뿐이다. Element의 외형, 동작, focusability, keyboard event handling 등등 다른 것은 아무것도 바뀌지 않는다.
 <br/>
@@ -83,7 +83,7 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`ari
 
 사용자를 위한 사용 환경의 미세 조정에서 중요한 다른 기술은 페이지에서 관련 부분만 노출 시킨다. DOM의 한 부분이 접근성 API에 노출되지 않도록 하는 방법은 여러 가지가 있다.
 
-먼저 DOM에서 명시적으로 숨겨진 콘텐츠는 접근성 트리에도 포함되지 않느다. 따라서 **`visibility: hidden`** 또는 **`display: none`** 의 CSS 스타일이 있거나 HTML5 **`hidden`** 속성을 사용하는 콘텐츠 역시 숨겨져 사용자가 인식할 수 없다.
+먼저 DOM에서 명시적으로 숨겨진 콘텐츠는 접근성 트리에도 포함되지 않는다. 따라서 **`visibility: hidden`** 또는 **`display: none`** 의 CSS 스타일이 있거나 HTML5 **`hidden`** 속성을 사용하는 콘텐츠 역시 숨겨져 사용자가 인식할 수 없다.
 
 하지만 시각적으로 렌더링되지 않지만 명시적으로 숨겨지지는 않는 Element는 여전히 접근성 트리에 포함된다. 한 가지 일반적인 기법은 절대 위치상 화면 밖에 있는 Element에 스크린 리더 전용 텍스트를 포함하는 것이다.
 
@@ -99,7 +99,7 @@ DOM에 있는 Element로는 집합의 크기를 결정할 수 없을 때 **`ari
 
 또한, 다른 상황이었다면 숨겨지는 Element를 참조하는 **`aria-label`**, **`aria-labelledby`** 또는 **`aria-describedby`** 속성을 통해 스크린 리더 전용 텍스트를 제공할 수 있다.
 
-마지막으로, ARIA는 **`aria-hidden`** 속성을 사용하여 시각적으로 숨겨지지 않는 콘텐츠를 제외하기 위한 메커니즘을 하는데, Element에 이 속성을 적용하면 사실상 Element와 *모든 하위 항목*이 접근성 트리에서 제거된다. **`aria-labelledby`** 또는 **`aria-describedby`** 속성이 참조하는 Element가 유일한 예외이다.
+마지막으로, ARIA는 **`aria-hidden`** 속성을 사용하여 시각적으로 숨겨지지 않는 콘텐츠를 제외하기 위한 매커니즘을 수행하는데, Element에 이 속성을 적용하면 사실상 Element와 *모든 하위 항목*이 접근성 트리에서 제거된다. **`aria-labelledby`** 또는 **`aria-describedby`** 속성이 참조하는 Element가 유일한 예외이다.
 
 ```html
 <div class="deck">  
