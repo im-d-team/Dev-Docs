@@ -1,4 +1,4 @@
-# state와 props
+# props와 state
 
 <br/>
 
