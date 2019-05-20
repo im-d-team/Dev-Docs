@@ -165,4 +165,9 @@ Object.assign(target, ...sources)
 
 핵심은 from sources to target then return target이다.
 
+---
+
+### 참고자료
+
+- [JavaScript Tip: Remove ?falsy? Items Out of an Array](http://www.devign.me/javascript-tip-remove-falsy-items-out-of-an-array)
 - [Object​.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
