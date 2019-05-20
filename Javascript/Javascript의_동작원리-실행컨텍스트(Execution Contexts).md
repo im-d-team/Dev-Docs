@@ -170,5 +170,6 @@ ECStack.pop();
 #### Reference
 
 - 인사이드 자바스크립트(송형주, 고현준 - 한빛미디어)
-- [ECMA-262-3 in detail. Chapter 1. Execution Contexts. - Dmitry Soshnikov]([]())
-- [ECMA-262-3 in detail. Chapter 1. Execution Contexts 번역 - 개발왕 김코딩]([]())
+- [ECMA-262-3 in detail. Chapter 1. Execution Contexts. - Dmitry Soshnikov](http://dmitrysoshnikov.com/ecmascript/chapter-1-execution-contexts/)
+- [ECMA-262-3 in detail. Chapter 1. Execution Contexts 번역 - 개발왕 김코딩](https://huns.me/development/159)
+- [실행 컨텍스트와 자바스크립트의 동작 원리 - poiemaweb](https://poiemaweb.com/js-execution-context)
