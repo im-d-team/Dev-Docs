@@ -17,7 +17,7 @@ BOM의 최상위 객체는 window라는 객체이고, DOM은 window 객체의 �
 
 > 문서 객체 모델(The Document Object Model(DOM)) 은 HTML, XML 문서의 프로그래밍 interface 이다. - MDN
 
-HTML에는 `<html>`, `<head>`, `<body>`와 같은 많은 태그가 있는데 이를 JavaScript로 사용할 수 있도록 객체로 만들면 그것을 **Document Object하고 한다.**
+HTML에는 `<html>`, `<head>`, `<body>`와 같은 많은 태그가 있는데 이를 JavaScript로 사용할 수 있도록 객체로 만들면 그것을 **Document Object라고 한다.**
 
 DOM은 문서의 구조화된 표현을 제공하며 **프로그래밍 언어(JavaScript 등)가 DOM 구조에 접근할 수 있는 방법을 제공하여 문서 구조, 스타일, 내용 등을 변경할 수 있도록 해준다.** 
 <br/>
@@ -53,7 +53,7 @@ HTML 코드는 DOM과 똑같은 것으로 예상되지만 브라우저에서 생
 
 이외
 
-- HTML 파일에 단어 하나라도 존재하더라도 브라우저는 이를 `html`과 `body` 으로 감싸고 `head`를 필수적으로 추가한다.
+- HTML 파일에 단어 하나라도 존재하면 브라우저는 이를 `html`과 `body` 으로 감싸고 `head`를 필수적으로 추가한다.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24274424/57984679-27eded80-7a99-11e9-87bd-acc9fbafd3e3.png" alt="code2" width="400"/>
@@ -61,7 +61,7 @@ HTML 코드는 DOM과 똑같은 것으로 예상되지만 브라우저에서 생
   <img src="https://user-images.githubusercontent.com/24274424/57984680-28868400-7a99-11e9-8dbb-0bb56a3ad599.png" alt="code2_devtool" width="400"/>
 </p>
 
-- DOM을 생성하는 과정에서 여는 태그는 작성을 하고 닫는 태그를 작성하지 않는 경우 자동 생성하여 맞춰서 오류가 발생하지 않는다.
+- DOM을 생성할 때 여는 태그만 작성하고 닫는 태그는 작성하지 않는다면, 자동 생성하여 맞춰서 오류가 발생하지 않는다.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24274424/57984681-28868400-7a99-11e9-95e4-f0c8797dfceb.png" alt="code3" width="400"/>
@@ -69,7 +69,7 @@ HTML 코드는 DOM과 똑같은 것으로 예상되지만 브라우저에서 생
   <img src="https://user-images.githubusercontent.com/24274424/57984682-28868400-7a99-11e9-93f5-68542db5cf5e.png" alt="code3_devtool" width="400"/>
 </p>
 
-그렇다면 우리가 작성한 코드가 실제 DOM으로 만들어진 것을 어디서 볼 수 있나?
+우리가 작성한 코드로 만들어진 실제 DOM은 어떻게 볼 수 있을까?
 <br/>
 
 ## DevTools
@@ -86,9 +86,9 @@ Element가 실제로 그려진 DOM Tree를 볼 수 있는 곳으로 **Element의
 
 ### Console Tab
 
-JavaScript를 사용해서 DOM을 조작할 수 있다. 실제로 JavaScript 엔진을 사용해서 테스트를 해보고 싶을 때 많이 사용하는 공간으로 IntelliSense를 보는 공간으로도 사용이 가능하다.
+JavaScript를 사용해서 DOM을 조작할 수 있다. 실제로 JavaScript 엔진을 사용해서 테스트를 해보고 싶을 때 많이 사용하는 공간으로 IntelliSense를 보는 공간으로도 사용 가능하다.
 
-브라우저에서 테스트할 때 원하는 Element를 JavaScript로 찾기 힘들 때 Element Tab에서 해당 Element를 클릭 후 Console 창에서 `$0`으로 호출해서 바로 사용이 가능하다.
+브라우저에서 테스트시 원하는 Element를 JavaScript로 찾기란 어렵다. 이에 Element Tab에서 해당 Element를 클릭 후 Console 창에서 `$0`으로 호출하여 바로 확인이 가능하다.
 
 기본적으로 브라우저에서 클릭 된 history를 보관하고 있어 이전에 선택한 Element를 다시 가져올 수 있다.
 
