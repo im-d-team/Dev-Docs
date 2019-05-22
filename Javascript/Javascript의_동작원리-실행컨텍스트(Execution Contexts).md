@@ -6,7 +6,7 @@
 
 ## 실행 컨텍스트(Execution Contexts)
 
-ECMA-262-3에서는 "**실행 가능한 코드(Executable code; 이하 실행 코드)** 의 유형을 **나누고(형상화)**, **구별**하기 위한 추상적인 개념"으로 정의한다. 실행 코드를 실행 하기 위해 **필요한 환경**을 뜻한다.
+ECMA-262-3에서는 "**실행 가능한 코드(Executable code; 이하 실행 코드)** 의 유형을 **나누고(형상화)**, **구별**하기 위한 추상적인 개념"으로 정의한다. 실행 코드를 실행하기 위해 **필요한 환경**을 뜻한다.
 
 실행 컨텍스트는 추상적인 개념이지만, **물리적으로는 객체의 형태**이며 **코드 실행에 필요한 정보(변수, 함수 선언, 스코프, this)** 가 들어있다.
 
@@ -58,12 +58,12 @@ ECStack = [
   ];
 ```
   
-- **꼭대기(top)** 에는 현재 **활성화 된 실행 컨텍스트**가 있다.
+**꼭대기(top)** 에는 현재 **활성화 된 실행 컨텍스트**가 있다.
 
-  > 활성화된 실행 컨텍스트를 활성 객체(activation object; AO)라고 한다.
+> 활성화된 실행 컨텍스트를 활성 객체(activation object; AO)라고 한다.
 
-- 실행 컨텍스트가 들어오고 나가면서 변경(push/pop)된다. 
-  - 새로운 실행 컨텍스트는 직전의 실행 컨텍스트위에 쌓이고, 실행 컨텍스트가 종료되면 해당 실행 컨텍스트를 파기하고 직전 컨텍스트에 제어를 반환한다.
+실행 컨텍스트가 들어오고 나가면서 변경(push/pop)된다. 
+새로운 실행 컨텍스트는 직전의 실행 컨텍스트 위에 쌓이고 실행 컨텍스트가 종료되면, 해당 실행 컨텍스트를 파기하고 직전 컨텍스트에 제어를 반환한다.
 
 <br/>
 
@@ -77,20 +77,21 @@ ECStack = [
 
 ## 함수 코드(Function Code)
 
-- 함수가 호출되어 함수 코드로 진입할 때, ECStack에 새로운 활성 객체(AO)가 생성 된다.
+- 함수가 호출되어 함수 코드로 진입할 때, ECStack에 새로운 활성 객체(AO)가 생성된다.
 - 새로 생성된 실행 컨텍스트는 호출된 함수(concrete function)의 코드에 중첩된 내부 함수(inner functions)의 코드를 포함하지 않는다.
-- 함수가 종료될때마다 활성 객체는 제어를 반환하고, ECStack에서 제거된다(일반적인 스택의 동작 방식을 따라서 진행). 이 작업이 끝나면, ECStack에는 globalContext만 남아있다.
+- 함수가 종료될 때마다 활성 객체는 제어를 반환하고, ECStack에서 제거된다(일반적인 스택의 동작 방식을 따라서 진행). 이 작업이 끝나면, ECStack에는 globalContext만 남아있다.
 
-  > - 재귀 함수의 호출
-  >
-  > ```js
-  > (function foo(flag) {
-  >     if (flag) {
-  >        return;
-  >     }
-  >     foo(true);
-  > })(false);
-  > ```
+> 실행 컨텍스트의 구조에서 함수를 호출하는 예제를 보았다.<br/>
+> 재귀 함수의 호출은 어떻게 될지 생각해보자
+>
+> ```js
+> (function foo(flag) {
+>     if (flag) {
+>        return;
+>     }
+>     foo(true);
+> })(false);
+> ```
 
 <br/>
 
@@ -167,9 +168,11 @@ ECStack.pop();
 
 <br/>
 
+---
+
 #### Reference
 
-- 인사이드 자바스크립트(송형주, 고현준 - 한빛미디어)
+- [인사이드 자바스크립트(송형주, 고현준 - 한빛미디어)](https://books.google.co.kr/books?id=gSVJDgAAQBAJ&hl=ko&source=gbs_navlinks_s)
 - [ECMA-262-3 in detail. Chapter 1. Execution Contexts. - Dmitry Soshnikov](http://dmitrysoshnikov.com/ecmascript/chapter-1-execution-contexts/)
 - [ECMA-262-3 in detail. Chapter 1. Execution Contexts 번역 - 개발왕 김코딩](https://huns.me/development/159)
 - [실행 컨텍스트와 자바스크립트의 동작 원리 - poiemaweb](https://poiemaweb.com/js-execution-context)
