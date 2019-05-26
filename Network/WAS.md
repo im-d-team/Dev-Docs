@@ -19,7 +19,7 @@ WAS는 위에서도 언급했듯이 JSP, Servlet 등을 처리하기 위해 쓰�
 ## JSP 처리
 JSP파일은 먼저 Servlet Class 형태의 java 소스 파일로 변환된다. 
 
-![ServletClass](/assets/images/servletClass.png) 
+![ServletClass](/assets/images/ServletClass.png) 
 
 이 java 파일 안에는 다음의 메소드가 정의되어 있다. 
 ```java
