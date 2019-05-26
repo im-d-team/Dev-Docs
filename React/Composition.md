@@ -100,9 +100,7 @@ ReactDOM.render(
 
 ## Specialization
 
-예를 들어, Java에서나 ES6에서 우리는 상속을 구현할 때 `Person`이라는 클래스를 상속 받아 `Developer`라는 좀 더 구체화된 클래스를 구현했다.
-
-하지만, `React`에서는 **상속이 아닌 합성(Composition)을 권장**하고 있으며 아래와 같이 `Dialog`라는 일반적인 컴포넌트를 이용하여 `WelcomDialog`라는 특수화된 컴포넌트를 구현한 뒤 이를 `SignUpDialog` 클래스 컴포넌트에서 이용하고 있다.
+`React`에서는 **상속이 아닌 합성(Composition)을 권장**하고 있으며 아래와 같이 `Dialog`라는 일반적인 컴포넌트를 이용하여 `WelcomDialog`라는 특수화된 컴포넌트를 구현한 뒤 이를 `SignUpDialog` 클래스 컴포넌트에서 이용하고 있다.
 
 ```js
 function Dialog(props) {
