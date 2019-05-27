@@ -104,7 +104,7 @@ public class Main {
     }
 }
 ```
-`driving()`는 파라미터로 `Vehicle`타입을 받는 메소드다. 하지만 위 예제처럼 `Car`와 `Bus`타입을 파라미터로 넘겨줘도 메소드는 정상적으로 작동된다. 자동적으로 `Car`와 `Bus`의 객체들이 `Vehicle`타입으로 **Upcasting**되었기 때문이다. 따라서 객체마다 따로따로 파라미터로 넘겨줘도 상관은 없지만, 다음과 같이 upcasting을 직접 해주면 코드 길이를 줄일 수 있다.   
+`driving()`는 파라미터로 `Vehicle`타입을 받는 메소드다. 하지만 위 예제처럼 `Car`와 `Bus`타입을 파라미터로 넘겨줘도 메소드는 정상적으로 작동된다. 자동적으로 `Car`와 `Bus`의 객체들이 `Vehicle`타입으로 **Upcasting**되었기 때문이다. 따라서 객체마다 따로따로 파라미터로 넘겨줘도 상관은 없지만, 다음과 같이 upcasting을 직접 해주면 한 곳에서 처리해줄 수 있다.   
 
 ```java
 public class Main {
