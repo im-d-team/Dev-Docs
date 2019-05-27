@@ -87,3 +87,4 @@ MDN Docs는 `setAttribute()`가 일관성 없이 동작할 수 있기 때문에 
 - [MDN docs - Element.setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#Notes)
 - [W3C Recommendation,Forms](https://www.w3.org/TR/html5/sec-forms.html#input-dirty-value-flag)
 
+
