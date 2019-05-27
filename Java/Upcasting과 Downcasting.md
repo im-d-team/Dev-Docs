@@ -76,32 +76,111 @@ public class Car extends Vehicle{
     }
 }
 ```
-위의 예제에서 `Car`와 `Bus`는 `Vehicle`을 상속 받고 있다. `Car`와 `Bus`로 객체를 생성하고, `ride()`를 실행하기 위해 다음과 같이 코드를 작성할 수 있다. 
-
 ```java
-public class Main {
+public class Person {
 	
-    public static void main(String[] args) {
-        Car c1 = new Car(4, "operator1");
-        Car c2 = new Car(6, "operator2");
-        Bus b1 = new Bus(10, "company1");
-        Bus b2 = new Bus(40, "company2");
-
-        for(Car car : list) {
-            System.out.println(car.ride());
-        }
-        for(Bus bus : list) {
-            System.out.println(bus.ride());
-        }
+    public String driving(Vehicle vehicle) {
+        return vehicle.ride();
     }
 }
 ```
-위 코드는 객체 타입이 `Car`와 `Bus`로 나뉘기 때문에 서로 다른 반복문을 이용해야 한다. 따라서, `Vehicle`을 상속받는 클래스가 늘어날수록 반복문도 늘어나게 된다. 이때 쓰일 수 있는 연산이 **upcasting**이다. 
+위의 예제에서 `Car`와 `Bus`는 `Vehicle`을 상속 받고 있으며, `Person`클래스는 파라미터로 `Vehicle`의 객체를 받아, `ride()`를 실행하는 메소드를 가지고 있다. 다음 `main()`를 확인해보자.
 
 ```java
 public class Main {
 	
     public static void main(String[] args) {
+        Person p = new Person();
+
+        Car c1 = new Car();
+        Car c2 = new Car();
+        Bus b1 = new Bus();
+        Bus b2 = new Bus();
+
+        System.out.println(p.driving(c1));
+        System.out.println(p.driving(c2));
+        System.out.println(p.driving(b1));
+        System.out.println(p.driving(b2));
+    }
+}
+```
+`driving()`는 파라미터로 `Vehicle`타입을 받는 메소드다. 하지만 위 예제처럼 `Car`와 `Bus`타입을 파라미터로 넘겨줘도 메소드는 정상적으로 작동된다. 자동적으로 `Car`와 `Bus`의 객체들이 `Vehicle`타입으로 **Upcasting**되었기 때문이다. 따라서 객체마다 따로따로 파라미터로 넘겨줘도 상관은 없지만, 다음과 같이 upcasting을 직접 해주면 코드 길이를 줄일 수 있다.   
+
+```java
+public class Main {
+	
+    public static void main(String[] args) {
+    	  Person p = new Person();
+
+          List<Vehicle> list = new ArrayList<Vehicle>();
+          list.add(new Car(4, "operator1"));
+          list.add(new Car(6, "operator2"));
+          list.add(new Bus(10, "company1"));
+          list.add(new Bus(40, "company2"));
+
+          for(Vehicle v : list) {
+              System.out.println(p.driving(v));
+          }
+    }
+}
+```
+
+한편, 위에서 upcasting의 또 다른 특징으로 upcasting된 객체는 더이상 자식클래스의 변수 및 메소드에 접근할 수 없다고 적어놨다. 하지만, 부모클래스의 메소드를 오버라이딩한 메소드는 접근할 수 있다. 다음 코드를 보자. 
+
+```java
+public class Bus extends Vehicle{
+	private String company;
+
+    Bus(int seat, String company){
+        super(seat);
+        this.company = company;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+	@Override
+	public String ride() {
+		return "버스 운헹중";
+	}
+}
+```
+```java
+public class Car extends Vehicle{
+    private String operator;
+
+    public Car() { };
+
+    public Car(int seat, String operator) {
+        super(seat);
+        this.operator = operator;
+    }
+
+    public String getOperator() {
+        return operator;
+    }
+
+    public void setOperator(String operator) {
+        this.operator = operator;
+    }
+
+	@Override
+	public String ride() {
+		return "소형차 운행중";
+	}
+}
+```
+```java
+public class Main {
+	
+    public static void main(String[] args) {
+        Person p = new Person();
+
         List<Vehicle> list = new ArrayList<Vehicle>();
         list.add(new Car(4, "operator1"));
         list.add(new Car(6, "operator2"));
@@ -109,13 +188,18 @@ public class Main {
         list.add(new Bus(40, "company2"));
 
         for(Vehicle v : list) {
-            System.out.println(v.ride());
+            System.out.println(p.driving(v));
         }
     }
 }
-```  
-`Vehicle`타입의 `List`에 `Car`와 `Bus`로 생성한 객체들을 `add()`해주었다. 각각의 객체들은 자동으로 형변환되어 동일한 반복문 안에서 실행된다.
-
+```
+`Bus`와 `Car`는 각각 `ride()`를 오버라이딩했고, 위 코드의 실행결과로 다음이 출력된다. 
+```java
+// 소형차 운행중
+// 소형차 운행중
+// 버스 운헹중
+// 버스 운헹중
+```
 <br/>
 
 # 인터페이스에서의 Upcasting
