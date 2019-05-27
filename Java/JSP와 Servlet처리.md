@@ -1,4 +1,4 @@
-![Servlet동작과정](/assets/images/server_side.png)  
+![Server_side](/assets/images/server_side.png)  
 
 # Web Server
 ## 기능
@@ -48,7 +48,7 @@ public void _jspDestroy() {
 ## Servlet 처리
 Servlet을 처리하기 위해 대부분 `GenericServlet` 클래스나 `HttpServlet` 클래스를 상속한다.   
 
-![서블릿아키텍처](/assets/images/servletArchitecture.png)
+![ServletArchitecture](/assets/images/servletArchitecture.png)
 
 ### GenericServlet Override
 `GenericServlet`은 `Servlet`을 구현한 클래스로, `GenericServlet`을 오버라이딩할 때에는 `Servlet`의 `service()` 메소드를 구현해야 한다. 이 메소드는 `GET`방식과 `POST`방식을 모두 처리한다. 파라미터로는 `ServletRequest`와 `ServletResponse`를 받는다.
