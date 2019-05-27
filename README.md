@@ -69,6 +69,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 - [Head Meta](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Head_Meta.md)
 - [표준모드 vs 쿽스모드](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Standard%26QuirksMode.md)
+- [ARIA](https://github.com/Im-D/Dev-Docs/blob/master/HTML/ARIA.md)
+- [input태그의 value바꾸기(https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md)
 
 </details>
 
@@ -128,6 +130,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [B_EventLoop](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_EventLoop.md)
 - [this 더알아보기](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Learning_more_about_this.md)
 - [함수 선언](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)
+- [자바스크립트 꿀팁](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/tricks_of_js.md)
 
 </details>
 
@@ -176,6 +179,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [React의 Lifecycle Event](https://github.com/Im-D/Dev-Docs/blob/master/React/React%EC%9D%98%20Lifecycle%20Event.md)
 - [React.memo](https://github.com/Im-D/Dev-Docs/blob/master/React/React.memo.md)
 - [Element와 Component](https://github.com/Im-D/Dev-Docs/blob/master/React/Element%EC%99%80%20Component.md)
+- [Composition](https://github.com/Im-D/Dev-Docs/blob/master/React/Composition.md)
 
 </details>
 
