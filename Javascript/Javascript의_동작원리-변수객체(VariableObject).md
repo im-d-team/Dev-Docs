@@ -8,7 +8,7 @@
 
 > 변수 객체의 구성요소
 
-- 변수(variable declaration)
+- 변수 선언(variable declaration)
 - 함수 선언(function declaration; FD)
 - 매개변수(formal parameters)와 인수정보(arguments)
 
@@ -61,13 +61,13 @@ AbstractVO // generic behavior of the variable instantiation process
 ╚══> FunctionContextVO // 함수 코드의 실행 컨텍스트에서 변수 객체는 활성 객체이다.
   (VO === AO // <arguments> object and <formal parameters> are added
 ```
-> ES5에서는 변수객체, 활성화 객체의 개념이 어휘적 환경(lexical enviroments)모델로 대체되었다.
+> ES5에서는 변수객체, 활성화 객체의 개념이 Lexical Enviroments(어휘적 환경)모델로 대체되었다.
 
 <br/>
 
 ## 전역 컨텍스트의 변수 객체
 
-전역 컨텍스트의 변수 객체는 전역 객체를 참조한다. 따라서, 전역 컨텍스트의 변수 객체는 전역 객체이다.
+전역 컨텍스트의 변수 객체는 전역 객체이다.
 
 ```js
 var x = 'xxx';
@@ -133,13 +133,13 @@ AO = {
 };
 ```
 > 활성화 객체의 프로퍼티
-- Arguments 객체는 활성화 객체의 프로퍼티
+- Arguments 객체 - 활성화 객체의 프로퍼티
 - callee - 현재 함수에 대한 참조
 - length - 실제로 전달된 인자의 수
 - properties-indexes("num")
     - 함수 매개 변수의 값(왼쪽부터 오른쪽 까지 매개 변수의 리스트)
     - arguments.length와 개수가 같다.
-    - arguments객체의 properties-indexes와 제공된 형식 매게 변수는 실제로 전달된 값을 공유한다.
+    - arguments객체의 properties-indexes와 제공된 형식 매 변수는 실제로 전달된 값을 공유한다.
 
 ```js
 foo(10, 20);
