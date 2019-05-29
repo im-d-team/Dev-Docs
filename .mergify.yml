@@ -13,14 +13,14 @@ pull_request_rules:
 
   - name: Add Label needs author response
     conditions:
-      - "#approved-reviews-by>=1"
+      - "#changes-requested-reviews-by>=1"
     actions:
       label:
         add: ["needs author response", "needs review"]
 
   - name: Remove Label needs author response
     conditions:
-      - "#approved-reviews-by=0"
+      - "#changes-requested-reviews-by=0"
     actions:
       label:
         remove: ["needs author response"]
