@@ -8,7 +8,7 @@ pull_request_rules:
       - label=approval + 2
     actions:
       label:
-        add: ["needs review"]
+        remove: ["needs review"]
       merge:
         method: merge
       delete_head_branch: {}
@@ -19,14 +19,15 @@ pull_request_rules:
     actions:
       label:
         add: ["needs author response"]
+        remove: ["needs review"]
 
   - name: Remove Label needs author response
     conditions:
       - "#changes-requested-reviews-by=0"
     actions:
       label:
-        remove: ["needs author response"]
         add: ["needs review"]
+        remove: ["needs author response"]
 
   - name: Add Label approval + 1
     conditions:
@@ -41,3 +42,4 @@ pull_request_rules:
     actions:
       label:
         add: ["approval + 2"]
+        remove: ["approval + 1"]
