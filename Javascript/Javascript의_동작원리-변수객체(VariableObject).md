@@ -139,7 +139,7 @@ AO = {
 - properties-indexes("num")
     - 함수 매개 변수의 값(왼쪽부터 오른쪽 까지 매개 변수의 리스트)
     - arguments.length와 개수가 같다.
-    - arguments객체의 properties-indexes와 제공된 형식 매 변수는 실제로 전달된 값을 공유한다.
+    - arguments객체의 properties-indexes와 제공된 매 변수는 실제로 전달된 값을 공유한다.
 
 ```js
 foo(10, 20);
