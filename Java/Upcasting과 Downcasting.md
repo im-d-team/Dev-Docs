@@ -1,5 +1,5 @@
 # Upcasting / Downcasting
-먼저, casting이란 형변환을 말하며 upcasting과 downcasting은 참조형을 형변환하는 개념이다.   
+먼저, casting이란 형변환을 말하며 Upcasting과 Downcasting은 참조형을 형변환하는 개념이다.   
 참조형이 형변환되는 경우는 다음과 같다.
 1. 클래스 상속시
 2. 인터페이스 확장시  
@@ -13,7 +13,7 @@
 1. 자식 클래스로 생성한 객체가 부모 클래스 타입으로 형변환되는 형태이다.
 2. 자식 클래스는 부모 클래스의 변수 및 메소드를 갖고 있기 때문에 암묵적 형변환이 가능하다.  
 3. 형변환된 객체는 본래 클래스의 변수 및 메소드에 접근할 수 없다. 다시 접근하기 위해서는 Downcasting이 필요하다. 
-4. upcasting을 이용해 코드 길이를 줄일 수 있다. 
+4. Upcasting을 이용해 한 곳에서 제어할 수 있다. 
 
 ```java
 public class Vehicle {
@@ -92,10 +92,10 @@ public class Main {
     public static void main(String[] args) {
         Person p = new Person();
 
-        Car c1 = new Car();
-        Car c2 = new Car();
-        Bus b1 = new Bus();
-        Bus b2 = new Bus();
+        Car c1 = new Car(4, "operator1");
+        Car c2 = new Car(6, "operator2");
+        Bus b1 = new Bus(10, "company1");
+        Bus b2 = new Bus(40, "company2");
 
         System.out.println(p.driving(c1));
         System.out.println(p.driving(c2));
@@ -104,7 +104,7 @@ public class Main {
     }
 }
 ```
-`driving()`는 파라미터로 `Vehicle`타입을 받는 메소드다. 하지만 위 예제처럼 `Car`와 `Bus`타입을 파라미터로 넘겨줘도 메소드는 정상적으로 작동된다. 자동적으로 `Car`와 `Bus`의 객체들이 `Vehicle`타입으로 **Upcasting**되었기 때문이다. 따라서 객체마다 따로따로 파라미터로 넘겨줘도 상관은 없지만, 다음과 같이 upcasting을 직접 해주면 한 곳에서 처리해줄 수 있다.   
+`driving()`는 파라미터로 `Vehicle`타입을 받는 메소드다. 하지만 위 예제처럼 `Car`와 `Bus`타입을 파라미터로 넘겨줘도 메소드는 정상적으로 작동된다. 자동적으로 `Car`와 `Bus`의 객체들이 `Vehicle`타입으로 **Upcasting**되었기 때문이다. 따라서 객체마다 따로따로 파라미터로 넘겨줘도 상관은 없지만, 다음과 같이 Upcasting을 직접 해주면 한 곳에서 처리해줄 수 있다.   
 
 ```java
 public class Main {
@@ -125,7 +125,7 @@ public class Main {
 }
 ```
 
-한편, 위에서 upcasting의 또 다른 특징으로 upcasting된 객체는 더이상 자식클래스의 변수 및 메소드에 접근할 수 없다고 적어놨다. 하지만, 부모클래스의 메소드를 오버라이딩한 메소드는 접근할 수 있다. 다음 코드를 보자. 
+한편, 위에서 Upcasting의 또 다른 특징으로 Upcasting된 객체는 더이상 자식클래스의 변수 및 메소드에 접근할 수 없다고 적어놨다. 하지만, 부모클래스의 메소드를 오버라이딩한 메소드는 접근할 수 있다. 다음 코드를 보자. 
 
 ```java
 public class Bus extends Vehicle{
@@ -146,7 +146,7 @@ public class Bus extends Vehicle{
 
 	@Override
 	public String ride() {
-		return "버스 운헹중";
+		return "버스 운행중";
 	}
 }
 ```
@@ -197,8 +197,8 @@ public class Main {
 ```java
 // 소형차 운행중
 // 소형차 운행중
-// 버스 운헹중
-// 버스 운헹중
+// 버스 운행중
+// 버스 운행중
 ```
 <br/>
 
@@ -236,7 +236,7 @@ public class Main {
 
 # Downcasting
 ```java
-Parent parent = new Child(); //upcasting
+Parent parent = new Child(); //Upcasting
 Child child = (child) parent;
 ```
 1. 부모 클래스로 생성한 객체가 자식 클래스 타입으로 형변환되는 형태이다.
