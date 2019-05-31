@@ -131,6 +131,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [this 더알아보기](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Learning_more_about_this.md)
 - [함수 선언](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)
 - [자바스크립트 꿀팁](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/tricks_of_js.md)
+- [B_Call_Apply_Bind.md](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_Call_Apply_Bind.md.md)
 
 </details>
 
