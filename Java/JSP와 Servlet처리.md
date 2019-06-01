@@ -14,7 +14,7 @@ Apach Server, IIS, nginx 등
 <br/>  
 
 # Web Application Server
-WAS는 위에서도 언급했듯이 JSP, Servlet 등을 처리하기 위해 쓰인다. JSP와 Servlet은 자바를 기반으로한 웹 프로그래밍 언어이기 때문에 thread로 요청을 처리한다. (반면 CGI는 프로세스로 요청을 처리한다.)
+WAS는 위에서도 언급했듯이 JSP, Servlet 등을 처리하기 위해 쓰인다. JSP와 Servlet은 자바를 기반으로한 웹 프로그래밍 언어이기 때문에 thread로 요청을 처리한다.
 
 ## JSP 처리
 JSP파일은 먼저 Servlet Class 형태의 java 소스 파일로 변환된다. 
