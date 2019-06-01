@@ -70,7 +70,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Head Meta](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Head_Meta.md)
 - [표준모드 vs 쿽스모드](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Standard%26QuirksMode.md)
 - [ARIA](https://github.com/Im-D/Dev-Docs/blob/master/HTML/ARIA.md)
-- [input태그의 value바꾸기(https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md)
+- [input태그의 value바꾸기](https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md)
+- [웹 컴포넌트(Web Component)](https://github.com/Im-D/Dev-Docs/blob/BKJang/HTML/%EC%9B%B9%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(Web%20Component).md)
 
 </details>
 
