@@ -127,6 +127,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [클래스(class)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%81%B4%EB%9E%98%EC%8A%A4(class).md>)
 - [B_EventLoop](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_EventLoop.md)
 - [this 더알아보기](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Learning_more_about_this.md)
+- [자바스크립트의 동작원리 - 변수객체](/Javascript/Javascript의_동작원리-변수객체(VariableObject).md)
 
 </details>
 
