@@ -70,7 +70,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Head Meta](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Head_Meta.md)
 - [표준모드 vs 쿽스모드](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Standard%26QuirksMode.md)
 - [ARIA](https://github.com/Im-D/Dev-Docs/blob/master/HTML/ARIA.md)
-- [input태그의 value바꾸기(https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md)
+- [input태그의 value바꾸기](https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md)
 
 </details>
 
@@ -131,6 +131,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [this 더알아보기](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Learning_more_about_this.md)
 - [함수 선언](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)
 - [자바스크립트 꿀팁](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/tricks_of_js.md)
+- [자바스크립트의 동작원리 - 실행 컨텍스트](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md)
 
 </details>
 
