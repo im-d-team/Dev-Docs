@@ -181,7 +181,7 @@ customElements.define('name-tag', NameTag);
   </head>
   <body>
 
-    <!-- #2. 커스텀 컴포넌트 요소 사용 -->
+    <!-- 커스텀 엘리먼트  -->
     <name-tag></name-tag>
 
   </body>
