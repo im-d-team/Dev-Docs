@@ -30,7 +30,7 @@ Ajax는 Asynchronous JavaScript And XML의 약어이다. 자바스크립트를 �
 
 ## 작동 방식
 
-![XMLHttpRequest](/assests/images/ajax.png)
+![XMLHttpRequest](../assets/images/ajax.png)
 
 1. 웹 페이지에서 이벤트 발생(페이지로드, 버튼 클릭)
 2. XMLHttpRequset 객체가 JavaScript에 의해 생성
