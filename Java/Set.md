@@ -62,7 +62,7 @@ public class Test {
 		Person p1 = new Person("Kim", 10);
 		Person p2 = new Person("Kim", 10);
 		
-		//중복 허용 X
+		//중복 허용 
 		System.out.println(set.add(p1));
 		System.out.println(set.add(p2));
 		
