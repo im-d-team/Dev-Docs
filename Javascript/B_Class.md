@@ -73,7 +73,7 @@ JavaScript는 내부적으로 새로운 함수가 만들어지면 엔진은 `pro
 `prototype` 객체는 아래와 같이 Constructor 함수의 속성, 메서드를 추가 가능하며 Constructor 함수의 모든 인스턴스에서 사용할 수 있다.
 
 ```js
-car.prototype.year = "2019"
+Vehicle.prototype.year = "2019"
 ```
 
 ![image](https://user-images.githubusercontent.com/24274424/58710008-569f8880-83f6-11e9-8754-071bc6f58d3c.png)
