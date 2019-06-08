@@ -17,7 +17,7 @@ public class test {
 		Iterator<Integer> it = list.iterator();
 		
 		while(it.hasNext()){
-			System.out.printf("%d ", it.next());
+			System.out.printf("%d ", it.next()	);
 		}
 	}
 }
