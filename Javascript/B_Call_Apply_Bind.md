@@ -143,7 +143,7 @@ Module.prototype.getName = function() {
   }
   
     // return changeName.apply(this, [1,2,3,4]);
-    return changeName.apply(this);
+  return changeName.apply(this);
 }
 
 const module = new Module('sNyung');
@@ -157,13 +157,13 @@ apply도 호출하는 즉시 Function을 실행시킨다.
 fun.apply(thisArg, [argsArray])
 ```
     
-call과 apply는 첫 번째 인자의 `this`를 내부 함수에서 사용할 `this`로 설정한다. apply는 call과 같이 첫 번째 인자로 `this`를 받는 건 똑같지만 뒤에 넘겨줄 값을 `[1,2,3,4,5]`처럼 배열 형태로 넘겨준다. (`call`과 같은 경우에는 `1,2,3,4,5`처럼 배열이 아닌 `,`로 전달한다)
+call과 apply는 첫 번째 인자의 `this`를 실행할 함수의 `this`로 설정해준다. apply는 call과 같이 첫 번째 인자로 `this`를 받는 건 똑같지만 뒤에 넘겨줄 값을 `[1,2,3,4,5]`처럼 배열 형태로 넘겨준다. (`call`과 같은 경우에는 `1,2,3,4,5`처럼 배열이 아닌 `,`로 전달한다)
 
 <br/>
 
 ## bind()
 
-call과 apply는 내부 함수에서 사용할 `this`를 설정하고 함수 바로 실행까지 해주지만, bind는 `this`만 설정해주고 함수 실행은 하지 않고 함수를 반환한다.
+call과 apply는 실행할 함수의 `this`로 설정하고 바로 실행한다. bind는 함수를 실행하지는 않고 this를 재정의한 새로운 함수를 반환한다.
 
 ```js
 function Module(name) {
