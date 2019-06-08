@@ -32,6 +32,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [HTTP2.0과 Web Socket](https://github.com/Im-D/Dev-Docs/blob/master/Browser/HTTP2_Websocket.md)
 - [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
 - [최신 브라우저의 내부 살펴보기](https://github.com/Im-D/Dev-Docs/blob/master/Browser/최신_브라우저의_내부_살펴보기.md)
+- [Browser Layer Mode](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Layer_Model.md)
 
 </details>
 
