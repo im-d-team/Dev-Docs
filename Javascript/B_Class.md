@@ -88,7 +88,7 @@ Vehicle.prototype.year = "2019"
 
 ## Class
 
-이제 Constructor 함수와 `prototype`에 대해 알아봤다. 이제 Class에 대해 알아보자. 위의 2개를 살펴봄으로써 좀 더 쉽게 이해할 수 있다. 이전의 것들과 크게 차이가 나는 것이 없기 때문이다. 
+지금까지 Constructor 함수와 `prototype`에 대해 알아봤다. 이제 Class에 대해 알아보자. 위의 2개를 살펴보면 좀 더 쉽게 이해할 수 있다. Class는 이전의 것들과 크게 차이가 나는 것이 없기 때문이다. 
 
 JavaScript 클래스는 `prototype` 기능을 활용하여 Constructor 함수를 작성하는 새로운 방법일 뿐이다.(**syntactic sugar**)
 
