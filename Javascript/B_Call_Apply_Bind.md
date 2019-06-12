@@ -49,7 +49,7 @@ const module = new Module('sNyung');
 console.log(module.getName());
 ```
 
-위와 같이 메서드 내부에서 함수를 정의하고 `this`를 사용하게 되면 Module이라고 생각하지만 `window`를 바라보고 있다. 그리고 이걸 해결하는 방법은 흔히 `self` 또는 `that`을 사용해서 해결한다.
+위와 같이 메서드 내부에서 함수를 정의하고 `this`를 사용하게 되면 Module이라고 생각하지만 `window`를 바라보고 있다. 그리고 이걸 해결하는 방법으로 흔히 `self` 또는 `that`을 사용한다.
 
 ```js
 function Module(name) {
