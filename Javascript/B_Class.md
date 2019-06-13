@@ -34,7 +34,7 @@ const car2 = new Vehicle("Honda", "Civic", "White");
 
 새로운 `Vehicle()`을 만들 때 JavaScript 엔진은 두 객체의 각각에 대한 Vehicle Constructor 함수 사본을 만든다. 즉 각각의 인스턴스의 공간이 만들어지는 것이다. 또한 속성과 메소드는 `Vehicle()`의 모든 인스턴스에 복사가 된다. 
 
-이게 왜 문제가 되는가? 라고 생각할 수 있다. 제일 문제는 Constructor 함수의 멤버 함수(메서드)가 **모든 객체에서 반복된다.** 계속 똑같은 멤버 함수를 만드는 것이다. 이것은 매우 불필요하게 낭비를 하기 때문이다. 
+이게 왜 문제가 되는가? 라고 생각할 수 있다. 문제는 Constructor 함수의 멤버 함수(메서드)가 **모든 객체에서 반복된다는 것이다.**
 
 다른 문제는 **기존의 만든 객체에 새로운 속성이나 메서드를 추가 하지 못한다는 것이다.**
 
@@ -60,7 +60,7 @@ function Vehicle(make, model, color, year) {
 
 ## Prototype
 
-JavaScript는 내부적으로 새로운 함수가 만들어지면 엔진은 `prototype`이라는 기본 속성을 추가한다.
+JavaScript는 내부적으로 새로운 함수가 만들어지면 JavaScript엔진이 `prototype` 속성을 추가해준다.
 
 ![image](https://user-images.githubusercontent.com/24274424/58709477-3b804900-83f5-11e9-882d-f6dbddae0254.png)
 
@@ -78,7 +78,7 @@ Vehicle.prototype.year = "2019"
 
 ![image](https://user-images.githubusercontent.com/24274424/58710008-569f8880-83f6-11e9-8754-071bc6f58d3c.png)
 
-이 접근법에는 몇 가지 주의 사항이 있는데 `prototype` 속성과 메서드는 Constructor 함수의 모든 인스턴스와 공유를 한다. 만약 인스턴스의 하나가 기본 속성에서 변경했다면 모든 인스턴스가 아닌 해당 인스턴스에서만 변경이 된다.
+이 접근법에는 주의사항이 있다. `prototype` 속성과 메서드는 Constructor 함수의 모든 인스턴스와 공유를 한다. 인스턴스의 기본 속성을 변경되면, 모든 인스턴스가 아닌 해당 인스턴스에서만 변경이 이루어진다.
 
 다른 한 가지는 참조 유형 속성이 모든 인스턴스 간에 항상 공유되는 것이다. 하나의 인스턴스에서 수정하면 모든 인스턴스의 참조 유형 속성이 수정된다.
 
@@ -106,7 +106,9 @@ class Vehicle {
 }
 ```
     
-생성 방법은 위처럼 만들면 된다. 위와 동일하게 인스턴스를 생성해보면 동일하게 `new` 키워드를 사용하면 된다.
+위와 같이 Class를 생성할 수 있다. 
+
+Class도 마찬가지로 우리가 앞서 만든 것과 동일하게 `new` 키워드를 사용하여 인스턴스를 생성한다.
 
 ```js
 const car = new Vehicle("Toyota", "Corolla", "Black");
