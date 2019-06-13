@@ -8,6 +8,8 @@
 
 ## Constructor Function
 
+> constructor function은 일반 function이며, 설명상 명확하게 나타내기 위하여 대문자를 사용하였습니다.
+
 Class 문법이 생기기 전에는 JavaScript에서는 모든 것을 Function으로 만들어야 했다. 그래서 사람들이 Class처럼 사용하기 위해서 Constructor function을 사용해서 비슷하게 사용하였다.
 
 ```js
@@ -169,7 +171,7 @@ constructor(){ }
 
 #### `constructor`
 
-`constructor`는 Class 자체를 나타내는 함수 자체를 정의하는 **Class 선언의 특수 함수**이다. 인스턴스를 새로 만들면 `constructor()`가 자동으로 호출된다.
+`constructor`는 함수 자체를 정의하는 **Class 선언의 특수 함수**이다. 인스턴스를 새로 만들면 `constructor()`가 자동으로 호출된다.
 
 ```js
 const car = new Vehicle("Honda", "Accord", "Purple"); // call constructor
