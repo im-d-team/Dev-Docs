@@ -176,7 +176,7 @@ layer를 분리하면 가장 좋은 점은 reflow(relayouting)와 repaint를 하
 
 따라서 화면을 재 계산해야 하기 때문에 reflow(relayouting) 후 repaint를 하게 된다.
 
-위 코드는 직접 개발자도구를 켜 확인해보자.
+위 코드는 직접 개발자도구를 실행시켜 확인해보자.
 
 ## 종합
 
