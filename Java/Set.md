@@ -45,7 +45,7 @@ public class Test {
 		
 		//해시코드 확인
 		System.out.println(set.hashCode());
-		System.out.println(str.hashCode());
+		System.out.println(str.hashCode());  
 	}
 }
 
