@@ -85,7 +85,7 @@ HTMLCollection은 유사배열이며, 실시간으로 node의 변경이 반영�
 <br/>
 
 ## 요소 탐색
-* 노트탐색  
+* 노드탐색  
     `parentNode`  
     `childNode`, `firstChild`, `lastChild`   
     `previousSibling`, `nextSibling` 등
@@ -102,8 +102,20 @@ HTMLCollection은 유사배열이며, 실시간으로 node의 변경이 반영�
     <li class="3"></li>
 </ul>
 ```
-즉, `li.a`의 `nextSibling`으로 `li.b`를 기대했지만 공백이 반환될 수도 있다. 이런 상황을 피하기 위해 위의 요소 탐색을 할 수 있다. 
+즉, `li.a`의 `nextSibling`으로 `li.b`를 기대했지만 공백이 반환될 수도 있다. 이런 상황을 피하기 위해 위의 요소 탐색을 할 수 있다.   
+또한 여러 요소가 반환되는 경우 노드 탐색은 NodeList로, 요소 탐색 HTMLCollection으로 반환된다. 
 
 <br/>
 
-## 요소 조작
+## 요소 조작 - classList
+
+classList에는 다음과 같은 메소드가 있다. 
+```js
+var target = document.getElementById("target");
+target.classList.add('added');
+target.classList.remove('added');
+target.classList.contains('added'); //boolean 반환
+target.classList.replace('target', 'changed');
+target.classList.toggle('active');
+```
+특히 다음과 같이 `toggle`을 사용하는 경우, `add`와 `remove`를 일일이 해줄 필요가 없기 때문에 매우 편리하다.
