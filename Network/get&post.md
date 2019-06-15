@@ -19,12 +19,12 @@ GET은 서버에 있는 **정보를 조회**할때 사용된다. 따라서 전�
 데이터를 Body에 담지 않고 **URL형태(쿼리 스트링)로 표현**한다. 따라서, URL형식에 맞지 않은 데이터는 인코딩하여 전달하여야 한다.
 
 ```
-<http://example.com/date.html?key=value&key=value>
+http://example.com/date.html?key=value&key=value
 ```
 
 따라서, **body가 빈 상태**로 전송된다. 또한 헤더에 content-type이 들어가지 않는다. 
 
-? 뒤에 key와 value의 쌍을 전송하고, &구분자를 통해 데이터를 나열한다.
+`?` 뒤에 key와 value의 쌍을 전송하고, `&`구분자를 통해 데이터를 나열한다.
 
 > content-type : 데이터 설명 및 타입 명시
 
