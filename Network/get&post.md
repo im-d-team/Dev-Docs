@@ -17,12 +17,20 @@ HTTP프로토콜은 클라이언트와 서버가 소통하기위해 만들어진
 GET은 서버에 있는 **정보를 조회**할때 사용된다. 따라서 전송되는 정보는 요청(request)을 위한 것이다.
 
 데이터를 Body에 담지 않고 **URL형태(쿼리 스트링)로 표현**한다. 따라서, URL형식에 맞지 않은 데이터는 인코딩하여 전달하여야 한다.
+> URL은 [퍼센트 인코딩](https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9)을 한다.
+> 예시는 다음과 같다.
+> ```html
+> https://ko.wikipedia.org/wiki/퍼센트_인코딩 <!-- 아래와 같이 인코딩 된다.-->
+> https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9
+> ```
+
+<br/>
+
+데이터를 쿼리스트링으로 표현하여 전송하기 때문에, **body가 빈 상태**로 전송된다. 또한 헤더에 content-type이 들어가지 않는다. 
 
 ```
 http://example.com/date.html?key=value&key=value
 ```
-
-따라서, **body가 빈 상태**로 전송된다. 또한 헤더에 content-type이 들어가지 않는다. 
 
 `?` 뒤에 key와 value의 쌍을 전송하고, `&`구분자를 통해 데이터를 나열한다.
 
@@ -60,8 +68,11 @@ name1=value1&name2=value2
 ### 특징
 
 * 캐싱 사용 불가
+
 * 브라우저 기록에 남지 않는다.
+
 * 북마크 될 수 없다.
+
 * 데이터 길이제한이 없다.
 
 <br/>
