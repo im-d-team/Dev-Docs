@@ -55,10 +55,14 @@ Ajax는 Asynchronous JavaScript And XML의 약어이다. 자바스크립트를 �
 ## 단점
 
 * 브라우저 호환성의 문제
-* HTTP클라이언트 기능이 한정되어 있다
+* 클라이언트의 PC로 요청을 보낼 수 없다.
+* 클라이언트 풀링(pooling) 방식을 사용하기 때문에 실시간 서비스가 불가능하다.
 * 페이지 이동없는 통신을 하면 보안상의 문제가 생길 수 있다 
 * 지원하는 Charset이 한정됨
-* 디버깅이 어렵다
+* 서버단과 클라이언트 단의 코드가 섞여있어 문제 확인이 힘들 수 있다.
+  * MVC패턴을 적용하여 해결 가능하다.
+* 비동기 요청 후 다음 작업을 진행하려면 callback함수를 써야 한다.
+  * Promise를 통해 극복 가능하다.
 * 비동기 요청이기 때문에 요청이 너무 많아지면 서버 부하가 심해질 수 있다
 * 동일-출처 정책으로 인해 다른 도메인과 통신이 불가능
   * 이를 해결하기 위한 방안으로 [CORS](https://github.com/Im-D/Dev-Docs/blob/master/Security/CORS(Cross-Origin%20Resource%20Sharing).md)가 있다.
