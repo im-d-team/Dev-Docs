@@ -13,9 +13,9 @@ HTML에서 제공하는 엘리먼트들은 브라우저와 운영체제에 따�
 
 ## HTML템플릿(Template)
 
-일반적인 JavaScript 컴포넌트는 문자열 형태로 템플릿을 가지거나 사전에 특정 엘리먼트의 구조를 만드는 형식으로 많이 사용한다.
+일반적인 JavaScript 컴포넌트는 문자열 형태로 템플릿을 가지거나, 사전에 특정 엘리먼트의 구조를 만드는 형식으로 많이 사용한다.
 
-웹 컴포넌트도 동일하게 특정 엘리먼트의 구조가 필요하며 이 때 사용하는 것이 템플릿(Template)이다.
+웹 컴포넌트도 동일하게 특정 엘리먼트의 구조가 필요하며, 이 때 사용하는 것이 템플릿(Template)이다.
 
 ```js
 document.querySelect('#target').innerHTML = [
@@ -54,8 +54,7 @@ HTML템플릿은 HTML로 작성되어야하기 때문에 컴포넌트를 제어�
 
 HTML 템플릿이 새로운 템플릿을 만들게 해준다면, HTML imports는 다른 HTML 파일에서 템플릿을 가져오게 해준다.
 
-HTML/CSS/JS를 묶음 형태로 사용하며 단일 URL로 호출한다.
-다른 도메인의 리소스를 로딩하기 위해서 `CORS` 활성화가 필요하다. 
+HTML imports는 HTML/CSS/JS를 묶음 형태로 사용하며 단일 URL로 호출한다. 단, 다른 도메인의 리소스를 로딩하기 위해서 [CORS](https://github.com/Im-D/Dev-Docs/blob/master/Security/CORS(Cross-Origin%20Resource%20Sharing).md) 활성화가 필요하다. 
 
 ```html
 <!-- main page -->
@@ -89,7 +88,7 @@ customElements.define('expanding-list', ExpandingList, { extends: "ul" });
 
 커스텀 엘리먼트의 클래스 오브젝트는 ES6의 `class`문법을 주로 사용한다.
 
-HTML표준에 정의되어 있지 않으면서도 커스텀 엘리먼트 이름 규칙에 맞지 않는 태그들은 HTMLUnknownElement인터페이스가 할당된다.
+HTML표준에 정의되어 있지 않으면서, 커스텀 엘리먼트 이름 규칙에 맞지 않는 태그들에는 HTMLUnknownElement인터페이스가 할당된다.
 
 결과적으로 다음과 같이 사용할 것이다.
 
@@ -105,9 +104,9 @@ HTML표준에 정의되어 있지 않으면서도 커스텀 엘리먼트 이름 
 
 ## 섀도우 돔(Shadow DOM)
 
-섀도우 DOM은 DOM의 구조를 가지고 있으나 외부에는 노출되지 않은 DOM을 말하며 DOM의 구조를 캡슐화할 때 사용한다.
+섀도우 DOM은 DOM의 구조를 가지고 있으나 외부에는 노출되지 않은 DOM을 말하며, DOM의 구조를 캡슐화할 때 사용한다.
 
-Web Component에서는 섀도우 DOM을 이용하여 커스텀 엘리먼트를 설명할 때 말했던 클래스 오브젝트내의 기능을 정의한다.
+Web Component에서는 섀도우 DOM을 이용하여, 커스텀 엘리먼트를 설명할 때 말했던 클래스 오브젝트내의 기능을 정의한다.
 
 ```js
 class ExpandingList extends HTMLElement {
@@ -124,7 +123,7 @@ class ExpandingList extends HTMLElement {
 }
 ```
 
-기존의 컴포넌트는 일반적인 DOM 트리가 렌더링된 후 DOM 트리 전체를 변경하기 때문에 reflow와 repaint와 같은 리렌더링에 따르는 비용이 발생한다. 하지만 섀도우 DOM을 사용하면 섀도우 호스트 즉, `expanding-list`를 만나는 순간 렌더링이 되기 때문에 리렌더링에 따른 비용을 줄일 수 있다.
+기존의 컴포넌트는 DOM 트리가 렌더링된 후, DOM 트리 전체를 변경하기 때문에 reflow나 repaint와 같은 비용이 발생한다. 하지만 섀도우 DOM을 사용하면 섀도우 호스트 즉, `expanding-list`를 만나는 순간 렌더링이 되기 때문에 리렌더링에 따른 비용을 줄일 수 있다.
 
 <br/>
 
