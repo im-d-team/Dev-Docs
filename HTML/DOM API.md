@@ -4,8 +4,8 @@ DOM은 프로그래밍 언어가 자신에 접근하고 수정할 수 있는 방
 <br/>
 
 ## 요소 접근
-* [getElementById](###getElementById)
-* [getElementsByClassName](###getElementsByClassName)
+* [getElementById](###-getElementById)
+* [getElementsByClassName](###-getElementsByClassName)
 * [querySelector와 querySelectorAll]( ###-querySelector-&-querySelectorAll)
 
 ### getElementById
