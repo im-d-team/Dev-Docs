@@ -129,10 +129,13 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [클래스(class)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%81%B4%EB%9E%98%EC%8A%A4(class).md>)
 - [B_EventLoop](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_EventLoop.md)
 - [this 더알아보기](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Learning_more_about_this.md)
+- [자바스크립트의 동작원리 - 변수객체](/Javascript/Javascript의_동작원리-변수객체(VariableObject).md)
 - [함수 선언](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)
 - [자바스크립트 꿀팁](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/tricks_of_js.md)
+- [DocumentFragment](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/DocumentFragment.md)
 - [자바스크립트의 동작원리 - 실행 컨텍스트](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md)
-- [Ajax](/Javascript/Ajax.md)
+- [Ajax](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Ajax.md)
+- [B_Call_Apply_Bind.md](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_Call_Apply_Bind.md.md)
 
 </details>
 
