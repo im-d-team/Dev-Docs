@@ -3,9 +3,9 @@
 브라우저에 event가 발생했을 때에 x, y 좌표 값을 얻는 방법에는 크게 4가지가 있다.
 
 - clientX / clientY
-- page / pageY
-- screen / screenY
-- offset / offsetY
+- pageX / pageY
+- screenX / screenY
+- offsetX / offsetY
 
 이렇게 4가지가 존재하는데 어떤 차이가 있는지 알아보았다.
 
@@ -18,7 +18,7 @@ client는 viewport와 매칭된다고 생각하면 쉽다.
 스크롤을 하게 되어도 화면의 같은 곳을 클릭하면 같은 값이 반환된다.
 브라우저의 크기가 달라져도 화면의 같은 곳에서는 같은 값이 변경된다.
 
-어느정도 절대값이라고 할 수 있다.
+어느 정도 절대값이라고 할 수 있다.
 
 ## pageX / pageY
 
@@ -29,7 +29,7 @@ client는 현재 브라우저에 보여지는 부분이다. page는 그것과 �
 스크롤을 하게 되면 값이 달라진다.
 브라우저의 크기를 줄여도 값과는 상관없다.
 
-## screen / screenY
+## screenX / screenY
 
 screen은 user device의 모니터를 기준으로 한다.
 모니터의 어느 부분을 클릭했는지 물리적인 값을 반환한다.
@@ -39,7 +39,7 @@ screen은 user device의 모니터를 기준으로 한다.
 스크롤을 해도 달라지지 않는다.
 브라우저의 크기가 달라지는 것은 관계가 없다. 다만 브라우저를 작게하여 모니터상의 브라우저 위치를 이동하면 값이 달라질 수 있다.
 
-## offset / offsetY
+## offsetX / offsetY
 
 offset은 이벤트가 걸린 DOM기준이다. 예를들어 div를 클릭했다면 div의 왼쪽 상단 모서리가 0, 0이 된다.
 
