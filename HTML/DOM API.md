@@ -6,7 +6,7 @@ DOM은 프로그래밍 언어가 자신에 접근하고 수정할 수 있는 방
 ## 요소 접근
 * [getElementById](###getElementById)
 * [getElementsByClassName](###getElementsByClassName)
-* [querySelector와 querySelectorAll](###querySelector&querySelectorAll)
+* [querySelector와 querySelectorAll]( ###-querySelector-&-querySelectorAll)
 
 ### getElementById
 ```html
@@ -18,8 +18,6 @@ DOM은 프로그래밍 언어가 자신에 접근하고 수정할 수 있는 방
 ```
 id 속성값으로 Element node를 하나 선택한다.   
 > (출력값) `<p id="getId">getId</p>`
-
-<br/>
 
 ### getElementsByClassName
 ```html
@@ -35,7 +33,7 @@ id 속성값으로 Element node를 하나 선택한다.
 > (출력값) `HTMLCollection(4) [p.getClass, p.getClass, p.getClass, p.getClass]`
 
 class 속성값으로 모든 Element node를 선택한다.   
-선택된 node들은 **HTMLCollection**으로 반환된다.
+선택된 node들은 `HTMLCollection`으로 반환된다.
 HTMLCollection은 **유사배열**이며, **실시간으로 node의 변경이 반영**된다. 따라서 다음과 같은 특징을 갖는다.
 
 * 배열 메소드를 사용할 수 없다.
@@ -75,10 +73,7 @@ HTMLCollection은 **유사배열**이며, **실시간으로 node의 변경이 �
         }
         ```
 
-
-<br/>
-
-### querySelector&querySelectorAll
+### querySelector & querySelectorAll
 `querySelector`와 `querySelectorAll`를 이용하면 `#`, `.`, `input[type=text]` 등과 같은 css 선택자로 요소에 접근할 수 있다.   
 `querySelectorAll`은 가져온 모든 요소를 **NodeList**로 가져온다. NodeList는 HTMLCollection과 달리 **node의 변동이 실시간으로 적용되지 않는다.** 
 
