@@ -4,7 +4,7 @@
 
 ## layer란
 
-브라우저는 크게 layer를 두가지로 분류합니다.
+브라우저는 크게 layer를 두가지로 분류한다.
 
 - RenderLayer
 - GraphicsLayer
