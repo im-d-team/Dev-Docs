@@ -71,7 +71,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [Head Meta](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Head_Meta.md)
 - [표준모드 vs 쿽스모드](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Standard%26QuirksMode.md)
 - [ARIA](https://github.com/Im-D/Dev-Docs/blob/master/HTML/ARIA.md)
-- [input태그의 value바꾸기](<https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md>)
+- [input태그의 value바꾸기](https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md)
+- [웹 컴포넌트(Web Component)](https://github.com/Im-D/Dev-Docs/blob/master/HTML/%EC%9B%B9%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(Web%20Component).md)
 
 </details>
 
@@ -136,7 +137,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [자바스크립트의 동작원리 - 실행 컨텍스트](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md>)
 - [DocumentFragment](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/DocumentFragment.md)
 - [자바스크립트의 동작원리 - 실행 컨텍스트](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md)
-- [B_Call_Apply_Bind.md](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_Call_Apply_Bind.md.md)
+- [Ajax](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Ajax.md)
+- [B_Call_Apply_Bind](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Call_Apply_Bind.md)
 
 </details>
 
@@ -159,6 +161,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <br/>
 
 - [로드밸런싱 & 클러스터링](https://github.com/Im-D/Dev-Docs/blob/master/Network/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1%20%26%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81.md)
+- [GET & POST](/Network/get&post.md)
 
 </details>
 
