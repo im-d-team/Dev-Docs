@@ -8,7 +8,7 @@
 
 하지만, `<script></script>`내의 스크립트에서 생성된 HTTP Request는 **Same Origin Policy**가 적용되기 때문에 Cross-Site Http Requests 가 불가능하다. 
 
-**Same Origin Policy**란 다른 출처의 Resource와의 통신을 제한하는 보안 방식이다. 출처가 같다는 것은 현재 페이지와 동일한 프로토콜, 포트, 호스트를 갖는 것을 말한다. 쉽게 말하자면, `<script></script>`내의 스크립트에서 생성된 Http Request는 그 페이지와 같은 서버에 있는 주소로만 전달될 수 있다. 
+**Same Origin Policy**란 다른 출처의 Resource와의 통신을 제한하는 보안 방식이다. 출처가 같다는 것은 현재 페이지와 동일한 프로토콜, 포트, 호스트를 갖는 것을 말한다. 따라서, Cross-Site Http Requests가 불가능하다는 것은 Http Request가 그 페이지와 같은 서버에 있는 주소로만 전달될 수 있다는 것을 말한다. 
 
 그러나, `AJAX`가 널리 사용되면서 `<script></script>`로 둘러싸여 있는 스크립트에서 생성되는 **XMLHttpRequest에 대해서도 Cross-Site HTTP Requests가 가능해야 한다는 요구**가 늘어났고 W3C에서 **CORS**라는 이름의 권고안이 나오게 되었다.
 
