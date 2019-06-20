@@ -65,9 +65,18 @@ class 속성값으로 모든 Element node를 선택한다.
         }
         ```
     * HTMLCollection을 배열로 변경한다.
+        * Spread 이용
         ```js
         var classes = document.getElementsByClassName("getClass");
         var arrClass = [...classes]; 
+        for(let i=0; i < arrClass.length; ++i){
+            arrClass[i].className = "changed";
+        }
+        ```
+        * `Array.from` 이용
+         ```js
+        var classes = document.getElementsByClassName("getClass");
+        var arrClass = Array.from(classes);
         for(let i=0; i < arrClass.length; ++i){
             arrClass[i].className = "changed";
         }
