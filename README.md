@@ -32,6 +32,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [HTTP2.0과 Web Socket](https://github.com/Im-D/Dev-Docs/blob/master/Browser/HTTP2_Websocket.md)
 - [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
 - [최신 브라우저의 내부 살펴보기](https://github.com/Im-D/Dev-Docs/blob/master/Browser/최신_브라우저의_내부_살펴보기.md)
+- [Browser Layer Mode](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Layer_Model.md)
 
 </details>
 
@@ -133,6 +134,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [자바스크립트의 동작원리 - 변수객체](/Javascript/Javascript의_동작원리-변수객체(VariableObject).md)
 - [함수 선언](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)
 - [자바스크립트 꿀팁](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/tricks_of_js.md)
+- [자바스크립트의 동작원리 - 실행 컨텍스트](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md>)
 - [DocumentFragment](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/DocumentFragment.md)
 - [자바스크립트의 동작원리 - 실행 컨텍스트](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md)
 - [Ajax](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Ajax.md)
@@ -227,6 +229,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 <br/>
 
 - [Memory](https://github.com/Im-D/Dev-Docs/blob/master/CS/Memory.md)
+- [정보이론](https://github.com/Im-D/Dev-Docs/blob/master/CS/information_theory.md)
+- [압축](https://github.com/Im-D/Dev-Docs/blob/master/CS/compression.md)
 
 </details>
 
