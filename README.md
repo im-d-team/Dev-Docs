@@ -215,6 +215,15 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 </details>
 
 <details>
+<summary> Typescript </summary>
+
+<br/>
+
+- [인터페이스(Interface)](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4(Interface).md)
+
+</details>
+
+<details>
 <summary> Git </summary>
 
 <br/>
