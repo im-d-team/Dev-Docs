@@ -12,9 +12,9 @@ js를 사용하여 시간을 측정해야하는 경우가 있다.
 
 js에서 시간을 측정하는 방법은 크게 4가지 정도 존재한다.
 
-- Date.now()
+- Date.now
 - console.time
-- process.hrtime() (nodeJS)
+- process.hrtime (nodeJS)
 - performance
 
 ## Date.now
