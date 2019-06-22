@@ -1,8 +1,11 @@
 # Dependency Injection(DI)
 Dependency Injection는 **Framework에 의해** 객체의 의존성이 주입되는 설계 패턴을 말한다.
 개발자가 class를 만들고 어떤 의존성을 주입할 것인지 설정하면, Framework가 **객체를 생성**하고 **동적으로 의존성을 주입**하는 형태이다. 결과적으로 객체간의 **의존 관계는 약해지며,** 프로그램의 제어권을 framework가 가져가는 **IoC(Inversion of Control)** 이 발생한다.   
-
-Spring Framework에서는 **Spring container**가 이 역할을 한다. 
+Spring Framework에서는 **Spring container**가 이 역할을 한다.  
+Spring Container는 객체를 관리하는데, 이 객체를 빈(bean)이라고 부른다. 그래서 스프링에서는 이 빈(bean)들을 관리한다는 의미로 컨테이너를 빈 팩토리(Bean Factory)라고 부른다.   
+이렇게 오브젝트의 생성과 오브젝트 사이의 런타임 의존 관계를 설정하는 DI관점으로 볼 때는 컨테이너를 빈 팩토리라고 한다.   
+하지만 스프링의 DI container는 단순한 DI작업보다 더 많은 일을 한다. 그래서 DI기능에 엔터프라이즈 애플리케이션을 개발하는 데 필요한 여러 가지 컨테이너 기능을 추가하여 애플리케이션 컨텍스트(Application Context)라고 부르기도 한다.   
+스프링에서는 이러한 컨테이너를 일반적으로 구성(Configuration)정보를 담아 xml로 구성한다.
 
 <br/>  
 
@@ -51,7 +54,7 @@ public class Service {
 
 <br/>  
 
-### 생성자를 이용한 의존관계 
+### Constructor Injection
 
 ```java
 public interface MemberService {
@@ -117,12 +120,12 @@ public class App {
 `GenericXmlApplicationContext`은 xml로 생성된 객체의 생성정보를 담는다.     
 따라서 `context`는 `memberService`와 `member` 객체를 갖는다.   
 객체에 접근하기 위해서는 `.getBean()`를 사용한다. 여기서 얻어진 객체의 타입은 `Object`이므로 다운캐스팅을 해줘야한다. 다운캐스팅이 번거롭다면 `context.getBean(Member.class)`처럼 작성할 수도 있다.   
-본론으로 돌아가서, 만약 `memberService`가 `Membe rServiceImpl2`의 객체가 되도록 하려면 applicationContext.xml에서 `class`속성값만 바꿔주면 된다.
-
+본론으로 돌아가서, 만약 `memberService`가 `Membe rServiceImpl2`의 객체가 되도록 하려면 applicationContext.xml에서 `class`속성값만 바꿔주면 된다.  
+결과적으로 객체간의 **의존 관계는 약해지며,** 프로그램의 제어권을 framework가 가져가는 **IoC(Inversion of Control)** 이 발생한다.   
 
 <br/>  
 
-### 프로퍼티를 이용한 의존관계 
+### Property Injection
 
 `setter()`를 이용해 의존관계를 설정할 때에는 `<property>`로 값을 지정해준다.
 ```java
@@ -177,6 +180,7 @@ xml의 `p 네임스페이스`를 사용하면 다음과 같이 간단하게 쓸 
 ```
 
 <br/>  
+
 
 ### 의존관계 자동설정
 
@@ -327,4 +331,8 @@ xml의 `context 네임스페이스`를 사용해 파일을 읽고 EL표현식을
 </bean>
 
 <bean id="userBean" class="com.user5.UserBean" p:userService-ref="userService"/>
-```
+```  
+
+#### Reference
+--
+[DI 컨테이너](http://www.nextree.co.kr/p11247/)
