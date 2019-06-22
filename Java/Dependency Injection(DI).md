@@ -1,6 +1,6 @@
 # Dependency Injection(DI)
 Dependency Injection는 **Framework에 의해** 객체의 의존성이 주입되는 설계 패턴을 말한다.
-개발자가 class를 만들고 어떤 의존성을 주입할 것인지 설정하면, Framework가 **객체를 생성**하고 **동적으로 의존성을 주입**하는 형태이다. 결과적으로 객체간의 **의존 관계는 약해지며,** 프로그램의 제어권을 framework가 가져가는 **IoC(Inversion of Control)** 이 발생한다.   
+개발자가 class를 만들고 어떤 의존성을 주입할 것인지 설정하면, Framework가 **객체를 생성**하고 **동적으로 의존성을 주입**하는 형태이다.
 Spring Framework에서는 **Spring container**가 이 역할을 한다.  
 Spring Container는 객체를 관리하는데, 이 객체를 빈(bean)이라고 부른다. 그래서 스프링에서는 이 빈(bean)들을 관리한다는 의미로 컨테이너를 빈 팩토리(Bean Factory)라고 부른다.   
 이렇게 오브젝트의 생성과 오브젝트 사이의 런타임 의존 관계를 설정하는 DI관점으로 볼 때는 컨테이너를 빈 팩토리라고 한다.   
