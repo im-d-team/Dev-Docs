@@ -325,7 +325,8 @@ public class App {
 ```
 추상클래스는 자식 객체를 생성하지 않고는 사용하지 못한다. xml에서 `<lookup-method>`를 이용해 메소드가 호출될 때 자식 객체를 생성할 수 있다. `scope`의 default는 singleton이기 때문에 항상 같은 객체를 리턴하지만 속성값을 `prototype`으로 줌으로써 항상 다른 객체를 생성하게 만들었다. 따라서 Member객체의 num이 계속 증가한 것을 확인할 수 있다.
 
-- **.properties**
+- **.properties**  
+
 xml의 `context 네임스페이스`를 사용해 파일을 읽고 EL표현식을 이용해 값을 불러올 수 있다.
 ```xml
 <context:property-placeholder location="classpath:com/user5/user.properties"></context:property-placeholder>
