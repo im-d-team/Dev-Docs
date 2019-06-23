@@ -5,7 +5,6 @@ Spring Framework에서는 **Spring container**가 이 역할을 한다.
 Spring Container는 객체를 관리하는데, 이 객체를 빈(bean)이라고 부른다. 그래서 스프링에서는 이 빈(bean)들을 관리한다는 의미로 컨테이너를 빈 팩토리(Bean Factory)라고 부른다.   
 이렇게 오브젝트의 생성과 오브젝트 사이의 런타임 의존 관계를 설정하는 DI관점으로 볼 때는 컨테이너를 빈 팩토리라고 한다.   
 하지만 스프링의 DI container는 단순한 DI작업보다 더 많은 일을 한다. 그래서 DI기능에 엔터프라이즈 애플리케이션을 개발하는 데 필요한 여러 가지 컨테이너 기능을 추가하여 애플리케이션 컨텍스트(Application Context)라고 부르기도 한다.   
-스프링에서는 이러한 컨테이너를 일반적으로 구성(Configuration)정보를 담아 xml로 구성한다.
 
 <br/>  
 
@@ -50,9 +49,40 @@ public class Service {
     dao.insert();
 }
 ```
-하지만, 이 방식도 `Service`에서 객체를 생성하기 때문에 큰 차이는 없다. 더 의존성을 약화시키기 위해 Spring에서는 **컨테이너**를 사용할 수 있다. 
+하지만, 이 방식도 `Service`에서 객체를 생성하기 때문에 큰 차이는 없다.   
+더 의존성을 약화시키기 위해 다음과 같이 **컨테이너**를 사용할 수 있다. 
+
+```xml
+<!--applicationContext.xml-->
+<bean id="dao" class="com.test.OracleDAO"/>
+```
+```java
+public class Service {
+    //스프링 컨테이너 생성
+    AbstractApplicationContext context = new GenericXmlApplicationContext("classpath:com/test/applicationContext.xml");
+
+    try {
+        //스프링 컨테이너에서 객체를 가져옴
+        DAO dao = (DAO)context.getBean("dao");
+        dao.insert();
+    } finally {
+        context.close();
+    }
+}
+```
+
+개발자는 xml에 객체 생성 정보 및 의존성을 설정한다. 그리고 컨테이너를 생성할 때 `classpath`로 해당 xml을 읽도록 한다.  
+컨테이너는 거기서 `<bean>`태그를 읽고 객체 생성 정보를 담는다. 따라서 `context`에는 'dao'의 생성 정보가 담겨 있다.
+컨테이너에 담겨진 객체를 가져오기 위해서는 `getBean()`을 쓴다. 이때 반환되는 객체의 타입은 `Obeject`이기 때문에 다운캐스팅을 해줘야한다.  
+다운캐스팅이 번거롭다면 `context.getBean(DAO.class)`처럼 쓸 수 있다.  
+본론으로 돌아가서, 만약 `dao`가 `MySQLDAO` 의 객체가 되도록 하려면 applicationContext.xml에서 `class`속성값만 바꿔주면 된다.  
+결과적으로 객체간의 **의존 관계는 약해지며, 재사용성이 높아진다.** 또한 프로그램의 제어권을 framework가 가져가는 **IoC(Inversion of Control)** 이 발생한다.   
 
 <br/>  
+
+## 의존 관계 설정
+
+의존관계를 설정하는 방법에는 Constructor Injection, Property Injection, Field Injection이 있다. 
 
 ### Constructor Injection
 
@@ -96,32 +126,8 @@ public class Member {
     <constructor-arg ref="memberService"></constructor-arg>
 </bean>
 ```
-컨테이너는 `<bean>`태그를 읽어 `memberService`와 `member`객체를 만든다.   
-이 때 `memberService`는 `MemberServiceImpl`의 객체이고, `member`는 `Member`의 객체이다. 즉,  `MemberService memberService = new MemberServiceImple()`과 `Member member = new Member()`이다.   
-다만 `Member`클래스에서는 생성자 인자를 받기 때문에 `<constructor-arg>`태그를 사용하게 된다. 생성자 인자가 기본형이면 속성으로 `value`를 넣어주고, 참조형이면 `ref`를 사용하게 된다. 
-
-```java
-public class App {
-    public static void main(String[] args) {
-        //스프링 컨테이너 생성
-        AbstractApplicationContext context = new GenericXmlApplicationContext("classpath:com/test/applicationContext.xml");
-
-        try {
-            //스프링 컨테이너에서 객체를 가져옴
-            Member m1 = (Member)context.getBean("member");
-            System.out.println(m1.result());
-        } finally {
-         context.close();
-        }
-    }
-}
-```
-컨테이너에서 만들어 놓은 객체에 접근하기 위해 스프링 컨테이너를 생성한다.  
-`GenericXmlApplicationContext`은 xml로 생성된 객체의 생성정보를 담는다.     
-따라서 `context`는 `memberService`와 `member` 객체를 갖는다.   
-객체에 접근하기 위해서는 `.getBean()`를 사용한다. 여기서 얻어진 객체의 타입은 `Object`이므로 다운캐스팅을 해줘야한다. 다운캐스팅이 번거롭다면 `context.getBean(Member.class)`처럼 작성할 수도 있다.   
-본론으로 돌아가서, 만약 `memberService`가 `Membe rServiceImpl2`의 객체가 되도록 하려면 applicationContext.xml에서 `class`속성값만 바꿔주면 된다.  
-결과적으로 객체간의 **의존 관계는 약해지며,** 프로그램의 제어권을 framework가 가져가는 **IoC(Inversion of Control)** 이 발생한다.   
+`Member`클래스에서는 생성자 인자를 받기 때문에 `<constructor-arg>`태그를 사용하게 된다.     
+생성자 인자가 기본형이면 속성으로 `value`를 넣어주고, 참조형이면 `ref`를 사용하게 된다. 
 
 <br/>  
 
