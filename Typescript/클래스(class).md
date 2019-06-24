@@ -2,7 +2,7 @@
 
 ## ES6 class vs Typescript class
 
-`ES6`가 도입되며 등장한 `class`의 개념과 비슷하지만 `Typescript`에서 `class`는 `ES6`의 `class`에서 제공하는 기능을 포함하는 동시에 좀 더 확장된 기능을 제공하고 있다.
+`Typescript`에서 `class`는 `ES6`가 도입되며 등장한 `class`의 개념과 비슷하지만 `ES6`의 `class`에서 제공하는 기능을 포함하는 동시에 좀 더 확장된 기능을 제공하고 있다.
 
 ```js
 class Developer {
