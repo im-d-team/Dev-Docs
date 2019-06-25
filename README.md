@@ -45,7 +45,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [ ] BKJang : []()
 - [ ] SeonHyungJo : []()
 - [ ] Jinseong : []()
-- [ ] awhead: []()
+- [ ] Dae-Hwa: []()
 - [ ] JHRla: []()
 
 </details>
@@ -67,7 +67,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [ ] BKJang : [Typescript ( 인터페이스 )]()
 - [ ] SeonHyungJo : [Object.create & Object.assign]()
 - [ ] Jinseong : [Time in js]()
-- [ ] awhead: [node.js의 특징]()
+- [ ] Dae-Hwa: [node.js의 특징]()
 - [ ] JHRla: [Dependency Injection]()
 
 #### 06월 16일
@@ -75,15 +75,15 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [ ] BKJang : [클래스(class) (Typescript)]()
 - [ ] SeonHyungJo : [정규 표현식]()
 - [ ] Jinseong : [BrowserXY]()
-- [ ] awhead: [GET&POST]()
+- [x] Dae-Hwa: [GET&POST](https://github.com/Im-D/Dev-Docs/blob/master/Network/get%26post.md)
 - [ ] JHRla: [DOM API]()
 
 #### 06월 09일
 
 - [ ] BKJang : [정적 타이핑(TypeScript)]()
 - [ ] SeonHyungJo : [IndexDB, WebSQL]()
-- [ ] Jinseong : []()
-- [ ] awhead: [바인딩(Binding)]()
+- [ ] Jinseong : [Browser Layer Model]()
+- [ ] Dae-Hwa: [바인딩(Binding)]()
 - [x] JHRla: [CORS](https://github.com/Im-D/Dev-Docs/blob/master/Security/CORS(Cross-Origin%20Resource%20Sharing).md)
 
 #### 06월 02일
@@ -91,8 +91,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] BKJang : [Web Component](https://github.com/Im-D/Dev-Docs/blob/master/HTML/%EC%9B%B9%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(Web%20Component).md)
 - [x] SeonHyungJo : [Basic_Javascript this, call, apply, bind](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Call_Apply_Bind.md)
 - [x] Jinseong : [Composite_Layers](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Layer_Model.md)
-- [ ] awhead: [Ajax]()
-- [ ] JHRla: [Set]()
+- [x] Dae-Hwa: [Ajax](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Ajax.md)
+- [x] JHRla: [Set](https://github.com/Im-D/Dev-Docs/blob/20190601/JHRla/Java/Set.md)
 
 <details>
 <summary> 2019년 05월 </summary>
@@ -101,24 +101,24 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 - [x] BKJang : [DocumentFragment](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/DocumentFragment.md)
 - [x] SeonHyungJo : [Basic_Javascript 팩토리와 클래스](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Class.md)
-- [ ] Jinseong : []()
-- [ ] awhead: []()
-- [ ] JHRla: [JSP와 Servlet처리]()
+- [x] Jinseong : [압축](https://github.com/Im-D/Dev-Docs/blob/master/CS/compression.md)
+- [x] Dae-Hwa: [자바스크립트의 동작 원리 - 변수 객체(Variable Object)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EB%B3%80%EC%88%98%EA%B0%9D%EC%B2%B4(VariableObject).md>)
+- [x] JHRla: [JSP와 Servlet처리](https://github.com/Im-D/Dev-Docs/blob/master/Java/JSP%EC%99%80%20Servlet%EC%B2%98%EB%A6%AC.md)
 
 #### 05월 19일
 
 - [x] BKJang : [React의 props와 state](https://github.com/Im-D/Dev-Docs/blob/master/React/props와%20state.md)
 - [x] SeonHyungJo : [Basic_Javascript DOM](https://github.com/Im-D/Dev-Docs/blob/master/HTML/DOM.md)
-- [x] Jinseong : [압축](https://github.com/Im-D/Dev-Docs/blob/master/CS/compression.md)
-- [ ] awhead: [자바스크립트 동작 원리 - 변수 객체]()
+- [x] Jinseong : [정보이론](https://github.com/Im-D/Dev-Docs/blob/master/CS/information_theory.md)
+- [x] Dae-Hwa: [자바스크립트의 동작 원리 - 실행 컨텍스트(Execution Contexts)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md>)
 - [ ] JHRla: [WAS]()
 
 #### 05월 12일
 
 - [x] BKJang : [React의 Composition](https://github.com/Im-D/Dev-Docs/blob/master/React/Composition.md)
 - [x] SeonHyungJo : [ARIA attribute](https://github.com/Im-D/Dev-Docs/blob/master/HTML/ARIA.md)
-- [x] Jinseong : [정보이론](https://github.com/Im-D/Dev-Docs/blob/master/CS/compression.md)
-- [ ] awhead: [자바스크립트 동작원리 - 실행컨텍스트]()
+- [ ] Jinseong : []()
+- [x] Dae-Hwa: [input태그의\_value바꾸기(input태그의\_dirty flag)](<https://github.com/Im-D/Dev-Docs/blob/master/HTML/input%ED%83%9C%EA%B7%B8%EC%9D%98_value%EB%B0%94%EA%BE%B8%EA%B8%B0(input%ED%83%9C%EA%B7%B8%EC%9D%98_dirty%20flag).md>)
 - [x] JHRla: [함수 선언](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)
 
 #### 05월 05일
