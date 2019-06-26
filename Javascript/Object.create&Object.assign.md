@@ -162,7 +162,7 @@ console.log(maddie.pupper); // Pupper
 console.log(maddie.pupperino); // Pups.
 ```
 
-성능상으로 new 생성자를 사용하는 것이 좋다고 한다. 확실히 성능 테스트를 해보면 알 수 있다.
+성능상으로 new 생성자를 사용하는 것이 좋다고 한다. 아래와 같이 성능 테스트를 해보면 왜 new 생성자를 사용하는 것이 더 좋은지 알 수 있다.
 <br/>
 
 ### 성능 테스트
