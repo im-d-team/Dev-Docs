@@ -54,7 +54,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- 🎇 **2019 Google I/O Extended 컨퍼런스 참여(https://github.com/Im-D/Dev-Docs/issues/47)** 🎇
+- 🎇 **[2019 Google I/O Extended 컨퍼런스 참여](https://github.com/Im-D/Dev-Docs/issues/47)** 🎇
 
 ---
 
