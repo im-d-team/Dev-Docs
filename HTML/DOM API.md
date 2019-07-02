@@ -114,6 +114,7 @@ class 속성값으로 모든 Element node를 선택한다.
 ## 요소 조작 - classList
 
 `classList`에는 다음과 같은 메소드가 있다. 
+
 ```js
 var target = document.getElementById("target");
 target.classList.add('added');
@@ -122,10 +123,42 @@ target.classList.contains('added'); //boolean 반환
 target.classList.replace('target', 'changed');
 target.classList.toggle('active');
 ```
+
 특히 다음과 같이 `toggle`을 사용하는 경우, `add`와 `remove`를 일일이 해줄 필요가 없기 때문에 매우 편리하다.
 
+```html
+<body>
+    <div class="bg">
+        <button id="btn"></button>
+    </div>
+</body>
+```
+```html
+.bg {
+    background: #e2e2e2;
+    border-radius: 15px;
+    width: 70px;
+}
 
+#btn {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    background: white;
+    border-radius: 15px;
+}
 
+.toggleTrue {
+    left: 40px;
+}
+```
+```js
+document.getElementById("btn").addEventListener("click", function(e){
+    let target = e.target;
+    target.classList.toggle('toggleTrue');
+});
+```
 <br/>
 
 ---
