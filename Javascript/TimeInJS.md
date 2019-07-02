@@ -108,7 +108,7 @@ console.log((end - start) / 1000);
 performance.now의 반환값은 DOMHighResTimeStamp다. 이는 ms(밀리 세컨드)인데 소수점을 포함한다. 따라서 마이크로 세컨드까지 정확하다.
 
 performance.now가 측정되는 시간은 [performance.timing.navigationStart](https://www.w3.org/TR/navigation-timing/#dom-performancetiming-navigationstart)부터다.
-이 시간은 이전 document가 unload되며 새로운 document를 fetch하는(fetchStart) 시점이다.
+이 시간은 이전 document가 unload되며 새로운 document를 fetch하는([fetchStart](https://www.w3.org/TR/navigation-timing/#dom-performancetiming-fetchstart)) 시점이다.
 
 브라우저에서 제공하는 방법들은 web worker를 사용한다. 현재 performance가 그 중에 가장 정확한 시간을 측정할 수 있다.
 
