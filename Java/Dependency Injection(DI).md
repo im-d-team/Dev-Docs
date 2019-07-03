@@ -1,10 +1,12 @@
 # Dependency Injection(DI)
-Dependency Injection는 **Framework에 의해** 객체의 의존성이 주입되는 설계 패턴을 말한다.
+Dependency Injection는 **Framework에 의해** 객체의 의존성이 주입되는 설계 패턴을 말한다.  
 개발자가 class를 만들고 어떤 의존성을 주입할 것인지 설정하면, Framework가 **객체를 생성**하고 **동적으로 의존성을 주입**하는 형태이다.
 Spring Framework에서는 **Spring container**가 이 역할을 한다.  
-Spring Container는 객체를 관리하는데, 이 객체를 빈(bean)이라고 부른다. 그래서 스프링에서는 이 빈(bean)들을 관리한다는 의미로 컨테이너를 빈 팩토리(Bean Factory)라고 부른다.   
+
+**Spring Container**는 객체를 관리하는데, 이 객체를 **빈(bean)** 이라고 부른다.  
+그래서 스프링에서는 이 빈(bean)들을 관리한다는 의미로 컨테이너를 **빈 팩토리(Bean Factory)** 라고 부른다.   
 이렇게 오브젝트의 생성과 오브젝트 사이의 런타임 의존 관계를 설정하는 DI관점으로 볼 때는 컨테이너를 빈 팩토리라고 한다.   
-하지만 스프링의 DI container는 단순한 DI작업보다 더 많은 일을 한다. 그래서 DI기능에 엔터프라이즈 애플리케이션을 개발하는 데 필요한 여러 가지 컨테이너 기능을 추가하여 애플리케이션 컨텍스트(Application Context)라고 부르기도 한다.   
+하지만 스프링의 DI container는 단순한 DI작업보다 더 많은 일을 한다. 그래서 DI기능에 엔터프라이즈 애플리케이션을 개발하는 데 필요한 여러 가지 컨테이너 기능을 추가하여 **애플리케이션 컨텍스트(Application Context)** 라고 부르기도 한다.   
 
 <br/>  
 
@@ -327,7 +329,7 @@ public class App {
 
 - **.properties**  
 
-xml의 `context 네임스페이스`를 사용해 파일을 읽고 EL표현식을 이용해 값을 불러올 수 있다.
+xml의 `context 네임스페이스`를 사용해 파일을 읽고 `EL(Expression Language) 표현식` 이용해 값을 불러올 수 있다.
 ```xml
 <context:property-placeholder location="classpath:com/user5/user.properties"></context:property-placeholder>
    
