@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="todoStyle.css">
+</head>
+
+<body>
+  <div style="margin:auto; width : 80%">
+    <h1 id="title">TODO List(IndexedDB)</h1>
+    <div class="newTodoContainer defaultContainer">
+      <span class="todoSubTitle left">TODO:</span>
+      <input type="text" id="newTodoInput" placeholder="새로운 할 일을 적어주세요" autofocus/>
+      <button type="button" id="newTodoBtn" class="defaultBtn right">+New</button>
+    </div>
+    <div id="newTodoList" class="defaultContainer"></div>
+    <div class="doneTodoContainer defaultContainer">
+      <span class="todoSubTitle left">TODO</span>
+      <span class="todoSubTitle bigTitle">Done</span>
+      <button type="button" id="removeButton" class="defaultBtn right">Clear</button>
+    </div>
+    <div id="doneTodoList" class="defaultContainer"></div>
+  </div>
+  <div class="commonBtnContainer">
+    <button type="button" id="buttonAllClear">All Clear</button>
+    <button type="button" id="buttonSave">Save</button>
+  </div>
+</body>
+<script type="text/javascript" src="./js/indexDB.js"></script>
+<script type="text/javascript" src="./js/todo.js"></script>
+
+</html>
