@@ -4,6 +4,7 @@
     * 자바스크립트가 브라우저 환경에서 돌아가는 대신 내 컴퓨터에서 서비스 혹은 런타임으로 실행된다.
 
 * V8자바스크립트 엔진을 사용한다.(크롬브라우저와 동일)
+> 참고 - [Javascript_Engine](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_Engine.md)
 
 * 언어 차원에서 네트워크를 지원한다.
     * 서버사이드 언어로 사용할 수 있다.
@@ -56,7 +57,7 @@ Node.js는 **싱글 스레드(Single Thread)**로 동작하고, 비동기적인 
 <br/>
 
 ## NPM(Node Package Manager)
-Node.js를 설치하면 NPM이 생기는데, 써드 파티 패키지나 모듈을 설치하는데 사용된다.
+Node.js를 설치하면 NPM이 생기는데, [써드 파티](https://ko.wikipedia.org/wiki/%EC%84%9C%EB%93%9C_%ED%8C%8C%ED%8B%B0_%EA%B0%9C%EB%B0%9C%EC%9E%90) 패키지나 모듈을 설치하는데 사용된다.
 
 패키지들은 `node_modules`폴더에 저장된다.
 
