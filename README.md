@@ -54,16 +54,27 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- 🎇 **[2019 Google I/O Extended 컨퍼런스 참여](https://github.com/Im-D/Dev-Docs/issues/47)** 🎇
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : [window.history]()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: []()
+- [ ] JHRla: []()
 
 ---
 
 ### 📅 History
 
+<details>
+<summary> 2019년 06월 </summary>
+
+#### 06월 30일
+
+- 🎇 **[2019 Google I/O Extended 컨퍼런스 참여](https://github.com/Im-D/Dev-Docs/issues/47)** 🎇
+
 #### 06월 23일
 
 - [ ] BKJang : [Typescript ( 인터페이스 )]()
-- [ ] SeonHyungJo : [Object.create & Object.assign]()
+- [x] SeonHyungJo : [Object.create & Object.assign](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Object.create%26Object.assign.md)
 - [ ] Jinseong : [Time in js]()
 - [ ] Dae-Hwa: [node.js의 특징]()
 - [ ] JHRla: [Dependency Injection]()
@@ -71,7 +82,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 #### 06월 16일
 
 - [ ] BKJang : [클래스(class) (Typescript)]()
-- [ ] SeonHyungJo : [정규 표현식]()
+- [x] SeonHyungJo : [정규 표현식](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Regular_Expressions.md)
 - [ ] Jinseong : [BrowserXY]()
 - [x] Dae-Hwa: [GET&POST](https://github.com/Im-D/Dev-Docs/blob/master/Network/get%26post.md)
 - [ ] JHRla: [DOM API]()
@@ -91,6 +102,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] Jinseong : [Composite_Layers](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Layer_Model.md)
 - [x] Dae-Hwa: [Ajax](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Ajax.md)
 - [x] JHRla: [Set](https://github.com/Im-D/Dev-Docs/blob/20190601/JHRla/Java/Set.md)
+
+</details>
 
 <details>
 <summary> 2019년 05월 </summary>
