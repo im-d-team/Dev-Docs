@@ -44,8 +44,6 @@ console.log(helloWorld('BKJang')) // BKJang Hello!
 `Typescript`에서 클래스가 인터페이스의 구현체가 되는 것은 `Java`와 굉장히 유사하다. 즉, 클래스가 인터페이스를 `implements`하면 지정된 인터페이스를 반드시 구현하여 한다.<br/>
 인터페이스는 메서드도 포함할 수 있다. 단, 모든 메서드는 추상 메서드이어야 한다. 클래스는 인터페이스에서 정의한 프로퍼티와 추상 메서드를 반드시 구현하여야 한다.
 
-// 인터페이스의 정의
-
 ```ts
 interface InterDeveloper {
     name : string;
