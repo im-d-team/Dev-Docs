@@ -13,7 +13,7 @@
 
 ## 왜 사용하는가?
 #### 빠르고, 효율적이고, 확장성이 아주 크다
-* Event driven이기 때문에 싱글 루프에서 실행되고, 논 블럭킹이다. 따라서 non-blocking i/o model을 가진다.
+* Event driven이기 때문에 싱글 루프에서 실행되고, non-blocking이다. 따라서 non-blocking i/o model을 가진다.
 
 #### 인기가 많다!
 > [mean stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)) 혹은 mern stack의 n이 노드다!
@@ -40,7 +40,7 @@ Node.js는 **싱글 스레드(Single Thread)**로 동작하고, 비동기적인 
 
 앞서 말했듯, node.js의 I/O실행은 비동기적이다. Blocking 없이 통신을 할 수 있는 것이 장점이다.
 
-하지만, 많은 CPU사용이 요구되어 CPU의 작업 처리가 한계에 다다른다면 결국 서버가 느려질 것이다. 그렇게되면 당연히 어플리케이션이 느려진다.
+하지만, 많은 CPU 사용이 요구되어 CPU의 작업 처리가 한계에 다다른다면 결국 서버가 느려질 것이다. 그렇게되면 당연히 어플리케이션이 느려진다.
 
 따라서 다음과 같은 프로젝트들이 어울린다.
 
