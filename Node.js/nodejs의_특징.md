@@ -14,6 +14,7 @@
 ## 왜 사용하는가?
 #### 빠르고, 효율적이고, 확장성이 아주 크다
 * Event driven이기 때문에 싱글 루프에서 실행되고, non-blocking이다. 따라서 non-blocking i/o model을 가진다.
+> blocking 모델에서는 하나의 스레드에 프로세스가 할당되면 끝날 때까지 기다려야 한다(sit and wait). 비동기적 작동이 안되기 때문에 요청이 발생할때마다 새로운 스레드를 생성한다. 반면, non-blocking i/o는 이벤트 루프로 처리를 하기 때문에 응답을 기다리지 않고 계속해서 요청을 보낼 수 있다.
 
 #### 인기가 많다!
 > [mean stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)) 혹은 mern stack의 n이 노드다!
