@@ -8,7 +8,8 @@ Non-blocking은 하나의 작업이 실패하거나 정지하더라도 다른 �
 
 lock-free 알고리즘은 것은 하나의 작업이 시작되어도, 시스템 전체의 진행이 보장되는 것이다.(A non-blocking algorithm is lock-free if there is guaranteed system-wide progress)<br/>
 wait-free 알고리즘은 각 스레드의 진행이 각각 보장되는 것(A non-blocking algorithm is wait-free if there is also guaranteed per-thread progress)이다. <br/>
-즉, 다른 스레드의 작업을 기다리지 않는다. 이를 통해 대기 상태 없이 공유 자원에 접근 할 수 있다.
+![non-blocking i/o](/assets/images/non-blocking.png)
+블로킹 모델은 요청이 동작 가능할때까지 스레드가 블록된다. 반면, 넌블로킹 모델은 요청이 동작 불가능하다는 것을 알려주어 블록상태 없이 계속해서 진행가능하다. 즉, 다른 스레드의 작업을 기다리지 않는다. 이를 통해 대기 상태 없이 공유 자원에 접근 할 수 있다.
 
 > Java의 멀티 스레드 어플리케이션에서 Synchronized를 시키는 것은 BlockingQueue Interface를 구현하는 것이라고 생각하면 된다. 당연히 non-blocking은 이와 반대다.
 
@@ -17,11 +18,7 @@ wait-free 알고리즘은 각 스레드의 진행이 각각 보장되는 것(A n
 ## Non-blocking I /O
 
 Non-blocking I/O 는 I/O와 관계없이 프로세스가 계속해서 진행되는 것을 뜻한다. 기존 방식(Non-blocking 혹은 synchronous한 I/O모델)에서는 I/O처리를 시작하면 작업이 끝날 때 까지 기다려야한다. 즉 프로그램이 block된다. 반면, Non-blocking I/O 모델에서는 입,출력을 외부에 맡겨 I/O의 진행 상황과 관계없이 프로그램이 진행된다.
-
-![non-blocking i/o](/assets/images/non-blocking.png)
-
-블로킹 모델은 요청이 동작 가능할때까지 스레드가 블록된다. 반면, 넌블로킹 모델은 요청이 동작 불가능하다는 것을 알려주어 블록상태 없이 계속해서 진행가능하다.
-
+<br/>
 ## Asynchronous Programming과 Non-blocking I/O
 
 프로그램의 주 실행흐름을 멈추거나 , 대기 상태 없이 즉시 다음 작업을 수행할 수 있도록 하는 것이 asynchronous 방식이다.
