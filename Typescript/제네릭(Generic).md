@@ -18,7 +18,9 @@
 
 ```js
 class NumberQueue {
-    protected arr = [];
+    constructor(arr) {
+        this.arr = arr;
+    }
 
     push(item) {
         this.arr.push(item);
