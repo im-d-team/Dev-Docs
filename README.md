@@ -54,8 +54,8 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : [Typescript ( 제네릭 )]()
-- [ ] SeonHyungJo : [window.history]()
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : [preload, prefetch]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
 - [ ] JHRla: []()
@@ -63,6 +63,14 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+
+#### 07월 07일
+
+- [ ] BKJang : [Typescript ( 제네릭 )]()
+- [ ] SeonHyungJo : [window.history]()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: []()
+- [ ] JHRla: []()
 
 <details>
 <summary> 2019년 06월 </summary>
