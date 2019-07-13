@@ -126,7 +126,34 @@ sayHello(new SHJo()); // SHJo Hello
 
 위의 코드를 보면 `SHJo`클래스는 인터페이스를 상속하고 있지 않지만 `sayHello`메서드를 실행했을 때 정상적으로 작동한다. 이처럼 인터페이스에서 구현된 메서드나 프로퍼티를 가지고 있다면 인터페이스를 구현한 것으로 인정하고 인터페이스의 구현체로서 해당 메서드나 프로퍼티를 실행한다. 이를 **덕 타이핑(Duck Typing)** 이라고 한다.
 
-인터페이스는 개발 단계에서 도움을 주기 위해 제공되는 기능으로 자바스크립트의 표준이 아니다. 따라서 `Typescript`파일을 트랜스파일링하면 인터페이스는 삭제된다.
+인터페이스는 개발 단계에서 도움을 주기 위해 제공되는 기능으로 자바스크립트의 표준이 아니다. 따라서 `Typescript`파일을 트랜스파일링하면 인터페이스 코드는 삭제된다.
+
+아래는 위의 코드를 Javascript로 컴파일한 코드이며 인터페이스 코드가 삭제된 것을 확인할 수 있다.
+
+```js
+var BKJang = /** @class */ (function () {
+    function BKJang() {
+    }
+    BKJang.prototype.helloworld = function () {
+        console.log('BKJang Hello');
+    };
+    return BKJang;
+}());
+var SHJo = /** @class */ (function () {
+    function SHJo() {
+    }
+    SHJo.prototype.helloworld = function () {
+        console.log('SHJo Hello');
+    };
+    return SHJo;
+}());
+function sayHello(helloworld) {
+    helloworld.helloworld();
+}
+sayHello(new BKJang()); // BKJang Hello
+sayHello(new SHJo()); // SHJo Hello
+
+```
 
 ---
 
