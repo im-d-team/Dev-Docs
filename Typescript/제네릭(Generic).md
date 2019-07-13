@@ -42,9 +42,9 @@ console.log(queue.pop().toFixed());
 
 위와 같이 `Javascript`에서 `NumberQueue`클래스를 작성하고 결과 값을 출력한다면 어떻게 될까?
 
-아마 2번 째 값을 출력하려고 할 때 `string`타입에는 `toFixed()`함수가 없기 때문에 `TypeError`가 발생할 것이다. 
+아마 2번째 값을 출력하려고 할 때 `string`타입에는 `toFixed()`함수가 없기 때문에 `TypeError`가 발생한다. 
 
-위와 같은 코드를 안짜면 된다고 생각할 수 있지다. 하지만 실제로 애플리케이션을 만들다 보면 서버에서 준 데이터를 가지고 코딩을 해야한다거나 코드가 복잡해진다거나 하면 충분히 일어날 수 있는 실수다.
+위와 같은 코드를 안짜면 된다고 생각할 수 있다. 하지만 실제로 애플리케이션을 만들다 보면 서버에서 준 데이터를 가지고 코딩을 해야한다거나 코드가 복잡해진다거나 하면 충분히 일어날 수 있는 실수다.
 
 `Typescript`로 위의 코드를 수정하면 다음과 같다.
 
@@ -86,38 +86,38 @@ console.log(queue.pop().toFixed());
 
 ```ts
 class Queue<T> {
-  protected arr: Array<T> = [];
-
-  push(item: T) {
-    this.data.push(item);
-  }
-
-  pop(): T {
-    return this.data.shift();
-  }
+    protected arr: Array<T> = [];
+  
+    push(item: T) {
+      this.arr.push(item);
+    }
+  
+    pop(): T {
+      return this.arr.shift();
+    }
 }
-
+  
 const numberQueue = new Queue<number>();
-
+  
 numberQueue.push(1);
 numberQueue.push(2);
-
+  
 console.log(numberQueue.pop().toFixed()); //1
 console.log(numberQueue.pop().toFixed()); //2
-
+  
 const stringQueue = new Queue<string>();
-
+  
 stringQueue.push('BKJang');
 stringQueue.push('Hello');
-
-console.log(numberQueue.pop().toUpperCase()); //BKJang
-console.log(numberQueue.pop().toUpperCase()); //Hello
-
+  
+console.log(stringQueue.pop().toUpperCase()); //BKJang
+console.log(stringQueue.pop().toUpperCase()); //Hello
+  
 const objQueue = new Queue<{name: string, age: number}>();
-
+  
 objQueue.push({name: 'BKJang', age: 27}); 
 objQueue.push({name: 'JHKim', age: 25});
-
+  
 console.log(objQueue.pop()); //27
 console.log(objQueue.pop()); //25
 ```
