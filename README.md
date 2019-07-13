@@ -57,7 +57,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [ ] BKJang : []()
 - [ ] SeonHyungJo : [preload, prefetch]()
 - [ ] Jinseong : []()
-- [ ] Dae-Hwa: []()
+- [ ] Dae-Hwa: [WAS]()
 - [ ] JHRla: []()
 
 ---
@@ -69,7 +69,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [ ] BKJang : [Typescript ( 제네릭 )]()
 - [ ] SeonHyungJo : [window.history]()
 - [ ] Jinseong : []()
-- [ ] Dae-Hwa: []()
+- [ ] Dae-Hwa: [Non-blocking]()
 - [ ] JHRla: []()
 
 <details>
