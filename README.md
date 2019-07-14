@@ -56,13 +56,22 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 - [ ] BKJang : []()
 - [ ] SeonHyungJo : [window.history]()
+- [ ] SeonHyungJo : [preload, prefetch]()
 - [ ] Jinseong : [ES6 Module in Browser]()
-- [ ] Dae-Hwa: []()
+- [ ] Dae-Hwa: [WAS]()
 - [ ] JHRla: []()
 
 ---
 
 ### 📅 History
+
+#### 07월 07일
+
+- [ ] BKJang : [Typescript ( 제네릭 )]()
+- [ ] SeonHyungJo : [window.history]()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: [Non-blocking]()
+- [ ] JHRla: []()
 
 <details>
 <summary> 2019년 06월 </summary>
@@ -73,7 +82,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 06월 23일
 
-- [ ] BKJang : [Typescript ( 인터페이스 )]()
+- [x] BKJang : [Typescript ( 인터페이스 )]()
 - [x] SeonHyungJo : [Object.create & Object.assign](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Object.create%26Object.assign.md)
 - [x] Jinseong : [Time in js](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/TimeInJS.md)
 - [ ] Dae-Hwa: [node.js의 특징]()
@@ -81,7 +90,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 06월 16일
 
-- [ ] BKJang : [클래스(class) (Typescript)]()
+- [x] BKJang : [클래스(class) (Typescript)](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/%ED%81%B4%EB%9E%98%EC%8A%A4(class).md)
 - [x] SeonHyungJo : [정규 표현식](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Regular_Expressions.md)
 - [x] Jinseong : [BrowserXY](https://github.com/Im-D/Dev-Docs/blob/master/Browser/BrowserXY.md)
 - [x] Dae-Hwa: [GET&POST](https://github.com/Im-D/Dev-Docs/blob/master/Network/get%26post.md)
@@ -89,7 +98,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 06월 09일
 
-- [ ] BKJang : [정적 타이핑(TypeScript)]()
+- [x] BKJang : [정적 타이핑(TypeScript)](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/%EC%A0%95%EC%A0%81%20%ED%83%80%EC%9D%B4%ED%95%91.md)
 - [ ] SeonHyungJo : [IndexDB, WebSQL]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: [바인딩(Binding)]()

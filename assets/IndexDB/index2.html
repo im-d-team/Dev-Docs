@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <input type="text" id="name" placeholder="Name"><br />
+  <input type="email" id="email" placeholder="Email"><br />
+  <button id="addButton">Add Data</button><br />
+
+  <input type="text" id="nameSearch" placeholder="Name"><br />
+  <input type="text" id="nameSearchEnd" placeholder="Name"><br />
+  <button id="getButton">Get Person</button>
+  <div id="status"></div>
+</body>
+<script>
+  let db;
+
+  function indexedDBOk() {
+    return "indexedDB" in window;
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    //indexedDB 지원 유무
+    if (!indexedDBOk) return;
+    //idarticle_people 네임인 DB생성.
+    const openRequest = indexedDB.open("idarticle_people", 1);
+    openRequest.onupgradeneeded = function (e) {
+      const thisDB = e.target.result;
+      // people ObjectStore 생성(테이블이라고 생각하면 될것 같음..)
+      if (!thisDB.objectStoreNames.contains("people")) {
+        var store = thisDB.createObjectStore("people", { autoIncrement: true });
+        store.createIndex("name","name", {unique:false});
+      }
+    }
+
+    openRequest.onsuccess = function (e) {
+      console.log("running onsuccess");
+      db = e.target.result;
+
+      //Listen for add clicks
+      document.querySelector("#addButton").addEventListener("click", addPerson, false);
+      document.querySelector("#getButton").addEventListener("click", getPeople, false);
+    }
+
+    openRequest.onerror = function (e) {
+      //Do something for the error
+    }
+
+  }, false);
+
+  function addPerson(e) {
+
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+
+    console.log("About to add " + name + "/" + email);
+    //people 테이블에 데이터 add 선언..
+    const transaction = db.transaction(["people"], "readwrite");
+    const store = transaction.objectStore("people");
+
+    //Define a person
+    const person = {
+      name: name,
+      email: email,
+      created: new Date()
+    }
+
+    //Perform the add
+    const request = store.add(person);
+
+    request.onerror = function (e) {
+      console.log("Error", e.target.error.name);
+      //some type of error handler
+    }
+
+    request.onsuccess = function (e) {
+      console.log("Add Success");
+    }
+  }
+
+
+  function getPeople(e) {
+    const name = document.querySelector("#nameSearch").value;
+    const endname = document.querySelector("#nameSearchEnd").value;
+
+    if (name == "" && endname == "") return;
+
+    const transaction = db.transaction(["people"], "readonly");
+    const store = transaction.objectStore("people");
+    const index = store.index("name");
+
+    //Make the range depending on what type we are doing
+    let range;
+    if (name != "" && endname != "") {
+      range = IDBKeyRange.bound(name, endname);
+    } else if (name == "") {
+      range = IDBKeyRange.upperBound(endname);
+    } else {
+      range = IDBKeyRange.lowerBound(name);
+    }
+
+    let s = "";
+
+    index.openCursor(range).onsuccess = function (e) {
+      const cursor = e.target.result;
+      if (cursor) {
+        s += "<h2>Key " + cursor.key + "<h2>&<p>";
+        for (var field in cursor.value) {
+          s += field + "=" + cursor.value[field] + "&lt;br/>";
+        }
+        s += "<p>";
+        cursor.continue();
+      }
+      // const myDiv = document.getElementById("#status")
+      // myDiv.innerHTML = s;
+      console.log(cursor)
+    }
+  }
+</script>
+
+</html>
