@@ -60,11 +60,16 @@ class Child extends Parent{
     public String parentMethod(){
         return "Inheritance Method";
     }
+    
+    public String childMethod() {
+        return "Child Method";
+    }
+    
 }
 
 class Parent{
     public String parentMethod(){
-      return "parent Method";
+      return "Parent Method";
     }
 }
 
@@ -86,15 +91,14 @@ public class Test01{
     } catch (RuntimeException e) {
       System.out.println("test02 - RuntimeException");
     }
-    // test03 - 
+    // test03 - 부모 타입을 사용한다면, 부모 타입 내에 정의된 것과 같은 형식의 메소드를 호출 할 수 있다.
     try {
       Parent childInstance = new Child();
       Parent parentInstance = new Parent();            
             
-      System.out.println("test03 - " + childInstance.parentMethod()); 
-      // test03 - Child Method
-      System.out.println("test03 - " + parentInstance.parentMethod());
-      // test03 - parent Method         
+      System.out.println("test03 - " + childInstance.parentMethod()); // test03 - Inheritance Method
+      System.out.println("test03 - " + parentInstance.parentMethod()); // test03 - Parent Method         
+      // childInstance.childMethod() // The method childMethod() is undefined for the type Parent - Compile Error
     } catch (RuntimeException e) {
       System.out.println("test03 - RuntimeException");
     }
