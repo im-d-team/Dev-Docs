@@ -54,12 +54,11 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : []()
-- [ ] SeonHyungJo : [window.history]()
+- [ ] BKJang : [배열 내장함수]()
 - [ ] SeonHyungJo : [preload, prefetch]()
-- [ ] Jinseong : [ES6 Module in Browser]()
+- [ ] Jinseong : []()
 - [ ] Dae-Hwa: [WAS]()
-- [ ] JHRla: []()
+- [ ] JHRla: [클로저]()
 
 ---
 
@@ -69,7 +68,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 - [ ] BKJang : [Typescript ( 제네릭 )]()
 - [ ] SeonHyungJo : [window.history]()
-- [ ] Jinseong : []()
+- [ ] Jinseong : [ES6 Module in Browser]()
 - [ ] Dae-Hwa: [Non-blocking]()
 - [ ] JHRla: []()
 
