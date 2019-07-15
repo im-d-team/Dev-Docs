@@ -249,7 +249,7 @@ history.pushState(stateObj, "page2", "page2.html");
 
 #### popstate 이벤트
 
-popstate 이벤트는 현재 활성화된 히스토리 엔트리에 변화가 있을 때 마다 실행된다. 만약 pushState 함수나 replaceState 함수에 의해 현재 활성화되어 있는 히스토리 엔트리가 조작 및 변경된다면, popstate 이벤트의 state 속성은 히스토리 항의 state 객체의 사본이 됩니다.
+popstate 이벤트는 현재 활성화된 히스토리 엔트리에 변화가 있을 때 마다 실행된다. 만약 pushState 함수나 replaceState 함수에 의해 현재 활성화되어 있는 히스토리 엔트리가 조작 및 변경된다면, popstate 이벤트의 state 속성은 히스토리 항의 state 객체의 사본이 된다.
 </br>
 
 #### 현재 상태 읽기
