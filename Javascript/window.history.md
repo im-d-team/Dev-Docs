@@ -12,7 +12,7 @@
 그러나 우리가 알고 있어야 하는 부분은 단순하게 이 라이브러리를 사용하니까 잘된다가 아니라 **어떻게 이렇게 되는 거지?** 하는 궁금증이 우선 되어야 한다.
 
 우리는 React를 기준으로 어떻게 앞으로 가기, 뒤로 가기, 새로 고침이 가능한지를 살펴보자.
-</br>
+<br/>
 
 ## react-router-dom
 
@@ -24,6 +24,9 @@ react-router-dom의 상위 프로젝트로 react-router라는 프로젝트가 �
 해당 패키지들을 살펴보면
 
 - [react-router Package](https://github.com/ReactTraining/react-router/tree/master/packages)
+
+![react-router Package](https://user-images.githubusercontent.com/24274424/61193172-b925bd00-a6f4-11e9-877e-8d1f5f6febf2.png)
+
 
 DOM과 Native라고 적혀있는 폴더를 볼 수 있다. 이를 통해 react-router라는 공통의 패키지가 존재하며 하위의 패키지로 DOM과 Native를 위한 패키지가 있구나라는 것을 알 수 있다. 이제 우리는 웹을 개발할 때 사용하는 react-router-dom을 열어보자
 
@@ -102,7 +105,7 @@ The public API for a <Router> that uses HTML5 history.
 ```
 
 HTML5 history를 사용하고 있다고 알려주고 있다.
-</br>
+<br/>
 
 ### [history 라이브러리](https://github.com/ReactTraining/history)
 
@@ -117,7 +120,7 @@ history 라이브러리의 설명을 보면 이렇게 적혀있다.
 `createHashHistory`는 예전 웹 브라우저를 위해서 사용되는 것이라고 설명되어있다. 
 
 위에서 react-router-dom에서 보았던 `createBrowserHistory` 함수가 있는 것을 확인했다. 
-</br>
+<br/>
 
 #### createBrowserHistory.js
 
@@ -163,15 +166,15 @@ function go(n) {
 }
 ```
 
-</br>
+<br/>
 
 ## HTML5 history API
 
 > [MDN - History](https://developer.mozilla.org/ko/docs/Web/API/History)
 
-JavaScript에는 자체적으로 history를 관리를 할 수 있는 객체이다.
+Javascript에서 자체적으로 history를 관리할 수 있는 객체이다.
 `window.history` 속성은 읽기 전용이며 `History object`를 반환한다. 또한 브라우저 세션 히스토리(현재 페이지가 있는 탭 또는 브라우저에서 방문한 페이지)를 조작하기 위한 인터페이스를 제공한다. 이렇게 조작이 가능하여 SPA에서도 페이지가 이동한 것과 같은 기능을 만들 수 있는 것이다.
-</br>
+<br/>
 
 ### Syntax
 
@@ -180,22 +183,22 @@ const historyObj = window.history;
 ```
 
 최상위 페이지의 경우 `History object`를 통해 접근할 수 있는 세션 히스토리 목록은 브라우저의 뒤로 가기, 앞으로 가기 버튼 옆의 드롭다운 목록에서 볼 수 있다. (크롬의 경우 버튼 우클릭)
-</br>
+<br/>
 
 ### History Interface
 
 History 인터페이스는 브라우저의 세션 히스토리를 조작할 수 있게 해준다. 세션 히스토리에는 탭에서 방문했던 페이지들이나, 현재 페이지가 로딩된 프레임들이 포함되어있다.
 
 History 인터페이스는 어떤 속성도 상속받지 않는다.
-</br>
+<br/>
 
 ### Properties
 
-- `History.length` : 세션 히스토리의 현재 로딩된 페이지를 포함한 요소 숫자들을(정수 값) 반환한다. 예를 들면, 새로운 탭의 로딩된 페이지는 1을 반환합니다.
-- `History.scrollRestoration` : 웹 어플리케이션에서 히스토리 네비게이션의 default 스크롤 복원 기능을 명시적으로 선언합니다.이 속성은 자동 또는 수동이 가능하다.
-- `History.state` : 히스토리 스택의 가장 상위에 있는 상태 값을 반환합니다. popstate 이벤트 콜없이 바로 상태를 볼 수 있는 방법입니다.
+- `History.length` : 세션 히스토리의 현재 로딩된 페이지를 포함한 요소 숫자들을(정수 값) 반환한다. 예를 들면, 새로운 탭의 로딩된 페이지는 1을 반환한다.
+- `History.scrollRestoration` : 웹 어플리케이션에서 히스토리 네비게이션의 default 스크롤 복원 기능을 명시적으로 선언한다 .이 속성은 자동 또는 수동이 가능하다.
+- `History.state` : 히스토리 스택의 가장 상위에 있는 상태 값을 반환한다. popstate 이벤트 콜없이 바로 상태를 볼 수 있는 방법이다.
 
-</br>
+<br/>
 
 ### Methods
 
@@ -207,7 +210,7 @@ History 인터페이스는 어떤 속성도 상속받지 않는다.
 
 2. 히스토리에서 특정 위치로 가기
 - `History.go()` : 세션히스토리의 특정 페이지를 로딩한다, 현재 페이지의 상대적인 위치에 따라 페이지 순서가 정의된다. 예를 들어, -1은 이전 페이지, 1은 다음 페이지. 변수 값을 넘기지 않거나, 0의 값을 가진 go() 메서드는 현재 페이지를 새로고침을 한다.​​​​​​​
-</br>
+<br/>
 
 #### History Entry 추가 및 변경
 
@@ -216,7 +219,7 @@ HTML5는 사용자가 History Entry를 추가하거나 변경할 수 있는 `his
 - `History.pushState()`
 - `History.replaceState()`
 
-</br>
+<br/>
 
 #### pushState() 메서드
 
@@ -233,7 +236,7 @@ history.pushState(state, "page1", "page1.html");
 
 - URL : 새로운 히스토리 엔트리의 URL을 지정한다. `pushState()` 호출 이후에는 브라우저가 이 URL을 로딩하지 않는 것을 명심해야 한다. 하지만 아마 나중에도 사용될 수도 있다. 새롭게 할당되는 URL은 현재의 URL에 기준하기 때문에, 절대 경로일 필요는 없다. 새로운 URL은 기존의 URL을 기준으로 해석된다. 새로운 URL은 현재 URL에서 유추될 수 없다면 `pushState()`는 예외가 발생한다. 이 변수는 선택 사항으로, 명시되지 않는다면, 현재 URL로 지정된다.
 
-</br>
+<br/>
 
 #### replaceState() 메서드
 
@@ -245,12 +248,12 @@ history.pushState(stateObj, "page2", "page2.html");
 `history.replaceState()`는 `history.pushState()`와 동일하게 동작한다. `replaceState()`는 새로운 히스토리를 하나 생성하는 대신에 현재의 히스토리 엔트리를 변경한다.
 
 `replaceState()` 는 state 객체나 사용자의 동작에 따라 현재 히스토리 엔트리의 URL을 업데이트 하려고 할 때 유용하다.
-</br>
+<br/>
 
 #### popstate 이벤트
 
 popstate 이벤트는 현재 활성화된 히스토리 엔트리에 변화가 있을 때 마다 실행된다. 만약 pushState 함수나 replaceState 함수에 의해 현재 활성화되어 있는 히스토리 엔트리가 조작 및 변경된다면, popstate 이벤트의 state 속성은 히스토리 항의 state 객체의 사본이 된다.
-</br>
+<br/>
 
 #### 현재 상태 읽기
 
@@ -264,7 +267,7 @@ popstate 이벤트를 기다릴 필요 없이, 아래와 같은 명령어를 이
 const currentState = history.state;
 ```
 
-</br>
+<br/>
 
 #### Reference
 
