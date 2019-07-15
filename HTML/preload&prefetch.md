@@ -52,9 +52,13 @@
 
 ### Font(FOUC FOIT 방지)
 
-font 반드시 가져와야 하는 리소스의 좋은 예이다. font는 한 페이지가 로드하는 여러 CSS파일의 맨 아래에 위치하는 경우도 있다. 
+FOUC와 FOIT의 내용은 아래의 링크로 대체하겠습니다.
 
-사용자가 사이트의 텍스트 콘텐츠를 기다리는 시간을 감소시키고, 시스템 font과 선호 font이 충돌하여 발생하는 플래시를 방지하기위해 `<link rel="preload">`를 HTML에 사용하면 font이 필요하다는 것을 브라우저가 즉시 알 수 있다.
+> [FOUT, FOIT, FOFT](https://css-tricks.com/fout-foit-foft/)
+
+font는 반드시 가져와야 하는 리소스의 좋은 예이다. font는 한 페이지가 로드하는 여러 CSS파일의 맨 아래에 위치하는 경우도 있다. 
+
+사용자가 사이트의 텍스트 콘텐츠를 기다리는 시간을 감소시키고, 시스템 font와 선호 font가 충돌하여 발생하는 플래시를 방지하기 위해 `<link rel="preload">`를 HTML에 사용하면 font가 필요하다는 것을 브라우저가 즉시 알 수 있다.
 
 ```html
 <link rel="preload">
