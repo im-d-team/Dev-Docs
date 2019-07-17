@@ -85,7 +85,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [Object.create & Object.assign](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Object.create%26Object.assign.md)
 - [x] Jinseong : [Time in js](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/TimeInJS.md)
 - [ ] Dae-Hwa: [node.js의 특징]()
-- [ ] JHRla: [Dependency Injection]()
+- [x] JHRla: [Dependency Injection](https://github.com/Im-D/Dev-Docs/blob/master/Java/Dependency%20Injection(DI).md)
 
 #### 06월 16일
 
@@ -93,7 +93,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [정규 표현식](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Regular_Expressions.md)
 - [x] Jinseong : [BrowserXY](https://github.com/Im-D/Dev-Docs/blob/master/Browser/BrowserXY.md)
 - [x] Dae-Hwa: [GET&POST](https://github.com/Im-D/Dev-Docs/blob/master/Network/get%26post.md)
-- [ ] JHRla: [DOM API]()
+- [x] JHRla: [DOM API](https://github.com/Im-D/Dev-Docs/blob/master/HTML/DOM%20API.md)
 
 #### 06월 09일
 
@@ -109,7 +109,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [Basic_Javascript this, call, apply, bind](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Call_Apply_Bind.md)
 - [x] Jinseong : [Composite_Layers](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Layer_Model.md)
 - [x] Dae-Hwa: [Ajax](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Ajax.md)
-- [x] JHRla: [Set](https://github.com/Im-D/Dev-Docs/blob/20190601/JHRla/Java/Set.md)
+- [x] JHRla: [Set](https://github.com/Im-D/Dev-Docs/blob/master/Java/Set.md)
 
 </details>
 
@@ -122,7 +122,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [Basic_Javascript 팩토리와 클래스](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Class.md)
 - [x] Jinseong : [압축](https://github.com/Im-D/Dev-Docs/blob/master/CS/compression.md)
 - [x] Dae-Hwa: [자바스크립트의 동작 원리 - 변수 객체(Variable Object)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EB%B3%80%EC%88%98%EA%B0%9D%EC%B2%B4(VariableObject).md>)
-- [x] JHRla: [JSP와 Servlet처리](https://github.com/Im-D/Dev-Docs/blob/master/Java/JSP%EC%99%80%20Servlet%EC%B2%98%EB%A6%AC.md)
+- [x] JHRla: [Upcasting과 Downcasting](https://github.com/Im-D/Dev-Docs/blob/master/Java/Upcasting%EA%B3%BC%20Downcasting.md)
 
 #### 05월 19일
 
@@ -130,7 +130,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [Basic_Javascript DOM](https://github.com/Im-D/Dev-Docs/blob/master/HTML/DOM.md)
 - [x] Jinseong : [정보이론](https://github.com/Im-D/Dev-Docs/blob/master/CS/information_theory.md)
 - [x] Dae-Hwa: [자바스크립트의 동작 원리 - 실행 컨텍스트(Execution Contexts)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md>)
-- [ ] JHRla: [WAS]()
+- [X] JHRla: [JSP와 Servlet처리](https://github.com/Im-D/Dev-Docs/blob/master/Java/JSP%EC%99%80%20Servlet%EC%B2%98%EB%A6%AC.md)
 
 #### 05월 12일
 
