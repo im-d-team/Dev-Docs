@@ -25,9 +25,11 @@ Non-blocking I/O 는 I/O와 관계없이 프로세스가 계속해서 진행되�
 
 Ansynchronous programming은 언어 차원에서 지원하거나, 함수 전달을 통해 처리하는 방식을 통해 구현한다.<br/>언어차원에서 지원하는 방식은 future, promise와 같이 객체 형태의 결과를 돌려받거나 특정 문법을 이용하여 구현할 수 있다.<br/>함수 전달을 통해 처리하기 위해서는 함수를 값처럼 사용(일급 함수)를 지원하는 언어에서 Callback을 전달하여 결과를 처리할 수 있다. 
 
-non-blocking 알고리즘과, non-blocking I/O 모델의 관점이 다른 것 처럼, Asnychronous programming은 Asynchronous I/O 와 다르다. 따라서 Asnychronous programming과 Non-blocking I/O는 서로 바라보는 관점이 다르다. Event-loop를 사용하여 동시성을 확보하였어도 I/O 작업이 blocking될 수 있기 때문이다.<br/>
-만약 I/O 모델들의 조합을 더 알아보고 싶다면 다음을 참고하길 바란다. - [Asynchronous IO 개념 정리
- - Uno's Blog](https://djkeh.github.io/articles/Boost-application-performance-using-asynchronous-IO-kor/)
+non-blocking 알고리즘과, non-blocking I/O 모델의 관점이 다른 것 처럼, Asnychronous programming은 Asynchronous I/O 와 다르다. 따라서 Asnychronous programming과 Non-blocking I/O는 서로 바라보는 관점이 다르다. Event-loop를 사용하여 동시성을 확보하였어도 I/O 작업이 blocking될 수 있기 때문이다.
+
+<br/>
+
+만약 I/O 모델들의 조합을 더 알아보고 싶다면 다음을 참고하길 바란다. - [Asynchronous IO 개념 정리 - Uno's Blog](https://djkeh.github.io/articles/Boost-application-performance-using-asynchronous-IO-kor/)
 
 ---
 
