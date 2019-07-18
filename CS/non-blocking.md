@@ -31,8 +31,8 @@ Asnychronous programming과 Non-blocking I/O는 서로 바라보는 관점이 �
 
 #### Refereces
 
-- [http://tutorials.jenkov.com/java-concurrency/non-blocking-algorithms.html](http://tutorials.jenkov.com/java-concurrency/non-blocking-algorithms.html)
-- [https://www.modernescpp.com/index.php/blocking-and-non-blocking](https://www.modernescpp.com/index.php/blocking-and-non-blocking)
-- [https://netjs.blogspot.com/2016/06/non-blocking-algorithms-in-java.html](https://netjs.blogspot.com/2016/06/non-blocking-algorithms-in-java.html)
-- [https://en.wikipedia.org/wiki/Non-blocking_algorithm](https://en.wikipedia.org/wiki/Non-blocking_algorithm)
-- [https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html](https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html)
+- [Non-blocking Algorithms - jenkov.com](http://tutorials.jenkov.com/java-concurrency/non-blocking-algorithms.html)
+- [Blocking and Non-Blocking Algorithms - modernescpp](https://www.modernescpp.com/index.php/blocking-and-non-blocking)
+- [Non-Blocking Algorithms in Java - netjs.blogspot.com](https://netjs.blogspot.com/2016/06/non-blocking-algorithms-in-java.html)
+- [Non-blocking algorithm - wikipedia](https://en.wikipedia.org/wiki/Non-blocking_algorithm)
+- [멈추지 않고 기다리기(Non-blocking)와 비동기(Asynchronous) 그리고 동시성(Concurrency) - Peoplefund Tech](https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html)
