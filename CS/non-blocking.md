@@ -18,7 +18,9 @@ blocking 모델은 요청이 동작 가능할때까지 스레드가 블록된다
 ## Non-blocking I /O
 
 Non-blocking I/O 는 I/O와 관계없이 프로세스가 계속해서 진행되는 것을 뜻한다. 기존 방식(blocking 혹은 synchronous한 I/O모델)에서는 I/O처리를 시작하면 작업이 끝날 때 까지 기다려야한다. 즉 프로그램이 block된다. 반면, Non-blocking I/O 모델에서는 입,출력을 외부에 맡겨 I/O의 진행 상황과 관계없이 프로그램이 진행된다.
+
 <br/>
+
 ## Asynchronous Programming과 Non-blocking I/O
 
 프로그램의 주 실행흐름을 멈추거나, 대기 상태 없이 즉시 다음 작업을 수행할 수 있도록 하는 것이 asynchronous 방식이다.
@@ -29,7 +31,7 @@ non-blocking 알고리즘과, non-blocking I/O 모델의 관점이 다른 것 �
 
 <br/>
 
-만약 I/O 모델들의 조합을 더 알아보고 싶다면 다음을 참고하길 바란다. - [Asynchronous IO 개념 정리 - Uno's Blog](https://djkeh.github.io/articles/Boost-application-performance-using-asynchronous-IO-kor/)
+만약 I/O 모델들의 조합을 알아보고 싶다면 다음을 참고하길 바란다. - [Asynchronous IO 개념 정리 - Uno's Blog](https://djkeh.github.io/articles/Boost-application-performance-using-asynchronous-IO-kor/)
 
 ---
 
