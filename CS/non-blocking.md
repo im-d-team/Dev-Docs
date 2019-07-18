@@ -6,7 +6,7 @@ Non-blocking은 하나의 작업이 실패하거나 정지하더라도 다른 �
 
 > 동시성 : 프로그램을 실행할 때 단 하나의 실행 순서를 갖도록 하는 제약을 없애고 각 부프로그램이 다른 부프로그램과 병렬적으로 동시에 실행되는 것
 
-lock-free 알고리즘은 것은 하나의 작업이 시작되어도, 시스템 전체의 진행이 보장되는 것이다.(A non-blocking algorithm is lock-free if there is guaranteed system-wide progress)<br/>
+lock-free 알고리즘이라는 것은 하나의 작업이 시작되어도, 시스템 전체의 진행이 보장되는 것이다.(A non-blocking algorithm is lock-free if there is guaranteed system-wide progress)<br/>
 wait-free 알고리즘은 각 스레드의 진행이 각각 보장되는 것(A non-blocking algorithm is wait-free if there is also guaranteed per-thread progress)이다. <br/>
 ![non-blocking i/o](/assets/images/non-blocking.png)
 blocking 모델은 요청이 동작 가능할때까지 스레드가 블록된다. 반면, non-blocking 모델은 요청이 동작 불가능하다는 것을 알려주어 블록상태 없이 계속해서 진행가능하다. 즉, 다른 스레드의 작업을 기다리지 않는다. 이를 통해 대기 상태 없이 공유 자원에 접근할 수 있다.
