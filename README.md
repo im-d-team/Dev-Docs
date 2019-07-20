@@ -54,15 +54,23 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : []()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: []()
+- [ ] JHRla: []()
+
+---
+
+### 📅 History
+
+#### 07월 14일
+
 - [x] BKJang : [배열 내장함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/배열%20내장함수.md)
 - [ ] SeonHyungJo : [preload, prefetch]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: [WAS]()
 - [ ] JHRla: [클로저]()
-
----
-
-### 📅 History
 
 #### 07월 07일
 
