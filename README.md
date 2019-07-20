@@ -54,7 +54,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : [배열 내장함수]()
+- [x] BKJang : [배열 내장함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/배열%20내장함수.md)
 - [ ] SeonHyungJo : [preload, prefetch]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: [WAS]()
@@ -66,9 +66,9 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 07월 07일
 
-- [ ] BKJang : [Typescript ( 제네릭 )]()
+- [x] BKJang : [Typescript ( 제네릭 )](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/제네릭(Generic).md)
 - [ ] SeonHyungJo : [window.history]()
-- [ ] Jinseong : [ES6 Module in Browser]()
+- [x] Jinseong : [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md)
 - [ ] Dae-Hwa: [Non-blocking]()
 - [ ] JHRla: []()
 
@@ -81,10 +81,10 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 06월 23일
 
-- [x] BKJang : [Typescript ( 인터페이스 )]()
+- [x] BKJang : [Typescript ( 인터페이스 )](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/인터페이스(Interface).md)
 - [x] SeonHyungJo : [Object.create & Object.assign](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Object.create%26Object.assign.md)
 - [x] Jinseong : [Time in js](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/TimeInJS.md)
-- [ ] Dae-Hwa: [node.js의 특징]()
+- [x] Dae-Hwa: [node.js의 특징](https://github.com/Im-D/Dev-Docs/blob/master/Node.js/nodejs의_특징.md)
 - [x] JHRla: [Dependency Injection](https://github.com/Im-D/Dev-Docs/blob/master/Java/Dependency%20Injection(DI).md)
 
 #### 06월 16일
