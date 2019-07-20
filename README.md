@@ -55,7 +55,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 ### ✏️ This Week Post
 
 - [ ] BKJang : [Cookie와 Session 그리고 Redis]()
-- [ ] SeonHyungJo : []()
+- [ ] SeonHyungJo : [CSS - animation]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
 - [ ] JHRla: []()
