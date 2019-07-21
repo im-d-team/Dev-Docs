@@ -1,4 +1,4 @@
-# CSS aimation
+# CSS Animation
 
 크게 애니메이션을 구현하는 방법은 2가지가 있다. 하나는 자바스크립트로 작성하는 방법이며, 다른 하나는 CSS의 animation 속성을 사용하는 방법이다.
 
