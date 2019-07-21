@@ -69,7 +69,7 @@ normal | reverse | alternate | alternate-reverse
 - normal : 매 사이클마다 정방향으로 재생한다.
 - reverse : 매 사이클마다 역방향으로 재생한다.
 - alternate : 매 사이클마다 각주기의 방향을 뒤집으며, 첫 번째 반복은 정방향으로 진행한다.
-- alternate : 매 사이클마다 각주기의 방향을 뒤집으며, 첫 번째 반복은 역방향으로 진행한다.
+- alternate-reverse : 매 사이클마다 각주기의 방향을 뒤집으며, 첫 번째 반복은 역방향으로 진행한다.
 
 > [Animation-Direction](https://codepen.io/seonhyungjo/pen/zgGZRE)
 
