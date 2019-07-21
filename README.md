@@ -58,7 +58,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [ ] SeonHyungJo : [CSS - animation]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
-- [ ] JHRla: []()
+- [ ] JHRla: [페이징 세그먼테이션]()
 
 ---
 
