@@ -37,12 +37,16 @@ public caching의 다른 명칭으로는 proxy cache, cache proxy server 등으�
 현대의 브라우저에서는 이 HTTP-header를 이용하여 캐시 컨트롤을 한다.
 header는 HTTP 1.0과 1.1버전에 따라 조금 다르다.
 
-|            | 1.0 req           | 1.0 res       | 1.1 req       | 1.1 req       |
+|            | 1.0 req           | 1.0 res       | 1.1 req       | 1.1 res       |
 | ---------- | ----------------- | ------------- | ------------- | ------------- |
 | validation | If-Modified-Since | Last-Modified | If-None-Match | ETag          |
 | freshness  | Pragma            | Expires       | Cache-Control | Cache-Control |
 
 ### Cache-control header
+
+![cache-control](https://user-images.githubusercontent.com/24724691/61639150-e31f4680-acd5-11e9-9381-d9114d619497.PNG)
+
+위 사진과 같이 사용하는 것이 cache-control 헤더다.
 
 cache control의 헤더는 request, response 모두 사용이 가능하다.
 
@@ -52,7 +56,7 @@ cache control의 헤더는 request, response 모두 사용이 가능하다.
 위와 같이 두 가지 표기법 모두 사용할 수 있다.
 
 - `Cache-Control: no-store` : 캐시 하지 않음. 캐시를 저장(store)하지 않음을 의미하며 사본을 만드는 것을 금지한다.
-- `Cache-Control: no-cache` : 사본을 저장은 한다. 즉 캐싱은 발생하지만, 서버와 재검사(revalidation) 과정을 거치고 클라이언트에게 제공된다. 영문으로는 **DO NOT Serve from cache without revalidation** 로 표기하고 있다.
+- `Cache-Control: no-cache` : 사본을 저장은 한다. 즉 캐싱은 발생하지만, 서버와 재검사(revalidation) 과정을 거치고 클라이언트에게 제공된다. 영문으로는 **DO NOT Serve from cache without revalidation** 가 더 정확한 표현일 것이다.
 - `Pragma: no-cache` : no-cache와 동일하지만 1.0방식임.
 
 `no-store, no-cache`는 검증되지 않은 캐시가 제공되는 것을 막는다.
