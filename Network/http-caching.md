@@ -52,7 +52,7 @@ cache control의 헤더는 request, response 모두 사용이 가능하다.
 위와 같이 두 가지 표기법 모두 사용할 수 있다.
 
 - `Cache-Control: no-store` : 캐시 하지 않음. 캐시를 저장(store)하지 않음을 의미하며 사본을 만드는 것을 금지한다.
-- `Cache-Control: no-cache` : 사본을 저장은 한다. 즉 캐싱은 발생하지만, 서버와 재검사(revalidation) 과정을 거치고 클라이언트에게 제공된다. 영어의 더 나은 표기는 **DO NOT Serve from cache without revalidation** 다.
+- `Cache-Control: no-cache` : 사본을 저장은 한다. 즉 캐싱은 발생하지만, 서버와 재검사(revalidation) 과정을 거치고 클라이언트에게 제공된다. 영문으로는 **DO NOT Serve from cache without revalidation** 로 표기하고 있다.
 - `Pragma: no-cache` : no-cache와 동일하지만 1.0방식임.
 
 `no-store, no-cache`는 검증되지 않은 캐시가 제공되는 것을 막는다.
