@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id='app'/>
+</body>
+<script>
+
+window.onpopstate = function(event) {
+  console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+
+  
+  const divElement = document.getElementById('app')
+
+  // Remove all child Element
+  // more faster than innerHTML = '';
+  while (divElement.firstChild) {
+    divElement.removeChild(divElement.firstChild);
+  }
+
+  const curState = event.state
+  if(curState.length === 0) return
+
+  const todoList = curState.todoList
+  
+  for (let index = 0; index < todoList.length; index++) {
+    const element = todoList[index];
+    divElement.insertAdjacentHTML('beforeend', `<div id="two">${element}</div>`); 
+  }
+};
+
+const history = window.history
+const page1State = {
+  todoList : ['aaa', 'aaa', 'aaa', 'aaa'],
+};
+const page2State = {
+  todoList : ['bbb', 'bbb', 'bbb', 'bbb'],
+};
+
+history.pushState(page1State, "page1", "page1.html");
+history.pushState(page2State, "page2", "page2.html");
+</script>
+</html>
