@@ -63,7 +63,7 @@ cache control의 헤더는 request, response 모두 사용이 가능하다.
 - `Cache-Control: s-maxage=<seconds>` : shared(공유)에서만 작동. 즉 public에서 작동함. maxage의 하이픈이 변경된 것에 주의하자.
 - `Cache-Control: must-revalidate` : 특정한 상황(네트워크 연결 끊김)일 때 freshness 하지 않아도 캐시 파일을 제공하는 경우가 있다. 이를 막는다.
 - `Cache-Control: proxy-revalidate` : shared(proxy)에서 작동하는 revalidate
-- `Cache-Control: no-transform` : 이미지와 같은 리소스들에 저장 최적화를 위해 포맷하는 경우 이를 막는다.
+- `Cache-Control: no-transform` : 이미지와 같은 리소스들에 저장 최적화를 위해 포맷하는 경우를 막는다.
 
 ## 캐시 동작 방식
 
