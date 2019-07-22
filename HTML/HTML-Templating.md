@@ -1,10 +1,10 @@
 # HTML Templating
 
-서버에서 데이터를 받아온 뒤, 돔 트리에 추가하거나 삭제하거나 교체할 경우가 생길 수 있다.이러한 작업이 반복적이고(특히 AJAX를 사용할 때) 매번 필요한 태그가 비슷하다면, 즉 구조가 비슷한데 데이터만 다를경우 templating이 효율적인 방법일 수 있다.
+서버에서 데이터를 받아온 뒤, DOM 트리에 추가하거나 삭제하거나 교체할 경우가 생길 수 있다. 이러한 작업이 반복적이고(특히 AJAX를 사용할 때) 매번 필요한 태그가 비슷하다면, 즉 구조가 비슷한데 데이터만 다를경우 **templating**이 효율적인 방법일 수 있다.
 
 <br/>
 
-Templating은 HTML과 데이터를 섞어서 웹 화면에 출력을 해주는 것이다. 서버에서 데이터를 조회하고 클라이언트에 동적 HTML을 만들어 보내주는 식으로도 사용할 수 있다.
+**Templating**은 HTML과 데이터를 합쳐서 웹 화면에 출력을 해주는 것이다. 서버에서 데이터를 조회하고 클라이언트에 동적 HTML을 만들어 보내주는 식으로도 사용할 수 있다.
 
 슬라이드를 만든다고 생각해보자, 버튼을 누르면 그림이 바뀌어야 한다.
 
@@ -28,7 +28,7 @@ var resultHTML = html
   .replace("{price}", data.price);
 ```
 
-저장해둔 템플릿을 이런 식으로 처리할 수 있는데, 데이터가 여러개라면 루프를 이용하여 처리할 수도 있다.
+저장해둔 템플릿을 이런 식으로 처리할 수 있는데, 데이터가 여러 개라면 루프를 이용하여 처리할 수도 있다.
 
 > 참고 - [JavaScript Templating Without a Library](https://jonsuh.com/blog/javascript-templating-without-a-library/)
 
@@ -42,7 +42,7 @@ var resultHTML = html
 
 이외에 템플릿을 보관할 수 있는 두 가지 방법이 있다.
 
-1. 서버에서 file에 보관하고, Ajax로 요청 해서 불러온다.
+1. 서버에서 file에 보관하고, Ajax로 요청해서 불러온다.
 2. HTML 코드 안에 숨겨둔다.
 
 <br/>
@@ -63,7 +63,7 @@ var resultHTML = html
 </script>
 ```
 
-가져올때는 이렇게 하면 된다.
+가져올 때는 이렇게 하면 된다.
 
 ```js
 var html = document.querySelector("#item").innerHTML;
