@@ -113,6 +113,13 @@ HTML5 에서는 `<template>` 태그가 추가됐다.
 > </script>
 > ```
 
+<br/>
+
+## Template 리터럴
+뿐만 아니라, ES6의 템플릿 리터럴을 사용하여 템플레이팅 작업을 할 수 있다.
+
+참고 - [Tagged Template Literals](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Tagged_Template_Literals.md)
+
 ---
 
 #### References
