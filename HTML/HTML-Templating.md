@@ -94,7 +94,24 @@ HTML5 에서는 `<template>` 태그가 추가됐다.
 
 ![HTML-Templating3](../assets/images/HTML-Templating3.png)
 
-> 템플릿 태그는 HTML태그로 인식되지만, 활성화 되지 않으면 렌더링되지 않는다. 이 때, 활성화는
+> 템플릿 태그는 HTML태그로 인식되지만, 활성화 되지 않으면 렌더링되지 않는다. 이 때, 활성화는 `importNode()` 혹은 `cloneNode()` 등을 사용한 경우와 같이 **deep copy** 를 하여 템플릿의 `.content` 를 복사하는 경우를 말한다. 이 때, `.content` 속성은 템플릿의 내부를 포함하는 읽기 전용의 DocumentFragment 이다.
+> ```js
+> <template>
+>   <h2>Template</h2>  
+> </template>
+>
+> <script>
+> // 1. importNode 사용
+>  var t = document.querySelector("#myTemplate");
+>  var clone = document.importNode(t.content, true);
+>  document.body.appendChild(clone);
+>
+> // 2. cloneNode 사용> 
+>   var temp2 = document.getElementsByTagName("template")[0];
+>   var clone2 = temp.content.cloneNode(true);
+>   document.body.appendChild(clone2);
+> </script>
+> ```
 
 ---
 
