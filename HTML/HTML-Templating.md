@@ -4,7 +4,8 @@
 
 <br/>
 
-**Templating**은 HTML과 데이터를 합쳐서 웹 화면에 출력을 해주는 것이다. 서버에서 데이터를 조회하고 클라이언트에 동적 HTML을 만들어 보내주는 식으로도 사용할 수 있다.
+**Templating**은 HTML과 데이터를 합쳐서 웹 화면에 출력을 해주는 것이다. 이 작업은 클라이언트에서 할 수도 있고 서버에서 할 수도 있다.
+> 클라이언트에서 html을 그리는 것을 CSR(Client-Side Rendering ), 서버에서 그리는 것을 SSR(Server-Side Rendering)이라고 한다.<br/>참고 - [서버 사이드 렌더링(SSR)](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EC%84%9C%EB%B2%84%20%EC%82%AC%EC%9D%B4%EB%93%9C%20%EB%A0%8C%EB%8D%94%EB%A7%81(SSR).md#%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81-vs-%EC%84%9C%EB%B2%84-%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81)
 
 슬라이드를 만든다고 생각해보자, 버튼을 누르면 그림이 바뀌어야 한다.
 
