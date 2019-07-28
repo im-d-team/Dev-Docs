@@ -54,11 +54,11 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : [Cookie와 Session 그리고 Redis]()
-- [ ] SeonHyungJo : [CSS - animation]()
-- [ ] Jinseong : [http-caching]()
-- [ ] Dae-Hwa: [HTML Templating]()
-- [ ] JHRla: [페이징 세그먼테이션]()
+- [x] BKJang : [Cookie와 Session 그리고 Redis]()
+- [x] SeonHyungJo : [CSS - animation]()
+- [x] Jinseong : [http-caching]()
+- [x] Dae-Hwa: [HTML Templating]()
+- [x] JHRla: [페이징 세그먼테이션]()
 
 ---
 
@@ -67,17 +67,17 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 07월 14일
 
 - [x] BKJang : [배열 내장함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/배열%20내장함수.md)
-- [ ] SeonHyungJo : [preload, prefetch]()
+- [x] SeonHyungJo : [preload, prefetch]()
 - [ ] Jinseong : []()
-- [ ] Dae-Hwa: [WAS]()
-- [ ] JHRla: [클로저]()
+- [x] Dae-Hwa: [WAS]()
+- [x] JHRla: [클로저]()
 
 #### 07월 07일
 
 - [x] BKJang : [Typescript ( 제네릭 )](<https://github.com/Im-D/Dev-Docs/blob/master/Typescript/제네릭(Generic).md>)
-- [ ] SeonHyungJo : [window.history]()
+- [x] SeonHyungJo : [window.history]()
 - [x] Jinseong : [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md)
-- [ ] Dae-Hwa: [Non-blocking]()
+- [x] Dae-Hwa: [Non-blocking]()
 - [ ] JHRla: []()
 
 <details>
@@ -106,9 +106,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 06월 09일
 
 - [x] BKJang : [정적 타이핑(TypeScript)](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/%EC%A0%95%EC%A0%81%20%ED%83%80%EC%9D%B4%ED%95%91.md)
-- [ ] SeonHyungJo : [IndexDB, WebSQL]()
+- [x] SeonHyungJo : [IndexDB, WebSQL]()
 - [ ] Jinseong : []()
-- [ ] Dae-Hwa: [바인딩(Binding)]()
+- [x] Dae-Hwa: [바인딩(Binding)]()
 - [x] JHRla: [CORS](<https://github.com/Im-D/Dev-Docs/blob/master/Security/CORS(Cross-Origin%20Resource%20Sharing).md>)
 
 #### 06월 02일
@@ -335,14 +335,14 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 9월 16일
 
 <<<<<<< Updated upstream
+
 - [x] BKJang ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
 - [x] SeonHyungJo ~[Functional](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Funtional.md)~,
-- [x] Jinseong [렉시컬 속이기 - eval()](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md), ~[JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)~
-=======
+- [x] # Jinseong [렉시컬 속이기 - eval()](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md>), ~[JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)~
 - [x] BKJang [브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
 - [x] SeonHyungJo [Functional](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Funtional.md),
 - [x] Jinseong [렉시컬 속이기 - eval()](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md>), [JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)
->>>>>>> Stashed changes
+  > > > > > > > Stashed changes
 
 </details>
 
