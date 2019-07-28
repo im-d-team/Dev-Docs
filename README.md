@@ -56,7 +56,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 - [ ] BKJang : [Cookie와 Session 그리고 Redis]()
 - [ ] SeonHyungJo : [CSS - animation]()
-- [ ] Jinseong : []()
+- [ ] Jinseong : [http-caching]()
 - [ ] Dae-Hwa: [HTML Templating]()
 - [ ] JHRla: [페이징 세그먼테이션]()
 
