@@ -174,7 +174,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 #### 04월 14일
 
 - [x] BKJang : [DeadLock(교착상태)](<https://github.com/Im-D/Dev-Docs/blob/master/Performance/DeadLock(%EA%B5%90%EC%B0%A9%EC%83%81%ED%83%9C).md>)
-- [x] SeonHyungJo : [Basic_Module](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_Module.md)
+- [x] SeonHyungJo : ~[Basic_Module](https://github.com/Im-D/Dev-Docs/tree/master/Deprecated/B_Module.md)~
 - [x] Jinseong : [Memory](https://github.com/Im-D/Dev-Docs/blob/master/CS/Memory.md)
 
 #### 04월 07일
@@ -294,7 +294,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 11월 18일
 
-- [x] BKJang [AMD와 CommonJS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/AMD%EC%99%80%20CommonJS.md)
+- [x] BKJang ~[AMD와 CommonJS](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/AMD%EC%99%80%20CommonJS.md)~
 - [x] SeonHyungJo [HTML Meta](https://github.com/Im-D/Dev-Docs/blob/master/HTML/Head_Meta.md)
 - [x] Jinseong [Spread Operator](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Spread_Operator.md)
 
@@ -334,9 +334,9 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 9월 16일
 
-- [x] BKJang [브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
-- [x] SeonHyungJo [Functional](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Funtional.md),
-- [x] Jinseong [렉시컬 속이기 - eval()](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md), [JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)
+- [x] BKJang ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
+- [x] SeonHyungJo ~[Functional](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Funtional.md)~,
+- [x] Jinseong [렉시컬 속이기 - eval()](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md), ~[JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)~
 
 </details>
 
