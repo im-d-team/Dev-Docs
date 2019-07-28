@@ -17,9 +17,9 @@
 <summary> 커밋 양식 </summary>
 
 ```md
-:pencil2: Your_name / detail_comment
+:pencil2: detail_comment
 
-ex) :house: BKJang / Update HTTPS와 SSL.md
+ex) :pencil2: Update HTTPS와 SSL.md
 ```
 
 </details>
@@ -74,7 +74,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 07월 07일
 
-- [x] BKJang : [Typescript ( 제네릭 )](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/제네릭(Generic).md)
+- [x] BKJang : [Typescript ( 제네릭 )](<https://github.com/Im-D/Dev-Docs/blob/master/Typescript/제네릭(Generic).md>)
 - [ ] SeonHyungJo : [window.history]()
 - [x] Jinseong : [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md)
 - [ ] Dae-Hwa: [Non-blocking]()
@@ -89,15 +89,15 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 06월 23일
 
-- [x] BKJang : [Typescript ( 인터페이스 )](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/인터페이스(Interface).md)
+- [x] BKJang : [Typescript ( 인터페이스 )](<https://github.com/Im-D/Dev-Docs/blob/master/Typescript/인터페이스(Interface).md>)
 - [x] SeonHyungJo : [Object.create & Object.assign](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Object.create%26Object.assign.md)
 - [x] Jinseong : [Time in js](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/TimeInJS.md)
 - [x] Dae-Hwa: [node.js의 특징](https://github.com/Im-D/Dev-Docs/blob/master/Node.js/nodejs의_특징.md)
-- [x] JHRla: [Dependency Injection](https://github.com/Im-D/Dev-Docs/blob/master/Java/Dependency%20Injection(DI).md)
+- [x] JHRla: [Dependency Injection](<https://github.com/Im-D/Dev-Docs/blob/master/Java/Dependency%20Injection(DI).md>)
 
 #### 06월 16일
 
-- [x] BKJang : [클래스(class) (Typescript)](https://github.com/Im-D/Dev-Docs/blob/master/Typescript/%ED%81%B4%EB%9E%98%EC%8A%A4(class).md)
+- [x] BKJang : [클래스(class) (Typescript)](<https://github.com/Im-D/Dev-Docs/blob/master/Typescript/%ED%81%B4%EB%9E%98%EC%8A%A4(class).md>)
 - [x] SeonHyungJo : [정규 표현식](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Regular_Expressions.md)
 - [x] Jinseong : [BrowserXY](https://github.com/Im-D/Dev-Docs/blob/master/Browser/BrowserXY.md)
 - [x] Dae-Hwa: [GET&POST](https://github.com/Im-D/Dev-Docs/blob/master/Network/get%26post.md)
@@ -138,7 +138,7 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [Basic_Javascript DOM](https://github.com/Im-D/Dev-Docs/blob/master/HTML/DOM.md)
 - [x] Jinseong : [정보이론](https://github.com/Im-D/Dev-Docs/blob/master/CS/information_theory.md)
 - [x] Dae-Hwa: [자바스크립트의 동작 원리 - 실행 컨텍스트(Execution Contexts)](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript%EC%9D%98_%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8(Execution%20Contexts).md>)
-- [X] JHRla: [JSP와 Servlet처리](https://github.com/Im-D/Dev-Docs/blob/master/Java/JSP%EC%99%80%20Servlet%EC%B2%98%EB%A6%AC.md)
+- [x] JHRla: [JSP와 Servlet처리](https://github.com/Im-D/Dev-Docs/blob/master/Java/JSP%EC%99%80%20Servlet%EC%B2%98%EB%A6%AC.md)
 
 #### 05월 12일
 
@@ -334,9 +334,15 @@ ex) :house: BKJang / Update HTTPS와 SSL.md
 
 #### 9월 16일
 
+<<<<<<< Updated upstream
 - [x] BKJang ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
 - [x] SeonHyungJo ~[Functional](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Funtional.md)~,
 - [x] Jinseong [렉시컬 속이기 - eval()](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md), ~[JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)~
+=======
+- [x] BKJang [브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [x] SeonHyungJo [Functional](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Funtional.md),
+- [x] Jinseong [렉시컬 속이기 - eval()](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EB%A0%89%EC%8B%9C%EC%BB%AC_%EC%86%8D%EC%9D%B4%EA%B8%B0(eval).md>), [JS-Module](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Module.md)
+>>>>>>> Stashed changes
 
 </details>
 
