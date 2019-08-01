@@ -14,23 +14,13 @@
 - 커밋은 아래와 같은 형식으로 메세지를 작성한다.
 
 <details>
+  
 <summary> 커밋 양식 </summary>
 
 ```md
 :pencil2: detail_comment
 
 ex) :pencil2: Update HTTPS와 SSL.md
-```
-
-</details>
-
-<details>
-<summary> Deprecated </summary>
-
-```md
-~[Title of contents](Link)~
-
-ex) ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
 ```
 
 </details>
@@ -58,6 +48,17 @@ ex) ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
 - [ ] JHRla: []()
+
+</details>
+
+<details>
+<summary> Deprecated </summary>
+
+```md
+~[Title of contents](Link)~
+
+```
+- ex) ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
 
 </details>
 
