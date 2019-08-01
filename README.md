@@ -54,20 +54,31 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : [javascript의 module]()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: []()
+- [ ] JHRla: []()
+
+---
+
+### 📅 History
+
+<details>
+<summary> 2019년 07월 </summary>
+
+#### 07월 21일
+
 - [x] BKJang : [Cookie와 Session 그리고 Redis]()
 - [x] SeonHyungJo : [CSS - animation]()
 - [x] Jinseong : [http-caching]()
 - [x] Dae-Hwa: [HTML Templating]()
 - [x] JHRla: [페이징 세그먼테이션]()
 
----
-
-### 📅 History
-
 #### 07월 14일
 
 - [x] BKJang : [배열 내장함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/배열%20내장함수.md)
-- [x] SeonHyungJo : [preload, prefetch]()
+- [x] SeonHyungJo : [preload, prefetch](https://github.com/Im-D/Dev-Docs/blob/master/HTML/preload%26prefetch.md)
 - [ ] Jinseong : []()
 - [x] Dae-Hwa: [WAS]()
 - [x] JHRla: [클로저]()
@@ -75,10 +86,12 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 07월 07일
 
 - [x] BKJang : [Typescript ( 제네릭 )](<https://github.com/Im-D/Dev-Docs/blob/master/Typescript/제네릭(Generic).md>)
-- [x] SeonHyungJo : [window.history]()
+- [x] SeonHyungJo : [window.history](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/window.history.md)
 - [x] Jinseong : [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md)
 - [x] Dae-Hwa: [Non-blocking]()
 - [ ] JHRla: []()
+
+</details>
 
 <details>
 <summary> 2019년 06월 </summary>
