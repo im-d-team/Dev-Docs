@@ -24,6 +24,17 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 </details>
 
+<details>
+<summary> Deprecated </summary>
+
+```md
+~[Title of contents](Link)~
+
+ex) ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
+```
+
+</details>
+
 ### 🔒 Meeting Note Rule
 
 - **자신이 원하는 주제** 를 조사한다.(어떤 내용이 되어도 상관은 없다.)
