@@ -33,7 +33,7 @@
 - animation-direction : 애니메이션이 종료되고 다시 처음부터 시작할지 역방향으로 진행할지?
 - animation-duration : 한 싸이클의 애니메이션이 어느 정도의 시간에 걸쳐 일어날지 지정
 - animation-fill-mode : 애니메이션이 시작되기 전이나 끝나고 난 후 어떤 값이 적용될지 지정
-- animation-name : 이 애니메이션의 중간 상태를 지정, 중간 상태란 @keyframe 규칙을 이용하여 기술한다.
+- animation-name : 이 애니메이션의 중간 상태를 지정, 중간 상태란 `@keyframe` 규칙을 이용하여 기술한다.
 
 <br/>
 
