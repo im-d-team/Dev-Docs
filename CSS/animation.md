@@ -22,7 +22,7 @@
 1. 다양한 컨트롤 또는 사용자 입력에 의해서 상태가 변하는 애니메이션을 구현하기 위해서 사용한다.
 2. 애니메이션의 시간, 효과등의 제한이 없이 구현이 가능하다.
 3. 프레임 단위로 애니메이션을 정의한다.
-4. setInterval, setTimeOut을 이용한 애니메이션과 requestAnimationFrame을 이용하 애니메이션이 있다.
+4. setInterval, setTimeOut을 이용한 애니메이션과 requestAnimationFrame을 이용한 애니메이션이 있다.
 5. 명령형 애니메이션
 
 <br/>
