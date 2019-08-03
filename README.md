@@ -66,7 +66,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : []()
+- [ ] BKJang : [Functional Programming]()
 - [ ] SeonHyungJo : [javascript의 module]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
