@@ -4,7 +4,7 @@ Java나 Python 같은 OOP 언어들에서는 Class라는 이름으로 객체지�
 
 Javascript의 Module은 OOP 언어에서의 Class와 비슷한 기능을 한다.
 
-Javascript에서는 scope를 기준으로 캡슐화를 한다. 전부터 Javascript는 scope를 이용해서 외부로부터 보호하려는 노력을 해왔다. ES5에서는 **함수가 scope의 기준**이기 때문에 함수의 scope를 이용해 Encapsulation을 시도했다. 또한 자신의 scope의 참조를 가진다는 클로져를 이용해서 내부 속성들을 사용하였다.
+Javascript에서는 scope를 기준으로 Encapsulation한다. 예전부터 Javascript는 scope를 이용해서 외부로부터 보호하려는 노력을 해왔다. ES5에서는 **함수가 scope의 기준**이기 때문에 함수의 scope를 이용해서 시도했다. 또한 클로져를 이용해서 내부 속성들을 만들어서 사용하였다.
 
 <br/>
 
@@ -25,17 +25,17 @@ Module은 구현내용을 캡슐화하고 기능에 따라 Public API로 노출�
 
 Javascript는 Module을 염두해두고 설계가 된 언어가 아니다. 시간이 지나면서 사람들이 필요에 따라 다양한 패턴을 만들었다.
 
-먼저 **IIFE(즉시실행함수 표현식), 노출식 모듈 패턴**을 살펴보자.
+다양한 패턴의 시작지점인 **IIFE(즉시실행함수 표현식), 노출식(공개) 모듈 패턴**을 살펴보자.
 
 <br/>
 
 ## IIFE(Immediately-invoked Function Expression)
 
-IIFE는 ES5기준 가장 많이 사용되던 패턴 중 하나이다. `Scope Block` 을 만드는 유일한 방법은 함수를 사용하는 것이다. 따라서 아래와 같은 예제는 `ReferenceError` 가 나온다.
+IIFE는 ES5 기준 가장 많이 사용되던 패턴 중 하나이다. `Scope Block` 을 만드는 유일한 방법은 함수를 사용하는 것이다. 따라서 아래와 같은 예제는 `ReferenceError` 가 나온다.
 
 ```js
 (function() {
-  const scoped = 42;
+  var scoped = 42;
 }());
     
 console.log(scoped); // ReferenceError
@@ -46,30 +46,26 @@ console.log(scoped); // ReferenceError
 IIFE는 오픈소스라이브러리에서 `Block scope`를 만드는데 사용된다. 아래 예제와 같이 사용하게 되면 공개하는 것과 아닌 것을 구분할 수 있게 된다.
 
 ```js
-function moduleFunction() {
+const moduleFunction = (function () {
   // private
-  let a = 3;
+  let a = "Hello World";
 
   function helloWorld(){
-    console.log('Hello');
+    console.log(a);
   }
 
   // public
   return {
-    a : a,
     sayHello: helloWorld
   }
-}()
+})()
 
 moduleFunction.sayHello();
-doSomething(moduleFunction.a);
 ```
 
 함수를 바로 실행한 후 Object를 반환하여 전역 네임을 한번만 사용하여 scope를 오염시키지 않는다. 외부에서 내부로의 접근을 차단하여 보호한다.  
 
 **다만 의존성관리가 되지 않는다. 코드를 재작성하지 않으면 다른 파일에서 재사용이 불가능하다.**
-
-예제에서 보았듯이 IIFE 패턴의 핵심은 **함수를 표현식으로 바꾸고 즉시 실행하는 것**이다.
 
 ```js
 (function() {
@@ -84,7 +80,7 @@ doSomething(moduleFunction.a);
 (function() {
   console.log("I am an IIFE!");
 }());
-    
+
 // Variation 2
 (function() {
   console.log("I am an IIFE, too!");
@@ -94,7 +90,7 @@ doSomething(moduleFunction.a);
 1. Variation 1는 4행에서 호출을 위한 괄호를 안쪽에 넣었다. 다시 바깥 괄호는 함수 밖의 함수 표현식을 만든다.
 2. Variation 2는 마지막줄의 괄호는 함수 표현식을 호출하기 위한 괄호로 함수 밖에 위치하고 있다.
 
-두 가지 방법은 널리 사용된다. 후에 핵심부분으로 들어가게 되면 2가지의 작동이 다르다는 것을 알 수 있다.
+두 가지 방법은 널리 사용된다. 후에 핵심부분을 공부하게 되면 2가지의 작동이 다르다는 것을 알 수 있다.
 
 작동하는 예제와 작동하지 않는 두 가지 예제를 살펴보자.
 
@@ -142,7 +138,7 @@ singleton.sayHello();
 doSomething(singleton.a);
 ```
 
-IIFE와 클로져를 같이 사용해서 구현을 해보았다. 모듈패턴에 대한 매우 기본적인 변형이다. 더 많은 패턴들이 존재하지만 거의 모든 패턴이 IIFE를 사용하여 폐쇄범위를 만든다.
+IIFE와 클로져를 같이 사용해서 구현을 해보았다. Module 패턴에 대한 기본적인 변형이다. 더 많은 패턴들이 존재하지만 거의 모든 패턴이 IIFE를 사용하여 폐쇄범위를 만든다.
 
 앞서 IIFE의 문제는 의존성 관리가 힘들다는 것이었다. 노출식 모듈패턴 역시 같은 문제가 있다.
 
@@ -164,16 +160,10 @@ IIFE와 클로져를 같이 사용해서 구현을 해보았다. 모듈패턴에
 AMD 형식은 브라우저에서 사용되며 define를 사용하여 Module을 정의한다.
 
 ```js
-define([], function() {
-  return {
-    sum: function() {
-        var total = 0;
-        for (var idx in arguments) {
-            total += arguments[idx];
-        }
-        return total;
-    }
-  };
+define(['dep1', 'dep2'], function (dep1, dep2) {
+    
+  //Define the module value by returning a value.
+  return function () {};
 });
 
 ```
@@ -197,7 +187,8 @@ module.exports = {
   }
 };
 
-// -----------------
+// -------------------------
+
 var math = require('./math');
 
 console.log(math.sum(1, 2));
@@ -267,7 +258,7 @@ import를 사용한 방식은 라이브러리의 특정 모듈만을 가져와 �
 
 ## ES6 module format
 
-ES 6에서는 모듈을 사용하기 위한 내장 문법을 지원한다. 바로 export다.
+ES6에서는 Module을 사용하기 위한 내장 문법을 지원한다. 바로 export다.
 
 ```js
 // some.js
@@ -288,7 +279,7 @@ hello();
 
 이렇게 하면 파일을 분리하고 그 파일에서 필요한 부분만 반환하여 사용할 수 있게 된다. 또한 재사용성이 극대화되어 의존성 관리도 가능하게 된다.
 
-또한 단일 값을 반환할 경우 default 형식을 지원한다. 이 경우 `{}`를 사용하지 않아도 된다.
+또한 단일 값을 반환할 경우 `default` 형식을 지원한다. 이 경우 `{}`를 사용하지 않아도 된다.
 
 ```js
 // Export default function
