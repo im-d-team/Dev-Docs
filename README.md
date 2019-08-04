@@ -223,7 +223,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 - [x] BKJang : [String, StringBuilder, StringBuffer](https://github.com/Im-D/Dev-Docs/blob/master/Java/String%2C%20StringBuilder%2C%20StringBuffer.md)
 - [x] SeonHyungJo : [호출 스택](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_CallStack.md)
-- [x] Jinseong : [Higher Order Functions](https://github.com/Im-D/Dev-Docs/blob/master/Language/Higher_Order_Functions.md)
+- [x] Jinseong : ~[Higher Order Functions](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Higher_Order_Functions.md)~
 
 #### 03월 17일
 
