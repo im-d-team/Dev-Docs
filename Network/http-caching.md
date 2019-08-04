@@ -77,7 +77,7 @@ cache control의 헤더는 request, response 모두 사용이 가능하다.
 
 캐시가 동작하는 공통 로직은 다음과 같다.
 
-최초 요청 후 응답헤더에 `Last-Modified, Etag, Expires, Chach-Control: max-age` 항목이 존재한다면 캐시 한다.
+최초 요청 후 응답헤더에 `Last-Modified, Etag, Expires, Cache-Control: max-age` 항목이 존재한다면 캐시 한다.
 
 ### 1.0
 
