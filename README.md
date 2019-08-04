@@ -353,9 +353,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 9월 30일
 
-- [x] BKJang [Event Delegation](<https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84(Event%20Delegation).md>), [Repaint & Reflow and SPA](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Repaint%EC%99%80%20Reflow.md)
+- [x] BKJang ~[Event Delegation](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84(Event%20Delegation).md>)~, [Repaint & Reflow and SPA](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Repaint%EC%99%80%20Reflow.md)
 - [x] SeonHyungJo [Reactive Programmming](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reative.md), [Call By xxx](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/CallByReference.md)
-- [x] Jinseong [Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Javascript_BuildTool.md), [EventLoop_Advanced](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/EventLoop_Advanced.md)
+- [x] Jinseong ~[Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Javascript_BuildTool.md)~, [EventLoop_Advanced](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/EventLoop_Advanced.md)
 
 #### 9월 16일
 
