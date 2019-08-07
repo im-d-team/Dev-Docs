@@ -70,7 +70,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [ ] SeonHyungJo : [javascript의 module]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
-- [ ] JHRla: []()
+- [ ] JHRla: [comet]()
 
 ---
 
