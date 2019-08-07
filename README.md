@@ -66,15 +66,28 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : [Functional Programming]()
-- [ ] SeonHyungJo : [javascript의 module]()
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : []()
 - [ ] Jinseong : [Event Delegation]()
 - [ ] Dae-Hwa: []()
-- [ ] JHRla: [comet]()
+- [ ] JHRla: []()
 
 ---
 
 ### 📅 History
+
+<details>
+<summary> 2019년 08월 </summary>
+
+#### 08월 07일
+
+- [ ] BKJang : [Functional Programming]()
+- [ ] SeonHyungJo : [javascript의 module]()
+- [ ] Jinseong : [웹 브라우저의 작동 원리]()
+- [ ] Dae-Hwa: []()
+- [ ] JHRla: [comet]()
+
+</details>
 
 <details>
 <summary> 2019년 07월 </summary>
