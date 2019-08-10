@@ -1,4 +1,4 @@
-# Javascript의 Module
+# Module
 
 Java나 Python 같은 OOP 언어들에서는 Class라는 이름으로 객체지향 프로그래밍을 구현한다. OOP의 특징으로는 *Encapsulation, Inheritance, Polymorphism*이 있다. 
 
