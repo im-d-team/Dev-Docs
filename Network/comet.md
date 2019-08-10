@@ -14,6 +14,8 @@ comet에는 `Polling`, `Long Polling`, `Streaming` 등이 있다.
 
 ## Polling  
 
+![polling](/assets/images/polling.png)  
+
 Polling은 클라이언트가 서버에 **주기적으로** 요청을 보내는 방식으로, 다음과 같은 특징을 갖는다.    
 
 * 시간마다 요청이 일괄적으로 전달된다. 
@@ -34,6 +36,8 @@ Polling은 클라이언트가 서버에 **주기적으로** 요청을 보내는 
 
 ## Long Polling  
 
+![Longpolling](/assets/images/LongPolling.png) 
+
 Long Polling은 위에서 언급한 Polling의 문제점을 해결하기 위한 방식으로, 클라이언트로부터 받은 요청을 유지하다가 데이터가 발생한 후(즉, 서버 이벤트가 발생되는 시점)에 응답을 전송하는 방식이다.  
 단, 요청을 무한히 유지하는 것이 아니라 time out이 발생하면 해당 요청/응답 트랜잭션을 완료하고 연결을 새로 생성한다.   
 Long Polling의 특징은 다음과 같다.
@@ -46,6 +50,8 @@ Long Polling 방식의 채팅방에 1000명이 참여하고 있다고 가정해�
 <br/> 
 
 ## Streaming
+
+![streaming](/assets/images/streaming.png) 
 
 Streaming 방식은 연결을 계속 유지하고, 이벤트가 발생할 때마다 부분적인 응답으로 브라우저에 데이터를 보내는 방식이다.  
 응답마다 다시 요청해야 하는 Long Polling에 비해 효율적이며, 서버의 상태 변경이 매우 잦은 경우 유리하다. 
