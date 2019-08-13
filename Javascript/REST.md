@@ -19,17 +19,21 @@ hello
 이 응답을 보고, 요청에 대한 결과로 `hello`라는 resource를 받았다고 표현하는 경우가 흔하다. 하지만 이는 엄밀히 말해 틀린 말이다. `hello`는 resource가 아닌 **representation data** 이기 때문이다.   
 
 GET 메소드 정의는 다음과 같다.  
-`The GET method requests a representation of the specified resource.`  
+
+```
+The GET method requests a representation of the specified resource.
+```  
+
 즉, GET 메소드는 특정 리소스에 대한 하나의 representation을 반환한다. 그러므로 `hello를 담고 있는 문서`가 리소스고, `hello`는 representation이다. representation은 representation metadata와 representation data로 구성된다. 위에서 받은 응답을 나눠보면 다음과 같다. 
 
-```html
-<!--representation metadata-->
+```js
+//representation metadata
 Content-Type: text/plain  
 Content-Language: en  
 ```
 
-```html
-<!--representation data-->
+```js
+//representation data
 hello
 ```  
 
