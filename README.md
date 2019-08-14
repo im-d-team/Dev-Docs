@@ -81,7 +81,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [ ] BKJang : [Functional Programming]()
 - [ ] SeonHyungJo : [Module]()
 - [ ] Jinseong : [웹 브라우저의 작동 원리]()
-- [ ] Dae-Hwa: []()
+- [ ] Dae-Hwa: [bind메소드]()
 - [ ] JHRla: [comet]()
 
 <details>
