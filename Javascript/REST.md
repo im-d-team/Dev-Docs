@@ -94,7 +94,7 @@ REST API는 다음의 중심규칙을 갖는다.
 
 * Server-Client 구조 : 일관적인 인터페이스로 분리되어야한다. 
 * Cacheable : HTTP 프로토콜을 따라 클라이언트의 응답을 캐싱할 수 있어야한다. 
-* Stateless : HTTP 프로토콜을 따라 REST Server 역시 stateless(무상태) 해야한다. 즉, 서버에 클라이언트의 context 정보를 저장하지 않아야 하며 각각의 요청을 별개의 것으로 인식하고 처리한다. 
+* Stateless : HTTP 프로토콜을 따라 REST Server 역시 stateless(무상태) 해야한다. 즉, 서버에 클라이언트의 context 정보를 저장하지 않아야 하며 각각의 요청을 별개의 것으로 인식하고 처리해야 한다. 
 * Layered System : REST를 사용하면 서버 A에 API를 배포하고, 서버 B에 데이터를 저장하고, 서버 C에 요청을 하는 계층화된 시스템을 구현할 수 있다. 계층화된 시스템에서는 비즈니스 로직을 수행하는 서버의 앞단에서 사용자 인증, 암호화 등의 보안 처리를 할 수 있으며, [로드 밸런싱](https://github.com/Im-D/Dev-Docs/blob/master/Network/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1%20%26%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81.md)이나 공유 캐시 기능을 통해 시스템 규모 확장성을 향상시킬 수 있다.  
 * Code-On-Demand(optional) : Server는 클라이언트가 실행시킬 수 있는 로직을 전송하여 기능을 확장시킬 수 있다.
 
@@ -109,5 +109,5 @@ REST API는 다음의 중심규칙을 갖는다.
 #### Reference
 [REST(Representational State Transfer) API](https://poiemaweb.com/js-rest-api)  
 [REST의 representation이란 무엇인가](https://blog.npcode.com/2017/04/03/rest의-representation이란-무엇인가/)  
-[REST란? REST API란? RESTful이란?](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html)
+[REST란? REST API란? RESTful이란?](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html)  
 [REST API Tutorial](https://restfulapi.net/rest-architectural-constraints/#layered-system)
