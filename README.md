@@ -90,8 +90,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 07월 21일
 
 - [x] BKJang : [Cookie와 Session 그리고 Redis]()
-- [x] SeonHyungJo : [CSS - animation]()
-- [x] Jinseong : [http-caching]()
+- [x] SeonHyungJo : [CSS - animation](https://github.com/Im-D/Dev-Docs/blob/master/CSS/animation.md)
+- [x] Jinseong : [http-caching](https://github.com/Im-D/Dev-Docs/blob/master/Network/http-caching.md)
 - [x] Dae-Hwa: [HTML Templating]()
 - [x] JHRla: [페이징 세그먼테이션]()
 
@@ -100,8 +100,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] BKJang : [배열 내장함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/배열%20내장함수.md)
 - [x] SeonHyungJo : [preload, prefetch](https://github.com/Im-D/Dev-Docs/blob/master/HTML/preload%26prefetch.md)
 - [ ] Jinseong : []()
-- [x] Dae-Hwa: [WAS]()
-- [x] JHRla: [클로저]()
+- [x] Dae-Hwa: [WAS](https://github.com/Im-D/Dev-Docs/blob/master/Java/WAS.md)
+- [x] JHRla: [클로저](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%81%B4%EB%A1%9C%EC%A0%80.md)
 
 #### 07월 07일
 
