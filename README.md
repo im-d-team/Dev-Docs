@@ -78,7 +78,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 08월 07일
 
-- [ ] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/20190804/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
+- [ ] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 - [ ] SeonHyungJo : [Module]()
 - [ ] Jinseong : [웹 브라우저의 작동 원리]()
 - [ ] Dae-Hwa: [bind메소드]()
