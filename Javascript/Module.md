@@ -311,7 +311,20 @@ sayHello();
 returnObject.sayGoodBye();
 ```
 
-아직 브라우저는 ES6문법을 지원하지 않는다. ES6 모듈 포맷을 사용할 수 있지만 브라우저에서 코드를 실제로 실행하기 전에 코드를 **AMD** 나 **CommonJS** 와 같은 **ES5 모듈 형식으로 바꾸기 위해 Babel과 같은 변환기가 필요하게 된다.**
+~~아직 브라우저는 ES6문법을 지원하지 않는다. ES6 모듈 포맷을 사용할 수 있지만 브라우저에서 코드를 실제로 실행하기 전에 코드를 **AMD** 나 **CommonJS** 와 같은 **ES5 모듈 형식으로 바꾸기 위해 Babel과 같은 변환기가 필요하게 된다.**~~
+
+이전에는 브라우저가 이것을 지원하지 않아 bundler나 transpiler를 사용해서 ES6 모듈을 사용했었다.
+
+### 브라우저에서 사용
+
+이 버전들부터는 브라우저가 ES6 모듈을 사용할 수 있다.
+
+- Chrome 61 이상
+- Firefox 60 이상
+- Edge 16 이상
+- Safari 11 이상
+
+> 관련 링크 [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md#es6-modules)
 
 <br/>
 
