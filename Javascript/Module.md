@@ -41,7 +41,7 @@ IIFE는 ES5 기준 가장 많이 사용되던 패턴 중 하나이다. `Scope Bl
 console.log(scoped); // ReferenceError
 ```
 
-![ReferenceError](https://user-images.githubusercontent.com/24274424/62371787-a7576d00-b570-11e9-8080-0349404066e2.png)
+![ReferenceError](![image](https://user-images.githubusercontent.com/24274424/63151836-5a31cb80-c045-11e9-8686-107cfc6b8dc4.png)
 
 IIFE는 오픈소스라이브러리에서 `Block scope`를 만드는데 사용된다. 아래 예제와 같이 사용하게 되면 공개하는 것과 아닌 것을 구분할 수 있게 된다.
 
@@ -244,7 +244,7 @@ export class C {
 
 ## 모듈 제공의 방향과 ES6
 
-Module 제공 방식의 추세가 AMD vs CommonJS였다면, CommonJS와 ES6 타입으로 축약되는 것으로 보인다.
+Module 제공 방식의 추세가 AMD vs CommonJS였다면, CommonJS와 ECMAScript Modules로 축약되는 것으로 보인다.
 
 하지만 여전히 일부 라이브러리가 AMD방식을 사용하고 있어 지금도 번들링은 UMD로 하고 있다.
 
@@ -328,8 +328,8 @@ returnObject.sayGoodBye();
 
 널리 사용되는 모듈 로더는 아래와 같이 있다.
 
-- RequireJS : AMD 형식의 모듈 용 로더
-- SystemJS : AMD, CommonJS, UMD 또는 System.register 형식의 모듈 용 로더
+- RequireJS : AMD 형식의 모듈용 로더
+- SystemJS : AMD, CommonJS, UMD 또는 System.register 형식의 모듈용 로더
 
 <br/>
 
@@ -342,8 +342,8 @@ returnObject.sayGoodBye();
 
 널리 사용되는 모듈 번들러는 아래와 같이 있다.
 
-- Browserify : CommonJS 모듈 용 bundler
-- Webpack : AMD, CommonJS, ES6 모듈 용 bundler
+- Browserify : CommonJS 모듈용 bundler
+- Webpack : AMD, CommonJS, ES6 모듈용 bundler
 
 <br/>
 
