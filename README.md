@@ -66,7 +66,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : []()
+- [ ] BKJang : [고차함수(High Order Function)](https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
 - [ ] SeonHyungJo : [Javascript BuildTool]()
 - [ ] Jinseong : [Event Delegation]()
 - [ ] Dae-Hwa: []()
@@ -78,7 +78,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 08월 07일
 
-- [ ] BKJang : [Functional Programming]()
+- [ ] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/20190804/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 - [ ] SeonHyungJo : [Module]()
 - [ ] Jinseong : [웹 브라우저의 작동 원리]()
 - [ ] Dae-Hwa: [bind메소드]()
@@ -89,7 +89,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 07월 21일
 
-- [x] BKJang : [Cookie와 Session 그리고 Redis]()
+- [x] BKJang : [Cookie와 Session 그리고 Redis](https://github.com/Im-D/Dev-Docs/blob/master/Network/Cookie%EC%99%80%20Session%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Redis.md)
 - [x] SeonHyungJo : [CSS - animation](https://github.com/Im-D/Dev-Docs/blob/master/CSS/animation.md)
 - [x] Jinseong : [http-caching](https://github.com/Im-D/Dev-Docs/blob/master/Network/http-caching.md)
 - [x] Dae-Hwa: [HTML Templating]()
