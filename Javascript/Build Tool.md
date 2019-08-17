@@ -1,29 +1,29 @@
 # Build Tool
 
-빌드하는데 도와주는 도구들은 종류도 다양하고 기능도 다양하다. 현재 가장 많은 기능을 지원하면서 많은 곳에서 사용되는 **Webpack**이 있다.
+빌드 작업은 한 번 구성을 하게되면 다시 빌드를 할 때는 단순 반복을 한다. 이에 빌드를 도와주는 도구들이 생겨나게 되었고, 시간이 지남에 따라 종류가 다양해지고 기능도 많아졌다. 
 
-Webpack 이전에 많이 사용되던 빌드 도구로는 Gulp와 Grunt가 있다. 
+현재 가장 많은 기능을 지원하며, 많은 곳에서 사용되는 도구로는 **Webpack**이 있으며, 이전에도 많은 빌드 도구들이 있었지만, 대표적으로 **Grunt와 Gulp**가 있다.
 
 ## Grunt
 
 ![image](https://user-images.githubusercontent.com/24274424/63153384-2658a500-c049-11e9-9c9c-0c962b7ba815.png)
 
 위에 보이는 돼지? 가 바로 Grunt의 마크이다.
-메인 타이틀이 돼지인 이유는 Grunt 단어 뜻에 있다.
+메인 타이틀이 돼지인 이유는 Grunt 단어 뜻에서 찾아볼 수 있다.
 
 > (돼지처럼) 꿀꿀 거리다(거리는 소리), 불평의 소리
 > 꿀꿀거리다, 불평하다, 좋지 않은
 
-Github에서 Grunt는
+Github [Grunt](https://github.com/gruntjs/grunt)를 찾아보면,
 > The JavaScript Task Runner 
 
-라고 설명을 하고 있다.
+라고 설명되어 있다.
 
-간단히 풀어서 말을 하면 Minify, Compile, Unit Test, Lint 등 주기적인 task들을 자동으로 수행하기 위해 사용되는 도구로 Javascript Task runner이다.
+간단히 풀어서 보자면 Minify, Compile, Unit Test, Lint 등 주기적인 task들을 자동으로 수행하기 위해 사용되는 도구로 Javascript Task runner이다.
 
-기본적으로 task들을 만들어 작동하며, 사용자 지정 task들을 수행하기 위해 Command Line Interface를 사용한다. 
+기본적으로 task들을 만들어 작동하며, 사용자 지정 task들을 수행하기 위해 **Command Line**를 사용한다. 
 
-Grunt는 Node.js로 작성되어 있으며, npm을 통해 배포된다.
+Grunt는 Node.js로 작성되어 있으며, npm을 통해 배포하고 있다.
 
 2019년 8월 기준으로, Grunt 생태계에 6,000개 이상의 플러그인을 사용할 수 있다고 한다.
 
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 };
 ```
 
-> [Grunt에서 사용하는 Gruntfile.js](https://github.com/gruntjs/grunt/blob/master/Gruntfile.js)
+> [Grunt에서 사용하는 Gruntfile.js](https://github.com/gruntjs/grunt/blob/master/Gruntfile.js)<br/>
 > [grunt-cli](https://github.com/gruntjs/grunt-cli/blob/master/bin/grunt)
 
 ### grunt-eslint로 task 살펴보기
@@ -155,7 +155,7 @@ Gulp는 steaming build system을 표방하고 있다. 즉, Node의 스트리밍 
 > 
 > 예를 들어, 스트림은 대용량 파일의 파일 같은 경우, 파일 전체를 모두 로드하기 전에 메모리 버퍼를 절약하기 위해 무엇인가 다른 일을 빠르게 처리할 수 있다.
 > 
-> 그래서 우리는 파일이 전체로 로드될 때까지 기다릴 필요 없이 파일을 일부를 쓰거나 어떤 처리를 할 수 있다.
+> 그래서 우리는 파일이 전체로 로드될 때까지 기다릴 필요없이 파일의 일부를 쓰거나 어떤 처리를 할 수 있다.
 
 ### 예제
 
@@ -193,7 +193,7 @@ exports.default = parallel(html, css, js);
 
 ### Grunt와 Gulp의 차이점
 
-Gulp와 Grunt의 하는 일은 같지만 만들어내는 방식이 다르다. Grunt는 package.json처럼 json형식으로 설정을 선언하여 사용한다. 즉, 설정 파일 기반이다. 이와 다르게 Gulp는 nodeJS의 스트림 기능을 이용하여 Javascript 코드를 사용한다.
+Gulp와 Grunt의 하는 일은 같지만 만들어내는 방식이 다르다. Grunt는 package.json처럼 json형식으로 설정을 선언하여 사용한다. 즉, 설정 파일 기반이다. 이와 다르게 Gulp는 NodeJS의 스트림 기능을 이용하여 Javascript 코드를 사용하여 작성한다.
 
 Gulp는 동시에 여러 작업을 처리할 수 있지만, Grunt는 일반적으로 한 번에 하나의 작업만 처리한다.
 
@@ -210,28 +210,27 @@ Webpack 사이트에 들어가면 자신을 이렇게 설명하고 있다.
 
 > webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
-Webpack은 `Module Bundler`이다. 주된 목적은 브라우저에서 사용하기 위해 JavaScript 파일을 번들링 하는 것이지만, 거의 모든 리소스 또는 리소스를 변환, 번들링 또는 패키징 할 수 있다.
-
+Webpack은 `Module Bundler`이다. 주된 목적은 브라우저에서 사용하기 위해 JavaScript 파일을 번들링하는 것이지만, 거의 모든 리소스를 변환, 번들링 또는 패키징할 수 있다.
 
 ### 모듈과 의존성
 
-Javascript는 커다란 소스를 나눠 편하게 개발하고 유지 보수하기 위해 모듈이라는 추상적인 개념을 사용한다. 마치 이는 Java의 Class와 비슷하다. 이렇게 모듈 방식으로 코딩하고 거기에 모듈별로 파일까지 나누어 개발하면 편하다. 
+Javascript는 커다란 소스를 나누어서 편하게 개발하고 유지 보수하기 위해 모듈이라는 추상적인 개념을 사용한다. 마치 이는 Java의 Class와 비슷하다. 이렇게 모듈 방식으로 코딩하고 거기에 모듈별로 파일까지 나누어 개발하면 편리하다. 
 
-모듈과 파일이 분기된 개념은 보통은 nodeJS에서 많이 사용한다.
+모듈과 파일이 분기된 개념은 보통은 NodeJS에서 많이 사용했었다.
 
-모듈화된 각각의 파일들은 서로의 의존성을 가진다. 의존성이란 쉽게 말해 `import * from './index'` 구문이다. 현재 파일에서 다른 파일을 가져와서 사용하게 되면 서로 의존성이 생긴다.
+모듈화된 각각의 파일들은 서로의 의존성을 가진다. 이때 의존성이란 쉽게 말해 `import * from './index'` 구문이다. 현재 파일에서 다른 파일을 가져와서 사용하게 되면 서로 의존성이 생긴다.
 
 브라우저상에서는 이러한 의존성을 표현하기가 어렵다. 특히 `HTTP/1.1`을 사용해야 하는 환경이라면 더욱더 힘들다. `HTTP/2.0`의 경우 한 번의 요청에 여러 파일을 받아올 수 있지만 1.1의 경우는 의존성을 통해 여러 파일이 필요하게 된다면 너무 많은 네트워크 자원을 소모하게 된다.
 
-많은 의존성으로 엮인 JS 파일들을 단순히 하나의 JS 파일로 압축해서 만들면 좋을까? 요청(request) 한 번에 그 압축파일 하나만 주면 땡! 하게 말이다. 
+많은 의존성으로 엮인 JS 파일들을 단순히 하나의 JS 파일로 압축해서 만들면 좋을까? 즉, 요청(request) 한 번에 그 압축파일 하나만 주면 끝나는 방식같은 경우이다. 
 
-그게 Webpack이다. 꼭 하나는 아니다. 라이브러리 / 핵심 소스를 나누어 파일을 두 개로 분기할 수도 있다. 요점은 다양한 파일들을 번들(bundle)해서 네트워크 비용을 최소화하여 파일을 번들한다! 라는 것이다.
+그러한 방법을 할 수 있도록 도와주는 것이 Webpack이다. 꼭 파일이 하나는 아니다. 라이브러리 / 핵심 소스를 나누어 파일을 두 개로 분기할 수도 있다. 요점은 다양한 파일들을 번들(bundle)해서 네트워크 비용을 최소화하여 파일을 번들한다! 라는 것이다.
 
-결국 Gulp나 Grunt처럼 필요한 자동화 기능까지 더해 빌드해 주는 것이 바로 Webpack이다.
+결국, **Gulp나 Grunt처럼 자동화 기능을 해주며, 의존성관리까지 해서 번들해주는 것이 바로 Webpack이다.**
 
 ### 더 나아가
 
-Webpack은 위에서 언급했듯이 단순히 Javascript의 의존성을 파악하여 번들하는 것만이 아니라, 모든 리소스(javascript, css, image, font, 심지어 typescript, coffeescript, less, sass 등)에 대한 dependancy graph를 생성하여 빌드를 한다. 요즘처럼 SPA를 구현하게 되면 이러한 의존성은 꼬리에 꼬리를 물고 Graph(Tree) 형태로 만들어지게 되는데 이것을 번들링 하여 하나 또는 그 이상의 파일로 만들어주는 것이 `Module Bundler`의 역할이다.
+Webpack은 위에서 언급했듯이 단순히 Javascript의 의존성을 파악하여 번들하는 것만이 아니라, 모든 리소스(javascript, css, image, font, 심지어 typescript, coffeescript, less, sass 등)에 대한 dependancy graph를 생성하여 빌드를 한다. 요즘처럼 SPA를 구현하게 되면 이러한 의존성은 꼬리에 꼬리를 물고 Graph(Tree) 형태로 만들어지게 되는데 이것을 번들링하여 하나 또는 그 이상의 파일로 만들어주는 것이 `Module Bundler`의 역할이다.
 
 ## 결론
 
