@@ -69,7 +69,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [ ] BKJang : [고차함수(High Order Function)](https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
 - [ ] SeonHyungJo : [Javascript BuildTool]()
 - [ ] Jinseong : [Event Delegation]()
-- [ ] Dae-Hwa: []()
+- [ ] Dae-Hwa: [객체]()
 - [ ] JHRla: []()
 
 ---
