@@ -12,7 +12,7 @@ ECMAScript 5.1 (ECMA-262)에 추가되었다.
 
 <br/>
 
-## bind()가 사용될 수 있는 상황들
+## bind()가 사용되는
 
 ```js
 var healthObj = {
@@ -25,7 +25,7 @@ var healthObj = {
   }
 };
 
-healthObj.showHealth(); // "달리기님, 오늘은 PM10:12,에 운동을 하셨네요"
+healthObj.showHealth(); // "달리기님, 오늘은 PM10:12에 운동을 하셨네요"
 ```
 
 `showHealth` 안의 `this` 는 해당 함수가 참조하는 객체에 있는 `name` 과 `lastTime` 을 참조한다.
@@ -87,7 +87,7 @@ var healthObj = {
 healthObj.showHealth(); // 님, 오늘은 undefined에 운동을 하셨네요
 ```
 
-새로 만들어진 콜백 함수 안의 `this` 는 `window` 를 가리킨다. 콜백 함수는 `showHealth` 가 실행되는 순간 바로 실행되는 것이 아니고, `showHealth` 가 실행 된 뒤 이벤트 큐에 저장 되어 있다가 실행되기 때문이다.
+새로 만들어진 콜백 함수 안의 `this` 는 `window` 를 가리킨다. 콜백 함수는 `showHealth` 가 실행되는 순간 바로 실행되는 것이 아니고, `showHealth` 가 실행된 뒤 이벤트 큐에 저장되어 있다가 실행되기 때문이다.
 
 <br/>
 
