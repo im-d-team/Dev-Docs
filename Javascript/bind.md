@@ -182,6 +182,7 @@ var result2 = addThirtySeven(5); // 37 + 5 = 42
 // 두 번째 인수는 무시됩니다.
 var result3 = addThirtySeven(5, 10); // 37 + 5 = 42
 ```
+> 위 예시에서 `bind`의 첫 번째 인자로 `null`이 사용됐다. 이는 알아보기 쉽도록 넣은 것이며, <br/>실제 상황에서는 `Object.create(null)` 혹은 `{}` 을 사용하여 빈 객체를 만들어주는 것이 안전한 방법이다. 아래의 예시도 마찬가지다.<br/> 참고 - [자바스크립트 this 바인딩 우선순위(김정환 블로그)](http://jeonghwan-kim.github.io/2017/10/22/js-context-binding.html#%EC%98%88%EC%99%B8%EC%83%81%ED%99%A9%EB%93%A4)
 
 ## 생성자
 
