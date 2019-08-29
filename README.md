@@ -66,23 +66,31 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : [고차함수(High Order Function)](https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
-- [ ] SeonHyungJo : [Javascript BuildTool]()
-- [ ] Jinseong : [Event Delegation]()
-- [ ] Dae-Hwa: [객체]()
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : []()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: []()
 - [ ] JHRla: []()
 
 ---
 
 ### 📅 History
 
+#### 08월 14일
+
+- [ ] BKJang : [고차함수(High Order Function)](https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
+- [ ] SeonHyungJo : [Javascript BuildTool]()
+- [ ] Jinseong : [Event Delegation]()
+- [ ] Dae-Hwa: [객체]()
+- [ ] JHRla: [Rest]()
+
 #### 08월 07일
 
 - [ ] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
-- [ ] SeonHyungJo : [Module]()
+- [ ] SeonHyungJo : [Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
 - [ ] Jinseong : [웹 브라우저의 작동 원리]()
 - [ ] Dae-Hwa: [bind메소드]()
-- [ ] JHRla: [comet]()
+- [ ] JHRla: [comet](https://github.com/Im-D/Dev-Docs/blob/master/Network/comet.md)
 
 <details>
 <summary> 2019년 07월 </summary>
@@ -92,7 +100,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] BKJang : [Cookie와 Session 그리고 Redis](https://github.com/Im-D/Dev-Docs/blob/master/Network/Cookie%EC%99%80%20Session%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Redis.md)
 - [x] SeonHyungJo : [CSS - animation](https://github.com/Im-D/Dev-Docs/blob/master/CSS/animation.md)
 - [x] Jinseong : [http-caching](https://github.com/Im-D/Dev-Docs/blob/master/Network/http-caching.md)
-- [x] Dae-Hwa: [HTML Templating]()
+- [x] Dae-Hwa: [HTML Templating](https://github.com/Im-D/Dev-Docs/blob/master/HTML/HTML-Templating.md)
 - [x] JHRla: [페이징 세그먼테이션]()
 
 #### 07월 14일
@@ -108,7 +116,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] BKJang : [Typescript ( 제네릭 )](<https://github.com/Im-D/Dev-Docs/blob/master/Typescript/제네릭(Generic).md>)
 - [x] SeonHyungJo : [window.history](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/window.history.md)
 - [x] Jinseong : [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md)
-- [x] Dae-Hwa: [Non-blocking]()
+- [x] Dae-Hwa: [Non-blocking](https://github.com/Im-D/Dev-Docs/blob/master/CS/non-blocking.md)
 - [ ] JHRla: []()
 
 </details>
@@ -195,7 +203,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 04월 28일
 
 - [x] BKJang : [Element와 Component](https://github.com/Im-D/Dev-Docs/blob/master/React/Element%EC%99%80%20Component.md)
-- [x] SeonHyungJo : [Basic\_메시지 큐와 이벤트 루프](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_EventLoop.md)
+- [x] SeonHyungJo : ~[Basic\_메시지 큐와 이벤트 루프](https://github.com/Im-D/Dev-Docs/tree/master/Javascript/B_EventLoop.md)~
 - [x] Jinseong : [this 더알아보기](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Learning_more_about_this.md)
 
 #### 04월 21일
@@ -361,9 +369,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 9월 30일
 
-- [x] BKJang ~[Event Delegation](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84(Event%20Delegation).md>)~, [Repaint & Reflow and SPA](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Repaint%EC%99%80%20Reflow.md)
-- [x] SeonHyungJo [Reactive Programmming](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reative.md), [Call By xxx](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/CallByReference.md)
-- [x] Jinseong ~[Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Javascript_BuildTool.md)~, [EventLoop_Advanced](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/EventLoop_Advanced.md)
+- [x] BKJang ~[Event Delegation](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84(Event%20Delegation).md>)~, ~[Repaint & Reflow and SPA](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Repaint%EC%99%80%20Reflow.md)~
+- [x] SeonHyungJo ~[Reactive Programmming](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reative.md)~, [Call By xxx](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/CallByReference.md)
+- [x] Jinseong ~[Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Javascript_BuildTool.md)~, ~[EventLoop_Advanced](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/EventLoop_Advanced.md)~
 
 #### 9월 16일
 
