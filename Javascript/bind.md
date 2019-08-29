@@ -49,6 +49,9 @@ healthObj.showHealth(); // 님, 오늘은 undefined에 운동을 하셨네요
 ```
 
 현재 `test`는 `window` 아래에 생성되어 있다. 따라서 `test` 를 호출하면 `test` 는 `window.name` 과 `window.lastTime` 을 호출하게 된다.
+> ```js
+> test(); // 님, 오늘은 undefined에 운동을 하셨네요
+> ```
 
 <br/>
 
