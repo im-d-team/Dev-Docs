@@ -188,10 +188,10 @@ setTimeout
 
 #### Reference
 
-- [JavaScript Event Loop Explained]([https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4))
-- [What is the Event Loop in Javascript]([https://www.wptutor.io/web/js/javascript-event-loop](https://www.wptutor.io/web/js/javascript-event-loop))
-- [Understanding JS: The Event Loop]([https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40))
-- [Event loop in javascript]([https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49](https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49))
-- [The JavaScript Event Loop]([https://flaviocopes.com/javascript-event-loop/](https://flaviocopes.com/javascript-event-loop/))
-- [Tasks, microtasks, queues and schedules]([https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/))
+- [JavaScript Event Loop Explained](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4))
+- [What is the Event Loop in Javascript](https://www.wptutor.io/web/js/javascript-event-loop](https://www.wptutor.io/web/js/javascript-event-loop))
+- [Understanding JS: The Event Loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40))
+- [Event loop in javascript](https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49](https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49))
+- [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/](https://flaviocopes.com/javascript-event-loop/))
+- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/))
 - [Poiemaweb - 자바스크립트/이벤트](https://poiemaweb.com/js-event)
