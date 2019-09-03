@@ -76,9 +76,17 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### 📅 History
 
+#### 08월 31일
+
+- [ ] BKJang : [Event Loop]()
+- [ ] SeonHyungJo : [Reflow Repaint]()
+- [ ] Jinseong : [Reactive]()
+- [ ] Dae-Hwa: [prototype]()
+- [ ] JHRla: [MSA]()
+
 #### 08월 14일
 
-- [ ] BKJang : [고차함수(High Order Function)](https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
+- [ ] BKJang : [고차함수(High Order Function)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md>), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
 - [ ] SeonHyungJo : [Javascript BuildTool]()
 - [ ] Jinseong : [Event Delegation]()
 - [ ] Dae-Hwa: [객체]()
@@ -358,9 +366,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 10월 14일
 
-- [x] BKJang [렌더링 최적화 기법](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md), [JS 애니메이션 vs CSS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Performance/CSS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%20vs%20JS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md)
-- [x] SeonHyungJo [Async-await 구현](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Async-Await.md), [setState](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/setState.md)
-- [x] Jinseong [Callback Hell](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Callback.md), [Promise1](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise1.md), [Promise2](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise2.md)
+- [x] BKJang ~[렌더링 최적화 기법](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md)~, [JS 애니메이션 vs CSS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Performance/CSS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%20vs%20JS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md)
+- [x] SeonHyungJo ~[Async-await 구현](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Async-Await.md)~, [setState](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/setState.md)
+- [x] Jinseong [Callback Hell](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Callback.md), [Promise1](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise1.md), [Promise2](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise2.md)
 
 </details>
 
@@ -370,7 +378,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 9월 30일
 
 - [x] BKJang ~[Event Delegation](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84(Event%20Delegation).md>)~, ~[Repaint & Reflow and SPA](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Repaint%EC%99%80%20Reflow.md)~
-- [x] SeonHyungJo ~[Reactive Programmming](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Reactive.md)~, [Call By xxx](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/CallByReference.md)
+- [x] SeonHyungJo ~[Reactive Programmming](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Reactive.md)~, ~[Call By xxx](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/CallByReference.md)~
 - [x] Jinseong ~[Javascript Build Tools](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Javascript_BuildTool.md)~, ~[EventLoop_Advanced](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/EventLoop_Advanced.md)~
 
 #### 9월 16일
