@@ -56,7 +56,7 @@ ul.addEventListener('click', function(evt) {
 });
 ```
 
-이렇게 하고 span태그를 클릭하면 어떨까?
+위와 같이 코드를 작성하고 span태그를 클릭하면 어떨까?
 
 결과 역시 제대로 작동한다.
 
