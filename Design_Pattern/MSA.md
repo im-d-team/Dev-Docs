@@ -90,7 +90,7 @@ APItoken은 API를 호출할 수 있는 권한 정보를 갖는다. 권한 정�
 ```
 클레임 기반 토큰은 일정량 이상의 정보를 담기 어려우며 한번 발급된 토큰은 변경이 어렵다. 때문에 토큰의 유효기간을 설정하여 주기적으로 재발급하는 방식이 사용된다.
 
-서버에 권한 정보를 저장하는 경우에는 클라이언트에 unique한 값만 부여한다. 때문에 보안상 유리하고, 많은 정보를 담을 수 있다. 하지만 모든 API 호출마다 서버에서 정보를 가져와야하기 때문에 DBMS보다는 redis와 같은 메모리 기반의 고속 storage를 사용하는 것이 좋다. 
+서버에 권한 정보를 저장하는 경우에는 클라이언트에 unique한 값만 부여한다. 때문에 보안상 유리하고, 많은 정보를 담을 수 있다. 하지만 모든 API 호출마다 서버에서 정보를 가져와야하기 때문에 DBMS보다는 [redis](https://github.com/Im-D/Dev-Docs/blob/master/Network/Cookie%EC%99%80%20Session%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Redis.md#redis%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-session-%EA%B4%80%EB%A6%AC)와 같은 메모리 기반의 고속 storage를 사용하는 것이 좋다. 
 
 <br/>
 
