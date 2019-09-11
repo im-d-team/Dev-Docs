@@ -66,7 +66,7 @@ ul.addEventListener('click', function(evt) {
 
 li와 span은 ul의 하위에 속하기 때문에 ul의 이벤트에도 반응하게 되어있다.
 
-실제로 클릭한 곳은 span이지만 span > li > ul 순으로 찾아 올라가며 이벤트리스너가 있는지 찾아갔다.
+실제로 클릭한 곳은 span이지만 span > li > ul 순으로 찾아 올라가며 이벤트리스너가 있는지 확인한다.
 
 이를 이벤트 버블링이라고 한다.
 
