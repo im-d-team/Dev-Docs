@@ -109,7 +109,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [CSS - animation](https://github.com/Im-D/Dev-Docs/blob/master/CSS/animation.md)
 - [x] Jinseong : [http-caching](https://github.com/Im-D/Dev-Docs/blob/master/Network/http-caching.md)
 - [x] Dae-Hwa: [HTML Templating](https://github.com/Im-D/Dev-Docs/blob/master/HTML/HTML-Templating.md)
-- [x] JHRla: [페이징 세그먼테이션]()
+- [x] JHRla: [페이징 세그먼테이션](https://github.com/Im-D/Dev-Docs/blob/master/CS/%ED%8E%98%EC%9D%B4%EC%A7%95%EA%B3%BC%20%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98.md)
 
 #### 07월 14일
 
