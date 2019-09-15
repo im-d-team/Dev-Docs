@@ -194,7 +194,7 @@ Javascript는 함수가 일급객체기 때문에 고차함수가 가능하며 �
 
 위의 코드처럼 화살표 함수를 통해 익명함수를 보다 람다스럽게 표현할 수 있게 되었다.
 
-좀 더 자세한 설명은 [다음](https://hyunseob.github.io/2016/09/17/lambda-anonymous-function-closure/)을 참조하길 바란다.
+좀 더 자세한 설명은 [다음](https://github.com/Im-D/Dev-Docs/blob/master/Language/Lamda.md)을 참조하길 바란다.
 
 ---
 
