@@ -2,7 +2,7 @@
 
 자바스크립트로 객체지향 프로그래밍을 할 수 있다. 하지만 대부분의 객체지향 언어와 달리 클래스가 아닌, 프로토타입으로 객체지향 프로그래밍을 구현한다. 또한, 클래스라는 개념이 없기 때문에 별도의 객체 생성 방법이 존재한다.
 
-> 참고 - [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md))
+> 참고 - [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md)
 
 > ES6부터는 자바스크립트에도 `class` 가 생겼는데, 이는 프로토타입 기반 패턴의 Syntatic sugar 이다.<br/>
 > 참고 - [class](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Class.md)
@@ -69,7 +69,7 @@ testFunc.__proto__ === Function.prototype; // true
 
 <br/>
 
-`prototype` 프로퍼티는 함수 객체가 생성자로 사용될 때 인스턴스화 된 객체의 부모 역할을 할 프로토타입을 가리킨다. 다시 말하면 같은 생성자로 만든 객체는 같은 프로토타입을 가리킨다.
+`prototype` 프로퍼티는 함수 객체가 생성자로 사용될 때 인스턴스화 된 객체의 부모 역할을 할 프로토타입을 가리킨다. 다시 말하면 같은 생성자 함수로 만든 객체는 같은 프로토타입을 가리킨다.
 
 ```js
 function TestConstructor() {}
@@ -114,7 +114,7 @@ TestConstructor.prototype.constructor.prototype === TestConstructor.prototype; /
 
 ### 객체의 프로토타입
 
-생성자를 통해 생성된 객체는 원본 객체를 가리킨다. 즉 `Object()` 생성자로 만들어진 객체는 `Object` 객체를 기리킨다.
+생성자 함수를 통해 생성된 객체는 원본 객체를 가리킨다. 즉 `Object()` 생성자 함수로 만들어진 객체는 `Object` 객체를 기리킨다.
 
 또한, 자바스크립트에서 제공하는 내장 객체들의 `[[Prototype]]` 은 `Object` 객체의 프로토타입을 가리킨다.
 
@@ -126,7 +126,7 @@ TestConstructor.prototype.constructor.prototype === TestConstructor.prototype; /
 
 ### 함수의 프로토타입
 
-함수는 내부적으로 `Function()` 생성자를 이용하여 생성된다. 따라서 함수는 `Function` 객체의 프로토타입에 정의된 프로퍼티들을 사용할 수 있다. 또한, `Function` 객체의 `[[Prototype]]` 은 `Object` 를 가리킨다.
+함수는 내부적으로 `Function()` 생성자 함수를 이용하여 생성된다. 따라서 함수는 `Function` 객체의 프로토타입에 정의된 프로퍼티들을 사용할 수 있다. 또한, `Function` 객체의 `[[Prototype]]` 은 `Object` 를 가리킨다.
 
 <br/>
 
