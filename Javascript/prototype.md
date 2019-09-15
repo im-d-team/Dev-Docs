@@ -116,6 +116,9 @@ TestConstructor.prototype.constructor.prototype === TestConstructor.prototype; /
 
 생성자 함수를 통해 생성된 객체는 원본 객체를 가리킨다. 즉 `Object()` 생성자 함수로 만들어진 객체는 `Object` 객체를 기리킨다.
 
+> 객체 리터럴 또한 `Object` 객체를 가리킨다. <br/>
+참고 - [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md#%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-%EC%83%9D%EC%84%B1%EC%9E%90-%EC%82%AC%EC%9A%A9)
+
 또한, 자바스크립트에서 제공하는 내장 객체들의 `[[Prototype]]` 은 `Object` 객체의 프로토타입을 가리킨다.
 
 따라서 모든 객체는 최종적으로 `Object` 객체의 프로토타입을 가리킨다.
