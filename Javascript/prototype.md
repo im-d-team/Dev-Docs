@@ -143,6 +143,11 @@ const numObj = new Number("1");
 
 num.__proto === numObj.proto__;
 ```
+> 위와 같은 이유로, `string` 타입의 변수는 원시타입임에도 `String` 객체의 메소드를 호출하여 사용할 수 있다.
+> ```js
+> const str = "str"
+> str.length // 3
+> ```
 
 <br/>
 
