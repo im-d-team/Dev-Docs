@@ -52,7 +52,9 @@ Nefilx는 MSA를 제일 잘하는 기업 중에 하나이며 MSA 구축을 편�
 
 ![hystrix](../assets/images/hystrix.png)  
 
- `closed` 는 서비스의 초기 상태로, 특정 서비스 혹은 REST API 호출 결과가 정상적인 경우 상태 변화 없이 처리된다. 만약 결과가 비정상적인 경우에는 서비스가 `open` 상태로 바뀌고 모든 접속이 차단된다. 일단 서비스 호출 결과는 `fallback`으로 정의된 내용이 return되며, `timeout`이 지난 후 서비스는 `half-open`상태로 바뀐다. 서비스 접근 결과가 성공이면 서비스가 `close` 상태로 바뀌고, 실패면 다시 `open -> half-Open`의 루틴이 반복된다.
+ `closed` 는 서비스의 초기 상태로, 서비스 호출 결과가 정상적인 경우 `closed` 상태를 유지한다.  
+ 만약 결과가 비정상적인 경우에는 `fallback` 으로 정의된 내용이 return되고 서비스가 `open` 상태로 바뀐다. 이 상태에서는 서비스로의 모든 접속이 차단되며 정해놓은 `timeout` 이 지나면 `half-open` 상태로 바뀐다.  
+ `half-open` 상태는 `open` 상태의 서비스가 `closed` 상태로 변환될 수 있는지 지속적으로 체크하는 상태로 볼 수 있다. `half-open` 상태인 서비스를 호출을 해보고 성공을 하면 `closed` 상태로 바뀌고 끝이 난다.   하지만, 실패를 하면 `open` 상태로 다시 돌아가게 되고 이 서비스는  `timeout` 이 지난 후 다시 `half-open` 상태가 되는 이런 루틴이 반복된다.  
 
 <br/>
 
