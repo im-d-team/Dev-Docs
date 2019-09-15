@@ -2,10 +2,10 @@
 
 자바스크립트로 객체지향 프로그래밍을 할 수 있다. 하지만 대부분의 객체지향 언어와 달리 클래스가 아닌, 프로토타입으로 객체지향 프로그래밍을 구현한다. 또한, 클래스라는 개념이 없기 때문에 별도의 객체 생성 방법이 존재한다.
 
-> 참고 - [객체](<[https://github.com/Im-D/Dev-Docs/blob/847087e43f65df4806d846617d32b72861a25cc5/Javascript/object.md](https://github.com/Im-D/Dev-Docs/blob/847087e43f65df4806d846617d32b72861a25cc5/Javascript/object.md)>)
+> 참고 - [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md))
 
-> ES6부터는 자바스크립트에도 `class` 가 생겼는데, 이는 프로토타입 기반 패턴의 Syntatic sugar 이다.
-> 참고 - [class](<[https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Class.md](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Class.md)>)
+> ES6부터는 자바스크립트에도 `class` 가 생겼는데, 이는 프로토타입 기반 패턴의 Syntatic sugar 이다.<br/>
+> 참고 - [class](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Class.md)
 
 <br/>
 
