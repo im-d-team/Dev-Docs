@@ -21,7 +21,7 @@
 const protoTestObj = {};
 
 // protoTestObj에 정의하지 않은 메소드를 사용할 수 있다.
-protoTestObj.hasOwnProperty("name"); // true
+protoTestObj.toString();
 ```
 
 다음과 같이 프로토타입에 프로퍼티를 정의하여 사용할 수 있다. 프로토타입에 프로퍼티를 정의한 뒤 참조하는 것과 같다. 따라서 각각의 객체마다 프로퍼티를 정의해야하는 문제점을 해결해준다.
