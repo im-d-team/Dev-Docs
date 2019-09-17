@@ -94,11 +94,11 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 08월 07일
 
-- [ ] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
-- [ ] SeonHyungJo : [Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
-- [ ] Jinseong : [웹 브라우저의 작동 원리]()
-- [ ] Dae-Hwa: [bind메소드](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/bind.md)
-- [ ] JHRla: [comet](https://github.com/Im-D/Dev-Docs/blob/master/Network/comet.md)
+- [x] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
+- [x] SeonHyungJo : [Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
+- [x] Jinseong : [웹 브라우저의 작동 원리](https://github.com/Im-D/Dev-Docs/blob/master/Browser/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [x] Dae-Hwa: [bind메소드](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/bind.md)
+- [x] JHRla: [comet](https://github.com/Im-D/Dev-Docs/blob/master/Network/comet.md)
 
 <details>
 <summary> 2019년 07월 </summary>
