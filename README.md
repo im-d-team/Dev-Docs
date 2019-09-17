@@ -87,17 +87,17 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 08월 14일
 
 - [ ] BKJang : [고차함수(High Order Function)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md>), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
-- [ ] SeonHyungJo : [Javascript BuildTool]()
+- [ ] SeonHyungJo : [Javascript BuildTool](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Build%20Tool.md)
 - [ ] Jinseong : [Event Delegation]()
-- [ ] Dae-Hwa: [객체]()
-- [ ] JHRla: [Rest]()
+- [ ] Dae-Hwa: [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md)
+- [ ] JHRla: [Rest](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST.md)
 
 #### 08월 07일
 
 - [ ] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 - [ ] SeonHyungJo : [Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
 - [ ] Jinseong : [웹 브라우저의 작동 원리]()
-- [ ] Dae-Hwa: [bind메소드]()
+- [ ] Dae-Hwa: [bind메소드](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/bind.md)
 - [ ] JHRla: [comet](https://github.com/Im-D/Dev-Docs/blob/master/Network/comet.md)
 
 <details>
