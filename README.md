@@ -47,7 +47,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [ ] SeonHyungJo : []()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
-- [ ] JHRla: []()
 
 </details>
 
@@ -66,23 +65,28 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ### ✏️ This Week Post
 
-- [ ] BKJang : []()
-- [ ] SeonHyungJo : [기본적인 렌더링 최적화 방법]()
+- [ ] BKJang : [Iteration Protocol]()
+- [ ] SeonHyungJo : [Worklet]()
 - [ ] Jinseong : []()
 - [ ] Dae-Hwa: []()
-- [ ] JHRla: []()
 
 ---
 
 ### 📅 History
 
+#### 09월 29일
+
+- [ ] BKJang : [Observer]()
+- [ ] SeonHyungJo : [기본적인 렌더링 최적화 방법]()
+- [ ] Jinseong : [Virtual Dom]()
+- [ ] Dae-Hwa: [그래프]()
+
 #### 09월 01일
 
 - [ ] BKJang : [Functional Programming]()
-- [ ] SeonHyungJo : [javascript의 module]()
+- [ ] SeonHyungJo : [Javascript의 module]()
 - [ ] Jinseong : [웹 브라우저의 작동 원리]()
-- [ ] Dae-Hwa: []()
-- [ ] JHRla: []()
+- [ ] Dae-Hwa: [ProtoType]()
 
 <details>
 <summary> 2019년 08월 </summary>
@@ -90,18 +94,18 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 08월 21일
 
 - [ ] BKJang : [Event Loop]()
-- [ ] SeonHyungJo : [Reflow Repaint]()
-- [ ] Jinseong : [Reactive]()
+- [ ] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
+- [ ] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
 - [ ] Dae-Hwa: [prototype]()
-- [ ] JHRla: [MSA]()
+- [x] JHRla: [MSA](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/MSA.md)
 
 #### 08월 14일
 
-- [ ] BKJang : [고차함수(High Order Function)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md>), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
-- [ ] SeonHyungJo : [Javascript BuildTool](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Build%20Tool.md)
-- [ ] Jinseong : [Event Delegation]()
-- [ ] Dae-Hwa: [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md)
-- [ ] JHRla: [Rest](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST.md)
+- [x] BKJang : [고차함수(High Order Function)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md>), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
+- [x] SeonHyungJo : [Javascript BuildTool](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Build%20Tool.md)
+- [x] Jinseong : [Event Delegation]()
+- [x] Dae-Hwa: [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md)
+- [x] JHRla: [Rest](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST.md)
 
 #### 08월 07일
 
