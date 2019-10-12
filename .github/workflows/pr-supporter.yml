@@ -1,0 +1,14 @@
+name: "Creaet Post Link"
+on: 
+  pull_request:
+    types: [opened]
+      
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: create link
+      uses: Im-D/Im-Bot/packages/pr-supporter@master
+      with:
+        myToken: ${{ secrets.GITHUB_TOKEN }}
