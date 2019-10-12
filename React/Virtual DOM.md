@@ -1,6 +1,6 @@
 # Virtual DOM
 
-react에서는 virtual DOM이라는 개념이 있다. 이 Virtual DOM에 대해 알아보자.
+react에서는 Virtual DOM이라는 개념이 있다. 이 Virtual DOM에 대해 알아보자.
 
 ## 브라우저의 렌더링
 
@@ -46,7 +46,7 @@ Virtual DOM을 갱신할 때 [Reconciliation](https://reactjs.org/docs/reconcili
 
 ## virtual dom 갱신 방법
 
-virtual dom을 변경하는 제일 흔한 방법 중 하나는 `setState()`다.
+virtual dom을 변경하는 제일 일반적인 방법 중 하나는 `setState()`다.
 `setState()`로 state를 변경하면 `ReactUpdates.enqueueUpdate()`를 실행해 변경 대상 컴포넌트로 등록한다.
 그런 뒤 나중에 배치작업 시 이를 실제로 갱신한다.
 
@@ -64,7 +64,13 @@ this.state 값을 직접 변경하는 경우 변경 대상 컴포넌트로 등�
 
 그런데 문제는 최신의 비교 알고리즘도 O(n^3)의 복잡도를 가진다.
 
-컴포넌트가 100개만 되어도 1000000번의 비교연산이 수행된다. 따라서 쉽게 말해 대충 변했다고 가정하는 휴리스틱 알고리즘을 구현했다.
+컴포넌트가 100개만 되어도 1000000번의 비교연산이 수행된다. 성능이 너무 좋지 않다.
+
+리액트는 n^3의 오래걸리는 알고리즘을 채택하는 대신 '휴리스틱 알고리즘'을 사용한다.
+
+[휴리스틱](https://ko.wikipedia.org/wiki/%ED%9C%B4%EB%A6%AC%EC%8A%A4%ED%8B%B1_%EC%9D%B4%EB%A1%A0)이란 어림짐작하는 방법이다.
+
+a와 b를 직접 비교하지 않고 특정 기준만 보고 어 다른데? 하고 판단하는 것이다.
 
 이 휴리스틱의 판단 기준은 두가지다.
 
