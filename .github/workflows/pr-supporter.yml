@@ -12,3 +12,7 @@ jobs:
       uses: Im-D/Im-Bot/packages/pr-supporter@master
       with:
         myToken: ${{ secrets.GITHUB_TOKEN }}
+    - name: create reviewRequest
+      uses: Im-D/Im-Bot/packages/pr-reviewer@master
+      with:
+        myToken: ${{ secrets.GITHUB_TOKEN }}
