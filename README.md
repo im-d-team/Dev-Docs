@@ -63,15 +63,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 ---
 
-### ✏️ This Week Post
-
-- [ ] BKJang : [Iteration Protocol]()
-- [ ] SeonHyungJo : [Worklet]()
-- [ ] Jinseong : []()
-- [ ] Dae-Hwa: []()
-
----
-
 ### 📅 History
 
 #### 09월 29일
