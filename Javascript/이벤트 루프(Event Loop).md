@@ -23,13 +23,13 @@
 
 ### Call Stack(호출 스택)
 
-호출 스택은 이름 그대로 `Stack`이며 LIFO구조를 갖는다. 함수를 호출하면(작업을 요청하면) 작업은 순차적으로 호출 스택에 쌓이고 실행된다. 자바스크립트 엔진은 하나의 스택만 가지고 있기 때문에 하나의 작업이 끝나기 전까지 다른 작업을 수행할 수 없다.
+호출 스택은 이름 그대로 `Stack`이며 LIFO(Last-In-First-Out)구조를 갖는다. 함수를 호출하면(작업을 요청하면) 작업은 순차적으로 호출 스택에 쌓이고 실행된다. 자바스크립트 엔진은 하나의 스택만 가지고 있기 때문에 하나의 작업이 끝나기 전까지 다른 작업을 수행할 수 없다.
 
 ## Web APIs
 
-흔히 WebAPI라 불리는 API들은 웹 브라우저에 내장되어 있다.
+흔히 WebAPI라 불리는 API들은 실행환경에 내장되어 있다.
 
-이것은 자바스크립트에 포함되는 것이 아니며 자바스크립트 언어를 사용하는데 있어 강력한 성능을 제공한다. 즉, 우리는 Web API의 내부는 조작할 수 없으며 호출만 가능하다.
+이것은 자바스크립트에 포함되는 것이 아니다. 즉, 우리는 Web API의 내부는 조작할 수 없으며 호출만 가능하다. 또한 자바스크립트 언어를 사용하는데 있어 강력한 성능을 제공한다. 
 
 Web API의 종류는 [다음](https://developer.mozilla.org/en-US/docs/Web/API)을 참조하면 알 수 있다.
 
@@ -43,7 +43,7 @@ Web API의 종류는 [다음](https://developer.mozilla.org/en-US/docs/Web/API)�
 
 ## Event Queue(이벤트 큐)
 
-이벤트 큐는 말 그대로 콜백 함수들이 대기하는 `Queue`이며 `FIFO`의 구조를 갖는다. 이벤트 루프는 호출 스택이 비워질 때마다 큐에서 콜백 함수를 호출 스택에 넣어주는 역할을 해준다.
+이벤트 큐는 말 그대로 콜백 함수들이 대기하는 `Queue`이며 `FIFO(First-In-First-Out)`의 구조를 갖는다. 이벤트 루프는 호출 스택이 비워질 때마다 큐에서 콜백 함수를 호출 스택에 넣어주는 역할을 해준다.
 
 <br/>
 
@@ -72,9 +72,9 @@ function func3() {
 func1();
 ```
 
-위 예제는 이벤트 루프를 설명할 때 가장 많이 사용되는 예제다. 만약, 이벤트 루프가 수행하는 과정이 없고 순차적으로 호출 스택에만 쌓이게 된다면 `func1`, `func2`, `func3`가 순차적으로 출력될 것이다. 하지만 실제로 위 코드를 실행해보면 `func1`, `func3`, `func2`가 순차적으로 출력되는 것을 볼 수 있을 것이다. 이런 결과가 나오는 이유는 위에서 설명한 것 처럼 이벤트 큐와 이벤트 루프를 통해 비동기 처리를 수행하는 `setTimeout`함수가 다른 함수들과 다르게 동작하기 때문이다.
+위 예제는 이벤트 루프를 설명할 때 가장 많이 사용되는 예제다. 만약, 이벤트 루프가 수행하는 과정이 없고 순차적으로 호출 스택에만 쌓이게 된다면 `func1`, `func2`, `func3`의 순서로 출력될 것이다. 하지만 실제로 위 코드를 실행해보면 `func1`, `func3`, `func2`의 순서로 출력되는 것을 볼 수 있을 것이다. 이런 결과가 나오는 이유는 위에서 설명한 것 처럼 이벤트 큐와 이벤트 루프를 통해 비동기 처리를 수행하는 `setTimeout`함수가 다른 함수들과 다르게 동작하기 때문이다.
 
-아래 이미지는 위 코드가 실행되는 것을 과정을 보여준다.
+아래 이미지는 위 코드가 실행되는 과정을 보여준다.
 
 <br/>
 
@@ -161,7 +161,7 @@ requestAnimationFrame(function {
 console.log("script end");
 ```
 
-위의 코드를 실행하면 다음과 같으 결과가 출력된다.
+위의 코드를 실행하면 다음과 같은 결과가 출력된다.
 
 ```js
 script start
@@ -190,10 +190,10 @@ setTimeout
 
 #### Reference
 
-- [JavaScript Event Loop Explained](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4))
-- [What is the Event Loop in Javascript](https://www.wptutor.io/web/js/javascript-event-loop](https://www.wptutor.io/web/js/javascript-event-loop))
-- [Understanding JS: The Event Loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40))
-- [Event loop in javascript](https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49](https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49))
-- [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/](https://flaviocopes.com/javascript-event-loop/))
-- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/))
+- [JavaScript Event Loop Explained](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4)
+- [What is the Event Loop in Javascript](https://www.wptutor.io/web/js/javascript-event-loop)
+- [Understanding JS: The Event Loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40)
+- [Event loop in javascript](https://code.likeagirl.io/what-the-heck-is-event-loop-1e414fccef49)
+- [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/)
+- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 - [Poiemaweb - 자바스크립트/이벤트](https://poiemaweb.com/js-event)
