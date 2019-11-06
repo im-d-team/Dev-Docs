@@ -1,18 +1,22 @@
-name: "Creaet Post Link"
+name: "Pull Request Action"
 on: 
   pull_request:
     types: [opened]
-      
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: create link
+    - name: Create link
       uses: Im-D/Im-Bot/packages/pr-supporter@master
       with:
         myToken: ${{ secrets.GITHUB_TOKEN }}
-    - name: create reviewRequest
+    - name: Create reviewRequest
       uses: Im-D/Im-Bot/packages/pr-reviewer@master
       with:
         myToken: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Link at README file
+      uses: Im-D/Im-Bot/packages/update-readme@master
+      with:
+        myToken: ${{ secrets.GITHUB_TOKEN}}
+        linkLocTarget: '### 📅 History'
