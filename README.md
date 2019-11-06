@@ -374,9 +374,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 10월 14일
 
-- [x] BKJang ~[렌더링 최적화 기법](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md)~, [JS 애니메이션 vs CSS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Performance/CSS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%20vs%20JS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md)
-- [x] SeonHyungJo ~[Async-await 구현](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Async-Await.md)~, [setState](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/setState.md)
-- [x] Jinseong [Callback Hell](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Callback.md), [Promise1](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise1.md), [Promise2](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise2.md)
+- [x] BKJang ~[렌더링 최적화 기법](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md)~, ~[JS 애니메이션 vs CSS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Performance/CSS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%20vs%20JS%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md)~
+- [x] SeonHyungJo ~[Async-await 구현](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/Async-Await.md)~, ~[setState](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/setState.md)~
+- [x] Jinseong ~[Callback Hell](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/B_Callback.md)~, ~[Promise1](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise1.md)~, ~[Promise2](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Promise2.md)~
 
 </details>
 
