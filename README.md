@@ -368,7 +368,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 10월 28일
 
-- [x] BKJang [XSS와 CSRF](https://github.com/Im-D/Dev-Docs/blob/master/Security/XSS%EC%99%80%20CSRF.md), [JSONP(JSON Padding)와 CORS(Cross-Origin Resource Sharing)](<https://github.com/Im-D/Dev-Docs/blob/master/Security/CORS(Cross-Origin%20Resource%20Sharing).md>)
+- [x] BKJang [XSS와 CSRF](https://github.com/Im-D/Dev-Docs/blob/master/Security/XSS%EC%99%80%20CSRF.md), ~[JSONP(JSON Padding)와 CORS(Cross-Origin Resource Sharing)](<https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/CORS(Cross-Origin%20Resource%20Sharing).md>)~
 - [x] SeonHyungJo [점진적향상 우아한 하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EC%A0%90%EC%A7%84%EC%A0%81%ED%96%A5%EC%83%81_%EC%9A%B0%EC%95%84%ED%95%9C%ED%95%98%ED%96%A5.md)
 - [x] Jinseong [쓰로틀링과 디바운싱](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Throttle%20and%20Debounce.md), [프로미스 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/PromisePattern.md)
 
