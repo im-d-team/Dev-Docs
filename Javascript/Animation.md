@@ -1,9 +1,11 @@
 # CSS 애니메이션 vs JS 애니메이션
 
-웹기술이 발전되면서 좀 더 사용자 친화적으로 개발을 하려는 노력하고 있다.
-방법 중 하나로 애니메이션을 추가함으로써 더욱 이쁘고 완성도가 높은 웹으로 만들어지고 있다.
+웹기술이 발전되면서 좀 더 사용자 친화적으로 개발하려는 노력을 하고 있다.
+이에 방법 중 하나로 애니메이션을 추가함으로써 더욱 이쁘고 완성도가 높은 웹을 만든다.
 
-예전에는 단순하게 CSS와 JS를 사용해서 애니메이션을 구현했었는데, 그 예시로 stackoverflow의 만우절 이벤트를 들 수 있다.
+예전에는 단순하게 CSS와 JS를 사용해서 애니메이션을 구현했다. 
+
+그 예시로 stackoverflow의 만우절 이벤트를 들 수 있다.
 
 ![stackoverflow](https://user-images.githubusercontent.com/24274424/68475826-83d94800-026c-11ea-90d1-760751c82d1f.png)
 
@@ -90,8 +92,8 @@ CSS로 애니메이션을 표현하는 방법은 크게 2가지 있다.
 
 #### 애니메이션
 
-- 트랜지션은 시작하기 위해 이벤트가 필요하지만 애니메이션은 **시작, 정지, 반복까지 제어 가능**(물론, 이벤트 제어도 가능)
-- 하나 또는 복수의 **`@keyframes`으로 이루어짐**
+- 트랜지션은 시작하기 위해 이벤트가 필요하지만 애니메이션은 **시작, 정지, 반복까지 제어 가능하다.**(물론, 이벤트 제어도 가능)
+- 하나 또는 복수의 **`@keyframes`으로 이루어진다.**
 
 ### 간단하게 살펴보는 기본 Animation 속성
 
@@ -103,10 +105,10 @@ CSS로 애니메이션을 표현하는 방법은 크게 2가지 있다.
 
 #### Example
 
-> [Animation-Delay](https://codepen.io/seonhyungjo/pen/aeOpxp)
-> [Animation-Direction](https://codepen.io/seonhyungjo/pen/zgGZRE)
-> [Animation-Duration](https://codepen.io/seonhyungjo/pen/ZgGeVJ)
-> [Animation-fill-mode](https://codepen.io/seonhyungjo/pen/qedrgM)
+- [Animation-Delay](https://codepen.io/seonhyungjo/pen/aeOpxp)
+- [Animation-Direction](https://codepen.io/seonhyungjo/pen/zgGZRE)
+- [Animation-Duration](https://codepen.io/seonhyungjo/pen/ZgGeVJ)
+- [Animation-fill-mode](https://codepen.io/seonhyungjo/pen/qedrgM)
 
 ### keyframe
 
@@ -178,13 +180,14 @@ animation: 3s ease-in 1s 2 reverse both paused slidein;
 </script>
 ```
 
-JS 애니메이션으로 위의 CSS 애니메이션과 같은 효과를 넣은 코드다.
+JS 애니메이션으로 위에서 살펴본 CSS 애니메이션과 같은 효과를 넣은 코드이다.
 
-**JavaScript 코드를 보면 `setInterval`을 주고 일정 주기마다 `frame()` 함수를 실행시켜 요소의 위치를 이동**시키고 있다.
+**JavaScript 코드를 보면 `setInterval`을 주고 일정 주기마다 `frame()` 함수를 실행시켜 요소를 이동**시키고 있다.
 
 ## CSS 애니메이션과 JS 애니메이션의 차이
 
-CSS 애니메이션은 낮은 버전의 브라우저에서는 지원을 하지 않는 경우가 있다.(특히, IE). 즉, **1. 크로스 브라우징면에서는 JS 애니메이션을 사용하는 것이 좋다.**
+CSS 애니메이션은 낮은 버전의 브라우저에서는 지원을 하지 않는 경우가 있다.(특히, IE). 
+즉, **1. 크로스 브라우징면에서는 JS 애니메이션을 사용하는 것이 좋다.**
 
 하지만, CSS 애니메이션은 **모든 동작을 CSS에서 관리하고 필요하다면 JS는 이벤트 감지를 위해서만 사용**한다.
 
