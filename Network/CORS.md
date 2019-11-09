@@ -85,7 +85,8 @@ function myCallback(data){
 };
 
 const script = document.createElement('script');
-script.src = '//test.com/jsonp?callback=myCallback&q=jin' document.getElementsByTagName('head')[0].appendChild(script); // 함수 실행
+script.src = '//test.com/jsonp?callback=myCallback&q=jin';
+document.getElementsByTagName('head')[0].appendChild(script); // 함수 실행
 ```
 
 server
