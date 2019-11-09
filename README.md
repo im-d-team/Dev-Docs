@@ -64,6 +64,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [Javascript/object_생성패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_생성패턴.md)
+
 - [x] BKJang : [ECMAScript/Generator와 async-await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Generator%EC%99%80%20async-await.md)
 
 
