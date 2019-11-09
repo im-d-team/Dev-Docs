@@ -64,6 +64,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] BKJang : [ECMAScript/Generator와 async-await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Generator와 async-await.md)
+
 
 #### 09월 29일
 
