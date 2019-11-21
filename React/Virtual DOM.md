@@ -32,7 +32,7 @@ virtual dom은 메모리에 존재하는 가상 DOM이다. react는 메모리에
 
 이 개념은 사실 react에만 특별히 있는 것은 아니다. document fragment로 dom조작을 하면 이 개념과 크게 다르지 않다.
 
-그런데 react가 이렇게 주목받는 이유는 dom fragment를 관리하는 것을 자동화 해주기 때문이다. virtual dom을 추상화하여 내부에서 처리하기 때문에 개발자가 따로 관리해야 할 것이 많지 않다.
+그런데 react가 이렇게 주목받는 이유는 dom fragment 관리를 자동화 해주기 때문이다. virtual dom을 추상화하여 내부에서 처리하기 때문에 개발자가 따로 관리해야 할 것이 많지 않다.
 
 vanilla script로 복잡한 상태와 다양한 view를 관리해봤다면 이 불편함을 잘 알 것이다. 이를 반자동의 느낌으로 다룰 수 있어 인기가 많다.
 
