@@ -19,7 +19,7 @@ display가 완료된 상태에서 DOM 조작을 하게 되면 보통의 경우 t
 
 ## 메모리에 있는 가상의 DOM
 
-virtual dom은 메모리에 존재하는 가상 DOM이다. react는 메모리에 virtual dom을 가지고 있다가 view의 변화를 감지하면 virtual dom을 1차적으로 변화시킨다.
+virtual DOM은 메모리에 존재하는 가상 DOM이다. react는 메모리에 virtual DOM을 가지고 있다가 view의 변화를 감지하면 virtual DOM을 1차적으로 변화시킨다.
 
 그런 뒤 이를 한꺼번에 모아 실제 DOM에 전달한다. (batch)
 
