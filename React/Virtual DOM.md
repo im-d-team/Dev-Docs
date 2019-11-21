@@ -13,7 +13,7 @@ virtual DOM을 알아보기 앞서 먼저 브라우저 렌더링 프로세스를
 display가 완료된 상태에서 DOM 조작을 하게 되면 보통의 경우 tree를 수정하게 된다. 그럼 render tree - layout - painting의 단계를 다시 거치게 된다.
 이와 관련된 내용은 [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)에서 확인할 수 있다.
 
-다수의 DOM 조작이 발생하고 잦은 reflow/repaint를 발생시킨다면 성능에 영향을 줄 것이다. 한 화면에서 DOM을 변경하여 기능을 구현하는 SPA의 경우 이 DOM조작이 많을 수 밖에 없다.
+다수의 DOM 조작이 발생하여 잦은 reflow/repaint를 발생시킨다면 성능에 영향을 줄 것이다. 한 화면에서 DOM을 변경하여 기능을 구현하는 SPA의 경우 이 DOM조작이 많을 수 밖에 없다.
 
 이 때 사용되는 것이 virtual DOM이다.
 
