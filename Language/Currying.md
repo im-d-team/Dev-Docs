@@ -73,7 +73,7 @@ const squareAfterAddTen = compose(square, addTen);
 const squareAfterMinusTen = compose(square, minusTen);
 
 console.log(squareAfterAddTen(10)); //400
-console.log(squareAfterMinusTen(30)); //100
+console.log(squareAfterMinusTen(30)); //400
 ```
 
 위의 `compose`함수가 2개 이상의 함수를 합성하는 역할을 해주는 함수다. 코드를 보면 합성할 함수들를 받은 다음 뒤에서 부터 순서대로 실행시키고 그 결과 값을 다음 함수의 인자로 전달하고 있다.
