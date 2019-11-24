@@ -1,6 +1,6 @@
 # Virtual DOM
 
-react에서는 Virtual DOM이라는 개념이 있다. 이 Virtual DOM에 대해 알아보자.
+react에서는 Virtual DOM(Document Object Model)이라는 개념이 있다. 이 Virtual DOM에 대해 알아보자.
 
 ## 브라우저의 렌더링
 
@@ -79,14 +79,12 @@ a와 b를 직접 비교하지 않고 특정 기준만 보고 어 다른데? 하�
 
 #### 다른 타입의 엘리먼트 
 
-```jsx
-<div>
+```diff
+-<div>
++<span>
   <Counter />
-</div>
-
-<span>
-  <Counter />
-</span>
+-</div>
++</span>
 ```
 
 이와 같이 `div` => `span`으로 변경되었다면 엘리먼트의 타입이 변경된 경우다. 이 경우 하위는 비교하지 않는다.
@@ -106,16 +104,16 @@ a와 b를 직접 비교하지 않고 특정 기준만 보고 어 다른데? 하�
 ```
 이런 데이터가 있을때 4가 추가된다고 하자.
 
-```jsx
+```diff
 <ul>
   <li>1</li>
   <li>2</li>
   <li>3</li>
-  <li>4</li>
++ <li>4</li>
 </ul>
 
 <ul>
-  <li>4</li>
++ <li>4</li>
   <li>1</li>
   <li>2</li>
   <li>3</li>
