@@ -98,22 +98,14 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 09월 01일
 
 - [ ] BKJang : [Event Loop](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84(Event%20Loop).md)
-- [ ] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
-- [ ] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
-- [v] Dae-Hwa: [protoType](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/prototype.md)
+- [x] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
+- [x] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
+- [x] Dae-Hwa: [protoType](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/prototype.md)
 - [x] JHRla: [MSA](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/MSA.md)
 
 </details>
 <details>
 <summary> 2019년 08월 </summary>
-
-#### 08월 21일
-
-- [ ] BKJang : [Event Loop]()
-- [ ] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
-- [ ] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
-- [v] Dae-Hwa: [protoType](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/prototype.md)
-- [x] JHRla: [MSA](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/MSA.md)
 
 #### 08월 18일
 
