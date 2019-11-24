@@ -43,6 +43,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 <details>
 <summary> 멤버 체크양식 </summary>
 
+#### xx월 xx일
+
 - [ ] BKJang : []()
 - [ ] SeonHyungJo : []()
 - [ ] Jinseong : []()
@@ -64,25 +66,44 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] Dae-Hwa : [Javascript/object_생성패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_생성패턴.md)
 
-- [x] BKJang : [ECMAScript/Generator와 async-await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Generator%EC%99%80%20async-await.md)
+#### 11월 10일
 
+- [ ] BKJang : [Generator와 async-await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Generator%EC%99%80%20async-await.md)
+- [ ] SeonHyungJo : [CSS 애니메이션 vs JS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Animation.md)
+- [ ] Jinseong : [CORS(Cross-Origin Resource Sharing)](https://github.com/Im-D/Dev-Docs/blob/master/Network/CORS.md)
+- [ ] Dae-Hwa: [객체 생성 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_%EC%83%9D%EC%84%B1%ED%8C%A8%ED%84%B4.md)
+
+<details>
+<summary> 2019년 10월 </summary>
+
+#### 10월 13일
+
+- [ ] BKJang : [Iteration Protocol](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Iteration_Protocol.md)
+- [ ] SeonHyungJo : [Worklet](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Worklet.md)
+- [ ] Jinseong : [JSend](https://github.com/Im-D/Dev-Docs/blob/master/Network/JSend.md)
+- [ ] Dae-Hwa: [비선형 구조의 탐색](https://github.com/Im-D/Dev-Docs/blob/master/CS/non-linear-search.md)
+
+</details>
+<details>
+<summary> 2019년 09월 </summary>
 
 #### 09월 29일
 
-- [ ] BKJang : [Observer]()
-- [ ] SeonHyungJo : [기본적인 렌더링 최적화 방법]()
-- [ ] Jinseong : [Virtual Dom]()
-- [ ] Dae-Hwa: [그래프]()
+- [ ] BKJang : [Observer](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Observer.md)
+- [ ] SeonHyungJo : [기본적인 렌더링 최적화 방법](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md)
+- [ ] Jinseong : [Virtual DOM](https://github.com/Im-D/Dev-Docs/blob/master/React/Virtual%20DOM.md)
+- [ ] Dae-Hwa : [그래프](https://github.com/Im-D/Dev-Docs/blob/master/CS/Graph.md)
 
 #### 09월 01일
 
-- [ ] BKJang : [Functional Programming]()
-- [ ] SeonHyungJo : [Javascript의 module]()
-- [ ] Jinseong : [웹 브라우저의 작동 원리]()
-- [ ] Dae-Hwa: [ProtoType]()
+- [ ] BKJang : [Event Loop](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84(Event%20Loop).md)
+- [ ] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
+- [ ] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
+- [v] Dae-Hwa: [protoType](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/prototype.md)
+- [x] JHRla: [MSA](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/MSA.md)
 
+</details>
 <details>
 <summary> 2019년 08월 </summary>
 
@@ -91,18 +112,18 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [ ] BKJang : [Event Loop]()
 - [ ] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
 - [ ] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
-- [ ] Dae-Hwa: [prototype]()
+- [v] Dae-Hwa: [protoType](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/prototype.md)
 - [x] JHRla: [MSA](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/MSA.md)
 
-#### 08월 14일
+#### 08월 18일
 
 - [x] BKJang : [고차함수(High Order Function)](<https://github.com/Im-D/Dev-Docs/blob/master/Language/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98(High%20Order%20Function).md>), [Currying](https://github.com/Im-D/Dev-Docs/blob/master/Language/Currying.md)
 - [x] SeonHyungJo : [Javascript BuildTool](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Build%20Tool.md)
-- [x] Jinseong : [Event Delegation]()
+- [x] Jinseong : [Event Delegation](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Event%20Delegation.md)
 - [x] Dae-Hwa: [객체](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object.md)
 - [x] JHRla: [Rest](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST.md)
 
-#### 08월 07일
+#### 08월 04일
 
 - [x] BKJang : [함수형 프로그래밍](https://github.com/Im-D/Dev-Docs/blob/master/Language/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 - [x] SeonHyungJo : [Module](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Module.md)
@@ -127,7 +148,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 - [x] BKJang : [배열 내장함수](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/배열%20내장함수.md)
 - [x] SeonHyungJo : [preload, prefetch](https://github.com/Im-D/Dev-Docs/blob/master/HTML/preload%26prefetch.md)
-- [ ] Jinseong : []()
 - [x] Dae-Hwa: [WAS](https://github.com/Im-D/Dev-Docs/blob/master/Java/WAS.md)
 - [x] JHRla: [클로저](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%ED%81%B4%EB%A1%9C%EC%A0%80.md)
 
@@ -137,7 +157,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] SeonHyungJo : [window.history](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/window.history.md)
 - [x] Jinseong : [ES6 Module in Browser](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ES6-module-in-Browser.md)
 - [x] Dae-Hwa: [Non-blocking](https://github.com/Im-D/Dev-Docs/blob/master/CS/non-blocking.md)
-- [ ] JHRla: []()
 
 </details>
 
