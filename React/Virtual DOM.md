@@ -10,16 +10,16 @@ virtual DOM을 알아보기 앞서 먼저 브라우저 렌더링 프로세스를
 
 ![rendering process](https://user-images.githubusercontent.com/24724691/62412567-bf49f200-b63f-11e9-9ed4-ec8215d04a7d.png)
 
-display가 완료된 상태에서 이 상태에서 DOM 조작을 하게 되면 보통의 경우 tree를 수정하게 된다. 그럼 render tree - layout - painting의 단계를 다시 거치게 된다.
+display가 완료된 상태에서 DOM 조작을 하게 되면 보통의 경우 tree를 수정하게 된다. 그럼 render tree - layout - painting의 단계를 다시 거치게 된다.
 이와 관련된 내용은 [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)에서 확인할 수 있다.
 
-다수의 DOM 조작이 발생하고 잦은 reflow/repaint를 발생시킨다면 성능에 영향을 줄 것이다. 한 화면에서 DOM을 변경하여 기능을 구현하는 SPA의 경우 이 DOM조작이 많을 수 밖에 없다.
+다수의 DOM 조작이 발생하여 잦은 reflow/repaint를 발생시킨다면 성능에 영향을 줄 것이다. 한 화면에서 DOM을 변경하여 기능을 구현하는 SPA의 경우 이 DOM조작이 많을 수 밖에 없다.
 
 이 때 사용되는 것이 virtual DOM이다.
 
 ## 메모리에 있는 가상의 DOM
 
-virtual dom은 메모리에 존재하는 가상 DOM이다. react는 메모리에 virtual dom을 가지고 있다가 view의 변화를 감지하면 virtual dom을 1차적으로 변화시킨다.
+virtual DOM은 메모리에 존재하는 가상 DOM이다. react는 메모리에 virtual DOM을 가지고 있다가 view의 변화를 감지하면 virtual DOM을 1차적으로 변화시킨다.
 
 그런 뒤 이를 한꺼번에 모아 실제 DOM에 전달한다. (batch)
 
@@ -32,7 +32,7 @@ virtual dom은 메모리에 존재하는 가상 DOM이다. react는 메모리에
 
 이 개념은 사실 react에만 특별히 있는 것은 아니다. document fragment로 dom조작을 하면 이 개념과 크게 다르지 않다.
 
-그런데 react가 이렇게 주목받는 이유는 dom fragment를 관리하는 것을 자동화 해주기 때문이다. virtual dom을 추상화하여 내부에서 처리하기 때문에 개발자가 따로 관리해야 할 것이 많지 않다.
+그런데 react가 이렇게 주목받는 이유는 dom fragment 관리를 자동화 해주기 때문이다. virtual dom을 추상화하여 내부에서 처리하기 때문에 개발자가 따로 관리해야 할 것이 많지 않다.
 
 vanilla script로 복잡한 상태와 다양한 view를 관리해봤다면 이 불편함을 잘 알 것이다. 이를 반자동의 느낌으로 다룰 수 있어 인기가 많다.
 
@@ -120,7 +120,7 @@ a와 b를 직접 비교하지 않고 특정 기준만 보고 어 다른데? 하�
 </ul>
 ```
 
-위와 아래는 사람 눈에는 큰 차이가 없어보인다. 하지만 react는 이를 완전히 다르게 처리해버린다. 전자는 하위 노드 추가, 후자는 전체 하위 노드 초기화.
+위와 아래는 표면적으로 크게 차이가 없어보인다. 하지만 react는 전자를 하위 노드 추가, 후자를 전체 하위 노드 변경으로 취급하여 둘을 다르게 처리한다.
 
 따라서 고유한 key prop을 통해 최적화 한다.
 
