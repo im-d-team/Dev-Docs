@@ -9,7 +9,7 @@
 
 ![stackoverflow](https://user-images.githubusercontent.com/24274424/68475826-83d94800-026c-11ea-90d1-760751c82d1f.png)
 
-현재는 WebGL, Canvas, SVG, Observer API / Web-Lottie, D3 등등 여러 기술과 라이브러리가 있어  구현할 수 있는 방법이 다양해졌다.
+현재는 WebGL, Canvas, SVG, Observer API / Web-Lottie, D3 등등 여러 기술과 라이브러리가 있어 구현할 수 있는 방법이 다양해졌다.
 
 그 중에서 기본이 되는 CSS와 JS 애니메이션을 살펴보자.
 
