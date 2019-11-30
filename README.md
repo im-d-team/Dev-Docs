@@ -66,7 +66,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] BKJang : [Deprecated/점진적향상_우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/점진적향상_우아한하향.md)
 - [x] BKJang : [Performance/점진적향상_우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/점진적향상_우아한하향.md)
 
 
