@@ -335,7 +335,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 12월 16일
 
 - [x] BKJang [SSR](<https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EC%84%9C%EB%B2%84%20%EC%82%AC%EC%9D%B4%EB%93%9C%20%EB%A0%8C%EB%8D%94%EB%A7%81(SSR).md>)
-- [x] SeonHyungJo [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
+- [x] SeonHyungJo ~[Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/WebWorker.md)~
 - [ ] Jinseong []()
 
 #### 12월 1일
