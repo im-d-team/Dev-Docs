@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+
+- [x] Dae-Hwa : [Javascript/object_create_pattern-constructor](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_create_pattern-constructor.md)
 - [x] BKJang : [Performance/점진적향상_우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/점진적향상_우아한하향.md)
 
 
