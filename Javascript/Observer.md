@@ -10,7 +10,7 @@
 
 예시는 [다음](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md#async)으로 대체한다.
 
-자바스크립트에서 옵저버 패턴을 구현할 수 있도록 제공하는 API에는 크게 5가지가 있다.
+자바스크립트에서는 옵저버 패턴을 이용한 API가 크게 5가지 제공된다.
 
 - Mutation Observer
 - Intersection Observer
@@ -24,7 +24,7 @@
 
 ## Mutation Observer
 
-`Mutation Observer`을 가장 먼저 소개하는 이유는 다른 `Observer`들에 비해 가장 활용도가 높기 때문이다. ie11까지 지원하고 있다.
+`Mutation Observer`을 가장 먼저 소개하는 이유는 다른 `Observer`들에 비해 가장 활용도가 높기 때문이다.
 
 `Mutation Observer`는 객체의 속성 변화를 감지하며 객체의 속성이 변화될 때마다 특정 행위를 수행하도록 한다.
 
@@ -48,13 +48,15 @@ mo.observe(target, options);
 
 ### MutationObserverInit
 
-- childList : 타겟 노드의 자식 엘레멘트(텍스트 노드를 포함)들의 추가 혹은 제거를 관찰해야할 때 true
-- attributes : 타겟 노드의 속성들의 변형들을 관찰해야할 때 true
-- characterData : 타겟 노드의 데이터를 관찰해야할 때 true
-- subtree : 타겟 노드부터 자손 노드들의 변형들까지 관찰해야할 때 true
-- attributeOldValue : attributes이 true면서 타겟 노드의 변경된 속성들 이전 값을 기록해야할 때 true
-- characterDataOldValue : characterData true면서 타겟 노드의 변경된 데이터 이전 값을 기록해야할 때 true
-- attributeFilter : 모든 속성들을 관찰하고 싶지않을 때 관찰할 속성명의 Array
+- childList : 타겟 노드의 자식 엘레멘트(텍스트 노드를 포함)들의 추가 혹은 제거를 관찰해야할 때 true (default: false)
+- attributes : 타겟 노드의 속성들의 변형들을 관찰해야할 때 true (default: false)
+- characterData : 타겟 노드의 데이터를 관찰해야할 때 true (default: none)
+- subtree : 타겟 노드부터 자손 노드들의 변형들까지 관찰해야할 때 true (default: false)
+- attributeOldValue : attributes이 true면서 타겟 노드의 변경된 속성들 이전 값을 기록해야할 때 true (default: none)
+- characterDataOldValue : characterData true면서 타겟 노드의 변경된 데이터 이전 값을 기록해야할 때 true (default: none)
+- attributeFilter : 모든 속성들을 관찰하고 싶지않을 때 관찰할 속성명의 Array (default: none)
+
+**최소한 `childList`, `attributes`, `characterData` 중 하나가 `true`여야 한다. 그렇지 않으면 `TypeError`가 발생한다.**
 
 - [MutationObserver 예시](https://codepen.io/seonhyungjo/pen/pQqOpv)
 
@@ -65,6 +67,8 @@ mo.observe(target, options);
 `Intersection Observer`는 용어 뜻 그대로 그대로 특정 DOM 객체가 우리가 보는 화면 영역(viewport)과 교차 되는 것을 감시한다.
 
 이를 이용해서 우리는 `scroll event`를 쓰지 않고 `Lazy Loading`을 구현할 수 있다. 예를 들어, 우리가 스크롤이 특정 위치에 도착했을 때 이벤트를 일으켜 해당 부분의 데이터를 가져와 볼 수 있다면 어떨까? 그렇다면 초기에 모든 데이터를 가져올 필요가 없기 때문에 초기 로딩 속도를 높일 수 있다.
+
+뿐만 아니라 `threshold` 옵션을 이용해여 관측 대상에 대한 전체 상자 영역(루트)에 대한 교차 영역의 비율을 지정하고 교차하는 부분이 명시한만큼 보이면 작동하도록 할 수도 있다.
 
 - [IntersectionObserver 예시](https://codepen.io/seonhyungjo/pen/wQQYdz)
 
