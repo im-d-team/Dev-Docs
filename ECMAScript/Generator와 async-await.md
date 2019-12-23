@@ -70,7 +70,7 @@ console.log(genObj.next()) //{value: 3, done: false}
 console.log(genObj.next()) //{value: undefined, done: true}
 ```
 
-`Generator` 객체는 이터러블이면서 이터레이터이기 때문에 `next()`메서드를 가지고 있다. 따라서 `next()` 메서드를 호출하면 `yield`문까지 실행되고 일시 중지된다. 다시 `next()` 메서드를 호출하면 다음 `yield`문을 만날 때까지 실행된 뒤 일시 중지된다.
+`Generator` 객체는 이터러블이면서 이터레이터이기 때문에 `next()`메서드를 가지고 있다. 따라서 `next()` 메서드를 호출하면 `yield`문까지 실행되고 일시 중지된다. 다시 `next()` 메서드를 호출하면 다음 `yield`문을 만날 때까지 실행된 뒤 일시 중지된다. 위의 코드에서는 `next()`메서드를 호출하면 `value`값으로 `yield`문의 오른쪽에 선언된 값이 반환된다.
 
 <br/>
 
@@ -135,7 +135,7 @@ console.log(genObj.next(3));
 
 ## Generator를 이용한 비동기 처리
 
-`Generator`의 진면목은 비동기 프로그래밍에서 볼 수 있다. 함수가 실행 도중에 멈춘다니. 언제 응답이 올지 알 수 없기 때문에, callback을 등록하는 비동기 프로그래밍에 응용하면 callback hell을 탈출할 수 있지 않을까?
+`Generator`의 진면목은 비동기 프로그래밍에서 볼 수 있다. 함수가 실행 도중에 멈춘다니. 언제 응답이 올 지 알 수 없기 때문에, callback을 등록하는 비동기 프로그래밍에 응용하면 callback hell을 탈출할 수 있지 않을까?
 
 ```js
 function getId(phoneNumber) {
