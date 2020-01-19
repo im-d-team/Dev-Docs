@@ -5,7 +5,7 @@
 일반적인 HTTP 요청은 다른 도메인의 자원을 요청하는 것이 가능하다 이를 Cross-Site HTTP Request라고 한다.
 
 그렇지만 script에서 다른 자원의 요청은 원칙적으로 동일한 도메인에서만 허용한다.
-이를 [Same-Origin olicy](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)라고 한다.
+이를 [Same-Origin Policy](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)라고 한다.
 
 **Same Origin Policy**란 script 내에서 다른 도메인의 script와 상호작용 하는 것을 제한하는 정책이다. 출처가 같다는 것은 같은 도메인, 정확하게는 동일한 protocol, port, host를 말한다.
 
