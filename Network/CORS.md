@@ -11,7 +11,7 @@
 
 [XHR](https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest), [AJAX](https://ko.wikipedia.org/wiki/Ajax)를 사용하며 개발하게 되면 이 정책을 깨고 자원을 이용하는 경우가 너무 많다.
 
-특히 현대의 SPA방식의 개발은 필수적이다.
+특히 현대의 SPA(Single Page Application) 방식의 개발은 필수적이다.
 
 이 Same Origin Policy을 깨트리며 통신하는 대표적인 방법으로 CORS, JSONP가 있다.
 
