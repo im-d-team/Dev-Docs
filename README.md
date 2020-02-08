@@ -61,33 +61,61 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 - ex) ~[브라우저 Redering 과정](https://github.com/Im-D/Dev-Docs/blob/master/Deprecated/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)~
 
-</details>
+</details>    
 
 ---
 
 ### 📅 History
-- [x] Dae-Hwa : [Security/SQL_Injection](https://github.com/Im-D/Dev-Docs/blob/master/Security/SQL_Injection.md)
+
+<!--
+<details>
+<summary> 2020년 2월 </summary>
+-->
+
+#### 02월 09일
+
+- [ ] BKJang : []()
+- [ ] SeonHyungJo : []()
+- [ ] Jinseong : []()
+- [ ] Dae-Hwa: [SQL Injection](https://github.com/Im-D/Dev-Docs/blob/master/Security/SQL_Injection.md)
+
+<!--
+</details>
+-->
+
+<details>
+<summary> 2019년 12월 </summary>
+
+#### 12월 01일
+
+- [ ] BKJang : [점진적향상 우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/점진적향상_우아한하향.md)
+- [ ] SeonHyungJo : [requestAnimationFrame(rAF)](https://github.com/Im-D/Dev-Docs/blob/master/Performance/requestAnimationFram(rAF).md)
+- [ ] Jinseong : [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
+- [ ] Dae-Hwa : [객체 생성 패턴 - 생성자 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_create_pattern-constructor.md)
+
+</details>
 
 
-- [x] Dae-Hwa : [Javascript/object_create_pattern-constructor](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_create_pattern-constructor.md)
-- [x] BKJang : [Performance/점진적향상_우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/점진적향상_우아한하향.md)
 
-
+<details>
+<summary> 2019년 11월 </summary>
+  
 #### 11월 10일
 
-- [ ] BKJang : [Generator와 async-await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Generator%EC%99%80%20async-await.md)
-- [ ] SeonHyungJo : [CSS 애니메이션 vs JS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Animation.md)
-- [ ] Jinseong : [CORS(Cross-Origin Resource Sharing)](https://github.com/Im-D/Dev-Docs/blob/master/Network/CORS.md)
-- [ ] Dae-Hwa: [객체 생성 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_%EC%83%9D%EC%84%B1%ED%8C%A8%ED%84%B4.md)
+- [x] BKJang : [Generator와 async-await](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Generator%EC%99%80%20async-await.md)
+- [x] SeonHyungJo : [CSS 애니메이션 vs JS 애니메이션](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Animation.md)
+- [x] Jinseong : [CORS(Cross-Origin Resource Sharing)](https://github.com/Im-D/Dev-Docs/blob/master/Network/CORS.md)
+- [x] Dae-Hwa: [객체 생성 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_%EC%83%9D%EC%84%B1%ED%8C%A8%ED%84%B4.md)
+</details>
 
 <details>
 <summary> 2019년 10월 </summary>
 
 #### 10월 13일
 
-- [ ] BKJang : [Iteration Protocol](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Iteration_Protocol.md)
-- [ ] SeonHyungJo : [Worklet](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Worklet.md)
-- [ ] Jinseong : [JSend](https://github.com/Im-D/Dev-Docs/blob/master/Network/JSend.md)
+- [x] BKJang : [Iteration Protocol](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Iteration_Protocol.md)
+- [x] SeonHyungJo : [Worklet](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Worklet.md)
+- [x] Jinseong : [JSend](https://github.com/Im-D/Dev-Docs/blob/master/Network/JSend.md)
 - [ ] Dae-Hwa: [비선형 구조의 탐색](https://github.com/Im-D/Dev-Docs/blob/master/CS/non-linear-search.md)
 
 </details>
@@ -96,14 +124,14 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 09월 29일
 
-- [ ] BKJang : [Observer](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Observer.md)
-- [ ] SeonHyungJo : [기본적인 렌더링 최적화 방법](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md)
-- [ ] Jinseong : [Virtual DOM](https://github.com/Im-D/Dev-Docs/blob/master/React/Virtual%20DOM.md)
-- [ ] Dae-Hwa : [그래프](https://github.com/Im-D/Dev-Docs/blob/master/CS/Graph.md)
+- [x] BKJang : [Observer](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Observer.md)
+- [x] SeonHyungJo : [기본적인 렌더링 최적화 방법](https://github.com/Im-D/Dev-Docs/blob/master/Performance/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EC%B5%9C%EC%A0%81%ED%99%94%20%EB%B0%A9%EB%B2%95.md)
+- [x] Jinseong : [Virtual DOM](https://github.com/Im-D/Dev-Docs/blob/master/React/Virtual%20DOM.md)
+- [x] Dae-Hwa : [그래프](https://github.com/Im-D/Dev-Docs/blob/master/CS/Graph.md)
 
 #### 09월 01일
 
-- [ ] BKJang : [Event Loop](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84(Event%20Loop).md)
+- [x] BKJang : [Event Loop](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84(Event%20Loop).md)
 - [x] SeonHyungJo : [Reflow Repaint](https://github.com/Im-D/Dev-Docs/blob/master/Performance/Reflow%20Repaint.md)
 - [x] Jinseong : [Reactive](https://github.com/Im-D/Dev-Docs/blob/master/Language/Reactive.md)
 - [x] Dae-Hwa: [protoType](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/prototype.md)
