@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
+
 - [x] SeonHyungJo : [Performance/requestAnimationFram(rAF)](https://github.com/Im-D/Dev-Docs/blob/master/Performance/requestAnimationFram(rAF).md)
 - [x] SeonHyungJo : [README](https://github.com/Im-D/Dev-Docs/blob/master/README.md)
 - [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
