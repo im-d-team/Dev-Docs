@@ -66,14 +66,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] SeonHyungJo : [Browser/test](https://github.com/Im-D/Dev-Docs/blob/master/Browser/test.md)
-
-- [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
-
-- [x] SeonHyungJo : [Performance/requestAnimationFram(rAF)](https://github.com/Im-D/Dev-Docs/blob/master/Performance/requestAnimationFram(rAF).md)
-- [x] SeonHyungJo : [README](https://github.com/Im-D/Dev-Docs/blob/master/README.md)
-- [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
-
 
 <!--
 <details>
@@ -83,9 +75,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 02월 09일
 
 - [ ] BKJang : []()
-- [ ] SeonHyungJo : []()
+- [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
 - [ ] Jinseong : []()
-- [ ] Dae-Hwa: [SQL Injection](https://github.com/Im-D/Dev-Docs/blob/master/Security/SQL_Injection.md)
+- [x] Dae-Hwa: [SQL Injection](https://github.com/Im-D/Dev-Docs/blob/master/Security/SQL_Injection.md)
 
 <!--
 </details>
