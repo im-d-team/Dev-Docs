@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] BKJang : [Network/HTTP vs WebSocket](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP vs WebSocket.md)
+
 
 <!--
 <details>
