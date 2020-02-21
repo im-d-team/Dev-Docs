@@ -269,7 +269,7 @@ conn.query(sql, param, function(err, rows, fields){});
 
 <br/>
 
-#### 에러메세지 지 출력 제한
+#### 에러메세지 출력 제한
 
 DB 오류 정보를 사용자에게 그대로 노출하면 안된다. 
 
