@@ -66,10 +66,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+
 - [x] SeonHyungJo : [CSS/WebToMobile](https://github.com/Im-D/Dev-Docs/blob/master/CSS/WebToMobile.md)
-
 - [x] BKJang : [Network/HTTP vs WebSocket](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP vs WebSocket.md)
-
 
 <!--
 <details>
@@ -98,8 +97,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [ ] Dae-Hwa : [객체 생성 패턴 - 생성자 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_create_pattern-constructor.md)
 
 </details>
-
-
 
 <details>
 <summary> 2019년 11월 </summary>
