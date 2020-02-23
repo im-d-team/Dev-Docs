@@ -59,8 +59,8 @@ arr = {2, 0, 2, 0, 4, 1, 5, 5, 2, 0, 2, 4, 0, 4, 0, 3}
   }
   ```
   
-  ---
-  
-  #### References 
-  - [Counting Sort : 계수 정렬 ](https://bowbowbow.tistory.com/8)
-  - [카운팅 정렬, 래딕스 정렬 ](https://ratsgo.github.io/data%20structure&algorithm/2017/10/16/countingsort/)
+---
+
+#### References 
+- [Counting Sort : 계수 정렬 ](https://bowbowbow.tistory.com/8)
+- [카운팅 정렬, 래딕스 정렬 ](https://ratsgo.github.io/data%20structure&algorithm/2017/10/16/countingsort/)
