@@ -62,7 +62,7 @@ Chromium issue [#993366](https://crbug.com/993366)
 
 DevTools 은 **Network Conditions** 탭에서 커스텀  User-Agent string 셋팅을 지원한다. User-Agent string은 network 리소스와 관련된 `User-Agent` HTTP header, 그리고 `navigator.userAgent` 값에 영향을 미친다. 
 
-사전정의된 User-Agent strings 최신 브라우저 버전을 반영하도록 업데이트되었다.
+사전정의된 User-Agent string들은 최신 브라우저 버전을 반영하도록 업데이트되었다.
 
 ![image](https://user-images.githubusercontent.com/24274424/74095036-4a93cb00-4b2e-11ea-97cb-4b9e106dc5d6.png)
 
