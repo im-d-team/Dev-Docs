@@ -54,7 +54,7 @@ Chromium issue [#988253](https://crbug.com/988253)
 
 ![image](https://user-images.githubusercontent.com/24274424/74095029-246e2b00-4b2e-11ea-9b77-89fec563c287.png)
 
-**Waterfall** 테이블 헤더 우클릭으로 **Path** 또는 **URL** 새로운 행렬을 볼 수 있다.
+**Waterfall** 테이블 헤더 우클릭으로 새로운 **Path** 또는 **URL** 행렬을 볼 수 있다.
 
 Chromium issue [#993366](https://crbug.com/993366)
 
