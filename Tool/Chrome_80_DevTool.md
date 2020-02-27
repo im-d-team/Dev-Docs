@@ -86,7 +86,7 @@ Chromium issue [#1029031](https://crbug.com/1029031)
 
 **per function** 또는 **per block** 모드 사용여부에 따라 HTML파일에서 코드 커버리지 적용 범위가 달라진다. 
 
-HTML 파일에서 인라인 스크립트를 함수로 취급된다. 스크립트가 전혀 실행되지 않으면 DevTools는 전체 스크립트를 사용된 코드로 표시한다.스크립트가 전혀 실행되지 않는 경우에만 DevTools는 스크립트를 사용하지 않는 코드로 표시된다.
+**per function** 모드를 사용하면, HTML 파일의 인라인 스크립트는 함수로 취급된다. 스크립트가 조금이라도 실행되면 DevTools는 전체 스크립트를 사용된 코드로 표시한다.스크립트가 전혀 실행되지 않는 경우에만 DevTools는 스크립트를 사용하지 않는 코드로 표시한다.
 
 ![image](https://user-images.githubusercontent.com/24274424/74095038-52536f80-4b2e-11ea-85e7-1027ddb72abc.png)
 
