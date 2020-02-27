@@ -1,6 +1,6 @@
 # Chrome 80 DevTool Update
 
-## 콘솔창에서 `let` 과 `class` 재 선언을 지원한다.
+## 콘솔창에서 `let` 과 `class` 재선언을 지원한다.
 
  `let` 과 `class` 의 재선언을 지원한다. 재선언을 할 수 없는 것은 콘솔창을 가지고 새로운 Javascript 코드를 실험하는 개발자에서는 엄청난 불편함이었다. 
 
