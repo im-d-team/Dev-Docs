@@ -18,7 +18,9 @@ Chromium issue [#1004193](https://crbug.com/1004193)
 
 ## WebAssembly 디버깅 향상
 
-DevTools [DWARF Debugging Standard](http://dwarfstd.org/) 지원 시작한다. 이는 DevTool안에서 우리의 소스로 단계별로 진행하거나, 중단점을 잡거나, 스택추적을 해결하는 데 도움을 준다. [Improved WebAssembly debugging in Chrome DevTools](https://developers.google.com/web/updates/2019/12/webassembly) 풀스토리를 확인하세요
+DevTools [DWARF Debugging Standard](http://dwarfstd.org/) 지원 시작한다. 이는 DevTool안에서 우리의 소스로 단계별로 진행하거나, 중단점을 잡거나, 스택추적을 해결하는 데 도움을 준다. 이에 대한 상세한 내용은 아래 글에 소개되어 있다.
+
+Google Developers: [Improved WebAssembly debugging in Chrome DevTools](https://developers.google.com/web/updates/2019/12/webassembly)
 
 ![image](https://user-images.githubusercontent.com/24274424/74095018-01dc1200-4b2e-11ea-808e-1cda18156298.png)
 
