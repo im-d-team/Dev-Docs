@@ -50,7 +50,7 @@ arr = {2, 0, 2, 0, 4, 1, 5, 5, 2, 0, 2, 4, 0, 4, 0, 3}
 - 배열 arr 의 요소값을 역순으로 저장한다.
   ```c
   int[arr.length] result; // 결과값 배열의 크기는 정렬 대상과 같아야 한다. 
-  for(i = arr.length; i>0 ; i ++){
+  for(i = arr.length-1; i>=0; i--){
     result[cnt[arr[i]] = arr[i];
     /* 배열 cnt의 값이 result의 인덱스가 되기 때문에,
      * 값을 저장한 수의 누적값을 감소시켜야 한다.
