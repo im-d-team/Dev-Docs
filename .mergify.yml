@@ -9,6 +9,7 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+      delete_head_branch: {}
 
   - name: Add Label needs author response
     conditions:
