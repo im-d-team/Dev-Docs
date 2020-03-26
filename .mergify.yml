@@ -2,7 +2,7 @@ pull_request_rules:
   - name: Automatic merge on review
     # https://doc.mergify.io/examples.html#require-all-requested-reviews-to-be-approved 
     conditions:
-      - "#approved-reviews-by>=3"
+      - "#approved-reviews-by>=4"
       - "#changes-requested-reviews-by=0"
       - base=master
       - label=approval + 3
@@ -41,3 +41,10 @@ pull_request_rules:
       label:
         add: ["approval + 2"]
         remove: ["approval + 1"]
+  - name: Add Label approval + 3
+    conditions:
+      - "#approved-reviews-by=3"
+    actions:
+      label:
+        add: ["approval + 3"]
+        remove: ["approval + 2"]
