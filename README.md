@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
+
 
 - [x] Dae-Hwa : [CS/Counting-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Counting-sort.md)
 
