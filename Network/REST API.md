@@ -67,7 +67,7 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 2) 자원에 대한 행위는 HTTP Method로 표현한다.
 > DELETE /members/1 (위의 예시를 바르게 표현한 경우)
 
-**즉, [행위(V) - 자원(N)] [Method - URI(Resource)]를 구분함으로써 REST한 API를 설계할 수 있다.**
+**즉, [행위(V) - 자원(N)] [Method - URI(Resource)]를 구분함으로써 RESTful한 API를 설계할 수 있다.**
 
 ### 2) 주의점
 1) 슬래시(/)는 계층 관계를 나타낼 때 사용한다.
