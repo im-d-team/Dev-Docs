@@ -7,6 +7,7 @@
 - **네트워크 아키텍처 원리**: Resource(자원)을 정의하고 Resource에 대한 URI를 지정하는 방법 전반을 일컫는다.
 
 <br/>
+
 ## API (Application Programming Interface)
 프로그램과 또 다른 프로그램을 연결해주는 매개체
 ### 예시
@@ -17,7 +18,9 @@
 ### API 작성 방법
 [작성 방법](https://github.com/yoondo/http-api-design/tree/master/ko)
 
+
 <br/>
+
 ## REST API
 REST를 통해 API를 구현한 것. Web에서 사용한다.  
 
@@ -60,6 +63,7 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 ##### 2) Form
 
 <br/>
+
 ## RESTful 한 API 설계 방법
 ### 1) REST API 중심 규칙
 1) URI는 정보의 자원을 표현한다. (Resource명은 명사로)
@@ -105,10 +109,10 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 * **GET, POST** https://mommoo.tistory.com/60  
 * **HTTP** https://withbundo.blogspot.com/2017/07/http-10-http.html?spref=tw
 * **Internet과 Web** http://tcpschool.com/webbasic/intro
-* **Types of Internet Protocols**
+* **Types of Internet Protocols** http://bitly.kr/AuC7wV  
 응용 계층 - 전송 계층 - 인터넷 계층 - 링크 계층 
-	- 응용계층: HTTP, HTTPS, FTP, SMTP, MQTT, SSH, TSL/SSL
-	- 전송계층: TCP/UDP
+응용계층: HTTP, HTTPS, FTP, SMTP, MQTT, SSH, TSL/SSL
+전송계층: TCP/UDP
 *  Internet 구성원으로서의 **Server, Client:** http://tcpschool.com/webbasic/www  
 * **URL, URI** 차이 http://bitly.kr/6WSgNSeY  
 URL(Uniform Resource Locator): 자원(이 있는 곳)  
