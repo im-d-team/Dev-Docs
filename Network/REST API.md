@@ -15,11 +15,13 @@
 ## API (Application Programming Interface)
 프로그램과 또 다른 프로그램을 연결해주는 매개체
 ### 예시
+---
 * 내 서비스에 구글 맵을 띄우고 싶을 때, 구글 Map API를 이용해서 구현한다.
 * 앱에 카카오톡 로그인을 넣고 싶을 때, 카카오톡 로그인 API를 사용한다.
 * 사용자 A에 대한 정보가 필요할 때 DB에 직접 접속하지 않고 getInfo같은 API를 통해 정보를 가져온다.
 
 ### API 작성 방법
+---
 [작성 방법](https://github.com/yoondo/http-api-design/tree/master/ko)
 
 
@@ -29,6 +31,7 @@
 REST를 통해 API를 구현한 것. Web에서 사용한다.  
 
 ### HTTP Packet(데이터 형식)  
+---
 ![image](https://user-images.githubusercontent.com/43839938/77837073-ab8b6700-719f-11ea-90ee-ae1d2f4b314f.png)![image](https://user-images.githubusercontent.com/43839938/77837076-be05a080-719f-11ea-91fb-f5bf195875a9.png)  <br>
 
 #### [Request Line]  HTTP METHOD
@@ -39,8 +42,11 @@ REST를 통해 API를 구현한 것. Web에서 사용한다.
 | POST  | 리소스 생성 |
 | PUT   | 리소스 수정  |
 | DELETE   | 리소스 삭제  |
-| PATCH | 리소스 일부 수정 |
+| PATCH | 리소스 일부 수정 |  
 
+
+**PUT**: 자원 전체 교체, 자원 내 **모든 필드** 필요. (일부만 전달할 시에 나머지 필드는 모두 null 혹은 초기값 처리 되므로 주의)  
+**PATCH**: 자원 부분 교체, 자원 내 일부 필드 필요.
 
 ```
 GET /members/1  #1번 member의 정보 조회
@@ -57,9 +63,11 @@ POST /members/2 # 2번 member의 정보 생성(추가)
 > GET /users/?age=14&name=%이%
 
 ### [HEADER]  
+---
 header: meta-data (data에 대한 설명을 제공하는 data)  
 <img src="https://user-images.githubusercontent.com/43839938/77837595-d678b980-71a5-11ea-879b-5118474e1d22.png" width="50%">
 ### [BODY] Data 종류
+---
 ##### 1) RAW: XML, JSON
 	참고: XML에 비한 JSON의 장점 
 	1) 저장할 data가 줄어든다. (data와 직접적인 연관이 없는 태그들이 사용되지 않기 때문이다.) 
@@ -70,6 +78,7 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 
 ## RESTful 한 API 설계 방법
 ### REST API 중심 규칙
+---
 1) URI는 정보의 자원을 표현한다. (Resource명은 명사로)
 > GET /members/delete/1 (잘못됨)
 2) 자원에 대한 행위는 HTTP Method로 표현한다.
@@ -78,6 +87,7 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 **즉, [행위(V) - 자원(N)] [Method - URI(Resource)]를 구분함으로써 RESTful한 API를 설계할 수 있다.**
 
 ### 주의점
+---
 1) 슬래시(/)는 계층 관계를 나타낼 때 사용한다.
 > GET /houses/apartments/12345
 > GET /animals/mammals/whales/1
@@ -102,6 +112,7 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 > GET sports/soccer/players/13
 
 ### 응답코드
+---
 ![응답코드](https://user-images.githubusercontent.com/43839938/77838355-2f4c5000-71ae-11ea-85b6-ae1ad5cc8532.JPG)
 
 ------------
