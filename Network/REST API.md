@@ -50,7 +50,7 @@ POST /members/2 # 2번 member의 정보 생성(추가)
 > GET /users/?age=14&name=%이%
 
 ### 1)-3. [HEADER]  
-header: meta-data (data들의 data)  
+header: meta-data (data에 대한 설명을 제공하는 data)  
 <img src="https://user-images.githubusercontent.com/43839938/77837595-d678b980-71a5-11ea-879b-5118474e1d22.png" width="50%">
 ### 1)-4. [BODY] Data 종류
 ##### 1) RAW: XML, JSON
