@@ -82,6 +82,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 03월 28일
 
+- [x] SeonHyungJo : 나는 이 시국에 어떻게 마스크를 구매했나?
 - [ ] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST API.md)
 - [ ] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
 
