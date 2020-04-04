@@ -66,34 +66,46 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/Radix-sort.md)
-
-- [x] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST API.md)
-
-- [x] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
 
 
+
+<!--<details>
+<summary> 2020년 4월 </summary>-->
+
+#### 04월 05일
+- [ ] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/Radix-sort.md)
+
+<!--</details>-->
+
+<!--<details>
+<summary> 2020년 3월 </summary>-->
+
+#### 03월 28일
+
+- [ ] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST API.md)
+- [ ] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
+
+<!--</details>-->
+
+<!--<details>
+<summary> 2020년 2월 </summary>-->
+  
+#### 02월 23일
+- [ ] JegalEun : 블록체인
 - [x] Dae-Hwa : [CS/Counting-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Counting-sort.md)
 
+#### 02월 16일
 
+- [ ] EUNJIHA : Web Summary
 - [x] SeonHyungJo : [CSS/WebToMobile](https://github.com/Im-D/Dev-Docs/blob/master/CSS/WebToMobile.md)
 - [x] BKJang : [Network/HTTP vs WebSocket](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP vs WebSocket.md)
 
-<!--
-<details>
-<summary> 2020년 2월 </summary>
--->
-
 #### 02월 09일
 
-- [ ] BKJang : []()
 - [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
-- [ ] Jinseong : []()
 - [x] Dae-Hwa: [SQL Injection](https://github.com/Im-D/Dev-Docs/blob/master/Security/SQL_Injection.md)
 
-<!--
-</details>
--->
+<!--</details>-->
 
 <details>
 <summary> 2019년 12월 </summary>
@@ -126,7 +138,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] BKJang : [Iteration Protocol](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/Iteration_Protocol.md)
 - [x] SeonHyungJo : [Worklet](https://github.com/Im-D/Dev-Docs/blob/master/Browser/Worklet.md)
 - [x] Jinseong : [JSend](https://github.com/Im-D/Dev-Docs/blob/master/Network/JSend.md)
-- [ ] Dae-Hwa: [비선형 구조의 탐색](https://github.com/Im-D/Dev-Docs/blob/master/CS/non-linear-search.md)
+- [x] Dae-Hwa: [비선형 구조의 탐색](https://github.com/Im-D/Dev-Docs/blob/master/CS/non-linear-search.md)
 
 </details>
 <details>
