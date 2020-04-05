@@ -74,7 +74,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 <summary> 2020년 4월 </summary>-->
 
 #### 04월 05일
-- [ ] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/Radix-sort.md)
+- [ ] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Radix-sort.md)
 
 <!--</details>-->
 
