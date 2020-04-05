@@ -66,7 +66,6 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] BKJang : [Tool/Test](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Test.md)
 
 
 
