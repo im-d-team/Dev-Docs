@@ -18,7 +18,7 @@
 
 10진수를 사용한다면 각 자릿수는 최소 0에서 최대 9까지의 값만 나올 수 있다.
 
-따라서 각 자릿수 마다 계수 정렬을 실행한다면, 계수 정렬의 범위가 항상 9로 정해진다.
+따라서 각 자릿수 마다 계수 정렬을 실행한다면, 계수 정렬 대상의 수는 항상 10 이하로 정해진다.
 
 > 계수 정렬을 사용하기 때문에 부동 소수점은 정렬이 불가능하다.
 
@@ -86,4 +86,3 @@ References
 - [Radix Sort - BRILLIANT](https://brilliant.org/wiki/radix-sort/)
 - [Radix sort - wikipedia](https://en.wikipedia.org/wiki/Radix_sort)
 - [기수 정렬(Radix Sort) - tubuk.tistory.com](https://tubuk.tistory.com/16)
-
