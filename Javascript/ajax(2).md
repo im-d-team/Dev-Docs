@@ -78,7 +78,7 @@ document.getElementById(‘ajax’).innerHTML= xhr.responseText;
 | 4 | request 처리가 끝나고, response가 준비된 상태 |
 
 
-## 2. $.Ajax()메소드 (jQuery 사용)
+## 2. $.ajax()메소드 (jQuery 사용)
 
 1. type : get, post 등의 전송 방식을 결정
 2. url : 접근할 url을 입력
