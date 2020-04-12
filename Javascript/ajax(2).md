@@ -33,15 +33,18 @@
 
 >###  AJAX의 요청 및 응답처리 과정
 **1.XMLHTTP request object를 만든다.**
-
-*var xhr= new XMLHttpRequest();*
+~~~
+var xhr= new XMLHttpRequest();
+~~~
 
 request를 보낼 준비를 브라우저에게 시키는 과정이다. 
 이것을 위해서 필요한 method를 갖춘 object가 필요하다.
 
 **2.Open a request**
 
-*xhr.open(‘GET’,”sidebar.html”,true); *
+~~~
+xhr.open(‘GET’,”sidebar.html”,true);
+~~~
 
 세 개의 매개변수(HTTP 메서드/요청 처리할 페이지의 URL/비동기 여부)를 정의한다.
 
@@ -51,19 +54,22 @@ post, get메소드에 따라 전송 방식에 차이가 있다.
 - POST 메소드의 경우, 데이터(페이로드)를 Request Body에 담아 전송한다.
 
 **3.send the request**
-
-*xhr.send();*
+~~~
+xhr.send();
+~~~
 
 준비된 request를 서버에 전송한다.
 
 
 **4.callback 함수를 만든다.**
 
-*xhr. onreadystatechange = function(){.  
- if(xhr.readyState===4){.  
-document.getElementById(‘ajax’).innerHTML= xhr.responseText;   
-     }.  
-}*.  
+~~~
+xhr. onreadystatechange = function(){
+	 if(xhr.readyState===4){
+		document.getElementById(‘ajax’).innerHTML= xhr.responseText;   
+     }
+}
+~~~
 
 - onreadystatechange : 서버에서 response가 와서 변화가 일어났을 때, 이에 대응해서 일어나는 메소드
 
@@ -90,20 +96,21 @@ document.getElementById(‘ajax’).innerHTML= xhr.responseText;
 8. jsoncallback : 성공시 불러올 함수
 
 >### 예제
+~~~
 $.ajax({ 
-			  url:'/study/tmp/test.php', //request 보낼 서버의 경로.  
-				type:'post', // 메소드(get, post, put 등).  
-				data:{'id':'admin'}, //보낼 데이터.  
-				dataType:'json'.  
-				success: function(data) {.  
-					//서버로부터 정상적으로 응답이 왔을 때 실행.  
+			  url:'/study/tmp/test.php', //request 보낼 서버의 경로  
+				type:'post', // 메소드(get, post, put 등)  
+				data:{'id':'admin'}, //보낼 데이터  
+				dataType:'json'  
+				success: function(data) {  
+					//서버로부터 정상적으로 응답이 왔을 때 실행  
 				},   
-				error: function(err) {.  
+				error: function(err) {  
 					//서버로부터 응답이 정상적으로 처리되지 못햇을 때 실행
-		}.  
-	}).  
+		}  
+	})  
 	
-	
+~~~
 	
 
  ####  jquery를 이용해서 Ajax를 사용하는 이유 
