@@ -68,11 +68,11 @@ header: meta-data (data에 대한 설명을 제공하는 data)
 <img src="https://user-images.githubusercontent.com/43839938/77837595-d678b980-71a5-11ea-879b-5118474e1d22.png" width="50%">
 ### [BODY] Data 종류
 
-##### 1) RAW: XML, JSON
+##### 1) RAW: XML, JSON [[XML과 JSON의 차이]](https://12bme.tistory.com/202)
 	참고: XML에 비한 JSON의 장점 
 	1) 저장할 data가 줄어든다. (data와 직접적인 연관이 없는 태그들이 사용되지 않기 때문이다.) 
 	2) JSON은 Object 형태이다. 다루기 용이하다. 
-	[XML과 JSON의 차이](https://12bme.tistory.com/202)
+
 ##### 2) Form
 
 <br/>
