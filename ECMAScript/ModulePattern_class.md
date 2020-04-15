@@ -2,56 +2,12 @@
 
 ## Module Pattern
 
-캡슐화는 OOP의 대표적인 특징 중 하나로 **정보 은닉**의 개념을 포함한다.
-하지만, 자바스크립트는 자바와 같이 `private`과 `public` 같은 키워드를 제공하지 않는다. 따라서 다른 방법으로 구현 가능하다.
-
-```js
-var Developer = (function() {
-  var lang;
-
-  //생성자 정의
-  function Developer(arg) {
-    lang = arg ? arg : '';
-  }
-
-  Developer.prototype = {
-    getLang : function() {
-      return lang;
-    },
-    setLang : function(arg) {
-      lang = arg;
-    }
-  }
-  
-  return Developer;
-}());
-
-var bkJang = new Developer('javscript');
-
-console.log(bkJang.getLang()); //javscript
-
-bkJang.lang = 'java'; //인터페이스를 통해서가 아닌 직접 변경
-console.log(bkJang.getLang()); //javscript
-
-bkJang.setLang('java');
-console.log(bkJang.getLang()); //java
-
-console.log(Developer.prototype === bkJang.__proto__); //true
-```
-
-마지막 출력 값을 보면 **인스턴스인 `bkJang`의 프로토타입 객체가 `Developer.prototype` 객체임을 알 수 있고 이는 상속을 구현할 수 있음을 의미**한다.
-
-
-## class
-
-`ES6`에서부터는 `ES5`까지는 존재하지 않았던 `class`가 생겨났다. `Java`에서의 `class`와는 똑같은 기능을 한다고 생각해서는 안된다. 
-
-**자바스크립트는 기본적으로 `Prototype`기반의 객체지향 언어**다. 즉, `ES6`의 `class`또한 프로토타입을 기반으로 동작하며 이는 기존의 자바스크립트에서 객체지향적으로 설계할 때의 방식을 좀 더 편하게 보완한 `Syntatic Sugar`다.
-
-## 클래스의 정의
+캡슐화는 객체 지향 프로그래밍(OOP; Object Oriented Programming)의 대표적인 특징 중 하나로 **정보 은닉**의 개념을 포함한다.
+하지만, 대개 객체 지향 언어는 객체 내의 은닉하고자 하는 정보와 그렇지 않은 정보를 `private`과 `public`과 같은 접근제어자를 통해 구분한다. 그러나 자바스크립트에서는 이와 같은 접근제어자를 제공하지 않으며, 대신 아래와 같은 방법을 이용해 캡슐화를 구현할 수 있다.
 
 ```js
 //ES5
+'use strict';
 var Person = (function() {
     //생성자 함수 정의
     function Person(name, job) {
@@ -70,6 +26,16 @@ var bkJang = new Person('BKJang', 'Developer');
 
 bkJang.sayInfo(); //Name : BKJang, Job : Developer
 ```
+
+마지막 출력 값을 보면 **인스턴스인 `bkJang`의 프로토타입 객체가 `Person.prototype` 객체임을 알 수 있고 이는 상속을 구현할 수 있음을 의미**한다.
+
+## class
+
+**자바스크립트는 기본적으로 `Prototype`기반의 객체지향 언어**다. 그리고 `Module Pattern`을 통해 자연스럽게 이해할 수 있을 것이다. 하지만 `ES5`의 `Module Pattern`을 사용하면 기본적으로 JS의 실행 컨텍스트, 클로저 등과 같은 개념을 정확히 알아야 구현이 가능하다. 물론, 실행 컨텍스트나 클로저 같은 개념을 몰라도 된다는 것은 아니지만 `ES6`의 `class`문법을 사용하면 우리가 좀 더 쉽게 익숙한 문법으로 캡슐화를 구현할 수 있다.  
+
+즉, `ES6`의 `class`또한 프로토타입을 기반으로 동작하며 이는 기존의 자바스크립트에서 객체지향적으로 설계할 때의 방식을 좀 더 편하게 보완한 `Syntatic Sugar`다.
+
+## 클래스의 정의
 
 `ES6`에서 `class`가 생기기 전 우리는 위와 같은 방식으로 생성자 함수와 프로토타입을 이용해 객체지향 프로그래밍을 진행했었다. 위와 같은 코드를 `ES6`의 `class`를 사용하여 구현하면 아래와 같이 좀 더 간결하게 구현할 수 있다.
 
@@ -95,7 +61,7 @@ bkJang.sayInfo(); //Name : BKJang, Job : Developer
 
 둘의 또 다른 차이점은 생성자 함수를 이용하여 선언하면 `window`에 할당되지만, **`class`를 이용하여 선언하면 `window`에 할당되지 않는다.**
 
-또한 **`class` 안에 있는 코드는 항상 `strict mode` 로 실행**되기 때문에 "use strict" 명령어가 없더라도 동일하게 동작한다.
+또한 **`class` 안에 있는 코드는 항상 [strict mode](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode) 로 실행**되기 때문에 "use strict" 명령어가 없더라도 동일하게 동작한다.
 
 ```js
 function Person() {}
@@ -212,7 +178,7 @@ console.log(person.personName); //SHJo
 
 `class`에서는 정적 메서드를 정의할 때, `static` 키워드를 사용하여 정의한다. **정적 메서드는 인스턴스를 생성하지 않아도 호출가능하며, 인스턴스가 아닌 `class`의 이름으로 호출한다.** 이와 같은 특징 때문에 애플리케이션을 위한 유틸리티성 함수를 생성하는데 주로 사용한다.
 
-또한 정적 메서드 내부에서는 `this`를 사용할 수 없다. 왜냐하면 **정적 메서드 내부에서는 `this`가 `class`의 인스턴스가 아닌 `class`자기 자신을 가리키기 때문**이다.
+또한 **정적 메서드 내부에서는 `this`가 `class`의 인스턴스가 아닌 `class`자기 자신을 가리킨다.**
 
 ```js
 class Person {
