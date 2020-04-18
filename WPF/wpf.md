@@ -6,7 +6,6 @@
 [3. Data Binding](#3.-Data-binding)  
 [4. 프로젝트 활용](#4.-프로젝트-활용)  
 
----
 
 ## 1. What is WPF?
 
