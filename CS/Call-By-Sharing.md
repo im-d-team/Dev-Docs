@@ -95,14 +95,16 @@ class Main{
 >
 > ```js
 > var test = { i: 0 }; // test.i === 0
+>
 > // change value
 > ((test) => {
 >   test.i = 1;
 > })(test); // test.i === 1
+>
 > // change reference
 > ((test) => {
 >   test = { i: 2 };
-> })(test); // test.i === 2
+> })(test); // test.i === 1
 > ```
 
 위의 예시처럼 parameter를 바꿔도 argument가 바뀌지 않지만, parameter가 객체인 경우 그 멤버를 변경하면 argument의 멤버도 변경된다. 위의 java 예시는 아래와 같이 동작한다.
