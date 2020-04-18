@@ -38,7 +38,7 @@ StaticResource는 XAML이 로드될 때 단 한 번 할당 된다. 동적으로 
 </Window.Resources>
 ```
 ### 2) Scope
-resource의 scope는 1. Local -> 2. Window -> 3. Application 순으로 올라간다. 다음 세 개의 코드에서 ComboBoxTitle에 주목해 보자.
+resource의 scope는 1. Local -> 2. Window -> 3. Application 순으로 올라간다. 다음 세 개의 코드에서 `ComboBoxTitle`에 주목해 보자.
 
 1. Local Resource
 ```xml
@@ -141,7 +141,7 @@ namespace WpfTutorialSamples.WPF_Application
 
 ```
 ### 4) Resource Dictionary
-
+[WPF Resource Dictionary 참고](https://docs.microsoft.com/ko-kr/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)
 
 ## 3. Data binding
 ### 1) 정의 
