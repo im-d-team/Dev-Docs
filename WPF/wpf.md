@@ -172,7 +172,7 @@ Path에는 Property명을, ElementName은 x:Key=? 의 이름을 사용한다. Bi
 ```
 ## 4. 프로젝트 활용
 https://www.slideshare.net/EUNJIHA4/wpf-232222167
-## 참고자료
+#### Reference
 * [What is WPF?](https://www.wpf-tutorial.com/about-wpf/what-is-wpf/)
 * [Resource](https://www.wpf-tutorial.com/wpf-application/resources/)
 * [Data binding](https://www.wpf-tutorial.com/data-binding/introduction/)
