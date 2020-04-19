@@ -19,7 +19,7 @@ XAML + CodeBehind
 
 ## 2. Resource
 ### 1) StaticResource vs. DynamicResource
-StaticResource는 XAML이 로드될 때 단 한 번 할당 된다. 동적으로 리소스를 변경할 수 없다. 반면 DynamicResource는 필요할 때마다 할당가능한 자원이다. 디자인 시에 존재하지 않았던 리소스들을 Code-behind 단에서 사용할 수 있다. 다음 코드의 ComboBoxItems, WindowBackgroundBrush는 각각 StaticResource, DynamicResource 이다.  
+StaticResource는 XAML이 로드될 때 단 한 번 할당 된다. 동적으로 리소스를 변경할 수 없다. 반면 DynamicResource는 필요할 때마다 할당가능한 자원이다. 디자인(XAML) 시에 존재하지 않았던 리소스들을 CodeBehind 단(C#)에서 사용할 수 있다. 다음 코드의 ComboBoxItems, WindowBackgroundBrush는 각각 StaticResource, DynamicResource 이다.  
 ```xml
 <!--testControl.xaml-->
 <Window.Resources>
@@ -50,6 +50,7 @@ resource의 scope는 1. Local -> 2. Window -> 3. Application 순으로 올라간
     <Label Content="{StaticResource ComboBoxTitle}" />
 </StackPanel>
 ```
+StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 하고 있다. Local Resource(여기서는 StackPanel.Resource)의 `ComboBoxTitle`와 바인딩 한다.  
 2. Window Resource
 ```xml
 <!--testControl.xaml-->
@@ -67,6 +68,7 @@ resource의 scope는 1. Local -> 2. Window -> 3. Application 순으로 올라간
     </StackPanel>
 </Window>
 ```
+StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 한다. StackPanel(여기서는 로컬) 자체에 `ComboBoxTitle`란 리소스가 없으므로 Window.Resource에 있는 `ComboBoxTitle`과 바인딩한다.  
 3. Application Resource
 ```xml
 <!--app.xaml-->
@@ -80,6 +82,7 @@ resource의 scope는 1. Local -> 2. Window -> 3. Application 순으로 올라간
     </Application.Resources>
 </Application>
 ```
+StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 한다고 가정하자. StackPanel(여기서는 로컬) 자체에 `ComboBoxTitle`란 리소스가 없고 Window.Resource에 `ComboBoxTitle`란 리소스가 없을 때는 App.xaml에 있는 리소스를 탐색한다. 즉 Application.Resources 는 최상위 계층이다.  
 ### 3) Code-behind Resource
 ```xml
 <!--App.xmal-->
@@ -173,6 +176,6 @@ Path에는 Property명을, ElementName은 x:Key=? 의 이름을 사용한다. Bi
 ## 4. 프로젝트 활용
 https://www.slideshare.net/EUNJIHA4/wpf-232222167
 #### Reference
-* [What is WPF?](https://www.wpf-tutorial.com/about-wpf/what-is-wpf/)
-* [Resource](https://www.wpf-tutorial.com/wpf-application/resources/)
-* [Data binding](https://www.wpf-tutorial.com/data-binding/introduction/)
+- [What is WPF?](https://www.wpf-tutorial.com/about-wpf/what-is-wpf/)
+- [Resource](https://www.wpf-tutorial.com/wpf-application/resources/)
+- [Data binding](https://www.wpf-tutorial.com/data-binding/introduction/)
