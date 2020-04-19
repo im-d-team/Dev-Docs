@@ -51,6 +51,7 @@ resource의 scope는 1. Local -> 2. Window -> 3. Application 순으로 올라간
 </StackPanel>
 ```
 StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 하고 있다. Local Resource(여기서는 StackPanel.Resource)의 `ComboBoxTitle`와 바인딩 한다.  
+
 2. Window Resource
 ```xml
 <!--testControl.xaml-->
@@ -69,6 +70,7 @@ StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 하고 있�
 </Window>
 ```
 StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 한다. StackPanel(여기서는 로컬) 자체에 `ComboBoxTitle`란 리소스가 없으므로 Window.Resource에 있는 `ComboBoxTitle`과 바인딩한다.  
+
 3. Application Resource
 ```xml
 <!--app.xaml-->
@@ -83,6 +85,7 @@ StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 한다. Sta
 </Application>
 ```
 StackPanel의 자식 계층인 Label에 `ComboBoxTitle`을 바인딩 한다고 가정하자. StackPanel(여기서는 로컬) 자체에 `ComboBoxTitle`란 리소스가 없고 Window.Resource에 `ComboBoxTitle`란 리소스가 없을 때는 App.xaml에 있는 리소스를 탐색한다. 즉 Application.Resources 는 최상위 계층이다.  
+
 ### 3) Code-behind Resource
 ```xml
 <!--App.xmal-->
