@@ -66,6 +66,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
+- [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
+
 - [x] JegalEun : [Java/Mybatis](https://github.com/Im-D/Dev-Docs/blob/master/Java/Mybatis.md)
 
 - [x] Dae-Hwa : [CS/Call-By-Sharing](https://github.com/Im-D/Dev-Docs/blob/master/CS/Call-By-Sharing.md)
