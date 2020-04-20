@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] JegalEun : [Java/Mybatis](https://github.com/Im-D/Dev-Docs/blob/master/Java/Mybatis.md)
+
 - [x] Dae-Hwa : [CS/Call-By-Sharing](https://github.com/Im-D/Dev-Docs/blob/master/CS/Call-By-Sharing.md)
 
 - [x] EUNJIHA : [WPF/wpf](https://github.com/Im-D/Dev-Docs/blob/master/WPF/wpf.md)
