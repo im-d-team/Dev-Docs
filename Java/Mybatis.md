@@ -16,7 +16,7 @@ SQL 쿼리문을 xml 형식의 파일로 분리시켜 저장관리할 수 있다
 
 ## Mybatis를 쓰는 이유
 ###### Mybatis가 없었을 때의 소스 방식
-~~~java
+```java
 public Entity selectFAQList(UserConnection conn, Entity param) throws SQLException {
        UserStatement stmt = null;
        ResultSet rslt = null;
@@ -30,7 +30,7 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
        _DATA.put("_DATA", EntityUtil.ResultSetToClobList(rslt));
        return _DATA;
 }
-~~~
+```
 .java 파일 안에 StringBuffer라는 클래스를 호출해 sql이라는 객체를 만들어 문자를 계속 이어주면서 sql query를 작성하고 있다. 
 
 이 경우 쿼리가 수정될 때마다 .java에 들어가 .append()메소드를 추가하고 저장해 유지 보수가 힘들고 가독성이 떨어져 sql query구문의 분리가 어려워진다. 
@@ -39,7 +39,7 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
 그래서 sql 구문과 java 코드의 분리 필요성을 느끼게 된다. 
 
 ######  Mybatis적용 후 소스 방식
-~~~java
+```java
 <?xml version="1.0" encoding="UTF-8"?>
   <ENTITY id="table.getTable1List" type="SQL" return="List">
     <![CDATA[
@@ -50,14 +50,14 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
     <PARAMS>    
     </PARAMS>
   </ENTITY>
-~~~
+```
 
 xml로 빼내서 쿼리문을 작성하면 내부적 처리는 Mybatis에서 모두 처리해 주므로 Entity id 값을 DAO에서 호출하기만 하면 된다. 
 
 우리가 사용할 sql 문을 Mapper에 등록해놓고선 편리하게 나중에 sqlSession을 통해서 id 값을 이용해 불러오고 사용하면 훨씬 편리하다.
 
 
-# 스프링 웹 프로젝트의 구조
+## 스프링 웹 프로젝트의 구조
 ![image](https://user-images.githubusercontent.com/43868540/79679996-af158980-8245-11ea-9cbb-66248dc0678e.png)
 
 핵심적으로 DAO는 SessionTemplate를 통해 Mybatis를 호출해 데이터베이스에 접근한다. 
@@ -74,7 +74,7 @@ Maven은 내가 사용할 라이브러리뿐만 아니라 해당 라이브러리
 
 pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
 
-~~~java
+```java
 <!-- mybatis -->
       <dependency>
          <groupId>org.mybatis</groupId>
@@ -114,14 +114,14 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
          <artifactId>mariadb-java-client</artifactId>
          <version>2.2.1</version>
       </dependency>
-~~~
+```
 
 **2. Mybatis와 Spring 연결**
 스프링 프레임워크에서 Mybatis를 사용하기 위한 xml 설정을 하는 단계
 
 /WEB_INF/spring/appServlet경로에 root-context.xml 파일 생성!
 
-~~~java
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -151,7 +151,7 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate"> <constructor-arg index="0" ref="sqlSession"/> 
    </bean> 
    </beans>
-  ~~~
+```
   
  
  15행은 sqlSession을 생성하기 위해 sqlSessionFactory를 정의하고 있다. 
@@ -174,7 +174,7 @@ SqlSessionTemplate은 마이바티스 스프링 연동 모듈의 핵심이다.
 SqlSessionTemplate은 SqlSession을 구현하고 코드에서 SqlSession를 대체하는 역할을 한다. 
 
 **3. mybatis-config.xml 작성**
-~~~java
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -191,24 +191,24 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         <mapper resource="sql/paper-mapper.xml"/>
     </mappers>
 </configuration>
-~~~
+```
 
- mybatis-config.xml은 mapper들이 모인 xml 파일이다. 
+mybatis-config.xml은 mapper들이 모인 xml 파일이다. 
  
- 즉, 앞서 21행은 위에 모든 xml 파일을 읽어들인다. 
+즉, 앞서 21행은 위에 모든 xml 파일을 읽어들인다. 
  
 **4 web.xml 작성**
 
 web.xml은 서버가 최초로 실행될 때 해당 위치에 있는 context 파일을 모조리 읽어들이는 것을 뜻한다. 
 context 파일을 읽어들이면서 xml을 인식한다. 
-~~~java
+```java
 <context-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>
           /WEB-INF/spring/root-context.xml
        </param-value>
    </context-param>
-   ~~~
+```
    
    
 **5 DAO 작성**
@@ -222,7 +222,7 @@ DAO는 sql 문의 id를 통해 데이터베이스와 sql 문을 연결해준다.
 2) dao 패키지 안에 AbstractDAO.java를 생성한다.
 
 3) AbstractDAO.java에 코드 작성한다.
-~~~java
+```java
 public class AbstractDAO { 
 	protected Log log = LogFactory.getLog(AbstractDAO.class); 
 	@Autowired private SqlSessionTemplate sqlSession; 
@@ -249,7 +249,7 @@ public class AbstractDAO {
 		return sqlSession.selectList(queryId,params); 
 	} 
 }
-~~~
+```
 
 앞에서 SqlSessionTemplate을 설정하였고, 이는 SqlSession을 대체한다.
 3번째 줄에 SqlSessionTemplate을 선언을 한다.
@@ -264,7 +264,7 @@ public class AbstractDAO {
 이 부분대로 src/main/resources/sql/_.xml 파일을 생성해서 사용하면 된다.
 
 paper-mapper.xml
-~~~java
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -276,7 +276,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
        FROM    paper_tb
        WHERE   cn = #{cn}
   </select>
-~~~
+```
 
 ##  Mybatis의 특징
 - 간단한 퍼시스턴스 프레임워크이다.
