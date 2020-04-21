@@ -30,7 +30,7 @@
 
 
 ## Ajax 구현방식
-### 1. XMLHttpRequest 객체 (javascript 사용)
+### 1. XMLHttpRequest 객체
 - 서버와 통신하기 위해 XMLHttpRequest 객체를 사용해서 Ajax를 요청하고 전송한다.  
 - xml, json, http 등 다양한 포맷을 주고받을 수 있다. 
 - XMLHttpRequest를 이용하면 웹 페이지를 전부 로딩하지 않고도 일부만을 갱신하는게 가능해진다.
