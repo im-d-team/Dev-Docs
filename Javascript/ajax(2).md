@@ -1,7 +1,7 @@
 # Ajax (Asynchronous Javascript And XML)
 - JavaScript의 라이브러리 중 하나이며, Asynchronous Javascript And Xml의 약자이다.
 - 전체 페이지를 새로 고치지 않고 페이지의 일부만을 위한 데이터를 로드하는 기법이다.  JavaScript를 사용한 비동기 통신, 클라이언트와 서버 간에 XML 데이터를 주고받는 기술이다. 이는 동적인 화면 처리를 가능하게 해준다.
-즉, 자바스크립트를 통해 서버에 데이터를 요청하는 것이다.
+즉, 자바스크립트를 사용하여 서버에 데이터를 요청하는 것이다.
 
 #### 비동기 방식이란?
 
@@ -132,7 +132,6 @@ jquery를 이용하면 더 적은 코딩 양과 동일한 코딩 방법으로 �
 - [Ajax 기존 구문 및 예제](https://dororongju.tistory.com/96) 
 - [Ajax의 과정](https://poiemaweb.com/js-ajax)
 - [jquery를 이용하는 이유](https://kdarkdev.tistory.com/26) 
-
 
 
 
