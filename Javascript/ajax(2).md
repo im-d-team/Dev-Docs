@@ -10,7 +10,7 @@
 
 
 ## Ajax를 사용하는 이유
-- 기본적으로 [HTTP 프로토콜](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP%20vs%20WebSocket.md#http)은 클라이언트 쪽에서 Request를 보내고 서버 쪽에서 Response를 보내고 페이지 전체가 리로드됨.
+- 기본적으로 [HTTP 프로토콜](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP%20vs%20WebSocket.md#http)은 클라이언트 쪽에서 Request를 보내면 서버 쪽에서 Response를 보내 페이지 전체가 리로드됨.
 따라서 화면의 내용을 갱신하기 위해서는 다시 request, response를 하는 과정을 거쳐 페이지 전체를 갱신해야 한다. 하지만 이럴 경우, 자원낭비와 시간낭비를 초래하게 된다.
 
 - Ajax는 HTML 페이지 전체가 아닌 일부분만 갱신할 수 있도록 JSON이나 XML 형태로 필요한 데이터만 받아 갱신하기 때문에 그만큼의 자원과 시간을 아낄 수 있다.
@@ -132,5 +132,4 @@ jquery를 이용하면 더 적은 코딩 양과 동일한 코딩 방법으로 �
 - [Ajax 기존 구문 및 예제](https://dororongju.tistory.com/96) 
 - [Ajax의 과정](https://poiemaweb.com/js-ajax)
 - [jquery를 이용하는 이유](https://kdarkdev.tistory.com/26) 
-
 
