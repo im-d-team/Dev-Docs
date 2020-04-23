@@ -58,13 +58,13 @@ xml로 빼내서 쿼리문을 작성하면 내부적 처리는 Mybatis에서 모
 
 
 ## 스프링 웹 프로젝트의 구조
-![image](https://user-images.githubusercontent.com/43868540/79679996-af158980-8245-11ea-9cbb-66248dc0678e.png)
+![웹 프로젝트의 구조](https://user-images.githubusercontent.com/43868540/79679996-af158980-8245-11ea-9cbb-66248dc0678e.png)
 
 핵심적으로 DAO는 SessionTemplate를 통해 Mybatis를 호출해 데이터베이스에 접근한다. 
 
 ## Mybatis 연동하기
 spring과 Mybatis는 연결한 전체 구조는 아래의 그림과 같다. 
-![image 복사본](https://user-images.githubusercontent.com/43868540/79680054-6f9b6d00-8246-11ea-9658-d5fb79be24d3.png)
+![Mybatis를 이용한 spring, DB연결 구조](https://user-images.githubusercontent.com/43868540/79680054-6f9b6d00-8246-11ea-9658-d5fb79be24d3.png)
 **1. Mybatis 라이브러리 추가**
 
 스프링에서 MyBatis를 사용하려면 라이브러리가 필요하다. 
