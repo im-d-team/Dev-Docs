@@ -4,7 +4,7 @@
  
 -  JDBC(Java Database Connectivity)란 Java에서 데이터베이스에 접속할 수 있도록 하는 자바 API이다.
 자바는 JDBC를 통해 mysql, oracle 등 데이터베이스 종류에 상관없이 접근할 수 있다.
-기존에 JDBC를 이용하여 프로그래밍을 하는 방식은 프로그램 소스 안에 SQL 문을 작성하는 방식이었다.
+기존에 [JDBC를 이용하여 프로그래밍을 하는 방식](https://blog.outsider.ne.kr/6)은 프로그램 소스 안에 SQL 문을 작성하는 방식이었다.
 그렇기 때문에 한 파일에 java 언어와 sql 언어가 있어 재사용성이 안 좋고 가독성이 떨어진다는 단점이 있다.
 
 
