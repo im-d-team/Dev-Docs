@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
+
 - [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
 - [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
 
