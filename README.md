@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
+
 - [x] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
 
 - [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
