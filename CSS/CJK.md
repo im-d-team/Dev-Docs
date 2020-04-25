@@ -118,7 +118,7 @@ break-word
   <img width="400" alt="CJK-wrap" src="https://user-images.githubusercontent.com/24274424/80282603-48183900-874d-11ea-8c01-a484718dfb67.jpeg">
 </p>
 
-참고로 오타가 있는데 `break-all`이 아니라 `break-word`입니다.
+참고로 오타가 있는데 `break-all`이 아니라 `break-word`이다.
 
 > [참고 - MDN_overflow-wrap](https://developer.mozilla.org/ko/docs/Web/CSS/overflow-wrap)
 
