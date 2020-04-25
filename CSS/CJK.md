@@ -26,7 +26,7 @@ W3C 문서에서는 중국어, 일본어, 한글을 통칭하여 CJK(Chinese, Ja
 - overflow-wrap : 박스의 가로 영역을 넘친 단어내에서 임의의 분리 여부를 결정한다.
 
 <p align="center">
-  <img width="400" alt="overflow-wrap" src="https://user-images.githubusercontent.com/24274424/80282842-9ed24280-874e-11ea-93a8-713f3243eff1.png">
+  <img width="600" alt="overflow-wrap" src="https://user-images.githubusercontent.com/24274424/80282842-9ed24280-874e-11ea-93a8-713f3243eff1.png">
 </p>
 
 위의 두 속성은 역할이 다르지만 줄 바꿈을 위해 필요한 상황에 따라 선언하며, 또한 조합하여 선언한다.
@@ -94,13 +94,13 @@ W3C 문서에서는 중국어, 일본어, 한글을 통칭하여 CJK(Chinese, Ja
 normal
 
 <p align="center">
-  <img width="400" alt="over-flow_normal" src="https://user-images.githubusercontent.com/24274424/80283841-b9f48080-8755-11ea-9dc6-686388bbb693.png">
+  <img width="600" alt="over-flow_normal" src="https://user-images.githubusercontent.com/24274424/80283841-b9f48080-8755-11ea-9dc6-686388bbb693.png">
 </p>
 
 break-word
 
 <p align="center">
-  <img width="400" alt="over-flow_break-word" src="https://user-images.githubusercontent.com/24274424/80283884-f7590e00-8755-11ea-95d5-3fe3b57dba5e.png">
+  <img width="600" alt="over-flow_break-word" src="https://user-images.githubusercontent.com/24274424/80283884-f7590e00-8755-11ea-95d5-3fe3b57dba5e.png">
 </p>
 
 ### 줄바꿈은 CJK, non-CJK에 따라 다르다.
