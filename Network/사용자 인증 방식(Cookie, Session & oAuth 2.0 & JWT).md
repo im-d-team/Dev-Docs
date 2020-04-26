@@ -41,16 +41,17 @@
   "alg": "HS256"
 }
 ```
-> typ: 토큰의 타입을 지정합니다. 바로 JWT 이죠.
+> typ: 토큰의 타입을 지정한다. 여기서는 JWT이다.
 
-> alg: 해싱 알고리즘을 지정합니다.  해싱 알고리즘으로는 보통 HMAC SHA256 혹은 RSA 가 사용되며, 이 알고리즘은, 토큰을 검증 할 때 사용되는 signature 부분에서 사용됩니다.
+> alg: 해싱 알고리즘을 지정한다. 해싱 알고리즘으로는 보통 HMAC SHA256 혹은 RSA 가 사용된다. 이 알고리즘은 토큰을 검증 할 때 사용되는 signature 부분에서 사용된다.
 
-2) 정보 (payload)
+2) 정보 (Payload)
 
-3) 서명 (signature)
-헤더의 인코딩값과, 정보의 인코딩값을 합친후 주어진 비밀키로 해쉬를 하여 생성합니다.
+3) 서명 (Signature)
+헤더(Header)의 인코딩 값과, 정보(Payload)의 인코딩 값을 합친 후 주어진 비밀키로 해쉬를 하여 생성한다.
 
 4) JWT 사용 예제
+> JWT 토큰 생성
 ```php
 use Firebase\JWT\JWT;
 
@@ -70,6 +71,7 @@ const JWT_SECRET_KEY = "(시크릿 키 입니다.)"
 
 $jwt = getJWToken($req->id, $req->pw, JWT_SECRET_KEY);
 ```
+> JWT 키로 decoding 하기
 ```php
 function getDataByJWToken($jwt, $secretKey)
 {
