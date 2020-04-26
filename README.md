@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT).md)
+
 - [x] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
 
 - [x] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
