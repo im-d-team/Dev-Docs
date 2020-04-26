@@ -34,7 +34,7 @@
 ![image](https://user-images.githubusercontent.com/43839938/80297158-af6cd200-87bb-11ea-92f1-82cadb6c8643.png)
 
 
-1) 헤더 (Header)
+1) **헤더 (Header)**
 ```json
 {
   "typ": "JWT",
@@ -45,9 +45,9 @@
 
 > alg: 해싱 알고리즘을 지정한다. 해싱 알고리즘으로는 보통 HMAC SHA256 혹은 RSA 가 사용된다. 이 알고리즘은 토큰을 검증 할 때 사용되는 signature 부분에서 사용된다.
 
-2) 정보 (Payload)
+2) **정보 (Payload)**
 
-3) 서명 (Signature)
+3) **서명 (Signature)**    
 헤더(Header)의 인코딩 값과, 정보(Payload)의 인코딩 값을 합친 후 주어진 비밀키로 해쉬를 하여 생성한다.
 
 4) JWT 사용 예제
