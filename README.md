@@ -66,38 +66,33 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT).md)
-
-- [x] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
-
-- [x] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
-
-- [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
-- [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
-
-- [x] JegalEun : [Java/Mybatis](https://github.com/Im-D/Dev-Docs/blob/master/Java/Mybatis.md)
-
-- [x] Dae-Hwa : [CS/Call-By-Sharing](https://github.com/Im-D/Dev-Docs/blob/master/CS/Call-By-Sharing.md)
-
-- [x] EUNJIHA : [WPF/wpf](https://github.com/Im-D/Dev-Docs/blob/master/WPF/wpf.md)
-
-- [x] BKJang : [Javascript/Prototype_Chain](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Prototype_Chain.md)
-
-- [x] SeonHyungJo : [HTML/WebM&WebP](https://github.com/Im-D/Dev-Docs/blob/master/HTML/WebM&WebP.md)
-
-- [x] JegalEun : [Javascript/ajax(2)](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/ajax(2).md)
-
-- [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
-
-
-
-
 
 <!--<details>
 <summary> 2020년 4월 </summary>-->
 
+#### 04월 26일
+
+- [ ] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT).md)
+- [ ] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
+- [ ] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
+
+#### 04월 19일
+
+- [ ] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
+- [ ] JegalEun : [Java/Mybatis](https://github.com/Im-D/Dev-Docs/blob/master/Java/Mybatis.md)
+- [ ] Dae-Hwa : [CS/Call-By-Sharing](https://github.com/Im-D/Dev-Docs/blob/master/CS/Call-By-Sharing.md)
+
+#### 04월 12일
+
+- [ ] SeonHyungJo : [HTML/WebM&WebP](https://github.com/Im-D/Dev-Docs/blob/master/HTML/WebM&WebP.md)
+- [ ] EUNJIHA : [WPF/wpf](https://github.com/Im-D/Dev-Docs/blob/master/WPF/wpf.md)
+- [ ] BKJang : [Javascript/Prototype_Chain](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Prototype_Chain.md)
+
 #### 04월 05일
-- [ ] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Radix-sort.md)
+
+- [x] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Radix-sort.md)
+- [ ] JegalEun : [Javascript/ajax(2)](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/ajax(2).md)
+- [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
 
 <!--</details>-->
 
@@ -107,8 +102,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 03월 28일
 
 - [x] SeonHyungJo : 나는 이 시국에 어떻게 마스크를 구매했나?
-- [ ] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST API.md)
-- [ ] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
+- [x] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST API.md)
+- [x] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
 
 <!--</details>-->
 
