@@ -1,6 +1,6 @@
 ## 프로토타입 체인
 
-특정 객체의 메서드나 프로퍼티에 접근하고자 할 때, **해당 객체에 접근하려고 하는 프로퍼티나 객체가 없다면** 프로토타입 링크([[Prototype]] 프로퍼티)를 따라 **자신의 부모 역할을 하는 프로토타입 객체를 차례로 검색**한다. 이를 프로토타입 체인이라 한다.
+특정 객체의 메서드나 프로퍼티에 접근하고자할 때, **해당 객체에 접근하려고 하는 프로퍼티나 객체가 없다면** 프로토타입 링크(`[[Prototype]]` 프로퍼티)를 따라 **자신의 부모 역할을 하는 프로토타입 객체를 차례로 검색**한다. 이를 프로토타입 체인이라 한다.
 
 ```javascript
 var developer = {
@@ -15,13 +15,11 @@ console.log(Object.prototype.hasOwnProperty('hasOwnProperty')); //true
 ```
 
 `developer`객체에는 `hasOwnProperty()`메서드가 존재하지 않지만 에러가 나지 않는다. 
-이는 `developer` 객체의 **부모 객체인 `Object.prototype` 해당 메서드를 검색하기 때문**이다.
+이는 `developer` 객체의 **부모 객체에 해당하는 `Object.prototype`의 메서드를 검색하기 때문**이다.
 
 
 
 ## 객체 리터럴 방식으로 생성했을 때 프로토타입 체인
-
-
 
 ```javascript
 var developer = {
@@ -43,8 +41,7 @@ console.log(Function.prototype.__proto__ === Object.prototype); //4.true
 
 `developer` 객체와 `Function.prototype` 객체의 **프로토타입 객체는 `Object.prototype` 객체**다.
 
-> 객체리터럴 방식으로 객체를 생성하면, 해당 객체의 프로토타입 객체는 `Object.prototype` 객체다.
-
+> 객체리터럴 방식으로 객체를 생성하면, 해당 객체의 프로토타입 객체는 `Object.prototype` 객체다. 좀 더 자세히 설명하면, 객체리터럴 방식으로 객체를 생성하면 `Object()`생성자 함수를 통해 객체가 생성되기 때문에 해당 객체의 프로토타입 객체는 `Object.prototype`객체가 된다.
 
 
 ## 생성자 함수를 생성했을 때 프로토타입 체인
