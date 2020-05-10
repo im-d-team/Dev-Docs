@@ -35,7 +35,7 @@ avi, mkv, asf, mp4, mov등은 모두 컨테이너 포맷을 가리키는 파일 
 
 개인적으로 Mac 유저로써 App Store를 찾아본 결과 Media Info라는 앱을 찾아서 설치하였다.
 
-아래는 임의의 영상 하나를 알아보았다.
+아래는 임의의 영상 하나를 알아본 결과이다. 
 
 ![Video_info](https://user-images.githubusercontent.com/24274424/79058627-334a9880-7cab-11ea-9962-e2c79d7f127b.png)
 
