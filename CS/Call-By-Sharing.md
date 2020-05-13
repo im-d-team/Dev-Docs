@@ -4,7 +4,7 @@
 
 들어가기에 앞서, 메소드의 호출 방식에는 크게 두 가지가 있다. **call by value(값에 의한 호출)** 과 **call by reference(주소에 의한 호출)** 이다. 이 두 가지 방법은 매개 변수로 전달된 값의 유형으로 구분한다. 이처럼 함수 호출 시 전달 값의 종류를 결정하는 방법을 [평가 전략(Evaluation strategy)](https://en.wikipedia.org/wiki/Evaluation_strategy) 이라고 한다.
 
-함수에 전달한 매개변수는 **actual parameter(actual argument)** 라고 하고, 함수에서 수신받은 매개변수는 **formal parameter(formal argument)** 라고 한다.
+함수에 전달한 매개변수는 **actual parameter(actual argument; 실질 인자)** 라고 하고, 함수에서 수신받은 매개변수는 **formal parameter(formal argument; 형식인자)** 라고 한다.
 
 ```js
 void method(formal parameter){}
@@ -12,7 +12,9 @@ void method(formal parameter){}
 method(actual paramter)
 ```
 
-> 보통, 이를 parameter와 argument로 나누어 부르는데, parameter는 formal parameter를 말하고 argument는 actual parameter를 뜻한다.
+> 하지만 acutal과 formal을 제외하고 parameter와 argument로 나누어 것을 많이볼수있다. 이 경우 parameter는 **formal** parameter(formal argument)를 뜻하고, argument는 **actual** parameter(actual argument)를 뜻한다. 
+>
+>헷갈리면 다음을 참고하자 [Parameter_(computer_programming)](https://en.wikipedia.org/wiki/Parameter_(computer_programming))
 
 ### Call By Value
 
