@@ -2,9 +2,9 @@
 
 ## 목차  
 [1. WPF](#1.-What-is-WPF?)  
-[2. Resource](#2.-Resource)  
-[3. Data Binding](#3.-Data-binding)  
-[4. 프로젝트 활용](#4.-프로젝트-활용)  
+[2. Resource](#2-Resource)  
+[3. Data Binding](#3-Data-binding)  
+[4. 프로젝트 활용](#4-프로젝트-활용)  
 
 
 ## 1. What is WPF?
