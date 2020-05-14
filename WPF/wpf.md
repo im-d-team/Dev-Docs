@@ -19,7 +19,7 @@ XAML + CodeBehind
 
 ## 2. Resource
 ### 1) StaticResource vs. DynamicResource
-StaticResource는 XAML이 로드될 때 단 한 번 할당 된다. 동적으로 리소스를 변경할 수 없다. 반면 DynamicResource는 필요할 때마다 할당가능한 자원이다. 디자인(XAML) 시에 존재하지 않았던 리소스들을 CodeBehind 단(C#)에서 사용할 수 있다. 다음 코드의 ComboBoxItems, WindowBackgroundBrush는 각각 StaticResource, DynamicResource 이다.  
+StaticResource는 XAML이 로드될 때 단 한 번 할당 된다. 동적으로 리소스를 변경할 수 없다. 반면 DynamicResource는 필요할 때마다 할당 가능한 자원이다. 디자인(XAML) 시에 존재하지 않았던 리소스들을 CodeBehind 단(C#, Visual Basic)에서 사용할 수 있다. 다음 코드의 `ComboBoxItems`, `WindowBackgroundBrush`는 각각 StaticResource, DynamicResource 이다.  
 ```xml
 <!--testControl.xaml-->
 <Window.Resources>
