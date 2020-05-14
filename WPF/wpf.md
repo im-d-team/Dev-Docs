@@ -18,6 +18,10 @@ XAML + CodeBehind
 
 
 ## 2. Resource
+* WPF의 Resource란? [참고](https://docs.microsoft.com/ko-kr/dotnet/framework/wpf/advanced/resources-wpf) 
+> WPF supports different types of resources. These resources are primarily two types of resources: XAML resources and resource data files. Examples of XAML resources include brushes and styles. Resource data files are non-executable data files that an application needs.
+( XAML 리소스와 데이터 파일 두 가지로 분류된다. XAML 리소스의 예로는 브러시, 스타일이 있고 데이터 파일은 응용 프로그램에 필요한 비실행 데이터 파일이다. )
+
 ### 1) StaticResource vs. DynamicResource
 StaticResource는 XAML이 로드될 때 단 한 번 할당 된다. 동적으로 리소스를 변경할 수 없다. 반면 DynamicResource는 필요할 때마다 할당 가능한 자원이다. 디자인(XAML) 시에 존재하지 않았던 리소스들을 CodeBehind 단(C#, Visual Basic)에서 사용할 수 있다. 다음 코드의 `ComboBoxItems`, `WindowBackgroundBrush`는 각각 StaticResource, DynamicResource 이다.  
 ```xml
