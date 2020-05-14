@@ -13,8 +13,8 @@
 WPF는 마이크로소프트의 최신 GUI 프레임워크이다. 닷넷 프레임 워크를 기반에 둔다. Windows Presentation Foundation의 약자이다. (WPF, which stands for Windows Presentation Foundation, is Microsoft's latest approach to a GUI framework, used with the .NET framework.)
 ### 2) 구성 요소
 XAML + CodeBehind  
-- XAML은 eXtensible Application Markup Language의 약자로 마이크로소프트 XML의 한 형태이다.
-- CodeBehind는 C# 또는 Visual Basic을 사용한다.  
+- XAML은 eXtensible Application Markup Language의 약자로 마이크로소프트 XML의 한 형태이다. 디자인을 위한 요소이다.
+- CodeBehind는 XAML과 연동되어 어플리케이션의 로직을 처리하는 요소이다. C# 또는 Visual Basic을 사용한다.  
 
 
 ## 2. Resource
