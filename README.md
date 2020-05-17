@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] JegalEun : [Tool/Framework vs Library](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Framework vs Library.md)
+
 - [x] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
 
 - [x] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
