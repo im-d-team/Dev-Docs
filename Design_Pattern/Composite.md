@@ -13,7 +13,7 @@
 
 ## Composite 패턴의 구성요소
 
-![uml](https://user-images.githubusercontent.com/43839951/82133981-1581cd80-982d-11ea-923b-97bb4cbb12d6.JPG)
+![image](https://user-images.githubusercontent.com/43839951/82136295-3ce59400-9847-11ea-8f06-9c4cb10e5117.png)
 
 ### Component
 
