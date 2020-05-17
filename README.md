@@ -66,6 +66,9 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
+- [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
+
 
 <!--<details>
 <summary> 2020년 4월 </summary>-->
