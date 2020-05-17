@@ -15,7 +15,7 @@
 
 ![uml](https://user-images.githubusercontent.com/43839951/82133981-1581cd80-982d-11ea-923b-97bb4cbb12d6.JPG)
 
-(1) Component
+### Component
 
 
 - 객체들의 집합 내에 들어있는 모든 객체들에 대한 인터페이스를 정의
@@ -24,7 +24,7 @@
 - 인터페이스/ 추상 클래스로 정의되며 모든 객체들에게 공통되는 메소드를 정의해야 함
 
 
-(2) Leaf
+### Leaf
 
 
 - 단일 객체의 행동을 정의
@@ -34,7 +34,7 @@
 - Composite에서 지원하는 기능을 구현
 
 
-(3) Composite
+### Composite
 
 
 - 단일 객체를 가질 수 있는 구성요소의 행동을 정의
