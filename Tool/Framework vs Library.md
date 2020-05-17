@@ -39,7 +39,7 @@
 
 예를 들면 사용자로부터 몇 가지 정보를 얻는 커멘드라인 프로그램을 작성한다고 하면 다음과 같다.
 
-~~~ c++
+~~~ c
   puts 'What is your name?'
   name = gets
   process_name(name)
