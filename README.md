@@ -66,14 +66,17 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] Dae-Hwa : [Java/copy-object](https://github.com/im-d-team/Dev-Docs/blob/master/Java/copy-object.md)
 
-- [x] JegalEun : [Tool/Framework vs Library](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Framework vs Library.md)
+<!--<details>
+<summary> 2020년 5월 </summary>-->
 
-- [x] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
+#### 05월 17일
 
-- [x] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
-- [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
+- [ ] Dae-Hwa : [Java/copy-object](https://github.com/im-d-team/Dev-Docs/blob/master/Java/copy-object.md)
+- [ ] JegalEun : [Tool/Framework vs Library](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Framework%20vs%20Library.md)
+- [ ] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
+
+<!--</details>-->
 
 
 <!--<details>
@@ -95,12 +98,12 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 - [ ] SeonHyungJo : [HTML/WebM&WebP](https://github.com/Im-D/Dev-Docs/blob/master/HTML/WebM&WebP.md)
 - [ ] EUNJIHA : [WPF/wpf](https://github.com/Im-D/Dev-Docs/blob/master/WPF/wpf.md)
-- [ ] BKJang : [Javascript/Prototype_Chain](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Prototype_Chain.md)
+- [x] BKJang : [Javascript/Prototype_Chain](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Prototype_Chain.md)
 
 #### 04월 05일
 
 - [x] Dae-Hwa : [Radix-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Radix-sort.md)
-- [ ] JegalEun : [Javascript/ajax(2)](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/ajax(2).md)
+- [x] JegalEun : [Javascript/ajax(2)](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/ajax(2).md)
 - [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
 
 <!--</details>-->
@@ -111,7 +114,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 #### 03월 28일
 
 - [x] SeonHyungJo : 나는 이 시국에 어떻게 마스크를 구매했나?
-- [x] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST API.md)
+- [x] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST%20API.md)
 - [x] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
 
 <!--</details>-->
