@@ -84,7 +84,7 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 04월 26일
 
-- [ ] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT).md)
+- [ ] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT)](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자%20인증%20방식(Cookie,%20Session%20&%20oAuth%202.0%20&%20JWT).md)
 - [ ] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
 - [ ] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
 
@@ -108,8 +108,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 <!--</details>-->
 
-<!--<details>
-<summary> 2020년 3월 </summary>-->
+<details>
+<summary> 2020년 3월 </summary>
 
 #### 03월 28일
 
@@ -117,37 +117,37 @@ ex) :pencil2: Update HTTPS와 SSL.md
 - [x] EUNJIHA : [Network/REST API](https://github.com/Im-D/Dev-Docs/blob/master/Network/REST%20API.md)
 - [x] BKJang : [ECMAScript/ModulePattern_class](https://github.com/Im-D/Dev-Docs/blob/master/ECMAScript/ModulePattern_class.md)
 
-<!--</details>-->
+</details>
 
-<!--<details>
-<summary> 2020년 2월 </summary>-->
+<details>
+<summary> 2020년 2월 </summary>
   
 #### 02월 23일
-- [ ] JegalEun : 블록체인
+- [x] JegalEun : 블록체인
 - [x] Dae-Hwa : [CS/Counting-sort](https://github.com/Im-D/Dev-Docs/blob/master/CS/Counting-sort.md)
 
 #### 02월 16일
 
-- [ ] EUNJIHA : Web Summary
+- [x] EUNJIHA : Web Summary
 - [x] SeonHyungJo : [CSS/WebToMobile](https://github.com/Im-D/Dev-Docs/blob/master/CSS/WebToMobile.md)
-- [x] BKJang : [Network/HTTP vs WebSocket](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP vs WebSocket.md)
+- [x] BKJang : [Network/HTTP vs WebSocket](https://github.com/Im-D/Dev-Docs/blob/master/Network/HTTP%20vs%20WebSocket.md)
 
 #### 02월 09일
 
 - [x] SeonHyungJo : [Tool/Chrome_80_DevTool](https://github.com/Im-D/Dev-Docs/blob/master/Tool/Chrome_80_DevTool.md)
 - [x] Dae-Hwa: [SQL Injection](https://github.com/Im-D/Dev-Docs/blob/master/Security/SQL_Injection.md)
 
-<!--</details>-->
+</details>
 
 <details>
 <summary> 2019년 12월 </summary>
 
 #### 12월 01일
 
-- [ ] BKJang : [점진적향상 우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/점진적향상_우아한하향.md)
-- [ ] SeonHyungJo : [requestAnimationFrame(rAF)](https://github.com/Im-D/Dev-Docs/blob/master/Performance/requestAnimationFram(rAF).md)
-- [ ] Jinseong : [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
-- [ ] Dae-Hwa : [객체 생성 패턴 - 생성자 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_create_pattern-constructor.md)
+- [x] BKJang : [점진적향상 우아한하향](https://github.com/Im-D/Dev-Docs/blob/master/Performance/점진적향상_우아한하향.md)
+- [x] SeonHyungJo : [requestAnimationFrame(rAF)](https://github.com/Im-D/Dev-Docs/blob/master/Performance/requestAnimationFram(rAF).md)
+- [x] Jinseong : [Web Worker](https://github.com/Im-D/Dev-Docs/blob/master/Browser/WebWorker.md)
+- [x] Dae-Hwa : [객체 생성 패턴 - 생성자 패턴](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/object_create_pattern-constructor.md)
 
 </details>
 
