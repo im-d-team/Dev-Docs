@@ -99,7 +99,7 @@ public class Singleton {
 ![쓰레드](https://user-images.githubusercontent.com/43839951/79640641-8ce02500-81cd-11ea-8bc4-1f920b96c33c.JPG)
 
 만약, 위 그림의 상황에서 `스레드A`와 `스레드B`가 동시에 **getInstance()** 를 호출한 경우, 먼저 cpu를 할당받은 `스레드A`가 Singleton 객체를 생성하고, 
-**makeInstance** 변수에 할당하기 직전에, `스레드B` CPU를 할당받고 **getInstance( )** 를 호출한다면,
+**makeInstance** 변수에 할당하기 직전에, `스레드B`가 CPU를 할당받고 **getInstance( )** 를 호출한다면,
 `스레드B` 또한 Singleton 객체를 생성 할 것이다.
 
 <br>
