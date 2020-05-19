@@ -149,7 +149,7 @@ public class Singleton {
 }
 ```
 
-`DCL 방식`은 **makeInstance** 가  **null**인 경우에만 `synchronized block`에 접근하므로 성능저하를 보완할 수 있다.
+`DCL 방식`은 **객체가 아직 생성되어 있지 않은** 경우에만 `synchronized block`에 접근하므로 성능저하를 보완할 수 있다.
 <br><br>
 
 ## Singleton 패턴의 장점
