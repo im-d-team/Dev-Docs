@@ -68,6 +68,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ### 📅 History
 - [x] BKJang : [Javascript/test](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/test.md)
 
+- [x] BKJang : [Javascript/test](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/test.md)
+
 
 <!--<details>
 <summary> 2020년 5월 </summary>-->
