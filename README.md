@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [CSS/safe-area](https://github.com/im-d-team/Dev-Docs/blob/master/CSS/safe-area.md)
+
 - [x] BKJang : [Javascript/test](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/test.md)
 
 - [x] BKJang : [Javascript/test](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/test.md)
