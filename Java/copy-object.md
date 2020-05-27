@@ -50,7 +50,7 @@ void shallowCopyTest(){
 ```java
 void deepCopyTest(){
     UserInfo someUser = new UserInfo("someName");
-    UserInfo deepCopy = something for deep copy...;
+    UserInfo deepCopy = ...; /*something for deep copy...*/
     
     deepCopy.setName("changedName");
     
