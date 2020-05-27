@@ -9,7 +9,7 @@
 
 ## 얕은 복사
 
-얕은 복사를 할 경우 참조를 저장한 변수 명은 달라지지만, 같은 인스턴스를 공유한다.
+얕은 복사를 할 경우 객체 인스턴스의 주소가 복사된다.
 
 ```java
 Object original = new Object();
@@ -18,6 +18,7 @@ Object shallowCopy = original;
 original.equals(new Object()); // false
 original.equals(shallowCopy); // true
 ```
+> 참조를 저장한 변수 명은 달라지지만, 같은 인스턴스를 공유한다. 정확히는 같은 인스턴스를 공유하는 다른 이름의 변수가 생성된 것이다.
 
 얕은 복사는 같은 인스턴스를 공유한다. 따라서 복사한 변수를 이용하여 인스턴스의 필드를 바꾸게 되면 원본 객체의 필드도 변화한다.
 
