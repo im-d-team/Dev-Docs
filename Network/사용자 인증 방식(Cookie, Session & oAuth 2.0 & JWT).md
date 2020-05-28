@@ -86,6 +86,6 @@ function getDataByJWToken($jwt, $secretKey)
 
 }
 ```
-### 참고자료
+#### Reference
 - [[JWT] JSON Web Token 소개 및 구조](https://velopert.com/2389)
 - [쉽게 알아보는 서버 인증 2편(Access Token + Refresh Token)](https://tansfil.tistory.com/59)
