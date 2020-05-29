@@ -27,18 +27,20 @@
 - 장점: 보안성 좋다. (`Access Token`을 지속적으로 발급받아야 하므로)
 - 단점: 필요한 Resource가 너무 많다. 시간도 많이 걸린다.
 
-> `Access Token`: API를 요청할 때 사용하는 토큰. 유효기간이 짧다.
+> `Access Token`: API를 요청할 때 사용하는 토큰. 유효기간이 짧다.  
 > `Refresh Token`: Access Token의 유효기간이 만료되면 `Access Token`을 다시 발급받기 위해 사용되는 Token. `Access Token`보다 유효기간이 길다.
 
 ### (2) JWT (JSON Web Token)
 - 설명: 토큰 자체가 data를 가지고 있다. 
 - 장점: 토큰 기반 인증의 장점 (서버 부하 덜 수 있음)
-- 단점: Packet(보내는 데이터) 양이 크다. 토큰 자체를 탈취하면 ID, PW 자체를 알 수 있다. (따라서 HTTPS 통신을 권장한다.)
+- 단점: Packet(보내는 데이터) 양이 크다. 토큰 자체를 탈취하면 ID, PW 자체를 알 수 있다. (따라서 `HTTPS` 통신을 권장한다.)
+
+###### HTTPS 관련 자료: [HTTPS란](https://github.com/im-d-team/Dev-Docs/blob/master/Security/HTTPS%EC%99%80%20SSL.md)
 
 ![image](https://user-images.githubusercontent.com/43839938/80296561-5dc24880-87b7-11ea-8a48-8e8ab99e611b.png)
 
 ![image](https://user-images.githubusercontent.com/43839938/80297158-af6cd200-87bb-11ea-92f1-82cadb6c8643.png)
-
+사이트: https://jwt.io/
 
 1) **헤더 (Header)**
 ```json
