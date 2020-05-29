@@ -25,7 +25,7 @@
 
 - 설명: `Access Token`, `Refresh Token`을 이용한 인증 방식은 한 서버에서 모두 관리하는 반면, 여기 OAuth에서는 Authorization Server에서 인증+권한 관리를 하고 Resource Server에서는 자원에 대한 관리만 한다.
 - 장점: 보안성 좋다. (`Access Token`을 지속적으로 발급받아야 하므로)
-- 단점: 필요한 Resource가 너무 많다. 시간도 많이 걸린다.
+- 단점: 필요한 Resource가 너무 많다. `Access Token`이 만료될 때마다 새롭게 발급하는 과정에서 생기는 HTTP 요청이 잦다.
 
 > `Access Token`: API를 요청할 때 사용하는 토큰. 유효기간이 짧다.  
 > `Refresh Token`: Access Token의 유효기간이 만료되면 `Access Token`을 다시 발급받기 위해 사용되는 Token. `Access Token`보다 유효기간이 길다.
