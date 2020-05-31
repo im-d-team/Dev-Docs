@@ -66,6 +66,10 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [CS/cohension&coupling](https://github.com/im-d-team/Dev-Docs/blob/master/CS/cohension&coupling.md)
+- [x] Dae-Hwa : [CS/soc](https://github.com/im-d-team/Dev-Docs/blob/master/CS/soc.md)
+- [x] Dae-Hwa : [CS/srp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/srp.md)
+
 - [x] SeonHyungJo : [CSS/safe-area](https://github.com/im-d-team/Dev-Docs/blob/master/CSS/safe-area.md)
 
 <!--<details>
