@@ -62,11 +62,9 @@ console.log(x);
 
 하지만 이것은 틀린 말이다. 자바스크립트 파일의 메모리를 할당하는 과정이 필요하기 때문에 호이스팅이 발생한다.
 
-하지만 **`let`으로 선언만 되고 할당되지 않은 변수를 사용하려고 하면 `var`와 달리 `Reference Error`가 발생**한다.
-
-이는 `let`으로 선언된 변수는 할당 되기 전에 **TDZ(Temporal Dead Zone), 일시적 사각 지대**에 빠지게되기 때문이다. 이 때문에 `Reference Error`가 발생하는 것이다.
-
 ![ES6](https://bkdevlog.netlify.app/assets/img/TDZ.jpg)
+
+위 그림에서 보면 알 수 있듯이 `let`으로 선언되면 초기화 단계 이전에 `TDZ(Temporal Dead Zone)`에 빠지게 된다. 아래 예제를 살펴보자.
 
 ```js
 //ES5(var)
@@ -122,7 +120,7 @@ console.log(result); //ReferenceError: result is not defined
 
 `let`으로 선언한 변수는 중복 선언이 불가하다.
 
-`var`로 선언한 변수는 **같은 레벨에서 재할당이 가능**하지만, `let`으로 선언한 변수를 **같은 레벨 내에서 다시 선언하면 에러가 발생**한다.
+`var`로 선언한 변수는 **같은 레벨에서 재선언이 가능**하지만, `let`으로 선언한 변수를 **같은 레벨 내에서 다시 선언하면 에러가 발생**한다.
 
 ```js
 //ES5(var)
@@ -259,6 +257,9 @@ Developer = {
 }
 //Uncaught TypeError: Assignment to constant variable.
 ```
+
+> 위 내용들을 살펴보았을 때, `let`과 `const`가 있는데 왜 `var`가 존재하는지 의문이 생길 수 있을 것 같다.   
+> `let`과 `const`는 `var`가 가지고 있던 단점들을 보완하기 위해 ES6(ECMA2015)부터 등장하게 된 새로운 문법이며 새로운 개발을 진행하게 될 때 `var`를 사용할 일은 아마도 없을 것 같다.
 
 #### Reference
 
