@@ -23,7 +23,9 @@
 - **getInstance()** 메소드를 통해서만 객체에 접근 가능
 
 `Singleton` 패턴은 몇가지 방식으로 구현 할 수 있다.
-<br>
+
+
+
 ### eager Initialization
 
 ```java
@@ -43,7 +45,8 @@ public class Singleton {
 ```
 `eager Initialization` 방식은 Singleton 인스턴스를 미리 생성해 놓는 방식으로, 
 **Multi-thread** 환경이 아니면서 Singleton 인스턴스가 많은 일을 하지 않을 때 사용 할 수 있다. 
-<br>
+
+
 ### Static block
 
 ```java
@@ -182,6 +185,8 @@ public class Singleton {
 `객체간의 상호 의존도`가 높아져서 **객체 지향 설계 원칙** 중 하나인 **개방-폐쇄 원칙** 에 어긋나게 된다.
 
 > **개방- 폐쇄 원칙(OCP, Open-Closed Principle)** : 소프트 웨어 개체(클래스, 모듈, 함수 등등)는 확장에 대해 열려 있어야 하고, 수정에 대해서는 닫혀있어야 한다는 객체 지향의 설계 원칙
+#### 참고
+-[개방 폐쇄 원칙 OCP (Open-Closed Principle)](https://lng1982.tistory.com/124)
 
 - `multi-thread`환경에서 동기화 처리 문제가 발생 할 수 있다. 
 
