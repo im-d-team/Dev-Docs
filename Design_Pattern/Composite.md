@@ -206,7 +206,7 @@ Javascript = 200 size
 
 ### 단점:
 
-- 설계를 일반화시켜 특정 Component 객체로만 Composite 객체를 구성하고 싶을 경우에 문제가 발생 할 수 있다.
+- 설계를 일반화시키기 때문에 특정 Component 객체로만 Composite 객체를 구성하고 싶을 경우에 문제가 발생할 수 있다.
 Composite 패턴에서 Component 클래스의 모든 하위 클래스 객체는 동일하게 Composite 객체를 구성하기 위한 요소로 사용 될 수 있기 때문이다
 
 ## 논의점
@@ -226,4 +226,3 @@ Composite 패턴에서는 `1) 계층구조를 관리하는 일` `2) 하위 객�
 
 
 [[디자인 패턴 7편] 구조 패턴, 컴퍼지트(Composite)](https://dailyheumsi.tistory.com/193)
-
