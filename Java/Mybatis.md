@@ -38,7 +38,7 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
 또한, 쿼리 양이 많아질수록 .java에는 자바 코드뿐만 아니라 쿼리 코드로 인해 양이 방대해진다.
 그래서 sql 구문과 java 코드의 분리 필요성을 느끼게 된다. 
 
-######  Mybatis적용 후 소스 방식
+###  Mybatis적용 후 소스 방식
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
   <ENTITY id="table.getTable1List" type="SQL" return="List">
@@ -72,7 +72,7 @@ Maven을 이용하면 라이브러리의 추가가 굉장히 쉽다. <br>
 Maven은 내가 사용할 라이브러리뿐만 아니라 해당 라이브러리가 작동하는데 필요한 다른 라이브러리들까지 관리하여 네트워크를 통해서 자동으로 다운받아 준다.<br>
 라이브러리를 쉽게 관리할 수 있다.
 
-pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
+pom.xml의 <dependency>태그 추가하기!
 
 ```java
 <!-- mybatis -->
@@ -134,16 +134,27 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
          <property name="username" value="root" />
          <property name="password" value="passwd" />
    </bean>
+```
   
-  <!--    Mybatis의 xml파일들을 읽기 위한 설정-->
+```java
+<!--    Mybatis의 xml파일들을 읽기 위한 설정-->
    <bean id="sqlSessionFactory"
         class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
+```
+위 부분은 sqlSession을 생성하기 위해 sqlSessionFactory를 정의하고 있다. 
+또한, property의 name과 ref가 dataSource로 정의 되어있다. 이 두 가지는 같은 것을 의미하지 않는다. name은 위에서 등록한 sqlSession 빈(bean)에서 사용할 이름이 dataSource이고, ref의 dataSource는 우리가 7행에서 정의한 빈(bean)을 참조하는 것을 의미한다. 
+
+```java
         <property name="configLocation"
             value="classpath:sql/mybatis-config.xml">
         </property>
-    </bean>  
-   
+    </bean>
+```
+위 부분은 src/main/resources 경로의 mybatis-config.xml 파일의 위치를 지정해 주는 것이다.
+mybatis-config.xml는 우리가 작성할 sql 문이 모여있는 xml 파일이다.
+
+```java
    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg  ref="sqlSessionFactory"></constructor-arg>
     </bean>   
@@ -152,16 +163,8 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
    </bean> 
    </beans>
 ```
-  
- 
- 15행은 sqlSession을 생성하기 위해 sqlSessionFactory를 정의하고 있다. 
- 17행의 property의 name과 ref가 dataSource로 정의 되어있다. 
-이 두 가지는 같은 것을 의미하지 않는다. name은 위에서 등록한 sqlSession 빈(bean)에서 사용할 이름이 dataSource이고, ref의 dataSource는 우리가 7행에서 정의한 빈(bean)을 참조하는 것을 의미한다. 
-
-19행을 보면 src/main/resources 경로의 mybatis-config.xml 파일의 위치를 지정해 주는 것이다. 
-mybatis-config.xml는 우리가 작성할 sql 문이 모여있는 xml 파일이다.
-
-마지막으로 27행의 sqlSessionTemplate은 마이바티스 스프링 연동 모듈의 핵심이다. SQLSessionTemplate은 SqlSession을 구현하고, 코드에서 SqlSession을 대체하는 역할을 한다.
+위 부분은 sqlSessionTemplate를 정의하고 있다.
+sqlSessionTemplate은 마이바티스 스프링 연동 모듈의 핵심이다. SQLSessionTemplate은 SqlSession을 구현하고, 코드에서 SqlSession을 대체하는 역할을 한다.
 
 * sqlSessionFactory <br>
 Mybatis에서는 SqlSession를 생성하기 위해 SqlSessionFactory를 사용한다. 
@@ -195,7 +198,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 mybatis-config.xml은 mapper들이 모인 xml 파일이다. 
  
-즉, 앞서 21행은 위에 모든 xml 파일을 읽어들인다. 
+즉, mybatis-config.xml의  지정해줌으로써 모든 xml 파일을 읽어들인다. 
  
 **4 web.xml 작성**
 
