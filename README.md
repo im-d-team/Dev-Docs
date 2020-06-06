@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [Network/IP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/IP.md)
+
 
 <!--<details>
 <summary> 2020년 5월 </summary>-->
