@@ -14,9 +14,13 @@
 
 > [출처 : Computer Science Bea](https://sites.google.com/site/computersciencebea/networks/types-of-networks/network-cabling-speeds/networks-protocols/mac-addresses/network-topologies/the-internet/the-www/wan-lan-pan)
 
-## IP(Internet Protocol)란?
+## IP(Internet Protocol)주소란?
 
-네트워킹이 가능한 장비를 식별하는 주소이다. 네트워크상에서 통신을 하기 위해서는 몇 가지 통신규약(Protocol)을 따라야 하는데, 그런 조약 중에는 "네트워킹을 하는 장비들에 숫자 12개의 고유한 주소를 주어 그 주소를 통해 서로를 인식하고 통신하도록 하자"라는 의미의 규약이 존재한다.
+먼저 IP 주소라는 말에서 IP를 먼저 알아보자. 위키의 내용을 살펴보면, 아래와 같다.
+
+> 인터넷 프로토콜(IP, Internet Protocol)은 송신 호스트와 수신 호스트가 **패킷 교환 네트워크**(패킷 스위칭 네트워크, Packet Switching Network)에서 정보를 주고받는 데 사용하는 정보 위주의 **규약**(프로토콜, Protocol)이며, OSI 네트워크 계층에서 호스트의 주소지정과 패킷 분할 및 조립 기능을 담당한다. 
+
+이에 IP 주소는 네트워킹이 가능한 장비를 식별하는 주소이다. 네트워크상에서 통신을 하기 위해서는 몇 가지 통신규약(Protocol)을 따라야 하는데, 그런 조약 중에는 "네트워킹을 하는 장비들에 숫자 12개의 고유한 주소를 주어 그 주소를 통해 서로를 인식하고 통신하도록 하자"라는 의미의 규약이 존재한다.
 
 **하나의 네트워크 안에서 IP들은 네트워크 영역은 같아야 하고, 호스트 IP는 서로 달라야 통신이 가능하다.**
 
