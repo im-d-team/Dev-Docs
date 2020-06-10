@@ -2,13 +2,13 @@
 
 ## 네트워크란
 
-두 대 이상의 컴퓨터가 논리적 또는 물리적으로 연결되어 통신이 가능한 상태를 말한다..
+두 대 이상의 컴퓨터가 논리적 또는 물리적으로 연결되어 통신이 가능한 상태를 말한다.
 일반적으로 규모에 따른 네트워크 종류는 아래와 같다.
 
 1. PAN (Personal Area, Network) : 가장 작은 규모의 네트워크.
 2. LAN (Local Area Network) : 근거리 영역 네트워크, 근거리 통신망을 의미하며 지역적 좁은 범위 내에서 고속 통신이 가능한 통신망.
-3. Man (Metropolitan Area Network) : 대도시 영역 네트워크.
-4. Wan (Wide Area Network) : 광대역 네트워크, Wide Area Network 광대역 통신망으로 LAN보다 넓은 지역을 나타내며 지역과 지역, 지방과 지방, 나라와 나라 또는 대륙과 대륙을 연결하는 통신망.
+3. MAN (Metropolitan Area Network) : 대도시 영역 네트워크.
+4. WAN (Wide Area Network) : 광대역 네트워크, Wide Area Network 광대역 통신망으로 LAN보다 넓은 지역을 나타내며 지역과 지역, 지방과 지방, 나라와 나라 또는 대륙과 대륙을 연결하는 통신망.
 
 ![WAN, LAN](https://user-images.githubusercontent.com/24274424/83945517-17481b00-a846-11ea-8848-d351a8b0dbed.png)
 
