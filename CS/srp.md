@@ -29,17 +29,17 @@
 
 ```java
 class Calculator {
-  	public void calculate(int left, int right, String operator) {
-    	if (operator.equals("+")) {
-   			System.out.println(left + right);
-    } else if (operator.equals("-")) {
-    	System.out.println(left + right);
-    } else if (operator.equals("*")) {
-		System.out.println(left + right);
-    } else if (operator.equals("/")) {
-    	System.out.println(left + right);
+    public void calculate(int left, int right, String operator) {
+        if (operator.equals("+")) {
+            System.out.println(left + right);
+        } else if (operator.equals("-")) {
+            System.out.println(left + right);
+        } else if (operator.equals("*")) {
+            System.out.println(left + right);
+        } else if (operator.equals("/")) {
+            System.out.println(left + right);
+        }
     }
-  }
 }
 ```
 
@@ -49,8 +49,8 @@ class Calculator {
 
 ```java
 interface Calculator {
-  	void calculate();
-  	int getResult();
+    void calculate();
+    int getResult();
 }
 
 interface Printer {
@@ -80,13 +80,13 @@ class BasicCalculator implements Calculator{ // 연산
     
     public void calculate() {
         if (operator.equals(PLUS)) {
-          result = left + right;
+            result = left + right;
         } else if (operator.equals(MINUS)) {
-          result = left + right;
+            result = left - right;
         } else if (operator.equals(MULTIPLY)) {
-          result = left + right;
+            result = left * right;
         } else if (operator.equals(DIVISION)) {
-          result = left + right;
+            result = left / right;
         }
     }
     
@@ -130,9 +130,9 @@ class IntPrinter implements Printer { // 출력
 
 ```java
 public interface Employee {
-	public Money calculatePay();
-	public void save();
-	public String reportHours();
+    public Money calculatePay();
+    public void save();
+    public String reportHours();
 }
 ```
 
