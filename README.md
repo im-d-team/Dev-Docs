@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
+
 - [x] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
 
 - [x] BKJang : [Javascript/Scope](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Scope.md)
