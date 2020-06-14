@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP API.md)
+
 
 - [x] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
 
