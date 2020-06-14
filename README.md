@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
+
 - [x] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
 
 - [x] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
