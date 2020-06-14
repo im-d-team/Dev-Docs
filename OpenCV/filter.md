@@ -67,7 +67,7 @@
 
 
 - kernel window와 pixel의 값들을 정렬한 후에 중간값을 선택하여 적용
-- salt-and-pepper noise 제거에 가장 효과적
+- 픽셀값들을 주변 픽셀들의 중간값으로 대체하다보니, 한 픽셀씩 연관성없이 바뀌어 있는 salt&pepper 노이즈를 제거하는데 매우 탁월
   
   
   
