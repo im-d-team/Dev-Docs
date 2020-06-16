@@ -187,16 +187,24 @@ class CalculatorClient {
 ```java
 enum Calculator {
   PLUS("+") {
-    result = left + right;
+    public void calculate(int left, int right) {
+      result = left + right;
+    }    
   },
   MINUS("-") {
-    result = left - right;
+    public void calculate(int left, int right) {
+      result = left - right;
+    }
   },
   MULTYPLY("*") {
-    result = left * right;
+    public void calculate(int left, int right) {
+      result = left * right;
+    }
   },
   DIVISION("/") {
-    result = left / right;
+    public void calculate(int left, int right) {
+      result = left / right;
+    }
   };
     
   public final String OPERATOR;
