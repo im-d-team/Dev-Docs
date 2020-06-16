@@ -33,11 +33,11 @@ class Calculator {
         if (operator.equals("+")) {
             System.out.println(left + right);
         } else if (operator.equals("-")) {
-            System.out.println(left + right);
+            System.out.println(left - right);
         } else if (operator.equals("*")) {
-            System.out.println(left + right);
+            System.out.println(left * right);
         } else if (operator.equals("/")) {
-            System.out.println(left + right);
+            System.out.println(left / right);
         }
     }
 }
