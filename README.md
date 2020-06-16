@@ -66,37 +66,42 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
-- [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP API.md)
 
 
-- [x] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
 
-- [x] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
 
-- [x] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
+<!--<details>
+<summary> 2020년 6월 </summary>-->
 
-- [x] BKJang : [Javascript/Scope](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Scope.md)
+#### 06월 14일
 
-- [x] SeonHyungJo : [Network/IP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/IP.md)
+- [ ] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP API.md)
+- [ ] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
+- [ ] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
+- [ ] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
 
+#### 06월 07일
+
+- [ ] BKJang : [Javascript/Scope](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Scope.md)
+- [ ] SeonHyungJo : [Network/IP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/IP.md)
+
+<!--</details>-->
 
 <!--<details>
 <summary> 2020년 5월 </summary>-->
 
 #### 05월 31일
 
-- [ ] Dae-Hwa : [CS/cohension&coupling](https://github.com/im-d-team/Dev-Docs/blob/master/CS/cohension&coupling.md)
-- [ ] Dae-Hwa : [CS/soc](https://github.com/im-d-team/Dev-Docs/blob/master/CS/soc.md)
 - [ ] Dae-Hwa : [CS/srp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/srp.md)
 
 #### 05월 24일
 
-- [ ] SeonHyungJo : [CSS/safe-area](https://github.com/im-d-team/Dev-Docs/blob/master/CSS/safe-area.md)
+- [x] SeonHyungJo : [CSS/safe-area](https://github.com/im-d-team/Dev-Docs/blob/master/CSS/safe-area.md)
 
 #### 05월 17일
 
 - [ ] Dae-Hwa : [Java/copy-object](https://github.com/im-d-team/Dev-Docs/blob/master/Java/copy-object.md)
-- [ ] JegalEun : [Tool/Framework vs Library](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Framework%20vs%20Library.md)
+- [x] JegalEun : [Tool/Framework vs Library](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Framework%20vs%20Library.md)
 - [ ] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
 
 <!--</details>-->
@@ -107,20 +112,20 @@ ex) :pencil2: Update HTTPS와 SSL.md
 
 #### 04월 26일
 
-- [ ] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT)](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자%20인증%20방식(Cookie,%20Session%20&%20oAuth%202.0%20&%20JWT).md)
-- [ ] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
-- [ ] BKJang : [Javascript/Variable_of_JS](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable_of_JS.md)
+- [x] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT)](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자%20인증%20방식(Cookie,%20Session%20&%20oAuth%202.0%20&%20JWT).md)
+- [x] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
+- [ ] BKJang : [Javascript/Variable](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable.md)
 
 #### 04월 19일
 
-- [ ] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
-- [ ] JegalEun : [Java/Mybatis](https://github.com/Im-D/Dev-Docs/blob/master/Java/Mybatis.md)
-- [ ] Dae-Hwa : [CS/Call-By-Sharing](https://github.com/Im-D/Dev-Docs/blob/master/CS/Call-By-Sharing.md)
+- [x] ssy0619 : [Design_Pattern/Singleton](https://github.com/Im-D/Dev-Docs/blob/master/Design_Pattern/Singleton.md)
+- [x] JegalEun : [Java/Mybatis](https://github.com/Im-D/Dev-Docs/blob/master/Java/Mybatis.md)
+- [x] Dae-Hwa : [CS/Call-By-Sharing](https://github.com/Im-D/Dev-Docs/blob/master/CS/Call-By-Sharing.md)
 
 #### 04월 12일
 
-- [ ] SeonHyungJo : [HTML/WebM&WebP](https://github.com/Im-D/Dev-Docs/blob/master/HTML/WebM&WebP.md)
-- [ ] EUNJIHA : [WPF/wpf](https://github.com/Im-D/Dev-Docs/blob/master/WPF/wpf.md)
+- [x] SeonHyungJo : [HTML/WebM&WebP](https://github.com/Im-D/Dev-Docs/blob/master/HTML/WebM&WebP.md)
+- [x] EUNJIHA : [WPF/wpf](https://github.com/Im-D/Dev-Docs/blob/master/WPF/wpf.md)
 - [x] BKJang : [Javascript/Prototype_Chain](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Prototype_Chain.md)
 
 #### 04월 05일
