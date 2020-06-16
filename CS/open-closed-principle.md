@@ -60,11 +60,11 @@ public void calculate() {
   if (operator.equals(PLUS)) {
     result = left + right;
   } else if (operator.equals(MINUS)) {
-    result = left + right;
+    result = left - right;
   } else if (operator.equals(MULTIPLY)) {
-    result = left + right;
+    result = left * right;
   } else if (operator.equals(DIVISION)) {
-    result = left + right;
+    result = left / right;
   } // 추가 할 기능 작성 e.g. 나머지 연산 제곱 연산 제곱근 연산 등등...
 }
 ```
