@@ -8,7 +8,6 @@
 
 ### 🔒 Rule
 
-- 작성 후, 반드시 README의 카테고리에 추가해준다.
 - 마크 다운을 작성할 때는 다음과 같은 형식을 따른다.
 
   [마크다운 규칙](https://github.com/im-d-team/Dev-Docs/blob/master/Rules/Markdown.md)
