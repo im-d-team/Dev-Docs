@@ -57,20 +57,17 @@
 ---
 
 ### 📅 History
-- [x] BKJang : [Javascript/Closure](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Closure.md)
-
-- [x] SeonHyungJo : [Network/TypesOfIP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TypesOfIP.md)
-
-
-
-
 
 <!--<details>
 <summary> 2020년 6월 </summary>-->
 
 #### 06월 14일
+- [ ] BKJang : [Javascript/Closure](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Closure.md)
+- [ ] SeonHyungJo : [Network/TypesOfIP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TypesOfIP.md)
 
-- [ ] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP API.md)
+#### 06월 14일
+
+- [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP API.md)
 - [ ] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
 - [ ] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
 - [ ] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
@@ -78,7 +75,7 @@
 #### 06월 07일
 
 - [ ] BKJang : [Javascript/Scope](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Scope.md)
-- [ ] SeonHyungJo : [Network/IP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/IP.md)
+- [x] SeonHyungJo : [Network/IP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/IP.md)
 
 <!--</details>-->
 
@@ -102,14 +99,14 @@
 <!--</details>-->
 
 
-<!--<details>
-<summary> 2020년 4월 </summary>-->
+<details>
+<summary> 2020년 4월 </summary>
 
 #### 04월 26일
 
 - [x] EUNJIHA : [Network/사용자 인증 방식(Cookie, Session & oAuth 2.0 & JWT)](https://github.com/Im-D/Dev-Docs/blob/master/Network/사용자%20인증%20방식(Cookie,%20Session%20&%20oAuth%202.0%20&%20JWT).md)
 - [x] SeonHyungJo : [CSS/CJK](https://github.com/Im-D/Dev-Docs/blob/master/CSS/CJK.md)
-- [ ] BKJang : [Javascript/Variable](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable.md)
+- [x] BKJang : [Javascript/Variable](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/Variable.md)
 
 #### 04월 19일
 
@@ -129,7 +126,7 @@
 - [x] JegalEun : [Javascript/ajax(2)](https://github.com/Im-D/Dev-Docs/blob/master/Javascript/ajax(2).md)
 - [x] ssy0619 : [OpenCV/이미지전처리](https://github.com/Im-D/Dev-Docs/blob/master/OpenCV/이미지전처리.md)
 
-<!--</details>-->
+</details>
 
 <details>
 <summary> 2020년 3월 </summary>
