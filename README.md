@@ -66,6 +66,8 @@ ex) :pencil2: Update HTTPS와 SSL.md
 ---
 
 ### 📅 History
+- [x] BKJang : [Javascript/Closure](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Closure.md)
+
 - [x] SeonHyungJo : [Network/TypesOfIP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TypesOfIP.md)
 
 
