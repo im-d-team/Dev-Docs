@@ -103,7 +103,7 @@ kernel window을 적용시킨 결과가 위의 그림과 같다고  할 때, 행
 
 ![bilateral](https://user-images.githubusercontent.com/43839951/84584221-77d5ea00-ae3c-11ea-85c8-5abd5416c65e.JPG)
 
-##### Reference
+#### Reference
 
 [mean / gaussian filter](https://preventionyun.tistory.com/31)
 
