@@ -81,7 +81,7 @@ kernel window을 적용시킨 결과가 위의 그림과 같다고  할 때, 행
 #### bilateral filtering
 
  경계선을 유지하면서 Gaussian Blur처리를 해주는 방법
- Gaussian 필터를 적용하고, 또 하나의 Gaussian 필터를 주변 pixel까지 고려하여 적용하는 방식입니다.
+ Gaussian 필터를 적용하고, 또 하나의 Gaussian 필터를 주변 pixel까지 고려하여 적용하는 방식이다.
 
  ### 예시
 
