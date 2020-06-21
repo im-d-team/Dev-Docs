@@ -67,7 +67,7 @@
 
 #### 06월 14일
 
-- [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP API.md)
+- [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP%20API.md)
 - [ ] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
 - [ ] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
 - [ ] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
