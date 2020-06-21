@@ -9,8 +9,10 @@
 ### 🔒 Rule
 
 - 작성 후, 반드시 README의 카테고리에 추가해준다.
-- 마크 다운을 작성할 때는 다음과 같은 형식을 따른다.([작성법 읽어보기](https://github.com/Im-D/Dev-Docs/tree/master/Mardown_Rule)
-  )
+- 마크 다운을 작성할 때는 다음과 같은 형식을 따른다.
+
+  [마크다운 규칙](https://github.com/im-d-team/Dev-Docs/blob/master/Rules/Markdown.md)
+  
 - 커밋은 다음을 참고하여 작성 
   
   [커밋 규칙](https://github.com/im-d-team/Dev-Docs/blob/master/Rules/Commit.md)
