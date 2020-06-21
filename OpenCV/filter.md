@@ -17,7 +17,7 @@
 ![convolution](https://user-images.githubusercontent.com/43839951/84584138-d77fc580-ae3b-11ea-9bdd-d1ca2107e4bb.JPG)
 
 - Convolution이란 시스템 출력을 구할 때 사용하는 하나의 '연산'으로 입력함수와 시스템 함수를 이용하여 출력값을 계산하는 연산을 의미.
-- 영상 신호 처리 관점에서의 컨볼볼루션은
+- 영상 신호 처리 관점에서의 Convolution은
 가중치(weight)을 갖는 mask(kernal)를 이용하여 영상처리를 하는 것을 의미. 입력영상에 mask를 씌운 다음 각 픽셀과 마스크를 곱한 값들의 합을 출력영상으로 만드는 것을 의미.
 
 ![영상처리 convolution](https://user-images.githubusercontent.com/43839951/84584032-b36fb480-ae3a-11ea-9884-ab445ae4d97a.JPG)
