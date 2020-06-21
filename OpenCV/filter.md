@@ -23,7 +23,7 @@
 ![영상처리 convolution](https://user-images.githubusercontent.com/43839951/84584032-b36fb480-ae3a-11ea-9884-ab445ae4d97a.JPG)
 
 
-오리 이미지(input)에 2차원 행렬(mask)을 convoution 해주었다면 오리 사진이 행렬의
+오리 이미지(input)에 2차원 행렬(mask)을 convolution 해주었다면 오리 사진이 행렬의
 개수만큼 복사되어 출력(output)된다.
 
 ### 용도 
