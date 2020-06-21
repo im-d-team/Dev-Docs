@@ -9,7 +9,7 @@
 ![JavaScript](https://bkdevlog.netlify.com/assets/img/js_scope_property.png)
 
 
-내부 함수의 `[[Scopes]]` 프로퍼티는 **자신의 실행 환경(Lexical Enviroment)**과 자신을 포함하는 **외부 함수의 실행 환경과 전역 객체**를 가리킨다.
+내부 함수의 `[[Scopes]]` 프로퍼티는 **자신의 실행 환경(Lexical Enviroment)** 과 자신을 포함하는 **외부 함수의 실행 환경과 전역 객체**를 가리킨다.
 
 이 때, 자신을 포함하는 **외부 함수의 실행 컨텍스트가 소멸하여도 `[[Scopes]] `프로퍼티가 가리키는 외부 함수의 실행 환경(Activation Object)은 소멸하지 않고 참조**할 수 있다. 이것이 **클로저**이다.
 
