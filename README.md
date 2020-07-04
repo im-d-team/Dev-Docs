@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7 Layer.md)
+
 
 <!--<details>
 <summary> 2020년 6월 </summary>-->
