@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] JegalEun : [Language/JSON_XML](https://github.com/im-d-team/Dev-Docs/blob/master/Language/JSON_XML.md)
+
 - [x] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
 
 - [x] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7 Layer.md)
