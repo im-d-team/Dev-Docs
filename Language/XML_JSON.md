@@ -3,26 +3,6 @@
 
 둘의 차이와 파싱하는 법을 정리를 해보았다.
 
-## JSON
-JSON은 JavaScript Object Notation의 약자로, 데이터를 저장하거나 전송할 때 많이 사용되는 데이터 교환 형식이다. 최근에는 용량이 작아서 JSON이 XML을 대체에서 데이터 전송 등에 많이 사용한다. 
-
-### JSON 문법
-![JSON 문법](https://user-images.githubusercontent.com/43868540/86515808-a9980a80-be56-11ea-9269-a15c597bda1f.PNG)
-
-[출처 surim014.log](https://velog.io/@surim014/JSON%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-- json 형식은 자바스크립트 객체와 마찬가지로 `key/value`가 존재할 수 있으며 key 값이나 문자열은 항상 쌍따옴표를 이용하여 표기해야 한다. 
-- 일반 자바스크립트의 객체처럼 원하는 만큼 중첩시켜서 사용할 수도 있다.
-- json 형식에서는 null, number, string, array, object, boolean을 사용할 수 있다.
-
-### JSON 장점
-- 내용이 **함축적**으로 최소한의 정보만을 가지고 있다.
-- **최소한의 정보**만 가지고 있기 때문에 속도는 그만큼 빨라진다.
-- 파싱이 매우 **간편**하고 사용하기 쉽다.
-
-### JSON 단점
-- 내용이 함축적이다 보니 내용의 의미 파악하기 힘들다.
-- **적은 규격의 데이터 전송**에 적합한 방식이기 때문에 XML보다는 빠르지만 대용량급 데이터 송수신엔 부적합하다.
-
 ## XML이란?
 XML은 EXtensible Markup Language의 약자로, HTML과 매우 비슷한 문자 기반의 마크업 언어이다.
 XML 태그는 HTML 태그처럼 미리 정의되어 있지 않고, 사용자가 직접 정의할 수 있다.
@@ -44,142 +24,25 @@ XML 태그는 HTML 태그처럼 미리 정의되어 있지 않고, 사용자가 
 - tag 때문에 실 데이터에 비해 문서의 양이 필요 이상으로 많아진다.
 - 배열 형식이나 반복 구조의 경우 불필요한 데이터가 계속해서 나타난다. 결국 파싱이 힘들어지고 속도는 느려진다.
 
-## JSON parse
-test.json
-``` json
-[
-  {"name":  "제갈은", "msg":  "경기도 안산", "birthday": {"month":  3, "day":  23}},
-  {"name":  "심세영","msg":  "경기도 안양", "birthday": {"month": 6,"day": 19}}
-]
-```
-assets 폴더 안에 jsons 폴더를 생성한다. 만든 jsons 폴더 안에 test.json을 생성한다.
+## JSON
+JSON은 JavaScript Object Notation의 약자로, 데이터를 저장하거나 전송할 때 많이 사용되는 데이터 교환 형식이다. 최근에는 용량이 작아서 JSON이 XML을 대체에서 데이터 전송 등에 많이 사용한다. 
 
-activity_main.xml
-``` xml
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+### JSON 문법
+![JSON 문법](https://user-images.githubusercontent.com/43868540/86515808-a9980a80-be56-11ea-9269-a15c597bda1f.PNG)
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="json parse"
-        android:onClick="clickBtn"/>
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"/>
+[출처 surim014.log](https://velog.io/@surim014/JSON%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+- json 형식은 자바스크립트 객체와 마찬가지로 `key/value`가 존재할 수 있으며 key 값이나 문자열은 항상 쌍따옴표를 이용하여 표기해야 한다. 
+- 일반 자바스크립트의 객체처럼 원하는 만큼 중첩시켜서 사용할 수도 있다.
+- json 형식에서는 null, number, string, array, object, boolean을 사용할 수 있다.
 
-</LinearLayout>
-```
-Button과 TextView를 화면에 추가해주었다. TextView에는 tv라는 id를 부여해주었다.
+### JSON 장점
+- 내용이 **함축적**으로 최소한의 정보만을 가지고 있다.
+- **최소한의 정보**만 가지고 있기 때문에 속도는 그만큼 빨라진다.
+- 파싱이 매우 **간편**하고 사용하기 쉽다.
 
-MainActivity.java
-``` java
-package com.example.myapplication;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.res.AssetManager;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
-public class MainActivity extends AppCompatActivity {
-
-    TextView tv;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        tv = findViewById(R.id.tv);
-    }
-    public void clickBtn(View view) {
-
-        //json 파일 읽어와서 분석하기
-
-        //assets폴더의 파일을 가져오기 위해
-        //창고관리자(AssetManager) 얻어오기
-        AssetManager assetManager = getAssets();
-
-        //assets/ test.json 파일 읽기 위한 InputStream
-        try {
-            InputStream is = assetManager.open("jsons/test.json");  
-            InputStreamReader isr = new InputStreamReader(is);
-            BufferedReader reader = new BufferedReader(isr);
-
-            StringBuffer buffer = new StringBuffer();
-            String line = reader.readLine();
-            while (line != null) {
-                buffer.append(line + "\n");
-                line = reader.readLine();
-            }
-
-            String jsonData = buffer.toString();
-
-            //json 데이터가 하나의 배열일 때
-            //jsonObject 객체 생성
-//            JSONObject jsonObject= new JSONObject(jsonData);
-//            String name= jsonObject.getString("name");
-//            String msg= jsonObject.getString("msg");
-//
-//            tv.setText("이름 : "+name+"\n"+"메세지 : "+msg);
-
-            //json 데이터가 []로 시작하는 여러 배열일때..
-            //JSONArray 객체 생성
-            JSONArray jsonArray = new JSONArray(jsonData);
-
-            String s = "";
-
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jo = jsonArray.getJSONObject(i);
-
-                String name = jo.getString("name");
-                String msg = jo.getString("msg");
-                JSONObject flag = jo.getJSONObject("birthday");
-                int aa = flag.getInt("month");
-                int bb = flag.getInt("day");
-
-                s += name + " : " + msg + ", 생일 :  " + aa + "월" + bb + "일\n";
-            }
-            tv.setText(s);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-    }
-}
-```
-
-json 파싱은 기본적으로 `JSONObject`와 `JSONArray`으로 json을 파싱할 수 있다.
-
-데이터가 하나의 배열일 때는 `JSONObject`를 사용하고 여러 배열일 때는 `JsonArray`를 사용한다. 
-
-`JSONArray`를 사용할 때는 for문을 사용해 `JSONObject`를 하나씩 생성해 값을 가져온다. 
-
-### 결과 화면
-<img width="431" alt="jsonparse" src="https://user-images.githubusercontent.com/43868540/86513605-89604f80-be46-11ea-91d9-30d9d99a6acf.png">
+### JSON 단점
+- 내용이 함축적이다 보니 내용의 의미 파악하기 힘들다.
+- **적은 규격의 데이터 전송**에 적합한 방식이기 때문에 XML보다는 빠르지만 대용량급 데이터 송수신엔 부적합하다.
 
 ## XML parse
 XML 파싱하는 방법에는 DOM, SAX, PULL 이렇게 총 3가지가 있는데 그중 pull 파싱을 사용하였다.
@@ -436,9 +299,147 @@ xml 데이터를 파싱할 때는 루프를 돌면서 XML 요소(element)를 파
 
 [출처 codedragon.tistory](https://codedragon.tistory.com/6755)
 
-
 ### 결과화면
 <img width="419" alt="xmlparse" src="https://user-images.githubusercontent.com/43868540/86514641-4efab080-be4e-11ea-9efb-311c2c7ed013.png">
+
+## JSON parse
+test.json
+``` json
+[
+  {"name":  "제갈은", "msg":  "경기도 안산", "birthday": {"month":  3, "day":  23}},
+  {"name":  "심세영","msg":  "경기도 안양", "birthday": {"month": 6,"day": 19}}
+]
+```
+assets 폴더 안에 jsons 폴더를 생성한다. 만든 jsons 폴더 안에 test.json을 생성한다.
+
+activity_main.xml
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="json parse"
+        android:onClick="clickBtn"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+</LinearLayout>
+```
+Button과 TextView를 화면에 추가해주었다. TextView에는 tv라는 id를 부여해주었다.
+
+MainActivity.java
+``` java
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.res.AssetManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView tv;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        tv = findViewById(R.id.tv);
+    }
+    public void clickBtn(View view) {
+
+        //json 파일 읽어와서 분석하기
+
+        //assets폴더의 파일을 가져오기 위해
+        //창고관리자(AssetManager) 얻어오기
+        AssetManager assetManager = getAssets();
+
+        //assets/ test.json 파일 읽기 위한 InputStream
+        try {
+            InputStream is = assetManager.open("jsons/test.json");  
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader reader = new BufferedReader(isr);
+
+            StringBuffer buffer = new StringBuffer();
+            String line = reader.readLine();
+            while (line != null) {
+                buffer.append(line + "\n");
+                line = reader.readLine();
+            }
+
+            String jsonData = buffer.toString();
+
+            //json 데이터가 하나의 배열일 때
+            //jsonObject 객체 생성
+//            JSONObject jsonObject= new JSONObject(jsonData);
+//            String name= jsonObject.getString("name");
+//            String msg= jsonObject.getString("msg");
+//
+//            tv.setText("이름 : "+name+"\n"+"메세지 : "+msg);
+
+            //json 데이터가 []로 시작하는 여러 배열일때..
+            //JSONArray 객체 생성
+            JSONArray jsonArray = new JSONArray(jsonData);
+
+            String s = "";
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jo = jsonArray.getJSONObject(i);
+
+                String name = jo.getString("name");
+                String msg = jo.getString("msg");
+                JSONObject flag = jo.getJSONObject("birthday");
+                int aa = flag.getInt("month");
+                int bb = flag.getInt("day");
+
+                s += name + " : " + msg + ", 생일 :  " + aa + "월" + bb + "일\n";
+            }
+            tv.setText(s);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+}
+```
+
+json 파싱은 기본적으로 `JSONObject`와 `JSONArray`으로 json을 파싱할 수 있다.
+
+데이터가 하나의 배열일 때는 `JSONObject`를 사용하고 여러 배열일 때는 `JsonArray`를 사용한다. 
+
+`JSONArray`를 사용할 때는 for문을 사용해 `JSONObject`를 하나씩 생성해 값을 가져온다. 
+
+### 결과 화면
+<img width="431" alt="jsonparse" src="https://user-images.githubusercontent.com/43868540/86513605-89604f80-be46-11ea-91d9-30d9d99a6acf.png">
+
+---
 
 #### REFERENCE
 - [JSON과 XML](http://tcpschool.com/json/json_intro_xml)
