@@ -37,14 +37,17 @@ SOAP는 일반적으로 UDDI 레지스토리를 통해 웹 서비스를 `등록(
 2. 서비스 제공자는 이를 디코딩하여 적절한 서비스 로직을 수행시켜서 결과를 얻는다.
 3. 로직을 수행시켜서 얻은 결과를 SOAP로 인코딩하여 반환한다. 
 
-여기서 WSDL(Web Services Description Language)과 UDDI(Universal description, discovery, and integration)의 개념이 모호할 것이다. 네트워크 상에 웹 서비스를 정의하고 설명한 것이 `WSDL`이고 XML 기반 언어이다. 서비스 제공자가 WSDL을 발행한다.
-네트워크 상에 웹 서비스가 정의된 WSDL가 존재하고 이러한 WSDL 저장되어 있는 위치만 안다면 바로 적용해서 사용할 수 있다. 그렇다면 WSDL은 어디에 저장되어 있을까?
+여기서 WSDL(Web Services Description Language)과 UDDI(Universal description, discovery, and integration)의 개념이 모호할 것이다. 
+웹 서비스가 제공하는 서비스에 대한 정보를 기술하기 위한 XML 기반의 마크업 언어가 `WSDL`이다. WSDL은 웹 서비스를 기술하고 웹 서비스가 실제 어디에 위치하고 있는 지와 웹 서비스를 이용하기 위한 Biding정보를 담고 있는 문서이다. 이 WSDL은 서비스 제공자가 기술한다. WSDL 정보를 해석하면 soap를 사용해 필요한 웹 서비스를 사용할 수 있다.
+그렇다면 WSDL은 어디에 저장되어 있을까?
 
 이러한 WSDL이 위치한 저장소가 `UDDI 레지스토리`이다. 
 이러한 저장소에 있는 자료를 꺼내기 위해 실행 프로토콜인 `SOAP`를 사용한다. 
 
 **한번 발행된 WSDL은 UDDI(레지스토리)에 저장이 되며 잠재적인 사용자가 원하는 기능의 웹서비스가 구현되었는지 검색하는데 사용된다.**
 SOAP을 사용해 필요한 웹서비스의 대한 정보를 UDDI를 통해 탐색, 선택을 하면 선택된 웹 서비스의 WSDL을 파싱하여 SOAP 메시지로 인코딩하여 반환한다. 
+
+더욱 자세한 설명이 필요하다면 [이곳](http://www.nextree.co.kr/p11842/)을 참고하길 바란다. 
 
 그렇다면 SOAP의 메시지 구조를 한번 살펴보자.
 
