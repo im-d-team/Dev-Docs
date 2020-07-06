@@ -3,7 +3,7 @@ API를 사용하면서 여러 종류의 API가 있다는 사실을 알게 되었
 
 SOAP와 REST는 일반적으로 웹 서비스라고 불린다. 이러한 서비스는 서로 다른 컴퓨터에서 네트워크를 통해 데이터를 주고받는 통신이라고 생각하면 된다. 
 
-저번 시간에는 REST API에 대해 자세히 알아보았으니 이번 시간에는 SOAP에 대해서 자세히 알아보는 시간을 가지자.
+저번 시간에는 [REST API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/REST%20API.md)에 대해 자세히 알아보았으니 이번 시간에는 SOAP에 대해서 자세히 알아보는 시간을 가지자.
 
 ## SOAP API?
 SOAP는 Simple Object Access Protocol의 약자이며 HTTP, HTTPS, SMTP 등을 통해 `XML 기반`의 메시지를 분산된 컴퓨터 네트워크 환경에서 교환하는 `프로토콜`이다.
