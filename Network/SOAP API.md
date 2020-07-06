@@ -73,7 +73,7 @@ SOAP 봉투(envelope), SOAP 헤더(header), SOAP 바디(body)로 구성된 하�
 
 또한, `<env:Body>`는 에러가 있을 때 SOAP Fault를 기술하는 곳이기도 하다. 
 
-`<env:Fault>`는 `<end:Body>` 엘리먼트의 하위 엘리먼트로, SOAP 문서 처리할 때 에러가 발생한 경우, 그 내용을 기술한다.
+`<env:Fault>`는 `<env:Body>` 엘리먼트의 하위 엘리먼트로, SOAP 문서 처리할 때 에러가 발생한 경우, 그 내용을 기술한다.
 
 각각의 엘리먼트와 예제 등 자세한 내용은 [이곳](http://egloos.zum.com/tequiero35/v/1026372)를 참고하길 바란다. 
 
