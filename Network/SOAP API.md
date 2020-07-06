@@ -9,7 +9,7 @@ SOAP와 REST는 일반적으로 웹 서비스라고 불린다. 이러한 서비�
 SOAP는 Simple Object Access Protocol의 약자이며 HTTP, HTTPS, SMTP 등을 통해 `XML 기반`의 메시지를 분산된 컴퓨터 네트워크 환경에서 교환하는 `프로토콜`이다.
 보안이나 메시지 전송 등에 있어서 많은 표준들이 정해져있기 때문에 REST API보다 조금 더 복잡하다.
 
-SOAP는 SSL, WS-Security라는 자체 표준의 보안 기능을 가지고 있기 때문에 보안 수준이 엄격하다. 
+SOAP는 SSL을 지원하고 WS-Security라는 자체 표준의 보안 기능을 가지고 있기 때문에 보안 수준이 엄격하다. 
 
 > SSL는 보안 소켓 계층(Secure Socket Layer)이며 클라이언트와 서버 간의 데이터 전송 시 암호화하여 보안을 유지한다.
 
