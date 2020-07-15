@@ -57,17 +57,26 @@
 ---
 
 ### 📅 History
-- [x] JegalEun : [Language/JSON_XML](https://github.com/im-d-team/Dev-Docs/blob/master/Language/JSON_XML.md)
 
-- [x] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
 
-- [x] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7 Layer.md)
 
+
+<!--<details>
+<summary> 2020년 7월 </summary>-->
+
+#### 07월 05일
+
+- [ ] JegalEun : [Language/JSON_XML](https://github.com/im-d-team/Dev-Docs/blob/master/Language/JSON_XML.md)
+- [ ] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
+- [ ] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7%20Layer.md)
+
+<!--</details>-->
 
 <!--<details>
 <summary> 2020년 6월 </summary>-->
 
-#### 06월 14일
+#### 06월 21일
+
 - [ ] BKJang : [Javascript/Closure](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Closure.md)
 - [ ] SeonHyungJo : [Network/TypesOfIP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TypesOfIP.md)
 
@@ -76,7 +85,7 @@
 - [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP%20API.md)
 - [ ] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
 - [ ] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
-- [ ] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
+- [x] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
 
 #### 06월 07일
 
