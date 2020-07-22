@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
+
 - [x] BKJang : [ECMAScript/ArrowFunction](https://github.com/im-d-team/Dev-Docs/blob/master/ECMAScript/ArrowFunction.md)
 
 - [x] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP & UDP.md)
