@@ -97,7 +97,7 @@ OSI는 `Open Systems Interconnection`의 약자로 개방형 시스템이라는 
 
 보통 TCP 프로토콜을 이용하며, 포트를 열어서 응용프로그램이 전송을 할 수 있게 한다.
 
-중요한 것은 데이터 전송을 위해서 Port 번호가 사용된다. 대표적인 프로토콜로 TCP와 UDP가 있다.  이 계층에서 사용하는 데이터 단위는 세그먼트이다.
+중요한 것은 데이터 전송을 위해서 Port 번호가 사용된다는 점이다. 대표적인 프로토콜로 TCP와 UDP가 있다. 이 계층에서 사용하는 데이터 단위는 세그먼트이다.
 
 결국 전송 계층은 **패킷 생성(Assembly/Sequencing/Deassembly/Error detection/Request repeat/Flow control) 및 전송** 역할을 한다.
 
