@@ -70,6 +70,8 @@ TCP는 네트워크 계층 중 전송 계층에서 사용하는 프로토콜로�
 
 ![TCP header](https://user-images.githubusercontent.com/24274424/88392336-c50f8900-cdf6-11ea-8d4b-018481dbb96d.png)
 
+> 출처 : [transmission-control-protocol-tcp-header](https://www.gatevidyalay.com/transmission-control-protocol-tcp-header/)
+
 | 필드 | 내용 | 크기(bit) | 
 |-----|-----|-----|
 |송수신자의 포트 번호|송수신 프로세스에 할당되는 포트 주소| 16 |
