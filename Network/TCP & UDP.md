@@ -68,7 +68,7 @@ TCP는 네트워크 계층 중 전송 계층에서 사용하는 프로토콜로�
 
 ### TCP Header 정보
 
-![TCP header](https://user-images.githubusercontent.com/24274424/87856935-8c3a6480-c95d-11ea-939c-148b6657eb7a.png)
+![TCP header](https://user-images.githubusercontent.com/24274424/88392336-c50f8900-cdf6-11ea-8d4b-018481dbb96d.png)
 
 | 필드 | 내용 | 크기(bit) | 
 |-----|-----|-----|
