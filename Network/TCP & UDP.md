@@ -63,8 +63,8 @@ TCP는 네트워크 계층 중 전송 계층에서 사용하는 프로토콜로�
     - 일정 시간동안 [ACK](#ack-제어비트) 값이 수신을 못할 경우 재전송을 요청한다.
 
 5. 전이중, 점대점 방식
-    - 전이중 (Full-Duplex) 전송이 양 방향으로 동시에 일어날 수 있다.
-    - 점대점 (Point to Point) 각 연결이 정확히 2개의 종단점을 가지고 있다.
+    - 전이중 (Full-Duplex) : 전송이 양 방향으로 동시에 일어날 수 있다.
+    - 점대점 (Point to Point) : 각 연결이 정확히 2개의 종단점을 가지고 있다.
 
 ![TCP header](https://user-images.githubusercontent.com/24274424/87856935-8c3a6480-c95d-11ea-939c-148b6657eb7a.png)
 
