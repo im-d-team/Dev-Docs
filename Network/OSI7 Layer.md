@@ -63,7 +63,7 @@ OSI는 `Open Systems Interconnection`의 약자로 개방형 시스템이라는 
 - 프로토콜 : Modem, Cable, Fiber, RS-232C
 - 대표장비 : 허브, 리피터
 
-> 프로토콜 데이터 단위(Protocol Data Unit)는 데이터 통신에서 상위 계층이 전달한 데이터에 붙이는 제어정보를 뜻한다.
+> 프로토콜 데이터 단위(PDU, Protocol Data Unit)는 데이터 통신에서 상위 계층이 전달한 데이터에 붙이는 제어정보를 뜻한다.
 
 ### 2 계층 - 링크 계층(Link Layer)
 
