@@ -169,6 +169,8 @@ APP_GLOBAL.getInfo(); //name : BKJang age : 25
 
 이처럼 **전역 변수 사용을 위해 전역 객체 하나를 만들어 사용**하는 것이다.
 
+하지만 네임스페이스 패턴을 사용했을 경우, 결국 전역 객체(`APP_GLOBAL`)의 `property`는 변경이 가능하다는 단점이 있다.
+
 ### 즉시 실행 함수 표현식(IIFE, Immediately-Invoked Function Expression)
 
 즉시 실행 함수를 사용하면 **함수가 실행되고 전역에서 사라진다.** 이 방법으로 라이브러리를 많이 만들곤 한다.
