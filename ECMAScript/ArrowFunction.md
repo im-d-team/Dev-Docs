@@ -6,6 +6,8 @@
 
 또한 화살표 함수는 익명 함수로만 사용할 수 있기 때문에 **함수 표현식**을 사용한다.
 
+익명함수와 함수 선언식, 표현식의 차이를 알고 싶다면 [다음](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.md)을 참고하면 좋을 것 같다.
+
 ```js
 const foo = () => {...} //매개변수가 없을 때
 const foo = x => {...} //매개변수가 하나일 때
