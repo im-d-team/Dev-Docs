@@ -59,6 +59,10 @@
 ### 📅 History
 - [x] BKJang : [README](https://github.com/im-d-team/Dev-Docs/blob/master/README.md)
 - [x] BKJang : [README2](https://github.com/im-d-team/Dev-Docs/blob/master/README2.md)
+- [x] BKJang : [test for update readme](https://github.com/im-d-team/Dev-Docs/blob/master/test%20for%20update%20readme.md)
+
+- [x] BKJang : [README](https://github.com/im-d-team/Dev-Docs/blob/master/README.md)
+- [x] BKJang : [README2](https://github.com/im-d-team/Dev-Docs/blob/master/README2.md)
 
 - [x] BKJang : [README](https://github.com/im-d-team/Dev-Docs/blob/master/README.md)
 - [x] BKJang : [README2](https://github.com/im-d-team/Dev-Docs/blob/master/README2.md)
