@@ -23,7 +23,7 @@ public class Customer {
         this.name = name;
 
         // initiating and coordinating actions with other objects
-        if (customerUniquenessChecker.isUnique(id)) {
+        if (!customerUniquenessChecker.isUnique(id)) {
             throw new BusinessRuleValidationException("Customer with this email already exists.");
         }
 
