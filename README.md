@@ -57,9 +57,6 @@
 ---
 
 ### 📅 History
-- [x] BKJang : [README](https://github.com/im-d-team/Dev-Docs/blob/master/README.md)
-
-- [x] BKJang : [README](https://github.com/im-d-team/Dev-Docs/blob/master/README.md)
 
 - [x] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1, MVC2.md)
 
