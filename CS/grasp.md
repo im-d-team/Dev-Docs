@@ -110,7 +110,7 @@ public class Customer {
 }
 ```
 
-`Customer` 클래스는 주문을 집계하고 기록하고 사용한다. 무엇보다도 `Customer` 클래스가 주문을 포함한다. 
+`Customer` 클래스는 주문을 집계하고 기록하고 사용한다. 무엇보다도 `Customer` 클래스가 주문(`Order`)을 포함한다. 
 
 ### Controller
 
