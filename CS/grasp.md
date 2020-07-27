@@ -135,7 +135,7 @@ public class CustomerOrdersController {
 
 ### Low Coupling
 
-결합도(coupling)가 낮게 유지되도록 책임을 할당 해야 한다. 낮은 결합도는 변화의 영향을 줄이고 낮은 의존성과 재사용성을 증가시키는 방법이다. 위의 Controller 예시는 의존성 주입을 이용해 결합도가 낮다.  `OrderService` 인터페이스의 명세가 바뀌지 않으면 이를 구현하는 서비스 객체가 바뀌어도 큰 영향을 받지 않을 것이다.
+결합도(coupling)가 낮게 유지되도록 책임을 할당 해야 한다. 낮은 결합도는 변화의 영향을 줄이고 낮은 의존성과 재사용성을 증가시키는 방법이다. 위의 Controller 예시는 의존성 주입을 이용해 결합도가 낮다. `OrderService` 인터페이스의 명세가 바뀌지 않으면 이를 구현하는 서비스 객체가 바뀌어도 큰 영향을 받지 않을 것이다.
 
 ### High Cohension
 
