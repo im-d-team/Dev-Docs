@@ -81,7 +81,7 @@ public class Customer {
 }
 ```
 
-위의 예시에서 `Customer` 클래스는모든 고객의 주문(`List<Orrder>)`을 알고 있다. 따라서 `Customer` 클래스가 주문의 총액을 계산하는 것은 당연한 일이다.
+위의 예시에서 `Customer` 클래스는 모든 고객의 주문(`List<Orrder>)`을 알고 있다. 따라서 `Customer` 클래스는 주문의 총액을 계산할 수 있는 책임을 지녀야 한다.
 
 ### Creator
 
