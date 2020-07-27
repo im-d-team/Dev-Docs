@@ -9,7 +9,7 @@
 ### 행동(Behavior; Doing)
 
 - 스스로 하는 것(doing something itself)
-- 다른 객체와 협력 하는 것(initiate and coordinate actions with other objects)
+- 다른 객체와 협력 하는 것(initiating and coordinating actions with other objects)
 
 ```java
 public class Customer {
