@@ -68,10 +68,11 @@ public class LineClient {
   ```java
   @Override
   public boolean isOn(Point p) {
-    if(isSomthingStartWithBaseClassTrue()) {
+    if(isSomthingStartWithBaseClassTrue()) { // 선행조건
       // ...
-          
-    if(isSomthingEndWithBaseClassWrong()) {
+    }
+    
+    if(isEndWithSomthingWrong()) { // 후행조건
       throw new SomeException();
     }
   }
@@ -88,7 +89,7 @@ public class LineClient {
       //...    
     }
   
-    public abstract boolean IsOn(Point p);
+    public abstract boolean isOn(Point p);
   }
   
   public class Line extends LinearObject{    
