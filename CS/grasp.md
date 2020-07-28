@@ -13,8 +13,9 @@
 
 ```java
 public class Customer {
-	// doing something itself
+    // doing something itself
     private Customer() {
+        //...
     }
  
     // doing something itself
@@ -32,6 +33,7 @@ public class Customer {
     
     // doing something itself
     public void addOrder(Order order) {
+    	//...
     }
 
 }
@@ -74,9 +76,9 @@ public class Customer {
     private List<Order> orders;
 	
 	public int getOrdersTotal(Guid orderId) {
-		return orders.stream()
-            .map(Order::getValue)
-            .sum();
+	    return orders.stream()
+                .map(Order::getValue)
+                .sum();
 	}
 }
 ```
@@ -97,7 +99,7 @@ public class Customer {
     private List<Order> orders; 
 
     public void addOrder(List<OrderProduct> orderProducts) {	
-		Order order = new Order(orderProducts); // Creator
+	Order order = new Order(orderProducts); // Creator
 
         if (2 <= orders.stream().filter(Order::isOrderedToday).count()) {
             throw new BusinessRuleValidationException("You cannot order more than 2 orders on the same day");
@@ -118,16 +120,16 @@ UI 레이어를 넘나들며 시스템 작동의 제어권을 수신하고 조�
 
 ```java
 public class CustomerOrdersController {
-	private OrderService customerOrderService;
+    private OrderService customerOrderService;
 
-	public CustomerOrdersController(OrderService customerOrderService) {
-		this.customerOrderService = customerOrderService;
-	}
+    public CustomerOrdersController(OrderService customerOrderService) {
+        this.customerOrderService = customerOrderService;
+    }
 
-	@PostMapping("/{customerId}/orders")
-	public String addCustomerOrder(Guid customerId, HttpServletRequest request)	{
-	   ...
-	}
+    @PostMapping("/{customerId}/orders")
+    public String addCustomerOrder(Guid customerId, HttpServletRequest request)	{
+        //...
+    }
 }
 ```
 
@@ -153,14 +155,14 @@ public class CustomerOrdersController {
 private Guid id;
 
 public Customer(string email, string name, UniquenessChecker customerUniquenessChecker) {
-	this.Email = email;
-	this.Name = name;
+    this.Email = email;
+    this.Name = name;
  
-	if (!customerUniquenessChecker.isUnique(id)) {
-		throw new BusinessRuleValidationException("Customer with this email already exists.");
-	}
+    if (!customerUniquenessChecker.isUnique(id)) {
+        throw new BusinessRuleValidationException("Customer with this email already exists.");
+    }
  
-	this.AddDomainEvent(new CustomerRegisteredEvent(this));
+    this.AddDomainEvent(new CustomerRegisteredEvent(this));
 }
 ```
 
@@ -184,7 +186,7 @@ public class ForeignExchangeImpl implements ForeignExchange {
 
     @Override
     public List<ConversionRate> getConversionRates() {
-        ...
+        //...
     }
 
     private static List<ConversionRate> getConversionRatesFromExternalApi() {
