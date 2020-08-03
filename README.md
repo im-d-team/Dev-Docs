@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
+
 
 - [x] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1, MVC2.md)
 
