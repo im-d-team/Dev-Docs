@@ -90,7 +90,7 @@ IP 주소 임대(Lease) 절차에 사용되는 DHCP 메시지는 아래 그림�
     - IP Lease Time (Option 51): 단말이 IP 주소(Your IP)를 사용(임대)할 수 있는 기간(시간)
     - DHCP Server Identifier (Option 54): 본 메시지(DHCP Offer)를 보낸 DHCP 서버의 주소이다. 2개 이상의 DHCP 서버가 DHCP Offer를 보낼 수 있으므로 각 DHCP 서버는 자신의 IP 주소를 본 필드에 넣어서 단말에 보낸다.
 
-> **Unitcast** : 유니캐스트(Unicast) 전송이란 고유 주소로 식별된 하나의 네트워크 목적지에 1:1로 ( one-to-one) 트래픽 또는 메시지를 전송하는 방식을 말한다. - 출처 : 위키백과
+> **Unitcast** : 유니캐스트(Unicast) 전송이란 고유 주소로 식별된 하나의 네트워크 목적지에 1:1로 (one-to-one) 트래픽 또는 메시지를 전송하는 방식을 말한다. - 출처 : 위키백과
 
 **3. DHCP Request**
 
