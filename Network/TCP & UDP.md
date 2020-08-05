@@ -123,7 +123,7 @@ TCP 통신을 이용하여 데이터를 전송하기 위해 네트워크 연결�
 4. close() 요청을 받은 서버 어플리케이션은 종료 프로세스를 진행하고 `FIN`을 클라이언트에 보내 `LAST_ACK` 상태로 바꾼다.
 5. FIN을 받은 클라이언트는 ACK를 서버에 다시 전송하고 `TIME_WAIT`으로 상태를 바꾼다. `TIME_WAIT`에서 일정 시간이 지나면 `CLOSED`된다. ACK를 받은 서버도 포트를 `CLOSED`로 닫는다.
 
-> 주의 : 반드시 서버만 CLOSE_WAIT 상태를 갖는 것은 아니다. 서버가 먼저 종료하겠다고 FIN을 보낼 수 있고, 이런 경우 서버가 FIN_WAIT1 상태가 됩니다. 누가 먼저 close를 요청하느냐에 따라 상태가 달라질 수 있다.
+> 주의 : 반드시 서버만 CLOSE_WAIT 상태를 갖는 것은 아니다. 서버가 먼저 종료하겠다고 FIN을 보낼 수 있고, 이런 경우 서버가 FIN_WAIT1 상태가 된다. 누가 먼저 close를 요청하느냐에 따라 상태가 달라질 수 있다.
 
 ![4-way handshake](https://user-images.githubusercontent.com/24274424/87865669-1e208c80-c9b3-11ea-8dba-fb42753c0da8.png)
 
