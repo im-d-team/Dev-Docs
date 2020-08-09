@@ -48,7 +48,10 @@ SOAP는 일반적으로 UDDI 레지스토리를 통해 웹 서비스를 `등록(
 SOAP을 사용해 필요한 웹서비스의 대한 정보를 UDDI를 통해 탐색, 선택을 하면 선택된 웹 서비스의 WSDL을 파싱하여 SOAP 메시지로 인코딩하여 반환한다. 
 
 <img width="597" alt="SOAP인코딩과정" src="https://user-images.githubusercontent.com/43868540/89731760-8d564180-da84-11ea-9b9c-173b51868512.png">
+
 > [출처](http://egloos.zum.com/tequiero35/v/929083)
+
+위의 설명은 soap를 이용한 웹 서비스 호출과 응답하는 과정을 자세히 설명한 이미지이다. 
 
 더욱 자세한 설명이 필요하다면 [이곳](http://www.nextree.co.kr/p11842/)을 참고하길 바란다. 
 
