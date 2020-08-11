@@ -61,7 +61,7 @@ XML 파싱하는 방법에는 DOM, SAX, PULL 이렇게 총 3가지가 있는데 
     <OVER20>true</OVER20>
 </CONTACT>
 ```
-마찬가지로 assets 폴더 안에 test2.xml 파일을 생성해준다.
+마찬가지로 assets 폴더 안에 `test2.xml` 파일을 생성해준다.
 
 **activity_main.xml**
 ``` xml
@@ -285,9 +285,9 @@ public class MainActivity extends AppCompatActivity {
 ```
 xml 데이터를 파싱할 때는 루프를 돌면서 XML 요소(element)를 파싱하는 방법을 사용한다. 
 
-위에 코드에서 볼 수 있듯이 while 루프 내에서 next() 함수를 호출하면서 element가 무엇인지 판단하고 파싱하는 것이다.
+위에 코드에서 볼 수 있듯이 while 루프 내에서 `next()` 함수를 호출하면서 element가 무엇인지 판단하고 파싱하는 것이다.
 
-해당 실 데이터(text)가 어떤 태그의 데이터인지 판단하기 위해 step이라는 변수를 이용하여 태그를 저장하고 검사하였다. 
+해당 실 데이터(text)가 어떤 태그의 데이터인지 판단하기 위해 `step`이라는 변수를 이용하여 태그를 저장하고 검사하였다. 
 
 - 태그를 파싱했을 때 태그의 이름을 가져올 때는 `getName()`을 사용한다.
 - 태그를 파싱했을 때 텍스트의 내용을 가져올 때는 `getText()`를 사용한다.
@@ -441,7 +441,7 @@ json 파싱은 기본적으로 `JSONObject`와 `JSONArray`으로 json을 파싱�
 
 ---
 
-#### REFERENCE
+#### Reference
 - [JSON과 XML](http://tcpschool.com/json/json_intro_xml)
 - [XML 구조](https://usroom.tistory.com/entry/XML%EC%9D%98-%EB%AC%B8%EB%B2%95)
 - [XML과 JSON의 장단점](https://usbs.tistory.com/entry/XML-JSON-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D)
