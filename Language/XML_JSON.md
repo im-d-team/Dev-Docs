@@ -312,7 +312,7 @@ xml 데이터를 파싱할 때는 루프를 돌면서 XML 요소(element)를 파
   {"name":  "심세영","msg":  "경기도 안양", "birthday": {"month": 6,"day": 19}}
 ]
 ```
-assets 폴더 안에 jsons 폴더를 생성한다. 만든 jsons 폴더 안에 test.json을 생성한다.
+위와 마찬가지로 assets 폴더 안에 jsons 폴더를 생성한다. 만든 jsons 폴더 안에 test.json을 생성한다.
 
 **activity_main.xml**
 ``` xml
