@@ -1,5 +1,5 @@
- # JSON과 XML
-저번 시간에 soap api를 정리하면서 데이터 형식에는 `JSON 형식`과 `XML 형식`이 있다고 들었다. 
+# JSON과 XML
+저번 시간에 [soap api](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP%20API.md)를 정리하면서 데이터 형식에는 `JSON 형식`과 `XML 형식`이 있다고 들었다. 
 
 둘의 차이와 파싱하는 법을 정리를 해보았다.
 
@@ -25,7 +25,7 @@ XML 태그는 HTML 태그처럼 미리 정의되어 있지 않고, 사용자가 
 - 배열 형식이나 반복 구조의 경우 불필요한 데이터가 계속해서 나타난다. 결국 파싱이 힘들어지고 속도는 느려진다.
 
 ## JSON
-JSON은 JavaScript Object Notation의 약자로, 데이터를 저장하거나 전송할 때 많이 사용되는 데이터 교환 형식이다. 최근에는 용량이 작아서 JSON이 XML을 대체에서 데이터 전송 등에 많이 사용한다. 
+JSON은 JavaScript Object Notation의 약자로, 데이터를 저장하거나 전송할 때 많이 사용되는 데이터 교환 형식이다. 최근에는 JSON이 용량이 더 작아서 XML을 대체에서 데이터 전송 등에 많이 사용한다. 
 
 ### JSON 문법
 ![JSON 문법](https://user-images.githubusercontent.com/43868540/86515808-a9980a80-be56-11ea-9269-a15c597bda1f.PNG)
@@ -51,7 +51,7 @@ XML 파싱하는 방법에는 DOM, SAX, PULL 이렇게 총 3가지가 있는데 
 
 각 파싱에 대한 간단한 설명은 [이곳](http://sunphiz.me/wp/archives/298)을 참고하길 바란다.
 
-test2.xml
+**test2.xml**
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <CONTACT>
@@ -63,7 +63,7 @@ test2.xml
 ```
 마찬가지로 assets 폴더 안에 test2.xml 파일을 생성해준다.
 
-activity_main.xml
+**activity_main.xml**
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -163,7 +163,7 @@ activity_main.xml
 ```
 화면을 구성해 줄 TextView와 CheckBox, EditText 등을 생성한다. 
 
-MainActivity.java
+**MainActivity.java**
 ``` java
 package com.example.myapplication;
 
@@ -303,7 +303,7 @@ xml 데이터를 파싱할 때는 루프를 돌면서 XML 요소(element)를 파
 <img width="419" alt="xmlparse" src="https://user-images.githubusercontent.com/43868540/86514641-4efab080-be4e-11ea-9efb-311c2c7ed013.png">
 
 ## JSON parse
-test.json
+**test.json**
 ``` json
 [
   {"name":  "제갈은", "msg":  "경기도 안산", "birthday": {"month":  3, "day":  23}},
@@ -312,7 +312,7 @@ test.json
 ```
 assets 폴더 안에 jsons 폴더를 생성한다. 만든 jsons 폴더 안에 test.json을 생성한다.
 
-activity_main.xml
+**activity_main.xml**
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -339,7 +339,7 @@ activity_main.xml
 ```
 Button과 TextView를 화면에 추가해주었다. TextView에는 tv라는 id를 부여해주었다.
 
-MainActivity.java
+**MainActivity.java**
 ``` java
 package com.example.myapplication;
 
