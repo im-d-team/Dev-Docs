@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] EUNJIHA : [Android/application fundamentals](https://github.com/im-d-team/Dev-Docs/blob/master/Android/application%20fundamentals.md)
+
 - [x] BKJang : [Browser/FOUC](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/FOUC.md)
 
 - [x] SeonHyungJo : [Network/HTTP3](https://github.com/im-d-team/Dev-Docs/blob/master/Network/HTTP3.md)
