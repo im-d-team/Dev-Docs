@@ -171,6 +171,7 @@ public Customer(string email, string name, UniquenessChecker customerUniquenessC
 ### Pure Fabrication
 
 다른 원칙들을 적용하여 높은 응집력과 낮은 결합력을 유지하기 힘들 경우(정확한 책임을 할당하기 힘든 경우) 도메인에 독립적인 클래스와 인터페이스를 만드는 것이 좋을 수 있다.
+위에서 살펴봤던 예시들을 사용하다 환전 기능을 추가하게 되었다. 이는 `Customer`혹은 `Order`의 책임이라고 명확하게 정의하기 애매한데, 이런 경우 적용할 수 있다. 아래는 이에 따라 작성된  독립적인 인터페이스와 구현 클래스이다.
 
 ```java
 public interface ForeignExchange {
