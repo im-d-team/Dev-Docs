@@ -55,7 +55,7 @@ public class LineClient {
 
 만약 리스코프 치환 원칙을 준수하지 않는다면 부모 클래스에 따라 작성된 클라이언트의 코드가 변경되어야 하는 상황을 피하기 힘들다. 
 
-> 이외에 직사각형과 정사각형에 대한 예시가 자주 나오는데, 이 또한 하위 타입의 변경에 의해 상위 타입을 바탕으로 정의한 동작이 제대로 작동하지 않는 경우에 관한 얘기이다.
+> 이외에 직사각형과 정사각형에 대한 예시가 자주 나오는데, 이 또한 하위 타입의 변경에 의해 상위 타입을 바탕으로 정의한 동작이 제대로 작동하지 않는 경우에 관한 얘기이다. 참고 - [The Liskov Substitution Principle](https://drive.google.com/file/d/0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh/view)
 
 ## LSP 준수 방법
 
