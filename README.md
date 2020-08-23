@@ -80,14 +80,14 @@
 #### 07월 26일
 
 - [ ] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
-- [ ] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1, MVC2.md)
+- [ ] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1,%20MVC2.md)
 - [ ] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
 - [ ] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
 
 #### 07월 19일
 
 - [ ] BKJang : [ECMAScript/ArrowFunction](https://github.com/im-d-team/Dev-Docs/blob/master/ECMAScript/ArrowFunction.md)
-- [ ] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP & UDP.md)
+- [ ] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP%20&%20UDP.md)
 
 #### 07월 05일
 
