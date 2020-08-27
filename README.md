@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [ML/머신러닝이란](https://github.com/im-d-team/Dev-Docs/blob/master/ML/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%B4%EB%9E%80.md)
+
 
 <!--<details>
 <summary> 2020년 8월 </summary>-->
