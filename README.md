@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
+
 - [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
 - [x] dididy : [Javascript/논리연산자](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90.md)
 
