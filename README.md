@@ -57,6 +57,9 @@
 ---
 
 ### 📅 History
+- [x] EUNJIHA : [Android/application fundamentals](https://github.com/im-d-team/Dev-Docs/blob/master/Android/application%20fundamentals.md)
+- [x] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
+
 - [x] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
 
 - [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
