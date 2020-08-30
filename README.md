@@ -57,66 +57,81 @@
 ---
 
 ### 📅 History
-- [x] BKJang : [Browser/FOUC](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/FOUC.md)
-
-- [x] SeonHyungJo : [Network/HTTP3](https://github.com/im-d-team/Dev-Docs/blob/master/Network/HTTP3.md)
+- [x] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
 
 - [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
+- [x] dididy : [Javascript/논리연산자](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90.md)
 
-
-- [x] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1, MVC2.md)
-
-- [x] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
-
-- [x] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
-
-- [x] BKJang : [ECMAScript/ArrowFunction](https://github.com/im-d-team/Dev-Docs/blob/master/ECMAScript/ArrowFunction.md)
-
-- [x] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP & UDP.md)
-
-
-
+- [x] SeonHyungJo : [ML/머신러닝이란](https://github.com/im-d-team/Dev-Docs/blob/master/ML/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%B4%EB%9E%80.md)
 
 
 <!--<details>
+<summary> 2020년 8월 </summary>-->
+
+#### 08월 23일
+
+- [ ] JegalEun : [Java/String,StringBuilder, StringBuffer차이](https://github.com/im-d-team/Dev-Docs/blob/master/Java/String,StringBuilder,%20StringBuffer%EC%B0%A8%EC%9D%B4.md)
+- [ ] Dae-Hwa : [CS/interface-segregation-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/interface-segregation-principle.md)
+
+#### 08월 09일
+
+- [ ] EUNJIHA : [Android/application fundamentals](https://github.com/im-d-team/Dev-Docs/blob/master/Android/application%20fundamentals.md)
+- [ ] BKJang : [Browser/FOUC](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/FOUC.md)
+- [ ] SeonHyungJo : [Network/HTTP3](https://github.com/im-d-team/Dev-Docs/blob/master/Network/HTTP3.md)
+
+<!--</details>-->
+
+<!--<details>
 <summary> 2020년 7월 </summary>-->
+
+#### 07월 26일
+
+- [ ] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
+- [ ] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1,%20MVC2.md)
+- [ ] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
+- [ ] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
+
+#### 07월 19일
+
+- [ ] BKJang : [ECMAScript/ArrowFunction](https://github.com/im-d-team/Dev-Docs/blob/master/ECMAScript/ArrowFunction.md)
+- [ ] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP%20&%20UDP.md)
 
 #### 07월 05일
 
 - [ ] JegalEun : [Language/JSON_XML](https://github.com/im-d-team/Dev-Docs/blob/master/Language/JSON_XML.md)
 - [ ] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
-- [ ] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7%20Layer.md)
+- [x] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7%20Layer.md)
 
 <!--</details>-->
 
-<!--<details>
-<summary> 2020년 6월 </summary>-->
+<details>
+<summary> 2020년 6월 </summary>
 
 #### 06월 21일
 
-- [ ] BKJang : [Javascript/Closure](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Closure.md)
-- [ ] SeonHyungJo : [Network/TypesOfIP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TypesOfIP.md)
+- [x] BKJang : [Javascript/Closure](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Closure.md)
+- [x] SeonHyungJo : [Network/TypesOfIP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TypesOfIP.md)
 
 #### 06월 14일
 
 - [x] JegalEun : [Network/SOAP API](https://github.com/im-d-team/Dev-Docs/blob/master/Network/SOAP%20API.md)
-- [ ] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
+- [x] Dae-Hwa : [CS/open-closed-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/open-closed-principle.md)
 - [ ] ssy0619 : [OpenCV/filter](https://github.com/im-d-team/Dev-Docs/blob/master/OpenCV/filter.md)
 - [x] SeonHyungJo : [Network/Subnetmask](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Subnetmask.md)
 
 #### 06월 07일
 
-- [ ] BKJang : [Javascript/Scope](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Scope.md)
+- [x] BKJang : [Javascript/Scope](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Scope.md)
 - [x] SeonHyungJo : [Network/IP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/IP.md)
 
-<!--</details>-->
+</details>
 
-<!--<details>
-<summary> 2020년 5월 </summary>-->
+<details>
+<summary> 2020년 5월 </summary>
 
 #### 05월 31일
 
-- [ ] Dae-Hwa : [CS/srp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/srp.md)
+- [x] Dae-Hwa : [CS/srp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/srp.md)
 
 #### 05월 24일
 
@@ -124,11 +139,11 @@
 
 #### 05월 17일
 
-- [ ] Dae-Hwa : [Java/copy-object](https://github.com/im-d-team/Dev-Docs/blob/master/Java/copy-object.md)
+- [x] Dae-Hwa : [Java/copy-object](https://github.com/im-d-team/Dev-Docs/blob/master/Java/copy-object.md)
 - [x] JegalEun : [Tool/Framework vs Library](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Framework%20vs%20Library.md)
 - [ ] ssy0619 : [Design_Pattern/Composite](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/Composite.md)
 
-<!--</details>-->
+</details>
 
 
 <details>
