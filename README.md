@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [CS/dependency-inversion-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/dependency-inversion-principle.md)
+
 
 
 
