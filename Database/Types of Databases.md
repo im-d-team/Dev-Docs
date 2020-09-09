@@ -7,7 +7,7 @@ NoSQL이란 No SQL, Not Only SQL 등 여러 의미로 해석되지만 현재 대
 
 > 참고: SQL은 Structured Query Language의 약자로 RDB의 데이터를 관리하는 특수 목적의 프로그래밍 언어이다. 우리는 데이터베이스를 비교하는 것이다. 이 문서에서는 RDB (SQL을 사용) vs NoSQL DB를 비교한다고 생각하면 된다.
 
-NoSQL을 구체적으로 이해하기 위해 먼저 RDB가 무엇인지 살펴보자. RDB는 1970년대 탄생 이후 지금까지 수십년간 가장 많이 사용된 DB 모델이다. RDB는 데이터를 정형화된 구조(Strict Schema)에 따라 테이블(Table)에 저장하는 형식이다. 각 테이블은 관계(Relations)를 갖고 있는데 이는 RDB가 데이터의 중복을 방지하고 [참조 무결성](https://ko.wikipedia.org/wiki/%EC%B0%B8%EC%A1%B0_%EB%AC%B4%EA%B2%B0%EC%84%B1)이 보장되도록 한다. 더불어 [ACID 속성](https://ko.wikipedia.org/wiki/ACID)을 갖고 있다. 예시로는 MySQL, PostgreSQL, MariaDB, Oracle, MSSQL 등이 있다.
+NoSQL을 구체적으로 이해하기 위해 먼저 RDB가 무엇인지 살펴보자. RDB는 1970년대 탄생 이후 지금까지 수십년간 가장 많이 사용된 DB 모델이다. RDB는 데이터를 정형화된 구조(Strict Schema)에 따라 테이블(Table)에 저장하는 형식이다. 각 테이블은 관계(Relations)를 갖고 있는데 이는 RDB가 데이터의 중복을 방지하고 [참조 무결성](https://ko.wikipedia.org/wiki/%EC%B0%B8%EC%A1%B0_%EB%AC%B4%EA%B2%B0%EC%84%B1)이 보장되도록 한다. 더불어 [ACID 속성](https://ko.wikipedia.org/wiki/ACID)을 갖고 있다. 예시로는 MySQL, PostgreSQL, MariaDB, Oracle SQL, MSSQL 등이 있다.
 
 그렇다면 이런 RDB의 특성과 대비한 NoSQL의 특성은 무엇일까? NoSQL은 RDB가 갖고 있던 데이터 완결성을 조금 포기하고 **유연한 데이터 모델** / **대량의 데이터 처리** / **짧은 지연시간 (Low Latency)** 이 중요한 애플리케이션들에 적용되고 있다. AWS에서 설명하는 [RDS vs NoSQL DB 표](https://aws.amazon.com/ko/nosql/)를 살펴보자.
 
