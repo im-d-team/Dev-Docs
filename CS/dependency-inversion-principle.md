@@ -54,7 +54,7 @@ class B {
 
 ![dip01-inversion2.png](https://github.com/Dae-Hwa/diagrams/blob/master/dip/dip01-inversion2.png?raw=true)
 
-위와 같이 `FileHandler`를 인터페이스로 도출한다면 위와 같이 될 것이다. 이것이 의존 역전이 일어난 것인데, 상위 모듈에서 하위 모듈을 사용하기 때문에 의존방향이 상위 모듈에서 하위 모듈을 향해야 한다. 하지만 가운데 추상화 된 인터페이스를 추가시켜 하위 모듈의 방향이 반대로 되었다. 즉 상위 모듈과 하위 모듈의 의존성이 제어의 흐름(flow of control)과 반대 방향이 되었다. 
+`FileHandler`를 인터페이스로 도출한다면 위와 같이 될 것이다. 이것이 의존 역전이 일어난 것인데, 상위 모듈에서 하위 모듈을 사용하기 때문에 의존방향이 상위 모듈에서 하위 모듈을 향해야 한다. 하지만 가운데 추상화 된 인터페이스를 추가시켜 하위 모듈의 방향이 반대로 되었다. 즉 상위 모듈과 하위 모듈의 의존성이 제어의 흐름(flow of control)과 반대 방향이 되었다. 
 
 ![dip01-inversion3.png](https://github.com/Dae-Hwa/diagrams/blob/master/dip/dip01-inversion3.png?raw=true)
 
