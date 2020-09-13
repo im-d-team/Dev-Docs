@@ -59,8 +59,6 @@
 ### 📅 History
 - [x] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
 
-- [x] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
-
 - [x] SeonHyungJo : [Node](https://github.com/im-d-team/Dev-Docs/blob/master/Node.js/make_meta_file.md)
 
 - [x] Dae-Hwa : [CS/dependency-inversion-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/dependency-inversion-principle.md)
