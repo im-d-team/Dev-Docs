@@ -57,6 +57,9 @@
 ---
 
 ### 📅 History
+- [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
+- [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
+
 - [x] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
 
 - [x] SeonHyungJo : [Node](https://github.com/im-d-team/Dev-Docs/blob/master/Node.js/make_meta_file.md)
