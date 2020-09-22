@@ -1,5 +1,5 @@
 # String, StringBuilder, StringBuffer의 차이점과 장단점
-String, StringBuilderm, StringBuffer는 문자열 클래스들이다. 모두 문자열을 저장하고 관리하는 클래스인데 무엇이 다를까?
+String, StringBuilder, StringBuffer는 문자열 클래스들이다. 모두 문자열을 저장하고 관리하는 클래스인데 무엇이 다를까?
 
 면접 시 자주 나오는 질문 중에 하나이기 때문에 정리를 해보았다.
 
@@ -70,8 +70,8 @@ String, StringBuilderm, StringBuffer는 문자열 클래스들이다. 모두 문
 반면, `StringBuilder`는 동기화를 보장하지 않기 때문에 thread-safe 하지 않다.
 
 이러한 특성 때문에 멀티 스레드 환경이라면 값 동기화 보장을 위해 `StringBuffer`를 사용하고, 
-단일 스레드 환경이라면 `StringBuilder`를 사용하는 것이 좋다. 무조건 단일 스레드 환경에서는 `StringBuffer`를 사용해라!는 아니지만 동기화 관련 처리로 인해 `StringBilder`에 비해 성능이 좋지 않다.
-대신 StringBuilder가 동기화를 고려하지 않기 때문에 단일 스레드 환경에서 StringBuffer에 비해 연산처리가 빠른 장점이 있다.
+단일 스레드 환경이라면 `StringBuilder`를 사용하는 것이 좋다.
+하지만 StringBuilder가 동기화를 고려하지 않기 때문에 단일 스레드 환경에서 StringBuffer에 비해 연산처리가 빠른 장점이 있다.
 
 ### StringBuffer, StringBuilder가 적절한 경우
 결론적으로 문자열 연산이 많을 때 두 클래스를 사용하지만 멀티 스레드 환경에서는 `StringBuffer`를 사용하면 좋고, 단일 스레드 환경이거나 멀티 스레드여도 굳이 동기화가 필요 없는 경우에는 `StringBuilder`를 사용하는 것이 좋다.
