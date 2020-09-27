@@ -1,4 +1,4 @@
-# Query Builder - Node.js의 Knex.js
+# Query Builder - Knex.js
 
 REST API를 설계 /  구현할 때, 각 API에 해당하는 SQL문을 직접 만들어서 코드에 넣곤 했다. 가령, **회원정보 조회 API** (`GET` `/users`)라면 `Select를 이용한 Query`를, **회원정보 수정 API** (`PATCH` `/user/{userNo}`)라면 `Update를 이용한 Query`를 코드에 넣었다. 하지만 **조회** 시에 몇 가지 필터를 건다든가 **수정**을 할 때 매번 넘겨주는 컬럼의 종류 / 개수가 다른 경우에는 그에 맞게 Query를 변경해줘야 하는 이슈가 생긴다. 물론 각각의 조건을 걸어서 그에 맞는 Query를 작성할 수 있지만, 이를 좀 더 수월하게 해주는 Query Builder를 사용하기로 했다. 
 
