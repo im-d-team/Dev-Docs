@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] JegalEun : [Network/Flow control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md)
+
 - [x] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
 - [x] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
 
