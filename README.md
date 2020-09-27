@@ -57,19 +57,31 @@
 ---
 
 ### 📅 History
-- [x] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
-
+- [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
 - [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
-- [x] dididy : [Javascript/논리연산자](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90.md)
 
-- [x] SeonHyungJo : [ML/머신러닝이란](https://github.com/im-d-team/Dev-Docs/blob/master/ML/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%B4%EB%9E%80.md)
+- [x] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
+
+- [x] SeonHyungJo : [Node](https://github.com/im-d-team/Dev-Docs/blob/master/Node.js/make_meta_file.md)
+
+- [x] Dae-Hwa : [CS/dependency-inversion-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/dependency-inversion-principle.md)
+
+
 
 
 <!--<details>
 <summary> 2020년 8월 </summary>-->
 
+#### 08월 30일
+
+- [ ] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
+- [ ] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
+- [ ] dididy : [Javascript/논리연산자](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90.md)
+- [ ] SeonHyungJo : [ML/머신러닝이란](https://github.com/im-d-team/Dev-Docs/blob/master/ML/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%B4%EB%9E%80.md)
+
 #### 08월 23일
 
+- [ ] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
 - [ ] JegalEun : [Java/String,StringBuilder, StringBuffer차이](https://github.com/im-d-team/Dev-Docs/blob/master/Java/String,StringBuilder,%20StringBuffer%EC%B0%A8%EC%9D%B4.md)
 - [ ] Dae-Hwa : [CS/interface-segregation-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/interface-segregation-principle.md)
 
@@ -86,7 +98,7 @@
 
 #### 07월 26일
 
-- [ ] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
+
 - [ ] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1,%20MVC2.md)
 - [ ] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
 - [ ] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
