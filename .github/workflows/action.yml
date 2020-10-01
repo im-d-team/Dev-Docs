@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Create link
-      uses: Im-D/Im-Bot/packages/pr-supporter@master
+      uses: Im-D/Im-Bot/packages/pr-supporter/dist@master
       with:
         myToken: ${{ secrets.GITHUB_TOKEN }}
     - name: Create reviewRequest
-      uses: Im-D/Im-Bot/packages/pr-reviewer@master
+      uses: Im-D/Im-Bot/packages/pr-reviewer/dist@master
       with:
         myToken: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Link at README file
-      uses: Im-D/Im-Bot/packages/update-readme@master
+      uses: Im-D/Im-Bot/packages/update-readme/dist@master
       with:
         myToken: ${{ secrets.GITHUB_TOKEN}}
         linkLocTarget: '### 📅 History'
