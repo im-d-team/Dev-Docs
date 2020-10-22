@@ -6,11 +6,11 @@ WebRTC 이전에 Real-time Communication에 사용되던 HLS(HTTP Live Streaming
 
 WebRTC의 라이센스는 BSD이며 국제 인터넷 표준화 기구 프로토콜 표준화 작업을, W3C가 API정의를 진행하였다.
 
-WebRTC는 서로 상호 작용하는 API들과 Protocol들로 구성되어 있다. Google에서 제공하는 [Adapter.js](https://github.com/webrtcHacks/adapter) 라이브러리를 사용하게 되면 플랫폼 간 WebRTC 구현의 차이점으로 인한 호환성 문제가 해결된 상태로 상대로 개발할 수 있다. 해당 라이브러리는 [npm package](https://www.npmjs.com/package/webrtc-adapter) 형태로도 제공된다.
+WebRTC는 서로 상호 작용하는 API들과 Protocol들로 구성되어 있다. Google에서 제공하는 [Adapter.js](https://github.com/webrtcHacks/adapter) 라이브러리를 사용하게 되면 플랫폼 간 WebRTC 구현의 차이점으로 인한 호환성 문제가 해결된 상태로 개발할 수 있다. 해당 라이브러리는 [npm package](https://www.npmjs.com/package/webrtc-adapter) 형태로도 제공된다.
 
 ## WebRTC API
 
-WebRTC는 다음과 같은 세 종류의 API가 구현되어 있다.
+WebRTC에는 다음과 같은 세 종류의 API가 구현되어 있다.
 
 - MediaStream(GetUserMedia)
    - 카메라와 마이크에 접근하여 하나의 스트림으로 비디오, 오디오의 Track들을 동기화해주는 역할
@@ -32,7 +32,7 @@ MediaStream(GetUserMedia) API를 사용하여 영상 및 음성 정보를 가져
 
 Signaling은 서로 다른 네트워크에 있는 각 peer끼리 Session Description 정보를 교환하여 p2p가 형성되도록 연결하는 과정이다. 이를 통해 IP, Port, Video, Audio 코덱 정보를 주고받아서 정상적인 기능을 수행한다.
 
-Signaling은 다음과 같은 세 종류의 정보를 교환한다세
+Signaling은 다음과 같은 세 종류의 정보를 교환한다.
 
 - Network Configuration
    - ICE(Interactive Connectivity Establishment)를 사용해 Candidate(IP, Port)를 찾음
@@ -81,7 +81,7 @@ ICE Candidate의 절차는 다음과 같다.
 
 ### 3. Connection
 
-Signaling을 통해 RTCPeerConnection(상대 Peer의  얻게 되면 연결이 성공적으로 이루어진 것이다.
+Signaling으로 상대방의 정보가 포함된 RTCPeerConnection을 얻게 되면 연결이 성공적으로 이루어진 것이다.
 
 ### 4. Communication
 
@@ -123,9 +123,9 @@ WebRTC를 통해서 각 Peer 간에 주고받는 데이터는 크게 아래의 �
 
 #### 1.1 STUN(Session Traversal Utilities for NAT)
 
-![](https://www.html5rocks.com/ko/tutorials/webrtc/basics/stun.png)
+![](http://io13webrtc.appspot.com/images/stun.png)
 
-> 출처: https://www.html5rocks.com/ko/tutorials/webrtc/basics/#toc-rtcpeerconnection
+> 출처: http://io13webrtc.appspot.com/images/stun.png
 
 WebRTC의 p2p 연결을 위해 NAT/Firewall 뒷 단의 클라이언트들은 사설 IP를 내부에서 보유하고 있다. 이럴 경우 외부 통신을 위해 자신의 공인 IP 정보를 스스로 파악하여 서로에게 알려주어야 한다. 이때 사설 IP를 보유한 장비들의 공인 IP 정보를 알려주어 접근할 수 있도록 해주는 서버가 STUN(Session Traversal Utilities for NAT)이다.
 
@@ -143,23 +143,23 @@ TURN 서버는 STUN 서버를 이용한 연결이 실패했을 경우 오디오,
 
 ![](https://miro.medium.com/max/2000/0*VketTspbtHNGP9ho.png)
 
-> https://medium.com/@khan_honney/5-reasons-to-prefer-ant-media-server-over-sfu-bbea131807f
+> 출처: https://medium.com/@khan_honney/5-reasons-to-prefer-ant-media-server-over-sfu-bbea131807f
 
 #### 2.1 Mesh(p2p)
 
-Mesh Topology 방식은 Session의 각 Peer가 서버를 사용하지 않고 다른 모든 Peer와 직접 연결하는 방식이다. 이런 종류의 연결은 비용이 가장 적고 쉽기 때문에 작은 규모의 화상 회의에서 적절하다. 그러나 컨퍼런스가 커질 경우 CPU 사용량이 많아질 수 있기 때문에 모든 참가자 간의 연결 유지에 어려움을 겪을 수 있다. 모든 피어 사이간 개별 직접 연결이기 때문에 Mesh Topology 방식은 녹화가 어렵다.
+Mesh Topology 방식은 Session의 각 Peer가 서버를 사용하지 않고 다른 모든 Peer와 직접 연결하는 방식이다. 이런 종류의 연결은 비용이 가장 적고 쉽기 때문에 작은 규모의 화상 회의에서 적절하다. 그러나 컨퍼런스가 커질 경우 CPU 사용량이 많아지거나 네트워크 지연이 발생할 수 있기 때문에 모든 참가자 간의 연결 유지에 어려움을 겪을 수 있다.
 
-#### 2.2 SFU(Selective Forwarding Unit)
-
-SFU Topology 방식은 Session의 각 참가자가 SFU(Selective Forwarding Unit) 역할을 하는 서버에 연결하는 방식이다. 각 참가자는 암호화된 비디오 Stream을 서버에 업로드하고 서버는 Stream을 다른 참가자들에게 전달한다.
-
-클라이언트 측에선 하나의 Upstream 연결만이 존재하므로 Mesh Topology 방식보다 업로드 효율이 높다. 이러한 특징으로 인해 Mesh Topology 방식보다 더 많은 참가자를 수용할 수 있다.
-
-#### 2.3 MCU(Multipoint Control Unit)
+#### 2.2 MCU(Multipoint Control Unit)
 
 MCU Topology 방식은 Session의 각 참가자가 다중 연결 제어장치(MCU) 역할을 하는 서버에 연결하는 방식이다. 각 참가자로부터 받은 미디어를 단일 스트림으로 합친 다음 각 클라이언트에게 제공한다. 서버 측면에서 대역폭 사용량과 Downstream 연결에서 CPU 점유율의 여유를 가져올 수 있지만, 오디오와 비디오 미디어를 단일 Stream으로 합치기 위한 CPU 할당이 필요하게 된다.
 
 가장 낮은 대역폭이기 때문에 네트워크 조건이 좋지 않을 때 유리하다. 또한 위상의 제한이 없어 다수의 참가자 연결에 적절하다. 하지만 미디어를 서버에서 다루는 과정에서 Latency가 높아질 수 있다.
+
+#### 2.3 SFU(Selective Forwarding Unit)
+
+SFU Topology 방식은 Session의 각 참가자가 SFU(Selective Forwarding Unit) 역할을 하는 서버에 연결하는 방식이다. 각 참가자는 암호화된 비디오 Stream을 서버에 업로드하고 서버는 Stream을 다른 참가자들에게 전달한다.
+
+클라이언트 측에선 하나의 Upstream 연결만이 존재하므로 Mesh Topology 방식보다 업로드 효율이 높다. 이러한 특징으로 인해 Mesh Topology 방식보다 더 많은 참가자를 수용할 수 있다.
 
 ---
 
