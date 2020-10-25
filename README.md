@@ -57,6 +57,19 @@
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [Browser/Cookie](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie.md)
+
+- [x] Dae-Hwa : [Java/date-api-in-java](https://github.com/im-d-team/Dev-Docs/blob/master/Java/date-api-in-java.md)
+
+- [x] SeonHyungJo : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
+
+- [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
+
+- [x] JegalEun : [Network/Flow control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md)
+
+- [x] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
+- [x] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
+
 - [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
 - [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
 
