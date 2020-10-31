@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] dididy : [CS/Bomb-Lab(1)](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Bomb-Lab(1).md)
+
 - [x] JegalEun : [Network/congestion control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/congestion%20control.md)
 
 - [x] EUNJIHA : [Database/DB Connection Pool](https://github.com/im-d-team/Dev-Docs/blob/master/Database/DB%20Connection%20Pool.md)
