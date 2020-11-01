@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [Browser/Cookie_Store](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie_Store.md)
+
 - [x] Dae-Hwa : [CS/aspect-oriented-programming](https://github.com/im-d-team/Dev-Docs/blob/master/CS/aspect-oriented-programming.md)
 
 - [x] dididy : [CS/Bomb-Lab(1)](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Bomb-Lab(1).md)
