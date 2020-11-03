@@ -6,7 +6,7 @@ String, StringBuilder, StringBuffer는 문자열 클래스들이다. 모두 문�
 ## String
 `String`은 문자열을 대표하는 것으로 문자열을 조작하는 경우 유용하게 사용할 수 있다.
 
-먼저 `String`과 다른 클래스(StringBuffer, StringBuilder)의 차이점은 String은 **immutable**(불변), `StringBuffer`는 **mutable**(변함)에 있다.
+먼저 `String`과 다른 클래스(StringBuffer, StringBuilder)의 차이점은 String은 **immutable**(불변), `StringBuffer`, `StringBuilder`는 **mutable**(변함)에 있다.
 
 `String` 객체는 한번 생성되면 할당된 **메모리 영역이 변하지 않는다**. 
 
