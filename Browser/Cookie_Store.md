@@ -93,7 +93,7 @@ typedef sequence<CookieListItem> CookieList;
 
 `interface CookieStore`에는 우리가 사용할 수 있는 메서드들과 이벤트 핸들러가 있는 것을 볼 수 있는데, 이벤트 핸들러는 window에서만 사용이 가능하다.
 
-`getAll`, `get`, `delete` 메서드를 사용하는 방법은 기본적으로 cookie의 이름만으로 사용할 수 있고, option이라는 것을 통해서 가져오거나 삭제가 가능한다. 자세한 형태는 아래를 살펴보면 된다.
+`getAll`, `get`, `delete` 메서드를 사용하는 방법은 기본적으로 cookie의 이름만으로 사용할 수 있고, option이라는 것을 통해서 가져오거나 삭제가 가능하다. 자세한 형태는 아래를 살펴보면 된다.
 
 간단하게 `dictionary CookieInit` 부분을 보게 되면 cookie에서 사용하는 설정 중 CookieSameSite의 기본값이 strict라는 것을 알 수 있다. 
 
