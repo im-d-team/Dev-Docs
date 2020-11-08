@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] BKJang : [Javascript/OOP_of_JS](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/OOP_of_JS.md)
+
 - [x] SeonHyungJo : [Browser/Cookie_Store](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie_Store.md)
 
 - [x] Dae-Hwa : [CS/aspect-oriented-programming](https://github.com/im-d-team/Dev-Docs/blob/master/CS/aspect-oriented-programming.md)
