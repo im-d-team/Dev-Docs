@@ -51,8 +51,7 @@ MTU 기본값으로 `1500 bytes`가 설정되어 있는 것을 확인 할 수 �
 
 이렇게 늘어날 때는 선형적으로 조금씩 늘어나고 줄어들 때는 반으로 확 줄어드는 `AIMD`의 특성때문에 혼잡 윈도우 크기를 그래프로 그려보면 다음과 같은 톱니 모양이 나타난다.
 
-<img width="608" alt="AIMD" src="https://user-images.githubusercontent.com/43868540/94355427-eb83c600-00be-11eb-83aa-cf7377e5df8c.png">
-
+![AIMD](https://user-images.githubusercontent.com/43868540/94355427-eb83c600-00be-11eb-83aa-cf7377e5df8c.png)
 - [출처 evan-moon.github](https://evan-moon.github.io/2019/11/26/tcp-congestion-control/)
 
 그러나 `AIMD`의 문제점은 네트워크 대역이 많이 남아도는 상황에도 윈도우 크기를 너무 조금씩 늘리면서 접근한다는 것이다.
