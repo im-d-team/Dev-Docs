@@ -115,7 +115,7 @@ MTU 기본값으로 `1500 bytes`가 설정되어 있는 것을 확인 할 수 �
 ![congestion control](https://user-images.githubusercontent.com/43868540/95659402-ba45d400-0b5b-11eb-8561-5ee1718ec8f1.PNG)
  > 출처 [blog.naver](http://blog.naver.com/PostView.nhn?blogId=sjc02183&logNo=221686794605&parentCategoryNo=&categoryNo=55&viewDate=&isShowPopularPosts=false&from=postView)
  
-위 그림을 보면 9라운드부터 타호와 리노의 모양이 달라지는 것을 확인할 수 있다.
+위 그림을 보면 9라운드부터 Tahoe와 Reno의 모양이 달라지는 것을 확인할 수 있다.
 
 손실 발생 시, `TCP Tahoe`는  `1MSS`로 떨어진다. 반면에 `TCP Reno`는 중복 ack가 3개 발생했을 때는 절반으로,  타임아웃으로 인한 패킷 손실이면 `1MSS`로 떨어진다.
 
