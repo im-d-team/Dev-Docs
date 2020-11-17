@@ -57,68 +57,69 @@
 ---
 
 ### 📅 History
-- [x] BKJang : [Javascript/OOP_of_JS](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/OOP_of_JS.md)
-
-- [x] SeonHyungJo : [Browser/Cookie_Store](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie_Store.md)
-
-- [x] Dae-Hwa : [CS/aspect-oriented-programming](https://github.com/im-d-team/Dev-Docs/blob/master/CS/aspect-oriented-programming.md)
-
-- [x] dididy : [CS/Bomb-Lab(1)](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Bomb-Lab(1).md)
-
-- [x] JegalEun : [Network/congestion control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/congestion%20control.md)
-
-- [x] EUNJIHA : [Database/DB Connection Pool](https://github.com/im-d-team/Dev-Docs/blob/master/Database/DB%20Connection%20Pool.md)
-- [x] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
-- [x] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
-
-- [x] SeonHyungJo : [Browser/Cookie](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie.md)
-
-- [x] Dae-Hwa : [Java/date-api-in-java](https://github.com/im-d-team/Dev-Docs/blob/master/Java/date-api-in-java.md)
-
-- [x] SeonHyungJo : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
-
-- [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
-
-- [x] JegalEun : [Network/Flow control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md)
-
-- [x] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
-- [x] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
-
-- [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
-- [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
-
-- [x] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
-
-- [x] SeonHyungJo : [Node](https://github.com/im-d-team/Dev-Docs/blob/master/Node.js/make_meta_file.md)
-
-- [x] Dae-Hwa : [CS/dependency-inversion-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/dependency-inversion-principle.md)
-
-
-
 
 <!--<details>
-<summary> 2020년 8월 </summary>-->
+<summary> 2020년 11월 </summary>-->
+
+#### 11월 08일
+- [ ] BKJang : [Javascript/OOP_of_JS](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/OOP_of_JS.md)
+- [ ] SeonHyungJo : [Browser/Cookie_Store](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie_Store.md)
+
+#### 11월 01일
+- [ ] dididy : [CS/Bomb-Lab(1)](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Bomb-Lab(1).md)
+- [ ] Dae-Hwa : [CS/aspect-oriented-programming](https://github.com/im-d-team/Dev-Docs/blob/master/CS/aspect-oriented-programming.md)
+- [ ] JegalEun : [Network/congestion control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/congestion%20control.md)
+
+<!--</details>-->
+
+<!--<details>
+<summary> 2020년 10월 </summary>-->
+
+#### 10월 11일
+- [ ] Dae-Hwa : [Java/date-api-in-java](https://github.com/im-d-team/Dev-Docs/blob/master/Java/date-api-in-java.md)
+- [ ] SeonHyungJo : [Browser/Cookie](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie.md)
+- [ ] EUNJIHA : [Database/DB Connection Pool](https://github.com/im-d-team/Dev-Docs/blob/master/Database/DB%20Connection%20Pool.md)
+
+<!--</details>-->
+
+<!--<details>
+<summary> 2020년 9월 </summary>-->
+
+#### 09월 27일
+- [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
+- [ ] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
+- [ ] JegalEun : [Network/Flow control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md)
+
+#### 09월 13일
+- [ ] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
+- [x] SeonHyungJo : [Node.js/make_meta_file.md](https://github.com/im-d-team/Dev-Docs/blob/master/Node.js/make_meta_file.md)
+- [x] Dae-Hwa : [CS/dependency-inversion-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/dependency-inversion-principle.md)
+
+<!--</details>-->
+
+<details>
+<summary> 2020년 8월 </summary>
 
 #### 08월 30일
 
-- [ ] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
-- [ ] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
-- [ ] dididy : [Javascript/논리연산자](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90.md)
-- [ ] SeonHyungJo : [ML/머신러닝이란](https://github.com/im-d-team/Dev-Docs/blob/master/ML/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%B4%EB%9E%80.md)
+- [x] EUNJIHA : [Database/Types of Databases](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Types%20of%20Databases.md)
+- [x] BKJang : [Performance/Throttling vs Debouncing](https://github.com/im-d-team/Dev-Docs/blob/master/Performance/Throttling%20vs%20Debouncing.md)
+- [x] dididy : [Javascript/논리연산자](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90.md)
+- [x] SeonHyungJo : [ML/머신러닝이란](https://github.com/im-d-team/Dev-Docs/blob/master/ML/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%B4%EB%9E%80.md)
 
 #### 08월 23일
 
-- [ ] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
-- [ ] JegalEun : [Java/String,StringBuilder, StringBuffer차이](https://github.com/im-d-team/Dev-Docs/blob/master/Java/String,StringBuilder,%20StringBuffer%EC%B0%A8%EC%9D%B4.md)
-- [ ] Dae-Hwa : [CS/interface-segregation-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/interface-segregation-principle.md)
+- [x] dididy : [Javascript/prototype(2)](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/prototype(2).md)
+- [x] JegalEun : [Java/String,StringBuilder, StringBuffer차이](https://github.com/im-d-team/Dev-Docs/blob/master/Java/String,StringBuilder,%20StringBuffer%EC%B0%A8%EC%9D%B4.md)
+- [x] Dae-Hwa : [CS/interface-segregation-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/interface-segregation-principle.md)
 
 #### 08월 09일
 
-- [ ] EUNJIHA : [Android/application fundamentals](https://github.com/im-d-team/Dev-Docs/blob/master/Android/application%20fundamentals.md)
-- [ ] BKJang : [Browser/FOUC](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/FOUC.md)
-- [ ] SeonHyungJo : [Network/HTTP3](https://github.com/im-d-team/Dev-Docs/blob/master/Network/HTTP3.md)
+- [x] EUNJIHA : [Android/application fundamentals](https://github.com/im-d-team/Dev-Docs/blob/master/Android/application%20fundamentals.md)
+- [x] BKJang : [Browser/FOUC](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/FOUC.md)
+- [x] SeonHyungJo : [Network/HTTP3](https://github.com/im-d-team/Dev-Docs/blob/master/Network/HTTP3.md)
 
-<!--</details>-->
+</details>
 
 <!--<details>
 <summary> 2020년 7월 </summary>-->
@@ -127,18 +128,18 @@
 
 
 - [ ] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1,%20MVC2.md)
-- [ ] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
-- [ ] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
+- [x] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
+- [x] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
 
 #### 07월 19일
 
-- [ ] BKJang : [ECMAScript/ArrowFunction](https://github.com/im-d-team/Dev-Docs/blob/master/ECMAScript/ArrowFunction.md)
-- [ ] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP%20&%20UDP.md)
+- [x] BKJang : [ECMAScript/ArrowFunction](https://github.com/im-d-team/Dev-Docs/blob/master/ECMAScript/ArrowFunction.md)
+- [x] SeonHyungJo : [Network/TCP & UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP%20&%20UDP.md)
 
 #### 07월 05일
 
-- [ ] JegalEun : [Language/JSON_XML](https://github.com/im-d-team/Dev-Docs/blob/master/Language/JSON_XML.md)
-- [ ] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
+- [x] JegalEun : [Language/JSON_XML](https://github.com/im-d-team/Dev-Docs/blob/master/Language/JSON_XML.md)
+- [x] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
 - [x] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7%20Layer.md)
 
 <!--</details>-->
