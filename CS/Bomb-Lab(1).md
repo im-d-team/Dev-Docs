@@ -14,11 +14,11 @@ Bomb Lab은 Carnegie Mellon University의 시스템 프로그래밍 과제인 La
 
 `L1:`은 기계어 코드로 번역되지 않고 분기 명령(jmp) 등에서 참조될 때에 번지의 계산에 사용된다. `mov`는 operand2의 값을 operand1에 할당할 때 사용한다.
 
-operand 앞에 붙는 기호 중 `$`는 상수 `%`는 레지스터를 나타낸다.
+operand 앞에 붙는 기호 중 `$`는 상수, `%`는 레지스터를 나타낸다.
 
 ### 어셈블리 명령어
 
-- AT&T 방식에서는 `instruction src, dest` 인 것을 감안하고 참고해야 한다. (LEA, MOVE 등)
+- AT&T 방식에서는 `[instruction] [src], [dest]` 인 것을 감안하고 참고해야 한다. (LEA, MOVE 등)
 
 ![](https://t1.daumcdn.net/cfile/tistory/23112B4256B1A00D0E)
 
