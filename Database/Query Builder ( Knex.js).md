@@ -71,32 +71,32 @@ transaction의 기능도 제공하니, transaction 처리가 필요한 곳에서
 
 ```jsx
 // Using trx as a transaction object:
-knex.transaction(function(trx) {
-
-  const books = [
-    {title: 'Canterbury Tales'},
-    {title: 'Moby Dick'},
-    {title: 'Hamlet'}
-  ];
-
-  knex.insert({name: 'Old Books'}, 'id')
-    .into('catalogues')
-    .transacting(trx)
-    .then(function(ids) {
-      books.forEach((book) => book.catalogue_id = ids[0]);
-      return knex('books').insert(books).transacting(trx);
-    })
-    .then(trx.commit)
-    .catch(trx.rollback);
-})
-.then(function(inserts) {
-  console.log(inserts.length + ' new books saved.');
-})
-.catch(function(error) {
-  // If we get here, that means that neither the 'Old Books' catalogues insert,
-  // nor any of the books inserts will have taken place.
-  console.error(error);
-});
+knex
+  .transaction(function (trx) {
+    const books = [
+      { title: "Canterbury Tales" },
+      { title: "Moby Dick" },
+      { title: "Hamlet" },
+    ];
+    knex
+      .insert({ name: "Old Books" }, "id")
+      .into("catalogues")
+      .transacting(trx)
+      .then(function (ids) {
+        books.forEach((book) => (book.catalogue_id = ids[0]));
+        return knex("books").insert(books).transacting(trx);
+      })
+      .then(trx.commit)
+      .catch(trx.rollback);
+  })
+  .then(function (inserts) {
+    console.log(inserts.length + " new books saved.");
+  })
+  .catch(function (error) {
+    // If we get here, that means that neither the 'Old Books' catalogues insert,
+    // nor any of the books inserts will have taken place.
+    console.error(error);
+  });
 ```
 
 await/async 방식은 다음과 같이 사용할 수 있다.
