@@ -4,7 +4,7 @@ REST API를 설계 /  구현할 때, 각 API에 해당하는 SQL문을 직접 �
 
 현재는 Node.js로 API를 구성하고 있기 때문에 Node.js에서 많이 사용되는 Query Builder를 찾았다. 바로 `[Knex.js](http://knexjs.org/)`라는 라이브러리이다.
 
-**Knex.js** (pronounced /kəˈnɛks/) is a "batteries included" SQL query builder for **Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift** designed to be flexible, portable, and fun to use. It features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full featured query and **schema builders**, **transaction support (with savepoints)**, **connection pooling** and standardized responses between different query clients and dialects.
+> **Knex.js** (pronounced /kəˈnɛks/) is a "batteries included" SQL query builder for **Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift** designed to be flexible, portable, and fun to use. It features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full featured query and **schema builders**, **transaction support (with savepoints)**, **connection pooling** and standardized responses between different query clients and dialects.
 
 Knex.js는 다양한 DBMS(**Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift**)를 지원하고 있고 단순 Query 생성 뿐만 아니라 **schema builder, transaction, connection pooling** 등의 기능도 지원하고 있다. 자세한 내용은 [공식홈페이지](http://knexjs.org)를 살펴보자.
 
