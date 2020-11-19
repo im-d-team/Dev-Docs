@@ -49,7 +49,7 @@ update `books` set `status` = 'archived' where `published_date` < 2000
 
 `thisKeyIsSkipped: undefined`로 설정한 Query Builder의 Outputs을 보면 thisKeyIsSkipped는 Query에 들어가지 않는 것을 확인할 수 있다. 만일 이런 Query Builder를 사용하지 않고 날 Query를 일일이 만들어줘야 한다면 어떤 컬럼이 undefined인지 확인 하고 그에 해당하는 Query를 만들어 줘야 하기 때문에 코드가 복잡해질 것이다.
 
-위를 바탕으로 다음과 같이 코드를 작성하면 짜잘한 일에 시간을 쏟지 않아도 된다.  
+위를 바탕으로 다음과 같이 코드를 작성하면 자잘한 일에 시간을 쏟지 않아도 된다.  
 
 ```jsx
 // userController.js
