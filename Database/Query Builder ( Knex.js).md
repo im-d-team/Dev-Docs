@@ -129,7 +129,7 @@ try {
 }
 ```
 
-물론, Raw SQL를 작성하는 것이 Knex.js를 통한 작성보다 쉬울 때가 많다. 그 때는 Raw SQL문을 사용하고 (Query Builder에서 Raw SQL도 지원한다), Raw SQL이 아닌 Query Builder가 좀 더 수월하게 코드를 작성할 경우에는 Query Builder를 사용하여 작성하면 된다.
+물론, 날 SQL를 작성하는 것이 Knex.js를 통한 작성보다 쉬울 때가 많다. 그 때는 날 SQL문을 사용하고 (Query Builder에서 Raw SQL도 지원한다), 날 SQL이 아닌 Query Builder가 좀 더 수월하게 코드를 작성할 경우에는 Query Builder를 사용하여 작성하면 된다.
 
 ---
 #### Reference
