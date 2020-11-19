@@ -28,7 +28,7 @@ module.exports = {
 };
 ```
 
-참고로, 그냥 mysql 모듈을 사용하면 다음과 같은 오류가 나서 [구글링](https://www.inflearn.com/questions/3637)을 해보니 mysql2 모듈을 사용하여 해결할 수 있었다.
+위의 예시에서 mysql 모듈을 사용하면 다음과 같은 오류 발생하여 [구글링](https://www.inflearn.com/questions/3637)을 해보니 mysql2 모듈을 사용하여 해결할 수 있었다.
 
 ```
 Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
