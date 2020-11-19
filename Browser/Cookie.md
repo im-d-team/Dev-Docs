@@ -6,7 +6,7 @@
 
 > [참고] Chrome 개발자 도구 - Application Tab
 
-위 사진은 Chrome 개발자 도구에 들어가서 Application Tab을 누르게 되면 왼쪽 메뉴에 보이는 Storage로 총 **5개**가 있다. 그중 가장 아래에 있는 Cookie에 대해서 알아보자
+위 사진은 Chrome 개발자 도구에 들어가서 Application Tab을 누르게 되면 왼쪽 메뉴에 보이는 Storage로 총 **5개**가 있다. 그 중 가장 아래에 있는 Cookie에 대해서 알아보자
 
 # Cookie
 
