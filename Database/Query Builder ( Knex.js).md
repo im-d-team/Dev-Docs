@@ -61,7 +61,7 @@ knex('User')
   .update({
     age: userAge,
     name: userName,
-		birth: userBirth
+    birth: userBirth
   })
 ```
 
