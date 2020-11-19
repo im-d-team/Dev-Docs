@@ -206,6 +206,8 @@ document.cookie = "user=SeonHyungJo; secure";
 
 - `samesite=lax` (Chrome default 값)
 
+> [관련 이슈](https://brocess.tistory.com/263)
+
 `samesite=lax`는 사용자 경험을 해치지 않으면서 XSRF 공격을 막을 수 있는 느슨한 접근법이다.
 
 strict와 마찬가지로 lax도 사이트 외부에서 요청을 보낼 때 브라우저가 쿠키를 보내는 걸 막아준다. 하지만 예외사항이 있다.
