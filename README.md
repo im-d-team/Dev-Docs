@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] dididy : [Javascript/Web_Storage_API](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Web_Storage_API.md)
+
 
 <!--<details>
 <summary> 2020년 11월 </summary>-->
