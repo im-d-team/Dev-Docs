@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] EUNJIHA : [React/Component, Props, State](https://github.com/im-d-team/Dev-Docs/blob/master/React/Component,%20Props,%20State.md)
+
 - [x] dididy : [Javascript/Web_Storage_API](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Web_Storage_API.md)
 
 
