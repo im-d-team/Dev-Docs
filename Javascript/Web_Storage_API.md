@@ -1,6 +1,6 @@
 # Web Storage API
 
-개발을 진행하다가 클라이언트에서 특정 값을 저장해야 하는 기능 구현 필요성이 생겼다면 어떻게 해야 할까?. 쿠키를 사용할 경우 제약 사항이 생길 수 있다. Web Storage API를 사용하게 되면 앞서 의도한 목적에 맞게 기능을 구현할 수 있다.
+개발을 진행하다가 클라이언트에서 특정 값을 저장해야 하는 기능 구현 필요성이 생겼다면 어떻게 해야 할까? 쿠키를 사용할 경우 제약 사항이 생길 수 있다. Web Storage API를 사용하게 되면 앞서 의도한 목적에 맞게 기능을 구현할 수 있다.
 
 쿠키의 경우 서버와 효율적으로 통신하기 위한 배경으로 탄생했다. 실제로 쿠키는 HTTP 헤더를 바탕으로 서버와 클라이언트가 서로를 식별하는 인증 과정을 위해 가장 많이 사용된다.
 
@@ -106,7 +106,7 @@ localStorage.setItem('now', Date.now());
 Web Storage을 잘 응용한 사례는 다음과 같은 경우가 있을 수 있다.
 
 - 웹서버의 데이터 캐시
-- 같은 오리진일 경우 서버를 통하지 않고 모든 탭, 브라우저 창의 정보 갱신([Broadcas Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API)의 폴리필 구현 시 사용할 수 있음)
+- 같은 오리진일 경우 서버를 통하지 않고 모든 탭, 브라우저 창의 정보 갱신([Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API)의 폴리필 구현 시 사용할 수 있음)
 - 글쓰기 등 창이 닫힐 경우를 대비해 값을 저장해야 하는 경우
 - base64로 변환된 Canvas나 이미지 임시 저장
 - 웹페이지의 개인화 설정 저장 및 제공(캐시로서의 역할)
