@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [CS/integer_representation](https://github.com/im-d-team/Dev-Docs/blob/master/CS/integer_representation.md)
+
 - [x] JegalEun : [Design_Pattern/JSP model](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/JSP%20model.md)
 
 - [x] EUNJIHA : [React/Component, Props, State](https://github.com/im-d-team/Dev-Docs/blob/master/React/Component,%20Props,%20State.md)
