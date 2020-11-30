@@ -72,7 +72,7 @@ console.log(document.cookie); // origin=github%2FSeonHyungJo
 
 URL path(경로)의 접두사로, 경로나 경로의 하위 경로에 있는 페이지만 쿠키에 접근할 수 있다. 절대 경로이어야 하고, 기본값은 현재 경로이다.
 
-`path=/user` 옵션을 사용하여 설정한 쿠키는 `/user`과 `/admin/something`에선 볼 수 있지만, `/partner` 이나 `/adminpage`에선 볼 수 없다.
+`path=/user` 옵션을 사용하여 설정한 쿠키는 `/user`과 `/user/something`에선 볼 수 있지만, `/partner` 이나 `/adminpage`에선 볼 수 없다.
 
 특별한 경우가 아니라면, path 옵션을 `path=/`같이 루트로 설정해 웹사이트의 모든 페이지에서 쿠키에 접근할 수 있도록 한다.
 
