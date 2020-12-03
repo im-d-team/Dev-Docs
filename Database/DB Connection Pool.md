@@ -80,24 +80,26 @@ npm mysql2 문서에는 다음과 같이 설명되어 있다.
 ```jsx
 ...
 
+
+
 try {
-        const connection = await pool.getConnection(async conn => conn);
-        try {
+    const connection = await pool.getConnection(async conn => conn);
+    try {
 
-							const Query;
-							const Params;
+        const Query;
+        const Params;
 
-							const [ResultSet] = await connection.query( 
-                    Query,
-                    Params
-                );
-		
-						} catch (err) {
-		            connection.release(); // 다음과 같이 사용 이후에는 release를 해줘야 한다.
-		            return res.json({isSuccess: false, code: 500, message: "서버 오류"});
-			      }
+        const [ResultSet] = await connection.query(
+            Query,
+            Params
+        );
+
     } catch (err) {
-        return res.json({isSuccess: false, code: 501, message: "서버 오류"});
+        connection.release(); // 다음과 같이 사용 이후에는 release를 해줘야 한다.
+        return res.json({ isSuccess: false, code: 500, message: "서버 오류" });
+    }
+} catch (err) {
+    return res.json({ isSuccess: false, code: 501, message: "서버 오류" });
 
 ```
 
