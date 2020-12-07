@@ -12,7 +12,7 @@ Bomb Lab은 Carnegie Mellon University의 시스템 프로그래밍 과제인 La
 
 `L1: mov %eax, %ebx # comment`
 
-`L1:`은 기계어 코드로 번역되지 않고 분기 명령(jmp) 등에서 참조될 때에 번지의 계산에 사용된다. `mov`는 operand2의 값을 operand1에 할당할 때 사용한다.
+`L1:`은 기계어 코드로 번역되지 않고 분기 명령([JMP](https://github.com/im-d-team/Dev-Docs/blob/20201101/dididy/CS/Bomb-Lab(1).md#%EC%96%B4%EC%85%88%EB%B8%94%EB%A6%AC-%EB%AA%85%EB%A0%B9%EC%96%B4) - FLAG 값을 기반으로 조건에 따라 특정 위치로 점프하도록 하는 명령어) 등에서 참조될 때에 번지의 계산에 사용된다. `mov`는 operand2의 값을 operand1에 할당할 때 사용한다.
 
 operand 앞에 붙는 기호 중 `$`는 상수, `%`는 레지스터를 나타낸다.
 
@@ -24,6 +24,10 @@ operand 앞에 붙는 기호 중 `$`는 상수, `%`는 레지스터를 나타낸
 ![어셈블리 명령어](https://t1.daumcdn.net/cfile/tistory/27304750588DB45C07)
 
 > 출처: https://aistories.tistory.com/12
+
+![JMP 조건 점프 명령어](https://t1.daumcdn.net/cfile/tistory/26231D4556925CA016)
+
+> 출처: https://8jz5.tistory.com/50
 
 ### 주소지정 방식
 - 즉시 지정 방식
