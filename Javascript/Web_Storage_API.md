@@ -29,7 +29,7 @@ Web Storage에 저장되는 key와 value는 모두 String이어야 한다. 숫�
 
 ## 2. Local Storage
 
-Web Storage는 기본적으로 쿠키와 동일하게 오리진(domain/port/protocol)에 따라 값에 대한 접근이 제한된다. Local Storage의 경우 특정 오리진에 저장된 데이터가 있더라도 다른 오리진에서 접근할 수 없다. 오로지 오리진이 같이 야만 해당 데이터에 접근할 수 있다.
+Web Storage는 기본적으로 쿠키와 동일하게 오리진(domain/port/protocol)에 따라 값에 대한 접근이 제한된다. Local Storage의 경우 특정 오리진에 저장된 데이터가 있더라도 다른 오리진에서 접근할 수 없다. 오로지 오리진이 같아야만 해당 데이터에 접근할 수 있다.
 
 Local Storage는 아래와 같이 setItem 메소드를 통해 key와 value를 지정하여 데이터를 설정할 수 있다.
 
@@ -71,9 +71,9 @@ Chrome 브라우저의 경우 DevTools의 Application 탭에서 Local Storage를
 
 Session Storage와 Local Storage의 차이점은 데이터 지속 여부와 접근할 수 있는 데이터 범위에 있다.
 
-저장되면 영구적으로 데이터가 저장되면 Local Storage와 다르게 Session Storage는 브라우저를 닫는 등 세션이 종료되면 데이터가 삭제된다. Session Storage의 이러한 특성으로 인해 보안이 필요한 경우 사용하면 좋다.
+저장되면 영구적으로 데이터가 저장되는 Local Storage와 다르게 Session Storage는 브라우저를 닫는 등 세션이 종료되면 데이터가 삭제된다. Session Storage의 이러한 특성으로 인해 보안이 필요한 경우 사용하면 좋다.
 
-앞서 설명했듯이 Local Storage는 오리진 같다면 전역으로 데이터를 공유할 수 있었다. 하지만 Session Storage의 경우 오리진이 같더라도 서로 다른 탭 혹은 서로 다른 브라우저라면 서로의 데이터를 침범할 수 없다. 즉 Local Storage와 달리 해당 탭에 대해 종속되어 있게 된다.
+앞서 설명했듯이 Local Storage는 오리진이 같다면 전역으로 데이터를 공유할 수 있었다. 하지만 Session Storage의 경우 오리진이 같더라도 서로 다른 탭 혹은 서로 다른 브라우저라면 서로의 데이터를 침범할 수 없다. 즉 Local Storage와 달리 해당 탭에 대해 종속되어 있게 된다.
 
 window.open을 이용해 새로운 창을 열게 되면 기존 창의 Session Storage의 값이 복사되기는 하지만 두 창의 데이터가 공유되지는 않는다.
 
