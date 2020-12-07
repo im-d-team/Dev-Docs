@@ -1,6 +1,6 @@
 # Bomb Lab(1)
 
-Bomb Lab은 Carnegie Mellon University의 시스템 프로그래밍 과제인 Lab 시리즈 중 하나이다. 과제에는 bomb라는 바이너리 파일이 제공된다. 과제의 목적은 gdb를 이용해 해당 파일을 리버스 엔지니링 하여 총 6단계의 문구를 찾아 폭탄을 해체하는 것이다. 과제의 특성상 어셈블리를 분석해야 하기 때문에 문제를 해결하는 과정에서 어셈블리와 친숙해질 수 있다.
+Bomb Lab은 Carnegie Mellon University의 시스템 프로그래밍 과제인 Lab 시리즈 중 하나이다. 과제에는 bomb라는 바이너리 파일이 제공된다. 과제의 목적은 gdb(GNU 디버거의 약자로 Unix/Linux 환경에서 C/C++ 디버깅에 사용)를 이용해 해당 파일을 리버스 엔지니링 하여 총 6단계의 문구를 찾아 폭탄을 해체하는 것이다. 과제의 특성상 어셈블리를 분석해야 하기 때문에 문제를 해결하는 과정에서 어셈블리와 친숙해질 수 있다.
 
 해당 문서에서 사용되는 어셈블리는 [AT&T 문법](http://doc.kldp.org/KoreanDoc/html/Assembly_Example-KLDP/Assembly_Example-KLDP.html)을 따른다.
 
@@ -16,24 +16,16 @@ Bomb Lab은 Carnegie Mellon University의 시스템 프로그래밍 과제인 La
 
 operand 앞에 붙는 기호 중 `$`는 상수, `%`는 레지스터를 나타낸다.
 
+- AT&T 방식에서는 `[instruction] [src], [dest]` 의 순서로 명렁이 구성된다.(Intel 방식의 경우 이와 반대로 `[instruction] [dest], [src]` 순서)
+
 ### 어셈블리 명령어
 
-- AT&T 방식에서는 `[instruction] [src], [dest]` 인 것을 감안하고 참고해야 한다. (LEA, MOVE 등)
 
-![](https://t1.daumcdn.net/cfile/tistory/23112B4256B1A00D0E)
+![어셈블리 명령어](https://t1.daumcdn.net/cfile/tistory/27304750588DB45C07)
 
-![](https://t1.daumcdn.net/cfile/tistory/214A7D3654B3CA5E25)
-
-![](https://t1.daumcdn.net/cfile/tistory/2331033C54B3CA810C)
-
-![](https://t1.daumcdn.net/cfile/tistory/2562654F54B3CAA308)
-
-> 출처: https://securityfactory.tistory.com/153
+> 출처: https://aistories.tistory.com/12
 
 ### 주소지정 방식
-
-- AT&T 어셈블리는 `instruction src, dest` 형태로 구성된다.
-
 - 즉시 지정 방식
   - `mov $0x1, %eax`: eax에 1을 할당하는 것처럼 값을 직접 대응시키는 방식이다.
 - 레지스터 지정방식
