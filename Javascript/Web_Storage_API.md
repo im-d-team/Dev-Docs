@@ -84,7 +84,7 @@ Session Storage의 프로퍼티 사용 방법은 Local Storage와 일치한다.
 Local Storage와 Session Storage에서 데이터가 갱신될 경우 Storage Event가 실행되는데 이에대한 프로퍼티는 아래와 같다.
 
 - `key` – 변경된 데이터의 키(`.clear()`를 호출했다면 `null`)
-- `oldValue` – 이전 값(키가 새롭게 추가되었다면 창null`)
+- `oldValue` – 이전 값(키가 새롭게 추가되었다면 `null`)
 - `newValue` – 새로운 값(키가 삭제되었다면 `null`)
 - `url` – 갱신이 일어난 문서의 url
 - `storageArea` – 갱신이 일어난 `localStorage`나 `sessionStorage` 객체
