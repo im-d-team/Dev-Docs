@@ -103,7 +103,7 @@ localStorage.setItem('now', Date.now());
 
 ## 마무리
 
-Web Storage을 잘 응용한 사례는 다음과 같은 경우가 있을 수 있다.
+Web Storage을 잘 응용한 사례는 다음과 같은 경우가 있다.
 
 - 웹서버의 데이터 캐시
 - 같은 오리진일 경우 서버를 통하지 않고 모든 탭, 브라우저 창의 정보 갱신([Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API)의 폴리필 구현 시 사용할 수 있음)
