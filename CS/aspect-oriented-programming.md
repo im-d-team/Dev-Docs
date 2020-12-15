@@ -37,7 +37,7 @@ class NonAspectOrientedSample implements Logger {
         // ...
     }
     
- 	public void doSomething() {
+    public void doSomething() {
         logging();
         // ...
     }
