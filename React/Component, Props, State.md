@@ -102,7 +102,7 @@ ReactDOM.render(
 
 ### (2) Component 추출
 
-추출은 할 일이 많아보이지만 컴포넌트를 재사용할 일이 많은 App 에서는 유지 보수가 더 수월해진다. 1) UI 일부가 여러 번 사용되거나(Button, Panel, Avatar) 2) UI 일부가 자체적으로 복잡한 경우에는(App, FeedStory, Comment) 별도의 컴포넌트로 만드는 게 좋다. 
+추출을 사용하면 컴포넌트를 재사용할 일이 많은 App 에서는 유지 보수가 더 수월해진다. 1) UI 일부가 여러 번 사용되거나(Button, Panel, Avatar) 2) UI 일부가 자체적으로 복잡한 경우에는(App, FeedStory, Comment) 별도의 컴포넌트로 만드는 게 좋다. 
 
 다음 `Comment` Component에는 유저사진 / 유저이름 / 내용 / 날짜가 브라우저 DOM 태그 형태 그대로 포함되어 있다. 
 
