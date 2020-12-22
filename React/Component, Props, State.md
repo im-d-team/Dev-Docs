@@ -1,6 +1,6 @@
 # Component, Props, State
 
-React는 `Component`개념에 집중 되어 있는 라이브러리다. `Component`는 JavaScript의 함수와 유사하다고 할 수 있는데, `Props`라는 데이터를 입력 받고 화면에 표시될 React `Element`를 반환한다. 한마디로 재사용 가능한 UI 조각이라고 생각하면 된다.
+React는 `Component`개념에 집중되어 있는 라이브러리다. `Component`는 JavaScript의 함수와 유사하다고 할 수 있는데, `Props`라는 데이터를 입력 받고 화면에 표시될 React `Element`를 반환한다. 한마디로 **재사용 가능한 UI 조각**이라고 생각하면 된다.
 
 > `Element` 는 React App의 가장 작은 단위이다. 화면에 표시할 내용을 기술한다. `Element`는 브라우저 DOM Element와 달리 일반 객체(plain object)이다.
 
