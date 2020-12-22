@@ -19,7 +19,7 @@ cf. React Component 이름은 다음 `Welcome`과 같이 항상 **대문자**로
 
 ```jsx
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>; //
+  return <h1>Hello, {props.name}</h1>;
 }
 
 // React는 {name: 'Sara'}를 props로 하여 Welcome를 호출한다.
@@ -37,12 +37,14 @@ ReactDOM.render(
 
 React Component 에는 `Function Component`와 `Class Component`가 있다. 이 Component들의 가장 큰 차이점은 `LifeCycle`과 `State`이다. (추후에 다룰 예정)
 
-### (1) JavaScript 함수로 작성: `Function Component` //16버전?부터?
+### (1) JavaScript 함수로 작성: `Function Component`
 
 ```jsx
 function Welcome(props) {
-	// const [content, setContent] = useState("");
 
+  // function 컴포넌트는 state를 useState를 통해 관리할 수 있다.
+  // const [content, setConent] = React.useState("");
+  
   return <h1>Hello, {props.name}</h1>;
 }
 ```
@@ -52,14 +54,16 @@ props(객체 형태)를 받고 React Element를 return 해주고 있다.
 ### (2) ES6 Class로 작성: `Class Component`
 
 ```jsx
-class Welcome extends React.Component { // 명시적으로 이야기 할 때 더 
-	// constructor(props) {
-  //   super(props); // props를 쓰고 싶을 때
+class Welcome extends React.Component {
+
+  // class 컴포넌트는 props, state를 다음과 같은 형태로 관리할 수 있다.
+  // constructor(props) {
+  //   super(props);
   //   this.state = {content: ""};
   // }
 
   render() {
-    return <h1>Hello, {this.props.name}</h1>;  // 안써도 되는데 그 이유는 컴파일하면서 자동으로 넣어주기 때문에
+    return <h1>Hello, {this.props.name}</h1>;
   }
 }
 ```
@@ -144,7 +148,7 @@ function Comment(props) {
 }
 ```
 
-전체 코드는 다음과 같다. // 배열도 구조분해 할당 쓸 수 있는데, 개수가 명확할 때만 쓴다. 
+전체 코드는 다음과 같다.
 
 ```jsx
 // const {author, } = props
@@ -255,11 +259,10 @@ class MyName extends Component {
 }
 
 function MyName(props) {
-	const { name = '기본이름' } = props; // default parameter
+  const { name = '기본이름' } = props; // default parameter
 
-	return (
-
- );
+  return (
+  );
 }
 
 MyName.defaultProps = {
