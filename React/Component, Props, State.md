@@ -296,7 +296,6 @@ class Clock extends React.Component {
     );
   }
 	
-	// 
 
 	// (6) <Clock />이 DOM에서 삭제되었다면 componentWillUnmount() 생명주기 메서드가 실행된다.
   componentWillUnmount() {
