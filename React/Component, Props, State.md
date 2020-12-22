@@ -35,7 +35,7 @@ ReactDOM.render(
 
 ## 1) Component 종류
 
-React Component 에는 `Function Component`와 `Class Component`가 있다. 이  Component들의 가장 큰 차이점은 `LifeCycle`과 `State`이다. (추후에 다룰 예정)
+React Component 에는 `Function Component`와 `Class Component`가 있다. 이 Component들의 가장 큰 차이점은 `LifeCycle`과 `State`이다. (추후에 다룰 예정)
 
 ### (1) JavaScript 함수로 작성: `Function Component` //16버전?부터?
 
