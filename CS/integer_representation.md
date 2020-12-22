@@ -4,7 +4,7 @@
 
 ![img](http://ktword.co.kr/img_data/5048_1.jpg)
 
->   그림출처 : [정보통신기술용어해석](http://ktword.co.kr/abbr_view.php?nav=2&id=122&m_temp1=5048)
+>   그림 출처 : [정보통신기술용어해석](http://ktword.co.kr/abbr_view.php?nav=2&id=122&m_temp1=5048)
 
 컴퓨터는 위와 같이 수를 표현한다. 이때 2진수 자리 한 칸을 비트(bit; binary digit)라 한다.
 
