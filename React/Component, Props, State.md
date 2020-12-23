@@ -282,13 +282,13 @@ React 컴포넌트는 state를 통해 위 규칙을 위반하지 않고 사용�
 
 ```jsx
 class Clock extends React.Component {
-	// (2) <Clock />의 constructor가 호출된다. state도 초기화한다.
+  // (2) <Clock />의 constructor가 호출된다. state도 초기화한다.
   constructor(props) { 
     super(props);
     this.state = {date: new Date()};
   }
 
-	// (4) (3)이 처음 실행된 직후 componentDidMount() 생명주기 메서드가 실행된다. 
+  // (4) (3)이 처음 실행된 직후 componentDidMount() 생명주기 메서드가 실행된다. 
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
@@ -297,19 +297,19 @@ class Clock extends React.Component {
   }
 	
 
-	// (6) <Clock />이 DOM에서 삭제되었다면 componentWillUnmount() 생명주기 메서드가 실행된다.
+  // (6) <Clock />이 DOM에서 삭제되었다면 componentWillUnmount() 생명주기 메서드가 실행된다.
   componentWillUnmount() {
     clearInterval(this.timerID);
   }
 
-	// (5) setState() 메서드가 있으므로 새로운 state로 render() 메소드를 다시 호출한다. (this.state ~ 로 직접 수정하는게 아니다!)
+  // (5) setState() 메서드가 있으므로 새로운 state로 render() 메소드를 다시 호출한다. (this.state ~ 로 직접 수정하는게 아니다!)
   tick() {
     this.setState({
       date: new Date()
     });
   }
 
-	// (3) <Clock />의 render() 메서드를 호출한다. 화면에 표시할 내용이다. (2)에서 초기화된 state를 기반으로 화면에 Mount한다.
+  // (3) <Clock />의 render() 메서드를 호출한다. 화면에 표시할 내용이다. (2)에서 초기화된 state를 기반으로 화면에 Mount한다.
   render() {
     return (
       <div>
