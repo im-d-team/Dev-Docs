@@ -359,8 +359,8 @@ this.setState((state, props) => ({
   this.setState((state, props) => {
     return { 
      counter: state.counter + props.increment;
-}
-})
+    }
+  })
 });
 this.setState((state, props) => ({
   counter: state.counter + props.increment
