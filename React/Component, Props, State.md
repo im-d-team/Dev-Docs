@@ -231,7 +231,7 @@ function sum(a, b) {
 // 순수함수 X: 입력값 account를 변경하고 있다.
 function withdraw(account, amount) {
   account.total -= amount;
-	return {...account, total: account.total - amount}
+	return { ...account, total: account.total - amount }
 }
 
 // 매개변수, return 있고 매개변수를 직접 바꾸지 않는다.
