@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] EUNJIHA : [Tool/Package Manager](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Package%20Manager.md)
+
 - [x] Dae-Hwa : [CS/integer_representation](https://github.com/im-d-team/Dev-Docs/blob/master/CS/integer_representation.md)
 
 - [x] JegalEun : [Design_Pattern/JSP model](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/JSP%20model.md)
