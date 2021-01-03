@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] JegalEun : [Network/3-way handshaking & 4-way handshaking](https://github.com/im-d-team/Dev-Docs/blob/master/Network/3-way%20handshaking%20&%204-way%20handshaking.md)
+
 - [x] Dae-Hwa : [CS/methods_in_IPC](https://github.com/im-d-team/Dev-Docs/blob/master/CS/methods_in_IPC.md)
 
 - [x] EUNJIHA : [Tool/Package Manager](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Package%20Manager.md)
