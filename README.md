@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [CS/methods_in_IPC](https://github.com/im-d-team/Dev-Docs/blob/master/CS/methods_in_IPC.md)
+
 - [x] EUNJIHA : [Tool/Package Manager](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Package%20Manager.md)
 
 - [x] Dae-Hwa : [CS/integer_representation](https://github.com/im-d-team/Dev-Docs/blob/master/CS/integer_representation.md)
