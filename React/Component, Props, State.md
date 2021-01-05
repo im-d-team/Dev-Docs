@@ -151,7 +151,6 @@ function Comment(props) {
 전체 코드는 다음과 같다.
 
 ```jsx
-// const {author, } = props
 function formatDate(date) {
   return date.toLocaleDateString();
 }
@@ -236,7 +235,6 @@ function withdraw(account, amount) {
 
 // 매개변수, return 있고 매개변수를 직접 바꾸지 않는다.
 // 이러면 새로운 객체가 리턴 된다. 
-// ES6, 인사이드 자바스크립트
 const obj = withdraw(account, amount);
 
 ```
@@ -341,7 +339,7 @@ this.setState({comment: 'Hello'});
 
 this.state는 constructor 내에서만 사용할 수 있다.
 
-### (2) State 업데이트는 비동기적일 수도 있다. // 스레드 safe하지 않다
+### (2) State 업데이트는 비동기적일 수도 있다.
 
 React는 성능을 위해 여러 setState() 호출을 단일 업데이트로 한꺼번에 처리할 수 있다. 따라서 **직전 값을 기반으로 업데이트를 해야할 경우**에는 setState(객체) 가 아닌 setState(함수) 를 사용하자. setState(함수) 는 첫번째 인자로 이전 state 첫 번째 인자를, 두번째 인자로 업데이트가 적용된 시점의 props를 받는다.
 
