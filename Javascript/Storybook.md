@@ -2,13 +2,13 @@
 
 프론트엔드에서 컴포넌트 단위로 개발을 진행하는 경우 해당 컴포넌트의 UI를 독립적으로 개발 및 테스트하며 작업하고자 한다면 어떻게 해야 할까? Storybook을 사용하면 원하는 방식으로 작업 할 수 있다.
 
-Storybook은 프론트엔드 UI 컴포넌트 개발 도구이다. React, Vue, Angular 등 컴포넌트 단위로 개발을 하는 프레임워크(혹은 라이브러리)에 적용하여 사용해볼 수 있다.
+Storybook은 프론트엔드 UI 컴포넌트 개발 도구이다. React, Vue, Angular 등 컴포넌트 단위로 개발을 하는 프레임워크(혹은 라이브러리)에 적용하여 사용해볼 수 있다. Storybook을 사용하면 UI 테스트를 손쉽게 할 수 있으므로 테스팅 툴로서 많이 사용되고 있다.
 
 ![Storybook 지원 범위](https://user-images.githubusercontent.com/16266103/103472343-e1651800-4dcf-11eb-959e-abd2411b3b5f.png)
 
 > 출처: [Storybook 공식 홈페이지](https://storybook.js.org/)
 
-React를 기준으로 CRA(Create React App) 환경에서 Storybook 구조와 사용법에 관해서 설명해보도록 하겠다.
+React를 기준으로 CRA(Create React App)환경에서 Storybook 구조와 사용법에 관해서 설명해보도록 하겠다.
 
 ## Storybook 시작해보기
 
@@ -51,7 +51,7 @@ Storybook을 빌드하기 위해서는 `build-storybook` 명령어를 사용할 
 
 ## Storybook 작성해보기
 
-CRA(Creat React App) 으로 React 프로젝트를 생성할 경우 자동으로 만들어지는 App.js를 Storybook에서 확인해볼 수 있도록 해보겠다.
+CRA(Creat React App)으로 React 프로젝트를 생성할 경우 자동으로 만들어지는 App.js를 Storybook에서 확인해볼 수 있도록 해보겠다.
 
 Storybook에 각 컴포넌트를 연결하기 위해서는 `<filename>.stories.js` 와 같이 파일명과 확장자명 사이에 `stories` 문자열을 comma(`.`) 사이에 넣어주면 된다. Storybook 실행 환경 설정 시 만들어지는 `./src/stories` 폴더를 보면 `Button.stories.js`, `Header.stories.js`, `Page.stories.js` 이렇게 세 개의 예시를 확인해볼 수 있다.
 
