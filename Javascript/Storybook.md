@@ -51,7 +51,7 @@ Storybook을 빌드하기 위해서는 `build-storybook` 명령어를 사용할 
 
 ## Storybook 작성해보기
 
-CRA(Creat React App)으로 React 프로젝트를 생성할 경우 자동으로 만들어지는 App.js를 Storybook에서 확인해볼 수 있도록 해보겠다.
+CRA(Creat React App)으로 React 프로젝트를 생성할 경우 자동으로 만들어지는 App.js를 Storybook에서 확인해볼 수 있도록 해보자.
 
 Storybook에 각 컴포넌트를 연결하기 위해서는 `<filename>.stories.js` 와 같이 파일명과 확장자명 사이에 `stories` 문자열을 comma(`.`) 사이에 넣어주면 된다. Storybook 실행 환경 설정 시 만들어지는 `./src/stories` 폴더를 보면 `Button.stories.js`, `Header.stories.js`, `Page.stories.js` 이렇게 세 개의 예시를 확인해볼 수 있다.
 
@@ -83,7 +83,7 @@ export const Default = Template.bind({});
 
 ![Main 계층 추가 후 Storybook 실행 화면](https://user-images.githubusercontent.com/16266103/103472350-e7f38f80-4dcf-11eb-8e1b-661e0a4394cc.png)
 
-이번에는 `App.js`에 Props를 전달할 수 있도록 수정하고 Props에 따른 Storybook 항목을 생성해보도록 하겠다.
+이번에는 `App.js`에 Props를 전달할 수 있도록 수정하고 Props에 따른 Storybook 항목을 생성해보자.
 
 ```jsx
 /* App.js */
