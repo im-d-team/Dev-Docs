@@ -136,6 +136,9 @@ Java의 Repository(Maven Central)에는 개인이 만든 Package를 추가하는
 
 [`npm`](https://www.npmjs.com/)(Node Package Manager)은 JavaScript의 Package Manager이다. 이는 세계에서 가장 큰 소프트웨어 Repository이기도 하다. npm은 jQuery, Bootstrap, React, Angular 등과 같은 인기 있는 Package들을 갖고 있다. Github 저장소를 npm과 연결하면 자신의 프로젝트를 npm에 등록할 수도 있다. JavaScript 프론트엔드든 Node.js 백엔드든 어떤 환경에서도 npm Package를 동시에 사용할 수 있다.
 
+cf. 패키지 매니저, `yarn`  
+`yarn`은 `npm`의 일관성, 보안, 성능과 관련한 이슈를 개선하고자 페이스북에서 만든 패키지 관리자이다. [이곳](https://classic.yarnpkg.com/en/)을 참고하자.
+
 ### 4. PHP
 
 **Manager**: `Composer`
