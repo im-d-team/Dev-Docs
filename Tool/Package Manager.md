@@ -14,7 +14,7 @@ javascript의 npm, java의 maven, gradle, php의 composer, python의 pip등 외�
 
 **Repository**: `PyPI`
 
-pip, conda는 Python에서 사용할 수 있는 Package Managers이다. 이 둘은 비슷한 개념으로 많이 사용되는데 명확하게는 서로 다른 목적을 가지고 있다. 다음 표를 살펴보자. 자세한 설명은 [이곳](https://www.anaconda.com/blog/understanding-conda-and-pip)을 참고하면 된다.
+pip, conda는 Python에서 사용할 수 있는 Package Manager이다. 이 둘은 비슷한 개념으로 많이 사용되는데 명확하게는 서로 다른 목적을 가지고 있다. 다음 표를 살펴보자. 자세한 설명은 [이곳](https://www.anaconda.com/blog/understanding-conda-and-pip)을 참고하면 된다.
 
 <img width="719" alt="Comparison of conda and" src="https://user-images.githubusercontent.com/43839938/103164402-2c21e580-484e-11eb-9892-320d23658459.png">
 
