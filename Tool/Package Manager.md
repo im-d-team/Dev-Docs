@@ -125,7 +125,8 @@ pip는 python software에 한정되어 있는 반면 conda는 C, C++ libraries �
     
 **2. 빌드 시 속도가 더 빠르다.**(`Gradle`은 캐시를 사용하기 때문에 반복해서 빌드하게 되면 차이가 더 커진다.) 
 
- Java의 Repository(Maven Central)에는 개인이 만든 Package를 추가하는 과정이 [복잡하다](https://jojoldu.tistory.com/161). 따라서 Nexus와 같은 사설 Repository를 [사용하기도](https://dev-youngjun.tistory.com/105) 한다.
+**3. 기타**   
+Java의 Repository(Maven Central)에는 개인이 만든 Package를 추가하는 과정이 [복잡하다](https://jojoldu.tistory.com/161). 따라서 Nexus와 같은 사설 Repository를 [사용하기도](https://dev-youngjun.tistory.com/105) 한다.
 
 ### 3. JavaScript
 
