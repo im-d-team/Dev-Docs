@@ -147,7 +147,7 @@ PHP의 Package Manager는 [`Composer`](https://getcomposer.org/), Repository는 
 
 Package Manager, Repository를 통해서 여러 외부 라이브러리들을 사용해보았다면, 이제 여러분이 만들어 볼 차례다!
 
-종속성, 패키지 이름, 작성자, 태그 / 키워드 및 버전 번호 등을 지정해서 Package를 만들고 Repository에 등록해보자. 다른 사람들은 여러분들의 라이브러리를 사용한다는 것, 얼마나 아름다운가? 이로써 개발자는 Package를 사용하고 구현하는 방법에 대해 생각할 수 있고 더 나은 재사용 가능한 Package를 생성할 수 있도록 생각을 넓혀 줄 것이다. 파이팅!
+종속성, 패키지 이름, 작성자, 태그 / 키워드 및 버전 번호 등을 지정해서 Package를 만들고 Repository에 등록해보자. 다른 사람들이 여러분들의 라이브러리를 사용한다는 것, 얼마나 아름다운가? 이로써 개발자는 Package를 사용하고 구현하는 방법에 대해 생각할 수 있고 더 나은 재사용 가능한 Package를 생성할 수 있도록 생각을 넓혀 줄 것이다. 파이팅!
 
 ### Reference
 
