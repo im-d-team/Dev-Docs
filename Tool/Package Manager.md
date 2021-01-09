@@ -91,9 +91,9 @@ pip는 python에서만 사용할 수 있는 반면 conda는 어떤 언어에든 
     </project>
     ```
 
-    2) `Gradle`의 build.gradle 예시 - `Gradle`역시 `Maven Central`을 레포지토리로 한다.
+2) `Gradle`의 build.gradle 예시 - `Gradle`역시 `Maven Central`을 레포지토리로 한다.
 
-    ```groovy
+```groovy
     buildscript {
         ext {
             springBootVersion = '1.5.4.RELEASE'
