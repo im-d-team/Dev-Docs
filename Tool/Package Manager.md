@@ -19,7 +19,7 @@ pip, conda는 Python에서 사용할 수 있는 Package Manager이다. 이 둘�
 ![Comparison of conda and](https://user-images.githubusercontent.com/43839938/103164402-2c21e580-484e-11eb-9892-320d23658459.png)
 
 
-pip는 python에서만 사용할 수 있는 반면 conda는 어떤 언어에든 사용할 수 있다.
+pip는 python software에 한정되어 있는 반면 conda는 C, C++ libraries 등도 포괄한다.
 
 또 하나의 핵심 차이는 두 개 모두 각 프로젝트 단위로 라이브러리를 설치하도록 하는 '가상환경' 을 사용할 수 있지만 접근 방식이 조금 다르다는 점이다. conda의 경우 '가상환경'이 내장되어 있지만, pip는 virtualenv등을 따로 설치해서 사용해야 한다.
 
