@@ -89,7 +89,7 @@ pip는 python에서만 사용할 수 있는 반면 conda는 어떤 언어에든 
        </build>
 
     </project>
-    ```
+```
 
 2) `Gradle`의 build.gradle 예시 - `Gradle`역시 `Maven Central`을 레포지토리로 한다.
 
@@ -121,7 +121,7 @@ pip는 python에서만 사용할 수 있는 반면 conda는 어떤 언어에든 
         compile('org.springframework.boot:spring-boot-starter')
         testCompile('org.springframework.boot:spring-boot-starter-test')
     }
-    ```
+```
     
 **2. 빌드 시 속도가 더 빠르다.**(`Gradle`은 캐시를 사용하기 때문에 반복해서 빌드하게 되면 차이가 더 커진다.) 
 
