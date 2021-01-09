@@ -1,6 +1,6 @@
 # Package Manager
 
-javascript의 npm, java의 maven, gradle, php의 composer, python의 pip등 외부 라이브러리를 불러오기 위해서 사용했던 Package Manager에 대해 알아보자.
+javascript의 npm, java의 maven, gradle, php의 composer, python의 pip등 외부 라이브러리를 관리하기 위해서 사용했던 Package Manager에 대해 알아보자.
 
 ## Package Manager란 무엇인가?
 
