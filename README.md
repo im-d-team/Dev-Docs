@@ -155,6 +155,7 @@
 
 </details>
 
+<details>
 <summary> 2020년 7월 </summary>
 
 #### 07월 26일
