@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] EUNJIHA : [Java/JPA](https://github.com/im-d-team/Dev-Docs/blob/master/Java/JPA.md)
+
 - [x] SeonHyungJo : [React/SWR](https://github.com/im-d-team/Dev-Docs/blob/master/React/SWR.md)
 
 - [x] dididy : [Javascript/Storybook](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Storybook.md)
