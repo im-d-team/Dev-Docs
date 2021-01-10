@@ -57,65 +57,79 @@
 ---
 
 ### 📅 History
-- [x] EUNJIHA : [Java/JPA](https://github.com/im-d-team/Dev-Docs/blob/master/Java/JPA.md)
 
+<!--</details>-->
+
+<!--<details>
+<summary> 2021년 1월 </summary>-->
+
+#### 01월 10일
+
+- [x] EUNJIHA : [Java/JPA](https://github.com/im-d-team/Dev-Docs/blob/master/Java/JPA.md)
 - [x] SeonHyungJo : [React/SWR](https://github.com/im-d-team/Dev-Docs/blob/master/React/SWR.md)
 
-- [x] dididy : [Javascript/Storybook](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Storybook.md)
+#### 01월 03일
 
-- [x] JegalEun : [Network/3-way handshaking & 4-way handshaking](https://github.com/im-d-team/Dev-Docs/blob/master/Network/3-way%20handshaking%20&%204-way%20handshaking.md)
+- [ ] Dae-Hwa : [CS/methods_in_IPC](https://github.com/im-d-team/Dev-Docs/blob/master/CS/methods_in_IPC.md)
+- [ ] dididy : [Javascript/Storybook](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Storybook.md)
+- [ ] JegalEun : [Network/3-way handshaking & 4-way handshaking](https://github.com/im-d-team/Dev-Docs/blob/master/Network/3-way%20handshaking%20&%204-way%20handshaking.md)
 
-- [x] Dae-Hwa : [CS/methods_in_IPC](https://github.com/im-d-team/Dev-Docs/blob/master/CS/methods_in_IPC.md)
+<!--</details>-->
+
+<details>
+<summary> 2020년 12월 </summary>
+
+#### 12월 27일
 
 - [x] EUNJIHA : [Tool/Package Manager](https://github.com/im-d-team/Dev-Docs/blob/master/Tool/Package%20Manager.md)
 
-- [x] Dae-Hwa : [CS/integer_representation](https://github.com/im-d-team/Dev-Docs/blob/master/CS/integer_representation.md)
+</details>
 
-- [x] JegalEun : [Design_Pattern/JSP model](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/JSP%20model.md)
+<details>
+<summary> 2020년 11월 </summary>
 
-- [x] EUNJIHA : [React/Component, Props, State](https://github.com/im-d-team/Dev-Docs/blob/master/React/Component,%20Props,%20State.md)
+#### 11월 22일
 
 - [x] dididy : [Javascript/Web_Storage_API](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Web_Storage_API.md)
-
-
-<!--<details>
-<summary> 2020년 11월 </summary>-->
+- [x] JegalEun : [Design_Pattern/JSP model](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/JSP%20model.md)
+- [x] Dae-Hwa : [CS/integer_representation](https://github.com/im-d-team/Dev-Docs/blob/master/CS/integer_representation.md)
 
 #### 11월 08일
-- [ ] BKJang : [Javascript/OOP_of_JS](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/OOP_of_JS.md)
-- [ ] SeonHyungJo : [Browser/Cookie_Store](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie_Store.md)
+- [x] BKJang : [Javascript/OOP_of_JS](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/OOP_of_JS.md)
+- [x] SeonHyungJo : [Browser/Cookie_Store](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie_Store.md)
+- [x] EUNJIHA : [React/Component, Props, State](https://github.com/im-d-team/Dev-Docs/blob/master/React/Component,%20Props,%20State.md)
 
 #### 11월 01일
-- [ ] dididy : [CS/Bomb-Lab(1)](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Bomb-Lab(1).md)
-- [ ] Dae-Hwa : [CS/aspect-oriented-programming](https://github.com/im-d-team/Dev-Docs/blob/master/CS/aspect-oriented-programming.md)
-- [ ] JegalEun : [Network/congestion control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/congestion%20control.md)
+- [x] dididy : [CS/Bomb-Lab(1)](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Bomb-Lab(1).md)
+- [x] Dae-Hwa : [CS/aspect-oriented-programming](https://github.com/im-d-team/Dev-Docs/blob/master/CS/aspect-oriented-programming.md)
+- [x] JegalEun : [Network/congestion control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/congestion%20control.md)
 
-<!--</details>-->
+</details>
 
-<!--<details>
-<summary> 2020년 10월 </summary>-->
+<details>
+<summary> 2020년 10월 </summary>
 
 #### 10월 11일
-- [ ] Dae-Hwa : [Java/date-api-in-java](https://github.com/im-d-team/Dev-Docs/blob/master/Java/date-api-in-java.md)
-- [ ] SeonHyungJo : [Browser/Cookie](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie.md)
-- [ ] EUNJIHA : [Database/DB Connection Pool](https://github.com/im-d-team/Dev-Docs/blob/master/Database/DB%20Connection%20Pool.md)
+- [x] Dae-Hwa : [Java/date-api-in-java](https://github.com/im-d-team/Dev-Docs/blob/master/Java/date-api-in-java.md)
+- [x] SeonHyungJo : [Browser/Cookie](https://github.com/im-d-team/Dev-Docs/blob/master/Browser/Cookie.md)
+- [x] EUNJIHA : [Database/DB Connection Pool](https://github.com/im-d-team/Dev-Docs/blob/master/Database/DB%20Connection%20Pool.md)
 
-<!--</details>-->
+</details>
 
-<!--<details>
-<summary> 2020년 9월 </summary>-->
+<details>
+<summary> 2020년 9월 </summary>
 
 #### 09월 27일
 - [x] dididy : [Javascript/WebRTC](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/WebRTC.md)
-- [ ] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
-- [ ] JegalEun : [Network/Flow control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md)
+- [x] EUNJIHA : [Database/Query Builder ( Knex](https://github.com/im-d-team/Dev-Docs/blob/master/Database/Query%20Builder%20(%20Knex.js).md)
+- [x] JegalEun : [Network/Flow control](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md)
 
 #### 09월 13일
-- [ ] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
+- [x] BKJang : [React/ImmutableState](https://github.com/im-d-team/Dev-Docs/blob/master/React/ImmutableState.md)
 - [x] SeonHyungJo : [Node.js/make_meta_file.md](https://github.com/im-d-team/Dev-Docs/blob/master/Node.js/make_meta_file.md)
 - [x] Dae-Hwa : [CS/dependency-inversion-principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/dependency-inversion-principle.md)
 
-<!--</details>-->
+</details>
 
 <details>
 <summary> 2020년 8월 </summary>
@@ -141,13 +155,11 @@
 
 </details>
 
-<!--<details>
-<summary> 2020년 7월 </summary>-->
+<summary> 2020년 7월 </summary>
 
 #### 07월 26일
 
-
-- [ ] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1,%20MVC2.md)
+- [x] JegalEun : [Design_Pattern/MVC1, MVC2](https://github.com/im-d-team/Dev-Docs/blob/master/Design_Pattern/MVC1,%20MVC2.md)
 - [x] Dae-Hwa : [CS/liskov_substitution_principle](https://github.com/im-d-team/Dev-Docs/blob/master/CS/liskov_substitution_principle.md)
 - [x] SeonHyungJo : [Network/DHCP&DNS](https://github.com/im-d-team/Dev-Docs/blob/master/Network/DHCP&DNS.md)
 
@@ -162,7 +174,7 @@
 - [x] Dae-Hwa : [CS/grasp](https://github.com/im-d-team/Dev-Docs/blob/master/CS/grasp.md)
 - [x] SeonHyungJo : [Network/OSI7 Layer](https://github.com/im-d-team/Dev-Docs/blob/master/Network/OSI7%20Layer.md)
 
-<!--</details>-->
+</details>
 
 <details>
 <summary> 2020년 6월 </summary>
