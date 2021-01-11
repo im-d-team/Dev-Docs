@@ -53,7 +53,7 @@ Storybook을 빌드하기 위해서는 `build-storybook` 명령어를 사용할 
 
 CRA(Creat React App)으로 React 프로젝트를 생성할 경우 자동으로 만들어지는 App.js를 Storybook에서 확인해볼 수 있도록 해보자.
 
-Storybook에 각 컴포넌트를 연결하기 위해서는 `<filename>.stories.js` 와 같이 파일명과 확장자명 사이에 `stories` 문자열을 comma(`.`) 사이에 넣어주면 된다. Storybook 실행 환경 설정 시 만들어지는 `./src/stories` 폴더를 보면 `Button.stories.js`, `Header.stories.js`, `Page.stories.js` 이렇게 세 개의 예시를 확인해볼 수 있다.
+Storybook에 각 컴포넌트를 연결하기 위해서는 `<filename>.stories.js` 와 같이 파일명과 확장자명 사이에 `stories` 문자열을 dot(`.`) 사이에 넣어주면 된다. Storybook 실행 환경 설정 시 만들어지는 `./src/stories` 폴더를 보면 `Button.stories.js`, `Header.stories.js`, `Page.stories.js` 이렇게 세 개의 예시를 확인해볼 수 있다.
 
 이제 `./src/App.stories.js` 파일을 만들어보자
 
