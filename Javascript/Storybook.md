@@ -19,7 +19,7 @@ $ npx create-react-app <Project Directory>
 Storybook을 시작하기에 앞서 CRA(Create React App)으로 새로운 React 프로젝트를 생성해보도록 하자.
 
 ```bash
-cd <Project Directory>
+$ cd <Project Directory>
 $ npx sb init
 ```
 
@@ -32,7 +32,7 @@ $ npx sb init
 명령어 실행 후에 `package.json`에 storybook 실행 및 빌드를 위한 `script`가 추가되었으며 `devDependencies`에 storybook 관련 의존성이 추가되었음을 확인할 수 있다. 또한 `.storybook` 폴더와 src폴더 내부에 `stories` 폴더가 생성되었다.
 
 ```bash
-npm run storybook
+$ npm run storybook
 ```
 
 Storybook 실행 환경 설정이 끝난 후  `npm run storybook` 명령어를 사용하면 Storybook을 실행해볼 수 있다.
@@ -44,7 +44,7 @@ Storybook 실행 환경 설정이 끝난 후  `npm run storybook` 명령어를 �
 Storybook을 실행해보면 기존 프로젝트와 독립된 상태로 빌드되며 별도의 웹서버를 통해 실행되게 된다. 따라서 Storybook을 독립적으로 빌드하여 배포하는 것도 가능하다. 이러한 특성으로 UI 컴포넌트 테스트 외에도 UI 컴포넌트 문서화, QA 등에 유용하게 사용할 수 있다.
 
 ```bash
-npm run build-storybook
+$ npm run build-storybook
 ```
 
 Storybook을 빌드하기 위해서는 `build-storybook` 명령어를 사용할 수 있다. 해당 명령어를 실행할 경우 빌드 결과물인 `storybook-static` 폴더가 프로젝트 최상단에 생성된다.
