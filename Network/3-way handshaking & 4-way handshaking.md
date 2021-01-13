@@ -1,3 +1,4 @@
+# 3-way handshaking & 4-way handshaking
 이번 시간에는 TCP 통신에서 쓰이는 `3-way handShaking`과 `4-way handShaking`을 정리해보았다.
 
 # TCP
