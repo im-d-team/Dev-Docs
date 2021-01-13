@@ -62,7 +62,7 @@ SWR은 왜 나오게 되었으며, 왜 사용하게 되었나 간단한 예제�
 
 위와 같은 화면이 있다고 하자.
 
-Website에서는 Avatar와 Content 둘 다 user 데이터를 사용하는 것을 볼 수 있다. 예전부터 우리는 상위 컴포넌트 `useEffect`에서 Data Fetching하고 props를 통해서 하위 컴포넌트에 데이터를 전달하는 방식이었다. 
+Website에서는 Avatar와 Content 둘 다 user 데이터를 사용하는 것을 볼 수 있다. 예전부터 우리는 상위 컴포넌트 `useEffect`에서 Data Fetching하고 props를 통해서 하위 컴포넌트에 데이터를 전달하는 방식을 주로 사용하였다. 
 
 이러면 Data Fetching을 상위 컴포넌트에서 유지하고 모든 컴포넌트에 데이터를 props로 넘긴다. 새로운 데이터 또는 컴포넌트가 늘어나게 되면 다시 상위 컴포넌트의 구조를 바꾸고 하위 컴포넌트에서 필요한 데이터는 추가, 변경하여 하위 컴포넌트로 넘긴다.
 
@@ -246,4 +246,3 @@ function Avatar ({ id }) {
 
 - [SWR 공식사이트](https://swr.vercel.app)
 - [전역 상태 관리에 대한 단상 (stale-while-revalidate)](https://jbee.io/react/thinking-about-global-state/)
-
