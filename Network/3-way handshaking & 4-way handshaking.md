@@ -7,7 +7,7 @@ TCP는 OSI 7계층 중 **전송 계층**에서 사용하는 프로콜로서, 장
 
 ## TCP의 특징
 - 인터넷상에서 데이터를 메시지의 형태로 보내기 위해 `IP`와 함께 사용하는 프로토콜이다.
-- 연결형 서비스로 흐름제어 및 혼잡제어를 제공한다.
+- 연결형 서비스로 [흐름제어](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Flow%20control.md) 및 [혼잡제어](https://github.com/im-d-team/Dev-Docs/blob/master/Network/congestion%20control.md)를 제공한다.
 > 연결형 서비스란 `3-way handshaking`과정을 통해 연결을 설정하고, `4-way handshaking`을 통해 연결을 해제하는 것을 의미한다.
 - 높은 신뢰성을 보장한다.
 - UDP보다 속도가 느리다.
