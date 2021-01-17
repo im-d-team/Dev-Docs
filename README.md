@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [CS/union-find](https://github.com/im-d-team/Dev-Docs/blob/master/CS/union-find.md)
+
 
 <!--</details>-->
 
