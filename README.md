@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] SeonHyungJo : [React/React Server Components](https://github.com/im-d-team/Dev-Docs/blob/master/React/React%20Server%20Components.md)
+
 - [x] JegalEun : [Network/Switch](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Switch.md)
 
 - [x] Dae-Hwa : [CS/union-find](https://github.com/im-d-team/Dev-Docs/blob/master/CS/union-find.md)
