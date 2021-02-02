@@ -102,12 +102,12 @@ public Member find(String memberId) {
 
 ![객체 그래프 관계](https://user-images.githubusercontent.com/43839938/104115508-7d080280-5353-11eb-83ec-13ab581cb15b.jpeg)
 
-Layerd Architecture
+Layered Architecture
 ![layered architecture](https://user-images.githubusercontent.com/43839938/104115545-cf492380-5353-11eb-88de-a84b69391d3c.png)
 
 
 
-[Layerd Architecture](https://walbatrossw.github.io/etc/2018/02/26/etc-layered-architecture.html) 즉, 물리적으로는 계층을 잘 나눴다고 해도 실제 SQL이 어떻게 실행되었느냐에 따라서 Entity의 신뢰 문제가 생긴다.
+[Layered Architecture](https://walbatrossw.github.io/etc/2018/02/26/etc-layered-architecture.html) 즉, 물리적으로는 계층을 잘 나눴다고 해도 실제 SQL이 어떻게 실행되었느냐에 따라서 Entity의 신뢰 문제가 생긴다.
 
 ```sql
 SELECT M.*, T.*
