@@ -52,9 +52,9 @@ Album 객체를 ALBUM 테이블에 저장해야 할 때는 INSERT INTO ITEM, INS
 
 ### 2. 연관관계
 
-객체는 참조를 사용하고 member.getTeam();
+객체는 참조를 사용하고 `member.getTeam();`
 
-테이블은 외래 키를 사용한다. JOIN ON M.TEAM_ID = T.TEAM_ID
+테이블은 외래 키를 사용한다. `JOIN ON M.TEAM_ID = T.TEAM_ID`
 
 ![연관관계](https://user-images.githubusercontent.com/43839938/104115506-7c6f6c00-5353-11eb-8cff-52e37025b1cb.jpeg)
 
