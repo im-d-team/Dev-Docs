@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] Dae-Hwa : [Java/junit-setup](https://github.com/im-d-team/Dev-Docs/blob/master/Java/junit-setup.md)
+
 - [x] EUNJIHA : [iOS/Xcode](https://github.com/im-d-team/Dev-Docs/blob/master/iOS/Xcode.md)
 
 - [x] SeonHyungJo : [React/React Server Components](https://github.com/im-d-team/Dev-Docs/blob/master/React/React%20Server%20Components.md)
