@@ -46,10 +46,7 @@ class SomeClassTest {
 만약 테스트 케이스가 늘어난다면 `@CSVSource` 어노테이션의 매개변수로 값만 추가해주면 된다.
 
 이외에도 `ParameterizedTest` 에 매개변수를 넣는 방법이 여러 가지가 있는데 그 중 `MethodSource` 를 추천한다.
-[@MethodSource - JUnit 5 User Guide
-
-
-](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests-sources-MethodSource) 에 나와있는 설명을 보고 따라하면 금방 익힐 수 있을 것이다.
+[@MethodSource - JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests-sources-MethodSource) 에 나와있는 설명을 보고 따라하면 금방 익힐 수 있을 것이다.
 
 > https://www.baeldung.com/parameterized-tests-junit-5 에도 설명이 잘 나와있다.
 
