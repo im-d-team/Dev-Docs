@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] dididy : [Javascript/Jest](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Jest.md)
+
 - [x] Dae-Hwa : [Java/junit-setup](https://github.com/im-d-team/Dev-Docs/blob/master/Java/junit-setup.md)
 
 - [x] EUNJIHA : [iOS/Xcode](https://github.com/im-d-team/Dev-Docs/blob/master/iOS/Xcode.md)
