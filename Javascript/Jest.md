@@ -180,8 +180,8 @@ expect 뒤에 붙는 `.toXxx` 부분이 Test Matcher이다. Test Matcher는 검�
 
 JavaScript 테스트 코드를 Jest의 Matcher로 어떻게 작성할 수 있는지 기본적인 부분을 다뤄보았다. 추후에 함수와 모듈을 mocking 하거나 비동기 테스트 진행 혹은 테스트 전/후처리에 대해서 작성해볼 계획이다.
 
-리액트에 Jest(+ React Testing Library)를 이용해 유닛 테스트를 하는 방법은 [프런트엔드에서 TDD가 가능하다는 것을 보여드립니다.](https://www.youtube.coM/watch? v=L1dtkLeIz-M) 영상에서 자세히 설명되어 있다.
+리액트에 Jest(+ React Testing Library)를 이용해 유닛 테스트를 하는 방법은 [프런트엔드에서 TDD가 가능하다는 것을 보여드립니다.](https://www.youtube.coM/watch?v=L1dtkLeIz-M) 영상에서 자세히 설명되어 있다.
 
 #### Reference
 
-- https://jestjs.io/en/
+- [Jest 공식문서](https://jestjs.io/en/)
