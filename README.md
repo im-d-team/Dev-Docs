@@ -57,6 +57,8 @@
 ---
 
 ### 📅 History
+- [x] dididy : [CS/OS](https://github.com/im-d-team/Dev-Docs/blob/master/CS/OS.md)
+
 - [x] SeonHyungJo : [Security/Response_Header_Security](https://github.com/im-d-team/Dev-Docs/blob/master/Security/Response_Header_Security.md)
 
 - [x] Dae-Hwa : [CS/플로이드-와샬-알고리즘](https://github.com/im-d-team/Dev-Docs/blob/master/CS/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
