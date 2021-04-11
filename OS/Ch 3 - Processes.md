@@ -1,12 +1,10 @@
-# Operating System
-
-## **3장 - Processes**
+# **3장 - Processes**
 
 운영체제의 주요 관심사는 사용자 프로그램 실행이지만 커널 내부가 아닌 사용자 공간에서 가장 잘 수행되는 다양한 시스템 작업도 고려되어야 한다. 따라서 시스템은 프로세스 모음, 사용자 코드 실행, 운영체제 코드 실행으로 구성된다. 이 장에서는 프로세스의 개념, 운영 체제에서 프로세스의 표현 방식 및 작동 방식에 대해 설명한다.
 
-### **3.1 Process Concept**
+## **3.1 Process Concept**
 
-**3.1.1 The Process**
+### **3.1.1 The Process**
 
 - 프로세스는 메모리에 실행중인 프로그램이다.
   - 프로그램은 디스크에 저장된 명령 목록을 의미하므로 프로세스와 다르다.
@@ -26,7 +24,7 @@
   - 함수를 호출할 때마다 함수 매개 변수, 로컬 변수 및 반환 주소를 포함하는 activation record가 스택에 push된다. 컨트롤이 함수에서 반환되면 activation record가 스택에서 pop 된다.
   - 메모리가 동적으로 할당될 때 힙이 증가하고 메모리가 시스템에 반환되면 힙이 축소된다. 운영체제는 힙 섹션과 스택 섹션이 겹치지 않도록 해준다.
 
-**3.1.2 Process State**
+### **3.1.2 Process State**
 
 ![Diagram of Process State](https://user-images.githubusercontent.com/16266103/113502910-e1f58200-9569-11eb-8f7b-92f772757083.png)
 
@@ -41,7 +39,7 @@
   - Terminated : 프로세스 실행 종료
 - 운영체제에 따라 상태의 이름이 다를 수 있다. 한 번에 하나의 프로세스만 프로세서의 코어에서 실행할 수 있다는 것을 알아야 한다.
 
-**3.1.3 Process Control Block**
+### **3.1.3 Process Control Block**
 
 ![Process Control Block (PCB)](https://user-images.githubusercontent.com/16266103/113502912-e6219f80-9569-11eb-90e1-3600f56a6cdf.png)
 
@@ -75,7 +73,7 @@
   - ...
 - Context Switch를 하는 주체는 OS 스케쥴러이다.
 
-**3.1.4 Threads**
+### **3.1.4 Threads**
 
 - 프로세스가 실행될 때 1개의 스레드를 포함하고 있다.
 - 스레드를 사용하면 하나의 프로세스에서 여러개의 작업을 실행할 수 있다.
