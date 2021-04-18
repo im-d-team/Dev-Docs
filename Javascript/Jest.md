@@ -68,113 +68,113 @@ expect 뒤에 붙는 `.toXxx` 부분이 Test Matcher이다. Test Matcher는 검�
 
 - `.toBe()` : 검증 대상과 기대 결과가 동일한지를 검증한다. 객체를 검증해야 하는 경우에는 사용하지 못한다.
 
-  ```javascript
-  test('two plus two is four', () => {
-    expect(2 + 2).toBe(4);
-  });
-  ```
+```javascript
+test('two plus two is four', () => {
+  expect(2 + 2).toBe(4);
+});
+```
 
 - `.toEqual()` : 위와 마찬가지로 검증 대상과 기대 결과가 동일한지를 검증한다. 객체, 배열도 재귀적으로 확인하므로 검증 가능하다.
 
-  ```javascript
-  test('object assignment', () => {
-    const data = { one: 1 };
-    data['two'] = 2;
-    expect(data).toEqual({ one: 1, two: 2 });
-  });
+```javascript
+test('object assignment', () => {
+  const data = { one: 1 };
+  data['two'] = 2;
+  expect(data).toEqual({ one: 1, two: 2 });
+});
   ```
 
 - `.toBeTruthy()`, `.toBeFalsy()` : 검증 대상이 true 인지, false 인지 검증한다.
 
-  ```javascript
-  test('null', () => {
-    const n = null;
-    expect(n).toBeNull();
-    expect(n).toBeDefined();
-    expect(n).not.toBeUndefined();
-    expect(n).not.toBeTruthy();
-    expect(n).toBeFalsy();
-  });
+```javascript
+test('null', () => {
+  const n = null;
+  expect(n).toBeNull();
+  expect(n).toBeDefined();
+  expect(n).not.toBeUndefined();
+  expect(n).not.toBeTruthy();
+  expect(n).toBeFalsy();
+});
 
-  test('undefined', () => {
-    const u = undefined;
-    expect(u).not.toBeNull();
-    expect(u).not.toBeDefined();
-    expect(u).toBeUndefined();
-    expect(u).not.toBeTruthy();
-    expect(u).toBeFalsy();
-  });
+test('undefined', () => {
+  const u = undefined;
+  expect(u).not.toBeNull();
+  expect(u).not.toBeDefined();
+  expect(u).toBeUndefined();
+  expect(u).not.toBeTruthy();
+  expect(u).toBeFalsy();
+});
 
-  test('zero', () => {
-    const z = 0;
-    expect(z).not.toBeNull();
-    expect(z).toBeDefined();
-    expect(z).not.toBeUndefined();
-    expect(z).not.toBeTruthy();
-    expect(z).toBeFalsy();
-  });
-  ```
+test('zero', () => {
+  const z = 0;
+  expect(z).not.toBeNull();
+  expect(z).toBeDefined();
+  expect(z).not.toBeUndefined();
+  expect(z).not.toBeTruthy();
+  expect(z).toBeFalsy();
+});
+```
 
 - `.toHaveLength()` : 검증 대상의 배열의 길이를 검증한다.
 
-  ```javascript
-  const shoppingList = [
-    'diapers',
-    'kleenex',
-    'trash bags',
-    'paper towels',
-    'beer',
-  ];
+```javascript
+const shoppingList = [
+  'diapers',
+  'kleenex',
+  'trash bags',
+  'paper towels',
+  'beer',
+];
 
-  test('the number of shopping list', () => {
-    expect(shoppingList).toHaveLength(5);
-  });
-  ```
+test('the number of shopping list', () => {
+  expect(shoppingList).toHaveLength(5);
+});
+```
 
 - `.toContain()` : 검증 대상의 배열에 특정 원소가 있는지를 검증한다.
 
-  ```javascript
-  const shoppingList = [
-    'diapers',
-    'kleenex',
-    'trash bags',
-    'paper towels',
-    'beer',
-  ];
+```javascript
+const shoppingList = [
+  'diapers',
+  'kleenex',
+  'trash bags',
+  'paper towels',
+  'beer',
+];
 
-  test('the shopping list has beer on it', () => {
-    expect(shoppingList).toContain('beer');
-    expect(new Set(shoppingList)).toContain('beer');
-  });
-  ```
+test('the shopping list has beer on it', () => {
+  expect(shoppingList).toContain('beer');
+  expect(new Set(shoppingList)).toContain('beer');
+});
+```
 
 - `.toMatch()` : 검증 대상에 대해 정규식 기반으로 검증이 필요할 경우 사용한다.
 
-  ```javascript
-  test('there is no I in team', () => {
-    expect('team').not.toMatch(/I/);
-  });
+```javascript
+test('there is no I in team', () => {
+  expect('team').not.toMatch(/I/);
+});
 
-  test('but there is a "stop" in Christoph', () => {
-    expect('Christoph').toMatch(/stop/);
-  });
-  ```
+test('but there is a "stop" in Christoph', () => {
+  expect('Christoph').toMatch(/stop/);
+});
+```
 
 - `.toThrow()` : exception 발생 여부를 검증한다. 문자열 혹은 정규식을 인자로 넘기면 에러 메시지와 동일한지 검증한다.
 
-  ```javascript
-  function compileAndroidCode() {
-    throw new Error('you are using the wrong JDK');
-  }
+```javascript
+function compileAndroidCode() {
+  throw new Error('you are using the wrong JDK');
+}
 
-  test('compiling android goes as expected', () => {
-    expect(compileAndroidCode).toThrow();
-    expect(compileAndroidCode).toThrow(Error);
+test('compiling android goes as expected', () => {
+  expect(compileAndroidCode).toThrow();
+  expect(compileAndroidCode).toThrow(Error);
 
-    expect(compileAndroidCode).toThrow('you are using the wrong JDK');
-    expect(compileAndroidCode).toThrow(/JDK/);
-  });
-  ```
+  expect(compileAndroidCode).toThrow('you are using the wrong JDK');
+  expect(compileAndroidCode).toThrow(/JDK/);
+});
+```
 
 ## 마무리하며
 
