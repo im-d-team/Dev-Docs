@@ -181,6 +181,7 @@ Swapping은 일반적으로 메모리가 *오버커밋*되어 해제되어야하
 
 <details>
 <summary> 질문(2021.04.11) </summary>
+  
 - Pure Overhead에 대해서
 - 레지스터가 빨라요? 메모리가 빨라요?
   - 레지스터요.
@@ -326,6 +327,7 @@ int main()
 
 <details>
 <summary> 질문(2021.04.18) </summary>
+  
 - PID는 PCB에 들어있다.
   - 맞다. 리눅스의 경우 C 구조체 안에 들어있다.
 - 3.3.1의 fork, exec flow chart 그림은 모든 경우에 대한 제네릭한 경우는 아니다.
