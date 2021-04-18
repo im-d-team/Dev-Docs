@@ -31,11 +31,11 @@ Jest를 사용해 간단한 Unit Test를 작성할 수 있다. 이번 시간에 
 Jest는 node 환경이 구성되어 있는 경우 아래와 같이 npm 명령을 통해 설치할 수 있다. 이후 package.json 파일의 test 스크립트를 `jest`로 수정해 준 뒤 `npm run test` 명령어로 jest를 실행할 수 있다. jest 옵션으로 `--watchAll --coverage`를 사용하게 되면 파일 변경 시 테스트를 다시 실행해 주며 모든 파일에 대한 커버리지 확인이 가능하다.
 
 ```shell
-mkdir jest-test
-cd jest-test
-npm init -y
+$ mkdir jest-test
+$ cd jest-test
+$ npm init -y
 
-npm i -D jest
+$ npm i -D jest
 // package.json
 ...
   "scripts": {
