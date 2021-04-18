@@ -180,6 +180,116 @@ Swapping은 일반적으로 메모리가 *오버커밋*되어 해제되어야하
 - 실제로 background 응용 프로그램이 일시 중단된 경우에도 service 계속 실행된다. service에는 사용자 인터페이스가 없고 메모리 사용량이 적으므로 모바일 환경에서 멀티 태스킹을 위한 효율적인 기술을 제공한다.
 
 
+## **3.3 Operations on Processes**
+
+대부분의 시스템에서 프로세스는 동시에 실행될 수 있고, 이들은 동적으로 생성되거나 삭제될 수 있다. 따라서 시스템은 프로세스의 생성, 삭제에 관한 매커니즘을 제공할 수 있어야한다.
+
+### **3.3.1 Process Creation**
+
+- 시스템의 실행 과정에서 프로세스는 여러 개의 새 프로세스를 생성할 수 있다. 부모 프로세스는 자식 프로세스를 생성하게 되고, 이 과정을 거쳐 프로세스 트리를 형성할 수 있다.
+- 일반적으로 프로세스는 고유한 번호인 Process Indentifier(PID)를 통해 식별되고 관리된다.
+
+![fork, exec flow chart](https://user-images.githubusercontent.com/24209005/115135028-44617e80-a050-11eb-9171-3e539e0c8cde.png)
+
+>  출처: Operating System Concepts 10th Edition
+
+- `fork()`시스템 콜을 호출하면 부모 프로세스는 본인과 동일한 자식 프로세스를 생성한다.
+- 자식 프로세스는 `exec()`시스템 콜을 통해 본인의 메모리 공간을 새로운 프로그램으로 대체한다.
+- 부모 프로세스는 `wait()`시스템 콜을 호출하고 자식 프로세스가 종료될 때까지 기다린다.
+
+#### A Tree of Processes in Linux
+
+![Process Tree](https://user-images.githubusercontent.com/24209005/115135057-6529d400-a050-11eb-980c-44008257e38f.png)
+
+>  출처: Operating System Concepts 10th Edition
+
+- systemd 프로세스는 루트 프로세스 역할을 하며 시스템이 부팅 될 때 생성되는 첫 번째 사용자 프로세스다.
+- logind 프로세스는 직접 로그온하는 클라이언트를 관리한다.
+- sshd 프로세스는 ssh를 사용하여 시스템에 연결하는 클라이언트를 관리한다.
+
+#### C Program Forking Separate Process
+
+```c
+#include <sys/types.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+  pid_t pid;
+
+  /* fork a child process */
+  pid = fork();
+
+  if (pid < 0) { /* error occurred */
+    fprintf(stderr, "Fork Failed");
+    return 1;
+  }
+  else if (pid == 0) { /* child process */
+    execlp("/bin/ls", "ls", NULL);
+  }
+  else { /* parent process */
+    /* parent will wait for the child to complete */
+    wait(NULL);
+    printf("Child Complete");
+  }
+
+  return 0;
+}
+```
+
+>  소스 코드 출처: Operating System Concepts 10th Edition
+
+- `fork()`시스템 콜은 부모 프로세스에겐 자식 프로세스의 PID를, 자식 프로세스에겐 0을 반환한다.
+- 그리고 반환된 pid 값을 통해 자식 프로세스의 `exec()`시스템 콜 호출 여부와 부모 프로세스의 `wait()`시스템 콜 호출 여부를 결정한다.
+- 부모 프로세스와 자식 프로세스는 동시에 동작한다.
+
+### **3.3.2 Process Termination**
+
+일반적인 프로세스의 종료 과정은 다음과 같다.
+
+- 자식 프로세스는 종료 시에 `exit()`시스템 콜을 호출한다.
+- 자식 프로세스에서 부모 프로세스로 상태 데이터와 PID를 반환한다.
+- 프로세스의 리소스는 시스템에 의해 할당 해제됩니다.
+
+또 다른 방법으로 부모 프로세스는 `abort()`시스템 콜을 호출하여 자식 프로세스의 실행을 종료할 수 있다. 이와 같이 종료하는 경우는 다음과 같다.
+
+- 자식 프로세스가 할당 된 리소스를 초과했을 때
+- 자식 프로세스에게 할당 된 작업이 더 이상 불필요할 때
+- 부모 프로세스가 종료되었을 때
+
+부모 프로세스는 `wait()`시스템 콜을 통해 자식 프로세스의 종료를 기다리게 되는데 이 때 종료 된 프로세스는 부모 프로세스에게 상태 정보와 PID를 반환한다. 이 때 다음과 같은 문제가 발생할 수 있다.
+
+#### Zombie Process
+
+![Zombie Process](https://user-images.githubusercontent.com/24209005/115135108-b0dc7d80-a050-11eb-84ef-3f10ab21bd04.png)
+
+좀피 프로세스는 대기중인 부모 프로세스가 없는 경우(`wait()`시스템 콜을 호출하지 않은 경우)에 해당된다. 즉, 자식 프로세스가 자식 프로세스의 종료 상태를 회수하지 않았을 경우 자식 프로세스는 좀비 프로세스가 된다.
+
+자식 프로세스가 종료된 이후에 부모 프로세스가 자식 프로세스의 상태를 알고 싶을 수 있기 때문에 커널은 자식 프로세스가 종료되더라도 최소한의 정보(프로세스 ID, 프로세스 종료 상태 등)를 가지고 있게 된다.
+
+부모 프로세스가 좀비 프로세스의 종료상태를 `wait()`시스템 콜을 통해 회수하게 되면 좀비 프로세스는 제거된다.
+
+#### Orphan Process
+
+![Orphan Process pt 자료](https://user-images.githubusercontent.com/24209005/115135117-c0f45d00-a050-11eb-9beb-3a72cdb6ce7b.png)
+
+`wait()`시스템 콜을 호출하지 않고 부모 프로세스가 종료 된 경우 해당 프로세스는 고아 프로세스가 된다. 즉, 부모 프로세스가 자식 프로세스보다 먼저 종료되면 자식 프로세스는 고아 프로세스가 된다.
+
+부모 프로세스가 자식 프로세스보다 먼저 종료되면 init 프로세스가 자식 프로세스 새로운 부모 프로세스가 된다.
+종료되는 프로세스가 발생할 때 커널은 이 프로세스가 누구의 부모 프로세스인지 확인한 후, 커널이 자식 프로세스의 PPID를 init 프로세스의 PID(1)로 바꾼다.
+
+#### 3.3.2.1 Android Process Hierarchy
+
+모바일 환경에 자원 제약이 있기 때문에 모바일 OS는 기존 프로세스를 종료해야 할 수 있다.
+이에 따라 안드로이드에서는 프로세스를 우선 순위를 가장 높은 것부터 가장 낮은 것까지 분류하고 있다.
+
+- Foreground Process: 현재 동작되고 있으며 스크린에서 보여지는 프로세스
+- Visible Process: 직접적으로 보여지지는 않지만 Foreground Process에 참조하고 있는 프로세스
+- Service Process: 백그라운드에서 동작하며 사용자에게 노출되는 프로세스
+- Background Process: 백그라운드에서 동작하지만 사용자에게 노출되지 않는 프로세스
+- Empty Process: 이외의 비활성화된 모든 프로세스
+
 ### 질문(2021.04.11)
 
 - Pure Overhead에 대해서
