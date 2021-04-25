@@ -56,30 +56,50 @@
 
 ---
 
+### [OS](https://github.com/im-d-team/Dev-Docs/blob/master/CS/OS.md)
+
+- ch3 Process
+  - 3.1 Process Concept : dididy(2021.04.04)
+  - 3.2 Process Scheduling : SeonHyungJo(2021.04.11)
+  - 3.3 Operations on Processes : BKJang(2021.04.18)
+
 ### 📅 History
-- [x] dididy : [CS/OS](https://github.com/im-d-team/Dev-Docs/blob/master/CS/OS.md)
+
+<!--<details>
+<summary> 2021년 3월 </summary>-->
+
+#### 03월 28일
 
 - [x] SeonHyungJo : [Security/Response_Header_Security](https://github.com/im-d-team/Dev-Docs/blob/master/Security/Response_Header_Security.md)
 
-- [x] Dae-Hwa : [CS/플로이드-와샬-알고리즘](https://github.com/im-d-team/Dev-Docs/blob/master/CS/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+<!--</details>-->
 
+<!--<details>
+<summary> 2021년 2월 </summary>-->
+
+#### 02월 28일
+
+- [x] Dae-Hwa : [CS/플로이드-와샬-알고리즘](https://github.com/im-d-team/Dev-Docs/blob/master/CS/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 - [x] dididy : [Javascript/Jest](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Jest.md)
 
+#### 02월 07일
+
 - [x] Dae-Hwa : [Java/junit-setup](https://github.com/im-d-team/Dev-Docs/blob/master/Java/junit-setup.md)
-
-- [x] EUNJIHA : [iOS/Xcode](https://github.com/im-d-team/Dev-Docs/blob/master/iOS/Xcode.md)
-
-- [x] SeonHyungJo : [React/React Server Components](https://github.com/im-d-team/Dev-Docs/blob/master/React/React%20Server%20Components.md)
-
-- [x] JegalEun : [Network/Switch](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Switch.md)
-
-- [x] Dae-Hwa : [CS/union-find](https://github.com/im-d-team/Dev-Docs/blob/master/CS/union-find.md)
-
 
 <!--</details>-->
 
 <!--<details>
 <summary> 2021년 1월 </summary>-->
+
+#### 01월 24일
+
+- [x] SeonHyungJo : [React/React Server Components](https://github.com/im-d-team/Dev-Docs/blob/master/React/React%20Server%20Components.md)
+- [x] EUNJIHA : [iOS/Xcode](https://github.com/im-d-team/Dev-Docs/blob/master/iOS/Xcode.md)
+
+#### 01월 17일
+
+- [x] Dae-Hwa : [CS/union-find](https://github.com/im-d-team/Dev-Docs/blob/master/CS/union-find.md)
+- [x] JegalEun : [Network/Switch](https://github.com/im-d-team/Dev-Docs/blob/master/Network/Switch.md)
 
 #### 01월 10일
 
@@ -88,9 +108,9 @@
 
 #### 01월 03일
 
-- [ ] Dae-Hwa : [CS/methods_in_IPC](https://github.com/im-d-team/Dev-Docs/blob/master/CS/methods_in_IPC.md)
-- [ ] dididy : [Javascript/Storybook](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Storybook.md)
-- [ ] JegalEun : [Network/3-way handshaking & 4-way handshaking](https://github.com/im-d-team/Dev-Docs/blob/master/Network/3-way%20handshaking%20&%204-way%20handshaking.md)
+- [x] Dae-Hwa : [CS/methods_in_IPC](https://github.com/im-d-team/Dev-Docs/blob/master/CS/methods_in_IPC.md)
+- [x] dididy : [Javascript/Storybook](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Storybook.md)
+- [x] JegalEun : [Network/3-way handshaking & 4-way handshaking](https://github.com/im-d-team/Dev-Docs/blob/master/Network/3-way%20handshaking%20&%204-way%20handshaking.md)
 
 <!--</details>-->
 
