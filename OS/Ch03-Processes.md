@@ -346,3 +346,172 @@ int main()
 - 모바일에서 프로세스 관리의 핵심은 자원 제약이 있을 경우 우선순위가 낮은 것을 제거해가며 자원을 확보하는 방식을 사용한다는 것
 
 </details>
+
+## 3.6 IPC in Message-Passing Systems
+
+이번 챕터에서는 프로세스 간 통신 방법에 대해서 알아본다.
+
+`3.5 IPC in Shared-Memory Systems` 을 통해 shared-memory 환경에서 cooperating 프로세스가 어떻게 소통할 수 있는지 확인했다. 이 scheme은 이러한 프로세스들이 메모리 영역을 공유하도록 요구하고 shared-memory에 접근 및 조작하기 위한 코드는 애플리케이션 프로그래머에 의해 명시적으로 작성되어야 한다. 동일한 효과를 달성하는 또 다른 방법은 운영 체제가 메시지 전달 기능을 통해 서로 통신하는 프로세스를 협력할 수 있는 수단을 제공하는 것이다.
+
+```c
+item next consumed;
+while (true) {
+	while (in == out)
+		; /* do nothing */
+	next consumed = buffer[out];
+	out = (out + 1) % BUFFER SIZE;
+	/* consume the item in next consumed */
+}
+```
+
+> Figure 3.13 The consumer process using shared memory.
+
+메시지 전달 기능은 적어도 두 가지 operation을 제공한다.
+
+- send(message)
+- receiver(message)
+
+link와 send() / receive() 작업을 논리적으로 구현하는 몇 가지 방법은 아래와 같다.
+
+- Direct or indirect communication
+- Synchronous or asynchronous communication
+- 자동 혹은 명시적 buffering
+
+위와 관련된 이슈들을 아래에서 살펴보게 될 것이다.
+
+### **3.6.1 Naming**
+
+프로세스가 통신하려면 반드시 서로를 알아볼 수 있는(특정 프로세스를 한정 지을 수 있는) 수단이 필요하다. direct 혹은 indirect 통신 방법이 존재한다.
+
+**direct communication**
+
+통신할 프로세스들은 서로의 이름에 대해 명확히 알아야 한다. (sender, recipient 모두)
+
+- send(P, message) : Send a message to process P
+- receive(Q, message) : Receive a message from process Q
+
+이 scheme에서 send()와 receive()는 아래와 같이 정의된다.
+
+- 통신을 원하는 두 프로세스 간 이 link는 자동으로 생성됨
+- link는 정확히 두 프로세스와 연관되어 있음
+- 다시 말해, 두 프로세스 간에는 정확히 하나의 링크만 존재함
+
+**symmetry, asymmetry**
+
+- symmetry : 발신자 프로세스와 수신자 프로세스 모두 통신하기 위해 다른 프로세스의 이름을 지정해야 함
+- asymmetry : 여기서는 발신인 이름만 수신인으로 지정하고 수신인은 발신인의 이름을 지정할 필요가 없음
+
+이 scheme에서 send()와 receive()는 아래와 같이 정의된다.
+
+- send(P, message) : Send a message to process P
+- receive(id, message) : 모든 프로세스로부터 메시지를 수신합니다. 변수 ID는 통신이 수행된 프로세스의 이름으로 설정
+  - 여기서 id는 통신이 발생하는 프로세스 set을 말함
+- 단점 (symmetric, asymmetric 모두)
+  - 프로세스를 특정하기 때문에 모듈성이 떨어지게 됨
+  - pid를 바꾸면 새로 바뀐 pid를 찾기 위해 old id를 모두 찾을 수밖에 없음
+
+**Indirect communication**
+
+- indirect communication : 통신 프로세스들이 **mailbox**나 **포트**를 통해 메시지를 주고받는 것
+- mailbox : message를 넣거나 뺄 수 있는 object이며 추상적으로 볼 수 있음
+  - 각 mailbox는 고유 id를 가짐
+  - ex: POSIX message queues
+
+이 scheme에서 send()와 receive()는 아래와 같이 정의된다.
+
+- send(A, message) : Send a message to mailbox A
+- receive(A, message) : Receive a message from mailbox A
+
+이 scheme의 communication link에는 다음과 같은 속성이 있다.
+
+- 공유된 mailbox를 가지고 있어야 두 프로세스 간 링크가 성립됨
+- 두 프로세스가 통신하기 위해 하나 이상의 mailbox를 이용할 수 있음
+- link는 두 프로세스 이상과 관련되어 있을 수 있음 (즉, 한 mailbox는 2개 이상의 프로세스가 통신하기 위해 존재)
+
+이제 P1, P2 및 P3 프로세스가 모두 편지함 A를 공유한다고 가정해보자. 프로세스 P1은 A에게 메시지를 보내고, P2와 P3는 모두 A로부터 receive()을 실행한다. 어느 프로세스가 P1에서 보낸 메시지를 수신할 것인가? 답은 다음 중 어떤 방법을 선택하느냐에 따라 달라진다.
+
+- 한 mailbox 3개 이상의 프로세스가 접근을 허용함으로써 생긴 문제
+- 이 답은 어떤 방법을 선택할 것인지에 따라 결과가 달라짐
+  - link(mailbox)에 2개 프로세스만 연관되도록 함
+  - 한 번에 1 프로세스만 receive()를 허용
+  - System이 어떤 프로세스가 선택하게 할 것인지 결정한다. 이때 누가 선택할 것인지 알고리즘을 정해야 하고 System이 sender에 대한 receiver를 확인할 수 있어야 함
+
+**mailbox 소유자(mailbox가 누구의 memory address에 속하는지)**
+
+- Process의 경우
+  - 프로세스 통신 간 고유의 mailbox를 소유하기 때문에 mailbox의 소유자를 알 수 있으므로 혼동이 없음
+  - 하지만 프로세스가 삭제될 때 mailbox도 삭제되므로 mailbox가 삭제되었는지 알림 받아야 함
+  - mailbox를 소유하는 프로세스가 종료되면 mailbox는 사라진다. 이후에 이 mailbox로 메시지를 보내는 모든 프로세스에는 mailbox가 더 이상 존재하지 않음을 알려야 함
+
+- Operating System의 경우
+  - 독립적으로 존재하게 된다. 즉, 어떤 프로세스에도 특정하게 attach 되지 않음
+  - 이에 따라 OS는 반드시 다음과 같은 절차를 밟도록 해야 함
+  - Create a new mailbox.
+  - Send and receive messages through the mailbox.
+  - Delete a mailbox.
+  - 새로운 mailbox를 만든 프로세스가 mailbox의 default 소유자가 됨 (초깃값)
+  - 하지만, ownership과 메시지를 받는 권한은 적절한 시스템 콜을 통해 다른 프로세스에 전달될 수 있다. 이를 통해 각 mailbox 다중 receiver가 존재할 수 있게 됨
+### **3.6.2 Synchronization**
+
+메시지를 읽는 중에 데이터가 업데이트될 수 있는 상황이라고 해보자. synchronization 문제가 발생하게 된다.
+
+프로세스 간 통신은 send()와 receive() 원시형을 통해 이루어진다. 구현을 위한 다양한 설계 옵션이 있다. 메시지 전달은 blocking 혹은 nonblocking(동기 및 비동기라고도 한다)일 수 있다. (관계의 동기, 비동기 개념은 다양한 운영체제 알고리즘에 적용됨)
+
+**Blocking send**
+
+receiving process 나 mailbox가 데이터를 받는 중에는 sending process가 block 된다.
+
+**Nonblocking send**
+됨
+sending process가 메시지를 전송하고 작업을 다시 시작한다.
+
+**Blocking receive**
+
+message를 읽을 수 있을 때까지 receiver를 block 한다.
+
+**Nonblocking receive**
+
+수신자가 유효한 메시지 또는 null을 검색한다.
+
+```c
+message next produced;
+while (true) {
+	/* produce an item in next produced */
+	send(next produced);
+}
+```
+
+> Figure 3.14 The producer process using message passing
+
+send()와 receive()의 blocking을 통해 생산자-소비자 문제 해결할 수 있다.
+
+- 생산자가 blocking send()를 사용하면 receiver와 mailbox에 도착할 때까지 대기 상태가 됨
+- 소비자는 receive()를 쓰더라도 blocking send()에 의해 block 된다. available 한 경우 block 해제하여 읽을 수 있음
+
+### **3.6.3 Buffering**
+
+direct 혹은 indirect로 통신할 때 메시지는 프로세스에 있는 임시 queue와 통신한다. 기본적으로 이러한 queue는 아래 3가지 방법으로 구현한다.
+
+**Zero capacity**
+
+큐의 최대 길이가 0이기 때문에 link에 대기 중인 메시지가 있을 수 없다. 이런 경우 sender는 수신인이 메시지를 수신할 때까지 block 해야 한다.
+
+**Bounded capacity**
+
+queue의 길이가 유한하다. 따라서 최대 n개의 메시지를 queue에 넣어 둘 수 있다. sender가 메시지를 보낼 때 queue가 비어 있으면 queue에 메시지가 보관되며, sender는 대기하지 않고 데이터를 보낼 수 있게 된다.
+
+하지만 link의 용량이 유한하기 때문에 link가 꽉 차면 sender는 반드시 빈 공간이 생길 때까지 block 처리되어야 한다.
+
+```c
+message next consumed;
+while (true) {
+	receive(next consumed);
+	/* consume the item in next consumed */
+}
+```
+
+> Figure 3.15 The consumer process using message passing.
+
+**Unbounded capacity**
+
+queue의 길이가 무한하기 때문에 sender는 block 되지 않는다.
