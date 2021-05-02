@@ -674,3 +674,18 @@ while (true) {
 **Unbounded capacity**
 
 queue의 길이가 무한하기 때문에 sender는 block 되지 않는다.
+
+<details>
+<summary> 질문(2021.05.02) </summary>
+
+- 3.6장의 내용은 컨셉인가? conceptual 한가?
+  - unbounded capacity를 보면 이건 conceptual 한 것이다.
+  - 그렇지만 일부는 conceptual 한게 아니라 구현이 되어있다.
+- 각 구형 장단점 및 패러다임이 있는가?
+  - 응용단에서 IPC를 사용할 때 구현한다기 보다는 어떤 성격을 갖고 있는가가 중요하다. 따라서 적절하게 골라 써야 한다.
+    - message queue, pipe 등의 IPC는 각각 다른 성격, 특성을 가지고 있으므로 구현하는 시나리오에 맞게 선택해야 한다.
+  - IPC에 뭐가 있는지 찾아보고 구현하면 된다.
+- 3.6장이 IPC 구현이랑 매칭 되는가?
+  - 섞인다, 와닿지 않고 conceptual한 게 있다.
+
+</details>
