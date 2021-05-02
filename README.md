@@ -62,6 +62,9 @@
   - 3.1 Process Concept : dididy(2021.04.04)
   - 3.2 Process Scheduling : SeonHyungJo(2021.04.11)
   - 3.3 Operations on Processes : BKJang(2021.04.18)
+  - 3.4 Interprocess Communication : Dae-Hwa(2021.04.25)
+  - 3.5 IPC in Shared-Memory Systems : Dae-Hwa(2021.04.25)
+  - 3.6 IPC in Message-Passing Systems : dididy(2021.05.02)
 
 ### 📅 History
 
