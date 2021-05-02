@@ -587,27 +587,27 @@ link와 send() / receive() 작업을 논리적으로 구현하는 몇 가지 방
 - 두 프로세스가 통신하기 위해 하나 이상의 mailbox를 이용할 수 있음
 - link는 두 프로세스 이상과 관련되어 있을 수 있음 (즉, 한 mailbox는 2개 이상의 프로세스가 통신하기 위해 존재)
 
-이제 P1, P2 및 P3 프로세스가 모두 편지함 A를 공유한다고 가정해보자. 프로세스 P1은 A에게 메시지를 보내고, P2와 P3는 모두 A로부터 receive()을 실행한다. 어느 프로세스가 P1에서 보낸 메시지를 수신할 것인가? 답은 다음 중 어떤 방법을 선택하느냐에 따라 달라진다.
+이제 P1, P2 및 P3 프로세스가 모두 mailbox A를 공유한다고 가정해보자. 프로세스 P1은 A에게 메시지를 보내고, P2와 P3는 모두 A로부터 receive()을 실행한다. 어느 프로세스가 P1에서 보낸 메시지를 수신할 것인가? 답은 다음 중 어떤 방법을 선택하느냐에 따라 달라진다.
 
 - 한 mailbox 3개 이상의 프로세스가 접근을 허용함으로써 생긴 문제
 - 이 답은 어떤 방법을 선택할 것인지에 따라 결과가 달라짐
   - link(mailbox)에 2개 프로세스만 연관되도록 함
-  - 한 번에 1 프로세스만 receive()를 허용
-  - System이 어떤 프로세스가 선택하게 할 것인지 결정한다. 이때 누가 선택할 것인지 알고리즘을 정해야 하고 System이 sender에 대한 receiver를 확인할 수 있어야 함
+  - 한 번에 한 개의 프로세스만 receive()를 허용
+  - System이 어떤 프로세스가 선택하게 할 것인지 결정함 따라서 이때 누가 선택할 것인지 알고리즘을 정해야 하고 System이 sender에 대한 receiver를 확인할 수 있어야 함
 
 **mailbox 소유자(mailbox가 누구의 memory address에 속하는지)**
 
 - Process의 경우
   - 프로세스 통신 간 고유의 mailbox를 소유하기 때문에 mailbox의 소유자를 알 수 있으므로 혼동이 없음
   - 하지만 프로세스가 삭제될 때 mailbox도 삭제되므로 mailbox가 삭제되었는지 알림 받아야 함
-  - mailbox를 소유하는 프로세스가 종료되면 mailbox는 사라진다. 이후에 이 mailbox로 메시지를 보내는 모든 프로세스에는 mailbox가 더 이상 존재하지 않음을 알려야 함
+  - mailbox를 소유하는 프로세스가 종료되면 mailbox는 사라짐 따라서 이후에 이 mailbox로 메시지를 보내는 모든 프로세스에는 mailbox가 더 이상 존재하지 않음을 알려야 함
 
 - Operating System의 경우
   - 독립적으로 존재하게 된다. 즉, 어떤 프로세스에도 특정하게 attach 되지 않음
   - 이에 따라 OS는 반드시 다음과 같은 절차를 밟도록 해야 함
-  - Create a new mailbox.
-  - Send and receive messages through the mailbox.
-  - Delete a mailbox.
+    - Create a new mailbox.
+    - Send and receive messages through the mailbox
+    - Delete a mailbox
   - 새로운 mailbox를 만든 프로세스가 mailbox의 default 소유자가 됨 (초깃값)
   - 하지만, ownership과 메시지를 받는 권한은 적절한 시스템 콜을 통해 다른 프로세스에 전달될 수 있다. 이를 통해 각 mailbox 다중 receiver가 존재할 수 있게 됨
 ### **3.6.2 Synchronization**
@@ -621,7 +621,7 @@ link와 send() / receive() 작업을 논리적으로 구현하는 몇 가지 방
 receiving process 나 mailbox가 데이터를 받는 중에는 sending process가 block 된다.
 
 **Nonblocking send**
-됨
+
 sending process가 메시지를 전송하고 작업을 다시 시작한다.
 
 **Blocking receive**
