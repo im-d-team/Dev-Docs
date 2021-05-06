@@ -73,7 +73,7 @@
 
 #### 03월 28일
 
-- [x] SeonHyungJo : [Security/Response_Header_Security](https://github.com/im-d-team/Dev-Docs/blob/master/Security/Response_Header_Security.md)
+- [ ] SeonHyungJo : [Security/Response_Header_Security](https://github.com/im-d-team/Dev-Docs/blob/master/Security/Response_Header_Security.md)
 
 <!--</details>-->
 
@@ -82,12 +82,12 @@
 
 #### 02월 28일
 
-- [x] Dae-Hwa : [CS/플로이드-와샬-알고리즘](https://github.com/im-d-team/Dev-Docs/blob/master/CS/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-- [x] dididy : [Javascript/Jest](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Jest.md)
+- [ ] Dae-Hwa : [CS/플로이드-와샬-알고리즘](https://github.com/im-d-team/Dev-Docs/blob/master/CS/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+- [ ] dididy : [Javascript/Jest](https://github.com/im-d-team/Dev-Docs/blob/master/Javascript/Jest.md)
 
 #### 02월 07일
 
-- [x] Dae-Hwa : [Java/junit-setup](https://github.com/im-d-team/Dev-Docs/blob/master/Java/junit-setup.md)
+- [ ] Dae-Hwa : [Java/junit-setup](https://github.com/im-d-team/Dev-Docs/blob/master/Java/junit-setup.md)
 
 <!--</details>-->
 
@@ -96,8 +96,8 @@
 
 #### 01월 24일
 
-- [x] SeonHyungJo : [React/React Server Components](https://github.com/im-d-team/Dev-Docs/blob/master/React/React%20Server%20Components.md)
-- [x] EUNJIHA : [iOS/Xcode](https://github.com/im-d-team/Dev-Docs/blob/master/iOS/Xcode.md)
+- [ ] SeonHyungJo : [React/React Server Components](https://github.com/im-d-team/Dev-Docs/blob/master/React/React%20Server%20Components.md)
+- [ ] EUNJIHA : [iOS/Xcode](https://github.com/im-d-team/Dev-Docs/blob/master/iOS/Xcode.md)
 
 #### 01월 17일
 
@@ -106,7 +106,7 @@
 
 #### 01월 10일
 
-- [x] EUNJIHA : [Java/JPA](https://github.com/im-d-team/Dev-Docs/blob/master/Java/JPA.md)
+- [ ] EUNJIHA : [Java/JPA](https://github.com/im-d-team/Dev-Docs/blob/master/Java/JPA.md)
 - [x] SeonHyungJo : [React/SWR](https://github.com/im-d-team/Dev-Docs/blob/master/React/SWR.md)
 
 #### 01월 03일
