@@ -66,7 +66,7 @@ class SomeClassTest {
 
 어떤 프로젝트든 우선적으로 설정해야 할 것이 있다. Test 소스용 root path를 지정해야 한다.
 
-우선 File-Proejct Structure-Modules에 들어간다.
+우선 File-Project Structure-Modules에 들어간다.
 
 > 이클립스는 프로젝트의 Java Build Path에서 설정할 수 있다.
 
@@ -106,7 +106,7 @@ class SomeClassTest {
 
 ### Maven 프로젝트
 
-아래 depencency를 `pom.xml`에 추가해준다. 이후 [Java Proejct](#java-project) 를 따라가면 된다.
+아래 depencency를 `pom.xml`에 추가해준다. 이후 [Java Project](#java-project) 를 따라가면 된다.
 
 ```xml
 <dependency>
@@ -119,7 +119,7 @@ class SomeClassTest {
 
 ### Gradle 프로젝트
 
-아래 dependency를 `build.gradle`에 추가해준다. 이후 [Java Proejct](#java-project) 를 따라가면 된다.
+아래 dependency를 `build.gradle`에 추가해준다. 이후 [Java Project](#java-project) 를 따라가면 된다.
 
 ```gradle
 testCompile group: 'org.junit.jupiter', name: 'junit-jupiter', version: 'latest.release'
