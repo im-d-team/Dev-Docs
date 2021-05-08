@@ -70,39 +70,39 @@ class SomeClassTest {
 
 > 이클립스는 프로젝트의 Java Build Path에서 설정할 수 있다.
 
-![junit설정해보기-03.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-03.png)
+![junit설정해보기-03.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-03.png)
 
 그다음 새 폴더를 생성하고 테스트 디렉토리로 설정한다.
-![junit설정해보기-04.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-04.png)
-![junit설정해보기-05.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-05.png)
+![junit설정해보기-04.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-04.png)
+![junit설정해보기-05.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-05.png)
 
 ### Java Project
 
 `Alt + Insert` 혹은 `Shift + Shift` 입력 후 검색을 하여 `Generate` 를 호출하면 `Test...` 라는 옵션이 있다.
-![junit설정해보기-06.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-06.png)
-![junit설정해보기-07.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-07.png)
+![junit설정해보기-06.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-06.png)
+![junit설정해보기-07.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-07.png)
 
 선택하면 아래와 같은 상자가 나온다. OK를 클릭하자.
 
 > 아래의 Member에서 원하는 테스트 케이스를 함께 생성할 수도 있다.
 
-![junit설정해보기-08.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-08.png)
+![junit설정해보기-08.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-08.png)
 
 생성된 클래스에 `@Test` 어노테이션을 입력 후 `Alt + Enter` 를 입력하면 아래와 같은 옵션들이 나온다. JUnit5를 사용할 것이니 선택해준다.
 
-![junit설정해보기-09.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-09.png)
+![junit설정해보기-09.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-09.png)
 
 이제 설정이 완료됐다. 이후 테스트 코드를 작성해본다.
 
-![junit설정해보기-10.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-10.png)
+![junit설정해보기-10.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-10.png)
 
 초록색 재생 버튼이 나오는데 클릭하면 실행시킬 수 있다. 잘 동작하는지 실행시켜보자.
 
-![junit설정해보기-11.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-11.png)
+![junit설정해보기-11.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-11.png)
 
 테스트에 성공했다고 하단에 나온다. 성공이다!
 
-![junit설정해보기-12.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-12.png)
+![junit설정해보기-12.png](https://raw.githubusercontent.com/Dae-Hwa/Dae-Hwa.github.io/master/data/blog/post/2021-01-05--junit-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0/junit%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0-12.png)
 
 ### Maven 프로젝트
 
