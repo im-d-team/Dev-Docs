@@ -65,6 +65,7 @@
   - 3.4 Interprocess Communication : Dae-Hwa(2021.04.25)
   - 3.5 IPC in Shared-Memory Systems : Dae-Hwa(2021.04.25)
   - 3.6 IPC in Message-Passing Systems : dididy(2021.05.02)
+  - 3.7.4 Pipes : SeonHyungJo(2021.05.09)
 
 ### 📅 History
 
