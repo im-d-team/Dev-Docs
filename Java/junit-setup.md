@@ -2,7 +2,7 @@
 
 ## JUnit
 
-[JUnit](https://junit.org/junit5/)은 자바 언어용 [단위 테스트](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%9B_%ED%85%8C%EC%8A%A4%ED%8A%B8) 프레임워크다. Java 진영에서 가장 많이 쓰이고 있는 테스트 프레임워크이고 JUnit 없이 TDD를 논하기 힘들 것이다.
+[JUnit](https://junit.org/junit5/)은 Java 언어용 [단위 테스트](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%9B_%ED%85%8C%EC%8A%A4%ED%8A%B8) 프레임워크다. Java 진영에서 가장 많이 쓰이고 있는 테스트 프레임워크이고 JUnit 없이 TDD를 논하기 힘들 것이다.
 
 ### JUnit5의 ParametizedTest
 
