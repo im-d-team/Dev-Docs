@@ -17,9 +17,9 @@ class SomeClass {
 class SomeClassTest {
     SomeClass someClass = new SomeClass();
     public test() {
-      System.out.println("test 1 : " + someClass.someFunction(1, 1) == 2);
-      System.out.println("test 2 : " + someClass.someFunction(2, 2) == 4);
-      System.out.println("test 3 : " + someClass.someFunction(3, 3) == 6);
+      System.out.println("test 1 : " + (someClass.someFunction(1, 1) == 2));
+      System.out.println("test 2 : " + (someClass.someFunction(2, 2) == 4));
+      System.out.println("test 3 : " + (someClass.someFunction(3, 3) == 6));
     }
 }
 ```
