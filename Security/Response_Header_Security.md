@@ -2,21 +2,21 @@
 
 웹 개발자들이 많이 알고 사용하고 있는 웹 페이지 사이트로 테스트를 진행해보고 보안 관련한 이슈를 해결해보자.
 
-아래의 사이트를 들어가서 본인의 사이트를 입력한 후 추가적인 설정 후 테스트를 누르게 되면 종합정보를 보여준다.
+아래의 사이트를 들어가서 본인의 사이트를 입력한 후 테스트를 진행하면, 진단 후 종합테스트 결과를 보여준다.
 
 > [성능 체크하기](https://www.webpagetest.org/)
 
-![image](https://user-images.githubusercontent.com/24274424/112757684-cf3cf380-9025-11eb-91f6-8450c4c4e29c.png)
+![performance 1](https://user-images.githubusercontent.com/24274424/112757684-cf3cf380-9025-11eb-91f6-8450c4c4e29c.png)
 
 ### 설정 전
 
-![image](https://user-images.githubusercontent.com/24274424/112757694-d7952e80-9025-11eb-9d68-402b483fbe26.png)
+![prev-setting](https://user-images.githubusercontent.com/24274424/112757694-d7952e80-9025-11eb-9d68-402b483fbe26.png)
 
 설정 전에는 보안 영역에서 F가 나온 것을 볼 수 있다.
 
 ### 설정 후
 
-![image](https://user-images.githubusercontent.com/24274424/112757704-debc3c80-9025-11eb-9387-2db68f9601fa.png)
+![post-setting](https://user-images.githubusercontent.com/24274424/112757704-debc3c80-9025-11eb-9387-2db68f9601fa.png)
 
 추후 설정을 하고 나서 A등급으로 변경된 것을 확인할 수 있다.
 
@@ -88,7 +88,7 @@ CSP를 적용하기는 쉽지 않다. 모든 페이지를 정확히 알고 있�
 
 이 Header는 한 번 https로 접속하는 경우 이후의 모든 요청을 http로 요청하더라도 브라우저가 자동으로 https로 요청한다.
 
-```json
+```text
 X-XSS-Protection: 1;mode=block
 ```
 
@@ -127,7 +127,7 @@ Lambda를 사용해서 CloudFront로 들어와 S3에서 Resource를 가져온 �
 
 ### Lambda 코드
 
-```json
+```js
 exports.handler = async (event, context) => {
   const response = event.Records[0].cf.response;
   const headers = response.headers;
