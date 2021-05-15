@@ -24,7 +24,7 @@
 
 ## SSR의 한계
 
-우리는 Client Side의 SSR은 차선책으로 사용한다. Server에서 HTML String을 만들어서 내려준다. 만들어진 HTML은 브라우저로 가서 First Contentful Paint 또는 Largest Contentful Paint로 보인다.
+우리는 SSR을 Client Side의 차선책으로 사용한다. Server에서 HTML String을 만들어서 내려준다. 만들어진 HTML은 브라우저로 가서 First Contentful Paint 또는 Largest Contentful Paint로 보인다.
 
 SSR은 보통 초기 렌더링에만 쓰이고 다시 사용되지 않는다.
 
