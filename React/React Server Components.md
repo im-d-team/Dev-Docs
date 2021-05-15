@@ -8,7 +8,7 @@
 
 **RSC**라 불리는 이번 주제는 **React Server Component**의 약자이다. 이 기능은 모던 UX 서버 기반 모델에서 착안하였다고 한다.
 
-이는 우리가 이미 알고 있는 SSR과 다른 결과물로, Client-Side의 JS bundle을 줄여주는 것이 메인이다. 아직 Production Version에는 아직 올라오지 않았지만, [RFC](https://github.com/reactjs/rfcs/blob/bf51f8755ddb38d92e23ad415fc4e3c02b95b331/text/0000-server-components.md) 나 [YouTube](https://www.youtube.com/watch?v=TQQPAU21ZUw&feature=emb_title) 으로 확인 가능하다.
+이는 우리가 이미 알고 있는 SSR(Server Side Rendering)과 다른 결과물로, Client-Side의 JS bundle을 줄여주는 것이 메인이다. 아직 Production Version에는 아직 올라오지 않았지만, [RFC](https://github.com/reactjs/rfcs/blob/bf51f8755ddb38d92e23ad415fc4e3c02b95b331/text/0000-server-components.md) 나 [YouTube](https://www.youtube.com/watch?v=TQQPAU21ZUw&feature=emb_title) 으로 확인 가능하다.
 
 위 영상의 Full Name은 **zero-bundle-size** React Server Component이다. 영상에는 설명뿐만 아니라 데모 영상과 데모 Repo도 알려주고 있어 따라 해볼 수 있다.
 
@@ -22,7 +22,7 @@
 - Client Component는 파일명이 `.client.js`다.
 - 두 군데 모두 사용하는 Shared Component는 파일명이 `.js`다.
 
-## SSR의 한계
+## SSR(Server Side Rendering)의 한계
 
 우리는 SSR을 Client Side의 차선책으로 사용한다. Server에서 HTML String을 만들어서 내려준다. 만들어진 HTML은 브라우저로 가서 First Contentful Paint 또는 Largest Contentful Paint로 보인다.
 
