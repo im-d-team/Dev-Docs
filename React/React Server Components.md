@@ -52,7 +52,7 @@ server-tree와 client-tree state는 서로 유실없이 scaling up 할 수 있�
 
 Server Component가 SSR을 대체할 수 없다. 그러나 같이 사용할 수 있게 만들어질 수 있으며, 시너지가 좋을 것으로 생각된다.
 
-Facebook 팀에서 Server Component는를 적용해 본 결과. 번들 사이즈가 줄었다고 한다. 초기 측정 시 **-18%** 였으며, 최근에는 **-29%** 까지 되었다고 한다. 
+Facebook 팀에서 Server Component는를 적용해 본 결과, 번들 사이즈가 줄었다고 한다. 초기 측정 시 **-18%** 였으며, 최근에는 **-29%** 까지 되었다고 한다. 
 
 ```jsx
 // NoteWithMarkdown.server.js - Server Component === zero bundle size
@@ -75,7 +75,7 @@ function NoteWithMarkdown({text}) {
 
 ## Auto Code Splitting
 
-best practise 중 하나는 Code Splitting 해서 User가 필요한 코드를 필요할 때 가져올 수 있다. 기존에 우리가 사용하던 `React.lazy()`은 휴리스틱에 의존했었다.
+best practice 중 하나는 Code Splitting 해서 User가 필요한 코드를 필요할 때 가져올 수 있다. 기존에 우리가 사용하던 `React.lazy()`은 휴리스틱에 의존했었다.
 
 ```jsx
 // PhotoRenderer.js (before Server Components)
@@ -97,10 +97,10 @@ function Photo(props) {
 
 ### code-splitting의 문제점
 
-- 메타 프레임 워크 (예 : Next.js) 외부에서 최적화는 수동으로 처리하여 `import`문을 `Dynamic import`로 대체해야 하는 경우가 많다.
+- 메타 프레임워크 (예 : Next.js) 외부에서 최적화는 수동으로 처리하여 `import`문을 `Dynamic import`로 대체해야 하는 경우가 많다.
 - 응용 프로그램이 사용자 환경에 영향을 미치는 Component를 로드하기 시작하면 지연될 수 있다.
 
-Server Component는 Client Component는 모든 일반 `import`를 가능한 code-splitting 지점으로 처리하여 auto code-splitting을 해준다.
+Server Component의 Client Component는 `import`를 최대한 code-splitting 지점으로 처리하여 auto code-splitting을 해준다.
 
 또한, 개발자는 서버에서 미리 사용할 Component를 선택할 수 있어, Client rendering에서 미리 가져올 수 있다.
 
