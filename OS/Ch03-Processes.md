@@ -610,6 +610,7 @@ link와 send() / receive() 작업을 논리적으로 구현하는 몇 가지 방
     - Delete a mailbox
   - 새로운 mailbox를 만든 프로세스가 mailbox의 default 소유자가 됨 (초깃값)
   - 하지만, ownership과 메시지를 받는 권한은 적절한 시스템 콜을 통해 다른 프로세스에 전달될 수 있다. 이를 통해 각 mailbox 다중 receiver가 존재할 수 있게 됨
+
 ### **3.6.2 Synchronization**
 
 메시지를 읽는 중에 데이터가 업데이트될 수 있는 상황이라고 해보자. synchronization 문제가 발생하게 된다.
@@ -752,3 +753,92 @@ Named pipes는 훨씬 더 강력한 통신 도구를 제공한다.
 Windows 시스템의 Named pipes는 UNIX에 비해 더 풍부한 통신 메커니즘을 제공한다. 
 
 전이중 통신이 허용되며 통신 프로세스는 동일하거나 다른 시스템에 상주할 수 있다. UNIX FIFO는 byte-oriented 데이터만 전송할 수 있는 반면, Windows 시스템은 byte-oriented 또는 message-oriented 데이터를 허용한다.
+
+## 3.8 Communication in Client–Server Systems
+
+[3.4-Interprocess-Communication](#3.4-Interprocess-Communication)에서 프로세스간에 `Shared Memeory`와 `Message Passing`방법을 이용해 통신하는 방법을 살펴봤다. 이 기술들은 `client-server` 시스템에서 통신하는 방법으로도 사용될 수 있다. 이번에는 `client-server` 시스템에서 통신하는 다른 두 가지 방법인 `Sockets`과 `Remote Procedure Call(RPC)`를 살펴볼 것이다.
+
+### 3.8.1 Sockets
+
+소켓은 통신을 위한 Endpoint라고 정의할 수 있다. 한 쌍의 프로세스는 각 프로세스에 하나씩 한 쌍의 소켓을 사용하여 통신하며 포트 번호와 연결된 IP 주소로 구성되어 있다. 일반적으로 소켓은 `client-server` 아키텍처를 사용한다.서버는 지정된 포트를 수신하여 들어오는 클라이언트 요청을 기다리고 요청이 수신되면 서버는 클라이언트 소켓의 연결을 수락하여 연결을 완료한다.
+
+클라이언트 프로세스가 연결 요청을 시작하면 호스트 컴퓨터에 의해 1024보타 큰 임의의 숫자로 포트가 할당된다.
+
+![Sockets](https://user-images.githubusercontent.com/24209005/118385392-621f0500-b649-11eb-875c-09d5ed68bbc3.png)
+
+예를 들어, IP 주소가 `146.86.5.20` 인 호스트 X의 클라이언트가 주소 `161.25.19.8`의 웹 서버 와 연결을 설정하려는 경우 호스트 X 주소에 포트 1625로 할당 될 수 있다.
+
+각 소켓의 연결은 고유해야하기 한다. 이에 따라 호스트 X의 다른 프로세스가 동일한 웹 서버와 다른 연결을 설정하려는 경우 1024보다 크고 1625가 아닌 포트 번호가 할당된다.
+
+#### Sockets in Java
+
+Java에는 3가지 유형의 Sockets이 있다.
+
+- 연결형(TCP)
+- 비연결형(UDP)
+- MulticastSocket Class: 데이터를 여러 수신자에게 보낼 수 있다.
+
+```java
+// Server
+import java.net.*;
+import java.io.*;
+
+public class DateServer {
+  public static void main(String[] args) {
+    try {
+      ServerSocket sock = new ServerSocket(6013);
+      /* now listen for connections */
+      while (true) {
+        Socket client = sock.accept();
+        PrintWriter pout = new PrintWriter(client.getOutputStream(), true);
+        /* write the Date to the socket */
+        pout.println(new java.util.Date().toString());
+        /* close the socket and resume */
+        /* listening for connections */
+        client.close();
+      }
+    } catch (IOException ioe) {
+      System.err.println(ioe);
+    }
+  }
+}
+```
+
+```java
+// Client
+import java.net.*;
+import java.io.*;
+
+public class DateClient {
+  public static void main(String[] args) {
+    try {
+      /* make connection to server socket */
+      Socket sock = new Socket("127.0.0.1", 6013);
+      InputStream in = sock.getInputStream();
+      BufferedReader bin = new BufferedReader(new InputStreamReader(in));
+      /* read the date from the socket */
+      String line;
+      while ((line = bin.readLine()) != null) {
+        System.out.println(line);
+      }
+      /* close the socket connection*/
+      sock.close();
+    } catch (IOException ioe) {
+      System.err.println(ioe);
+    }
+  }
+}
+```
+
+1. 서버 프로세스는 `println()` 메서드를 호출하여 클라이언트에 날짜를 보낸다.
+2. 소켓에 날짜를 기록하면 서버는 클라이언트에 대한 소켓을 닫고 더 많은 요청을 다시 수신한다.
+3. 클라이언트는 소켓을 만들고 서버가 수신하는 포트에 연결하여 서버와 통신한다.
+4. 클라이언트는 소켓을 만들고 포트 6013의 IP 주소 `127.0.0.1`에서 서버와의 연결을 요청한다.
+5. 일단 연결되면 클라이언트는 일반 스트림 I/O 문을 사용하여 소켓에서 읽을 수 있다.
+6. 서버로부터 날짜를받은 후 클라이언트는 소켓을 닫고 종료한다.
+
+- IP 주소 `127.0.0.1`은 루프백으로 알려진 특수 IP 주소로 컴퓨터가 자기 자신을 참조하는 IP이다.
+- 이 메커니즘을 사용하면 동일한 호스트의 클라이언트와 서버가 TCP/IP 프로토콜을 사용하여 통신 할 수 있다.
+- `127.0.0.1`은 날짜 서버를 실행하는 다른 호스트의 IP 주소 혹은 실제 도메인 명으로도 대체 ​​될 수 있습니다.
+
+소켓을 사용하는 통신은 일반적이고 효율적이지만 분산 프로세스 간의 저수준 통신으로 간주된다. 그 이유는 소켓이 통신 스레드간에 구조화되지 않은 바이트 스트림을 교환하는 것만 허용하기 때문이다. 다음 섹션에서는 조금 더 수준 높은 통신 방법인 `Remote Procedure Calls(RPC)`를 살펴보도록 하겠다.
