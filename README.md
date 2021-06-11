@@ -71,6 +71,8 @@
     - 3.8.1 Sockets : BKJang(2021.05.16)
 
 ### 📅 History
+- [x] dididy : [CS/Ch04-Threads&Concurrency](https://github.com/im-d-team/Dev-Docs/blob/master/CS/Ch04-Threads&Concurrency.md)
+
 
 <!--<details>
 <summary> 2021년 3월 </summary>-->
