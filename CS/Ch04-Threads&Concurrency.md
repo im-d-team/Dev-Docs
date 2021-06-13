@@ -25,13 +25,9 @@
 
 그러나 프로세스 생성 작업은 매우 많은 시간을 소비하고 많은 자원을 필요로 하는 일이다. 하지만 새 프로세스가 해야 할 일이 기존 프로세스가 하는 일과 동일하므로 대부분은 하나의 프로세스 안에 여러 스레드를 만들어나가는 것이 더 효율적이다. 또한, 현재의 운영체제 커널은 다중화되어 있다. 커널 안에 다수의 스레드가 동작하고 각 스레드는 장치 또는 인터럽트 처리 등의 특정 작업을 수행한다.
 
-<img width="879" alt="Screen Shot 2021-06-06 at 11 29 21 AM" src="https://user-images.githubusercontent.com/16266103/120910509-78553980-c6ba-11eb-9527-e89dd0b58a7e.png">
+<img width="879" alt="Single-threaded and multithreaded processes" src="https://user-images.githubusercontent.com/16266103/120910509-78553980-c6ba-11eb-9527-e89dd0b58a7e.png">
 
-
-
-<img width="885" alt="Screen Shot 2021-06-06 at 11 28 52 AM" src="https://user-images.githubusercontent.com/16266103/120910501-61164c00-c6ba-11eb-9065-1fb2e86775d6.png">
-
-
+<img width="885" alt="Multithreaded server architecture" src="https://user-images.githubusercontent.com/16266103/120910501-61164c00-c6ba-11eb-9065-1fb2e86775d6.png">
 
 ### **4.1.2 Benefits**
 
@@ -48,13 +44,13 @@
 
 하나의 코어는 한 번에 오직 하나의 스레드만 실행할 수 있기 때문에 안일 코어 시스템상에서 병행성은 단순히 스레드의 실행이 시간에 따라 교대로 실행된다는 것을 의미한다. 그러나 여러 코어를 가진 시스템에서는 시스템이 개별 스레드를 각 코어에 배정할 수 있기 때문에 병행성은 스레드들이 병령적으로 실행될 수 있다는 것을 뜻한다.
 
-<img width="788" alt="Screen Shot 2021-06-06 at 11 30 17 AM" src="https://user-images.githubusercontent.com/16266103/120910518-9458db00-c6ba-11eb-984e-b7c122a67af5.png">
+<img width="788" alt="Concurrent execution on a single-core system" src="https://user-images.githubusercontent.com/16266103/120910518-9458db00-c6ba-11eb-984e-b7c122a67af5.png">
 
 ### **4.2.1 Programming Challenges**
 
 multicore system의 프로그래밍 난점은 아래 5가지이다.
 
-<img width="556" alt="Screen Shot 2021-06-06 at 11 30 48 AM" src="https://user-images.githubusercontent.com/16266103/120910530-a63a7e00-c6ba-11eb-8e10-ee76a82972d9.png">
+<img width="556" alt="Parallel execution on a multicore system" src="https://user-images.githubusercontent.com/16266103/120910530-a63a7e00-c6ba-11eb-8e10-ee76a82972d9.png">
 
 1. Identifying tasks(작업 식별) : 동시 작업으로 나눌 수 있는 영역을 찾기 위한 응용 프로그램을 검토하는 작업이 포함되며, 이상적으로는 작업이 서로 독립적이므로 개별 코어에서 병렬로 실행될 수 있음
 2. Balance(균형 잡기) : 병렬로 실행할 수 있는 작업을 식별하는 동안, 프로그래머는 작업이 동일한 값의 동일한 작업을 수행하도록 보장해야 하며, 경우에 따라서는 특정 task가 다른 task만큼 전체 프로세스에 많은 가치를 부여하지 않을 수 있음
@@ -67,7 +63,7 @@ Amdahl의 법칙은 직렬(비병렬) 및 병렬 구성 요소를 모두 갖춘 
 
 예를 들어, 75%의 병렬 및 25%의 직렬 애플리케이션을 사용한다고 가정하자. 두 개의 프로세싱 코어가 있는 시스템에서 이 애플리케이션을 실행하면 1.6배의 속도를 얻을 수 있다. 두 개의 코어를 추가하면(총 4개), 속도가 2.28배 빨라진다. 아래 그래프는 여러 다른 시나리오에서 Amdahl의 법칙을 보여준다.
 
-<img width="298" alt="Screen Shot 2021-06-13 at 4 08 18 PM" src="https://user-images.githubusercontent.com/16266103/121798501-ad84fd00-cc61-11eb-98ed-51c6cc1dce9f.png">
+<img width="298" alt="AMDAHL’S LAW src="https://user-images.githubusercontent.com/16266103/121798501-ad84fd00-cc61-11eb-98ed-51c6cc1dce9f.png">
 
 Amdahl의 법칙에 대한 한 가지 흥미로운 사실은 N이 무한대에 가까워질수록 속도가 1µS로 수렴된다는 것이다. 예를 들어 애플리케이션의 50%가 연속적으로 수행되는 경우, 추가되는 처리 코어 수에 관계없이 최대 속도 상승은 2배이다. 이것은 Amdahl의 법칙에 대한 기본 원리이다(애플리케이션의 직렬 부분은 컴퓨팅 코어를 더 추가함으로써 우리가 얻는 성능에 불균형적인 영향을 미칠 수 있다)
 
@@ -75,7 +71,7 @@ Amdahl의 법칙에 대한 한 가지 흥미로운 사실은 N이 무한대에 �
 
 Parallelism에는 Data parallelism(데이터 병렬화), Task Parallelism(작업 병렬화) 2가지가 있으며 서로 상호배타적이지 않다.
 
-<img width="667" alt="Screen Shot 2021-06-06 at 11 31 16 AM" src="https://user-images.githubusercontent.com/16266103/120910548-b6525d80-c6ba-11eb-93f4-1c0e7547f450.png">
+<img width="667" alt="Data and task parallelism" src="https://user-images.githubusercontent.com/16266103/120910548-b6525d80-c6ba-11eb-93f4-1c0e7547f450.png">
 
 #### Data parallelism(데이터 병렬화)
 
@@ -99,4 +95,4 @@ Parallelism에는 Data parallelism(데이터 병렬화), Task Parallelism(작업
 
 - Task parallelism(작업 병렬화)의 양은 독립적인 업무의 수에 비례함
 
-### <img width="502" alt="Screen Shot 2021-06-06 at 11 31 51 AM" src="https://user-images.githubusercontent.com/16266103/120910562-cbc78780-c6ba-11eb-989b-9ceb9b86956e.png">
+<img width="502" alt="User and kernal threads" src="https://user-images.githubusercontent.com/16266103/120910562-cbc78780-c6ba-11eb-989b-9ceb9b86956e.png">
