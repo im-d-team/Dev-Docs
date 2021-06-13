@@ -97,3 +97,21 @@ Parallelism에는 Data parallelism(데이터 병렬화), Task Parallelism(작업
 - Task parallelism(작업 병렬화)의 양은 독립적인 업무의 수에 비례함
 
 <img width="502" alt="User and kernal threads" src="https://user-images.githubusercontent.com/16266103/120910562-cbc78780-c6ba-11eb-989b-9ceb9b86956e.png">
+
+
+<details>
+<summary> 질문(2021.06.13) </summary>
+
+- 암달의 법칙이 GPU에 적용되지 않는 이유
+-> CPU는 Task(규모 있는 작업)를 돌리는 게 목적이지만 GPU는 단순한 걸 하나씩(array의 각 파트 병렬 연산) 병렬로 연산하는 작업을 하기 때문이다.
+
+- GPU를 이용하려면 데이터 병렬화를 해야 하는가?
+-> 데이터를 나눠서 작업할 때 한 작업이 다른 작업이 계산하고 있는 데이터를 건들지 않는 것이 중요하다. 따라서 단위를 잘 쪼갤 수 있으면 된다.
+
+- GPU 그래픽 그릴 때 픽셀 단위로 병렬화의 그 단위인가?
+-> 픽셀은 최종적으로 비춰지는 단위이다. 픽셀에 맞추지 않은 채로 계산 후 픽셀에 맞춰서 뿌려준다.(텍스쳐, 폴리곤) 이것을 GPU 파이프라이닝이라고 한다.
+
+- 데이터 병렬화와 함수형 프로그래밍
+-> 순수함수가 필요한 이유는 데이터 병렬화에 효율적이며 데이터 병렬화가 보장되기 때문이다.
+
+</details>
