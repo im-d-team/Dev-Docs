@@ -96,9 +96,6 @@ Parallelism에는 Data parallelism(데이터 병렬화), Task Parallelism(작업
 
 - Task parallelism(작업 병렬화)의 양은 독립적인 업무의 수에 비례함
 
-<img width="502" alt="User and kernal threads" src="https://user-images.githubusercontent.com/16266103/120910562-cbc78780-c6ba-11eb-989b-9ceb9b86956e.png">
-
-
 <details>
 <summary> 질문(2021.06.13) </summary>
 
@@ -115,3 +112,111 @@ Parallelism에는 Data parallelism(데이터 병렬화), Task Parallelism(작업
 -> 순수함수가 필요한 이유는 데이터 병렬화에 효율적이며 데이터 병렬화가 보장되기 때문이다.
 
 </details>
+
+## 4.3 Multithreading Models
+
+지금까지 스레드를 일반적인 의미로 다루었으나, user thread는 user-level에서 제공되고, kernel thread는 kernel-level에서 제공된다.
+
+user thread는 커널 위에서 지원되며, 커널의 지원없이 관리된다. 반면에 kernel thread는 운영체제에서 직접 지원되고 관리된다. 최신 운영체제는 kernel thread를 지원한다.
+
+<img width="502" alt="User and kernal threads" src="https://user-images.githubusercontent.com/16266103/120910562-cbc78780-c6ba-11eb-989b-9ceb9b86956e.png">
+
+그림 4.6에 나와있는 것처럼 user thread와 kernel thread간 여러 관계성이 있다.
+
+3가지 일반적인 방법인 **다대일 모델**, **일대일 모델**, **다대다 모델**을 살펴보자.
+
+### 4.3.1 Many-to-One Model
+
+![Many-to-one model](https://user-images.githubusercontent.com/24274424/122659724-a3a94f80-d1b5-11eb-88ab-752a53d24596.png)
+
+다대일 모델(그림 4.7)은 많은 user-level 스레드를 하나의 kernel 스레드에 연결한다. 스레드 관리는 사용자 공간의 스레드 라이브러리에 의해 수행되어 효율적이다.(4.4절 스레드 라이브러리에 대해 설명한다). 
+
+그러나 스레드가 blocking system call을 수행하면 전체 프로세스가 차단된다.
+
+한 번에 하나의 스레드만 커널에 접근할 수 있기 때문에 다중 스레드는 멀티 코어 시스템에서 병렬로 실행할 수 없다. Green thread (Solaris 시스템에서 사용하고 있고, Java의 초기 버전에서 채택된 스레드 라이브러리)는 다대일 모델을 사용한다. 그러나 현재 대부분의 컴퓨터 시스템에서 표준이 된 다중 프로세스 코어를 활용할 수 없어서 현재 사용되는 시스템은 거의 없다.
+
+### 4.3.2 One-to-One Model
+
+![One-to-One Model](https://user-images.githubusercontent.com/24274424/122659838-c720ca00-d1b6-11eb-9bec-ad4a7e9ebe24.png)
+
+일대일 모델(그림 4.8)은 각 user thread를 각 kernel thread에 연결한다. 스레드가 blocking system call을 실행할 때 다른 스레드가 실행될 수 있도록 함으로써 다대일 모델보다 더 많은 동시성을 제공하며, 여러 스레드가 다중 프로세서에서 병렬로 실행될 수 있다.
+
+이 모델의 유일한 단점은 사용자 스레드를 생성하려면 해당 kernel thread를 생성해야하며 많은 수의 kernel thread가 시스템 성능에 부담을 주는 것이다. 
+
+리눅스와 윈도우 운영체제는 일대일 모델로 구현되어있다.
+
+### 4.3.3 Many-to-Many Model
+
+![Many-to-Many Model](https://user-images.githubusercontent.com/24274424/122659904-604fe080-d1b7-11eb-8f94-ebe53a3b8cc3.png)
+
+다대다 모델(그림 4.9)은 많은 user-level 스레드를 더 적거나 같은 수의 kernel thread로 다중화한다. kernel thread의 수는 특정 응용 프로그램이나 특정 시스템에 따라 다를 수 있다(응용 프로그램에는 코어가 4개인 시스템보다 처리 코어가 8개인 시스템에서 더 많은 커널 스레드가 할당될 수 있다).
+
+디자인이 동시성에 미치는 영향을 보자.
+
+다대일 모델을 사용하면 개발자가 원하는 만큼 많은 user thread를 만들 수 있지만 커널이 한 번에 하나의 kernel thread만 예약할 수 있기 때문에 병렬처리가 불가능하다.
+
+일대일 모델을 더 큰 동시성을 허용하지만 개발자는 애플리케이션 내에서 너무 많은 스레드를 생성하지 않도록 주의해야한다(일부 시스템에서는 생성할 수 있는 수가 제한이 있을 수 있다).
+
+다대다 모델에는 이러한 단점이 없다. 개발자는 필요한만큼 많은 사용자 스레드를 생성할 수 있으며, 해당 kernal thread는 다중 프로세서에서 병렬로 실행될 수 있다. 또한 스레드가 blocking system call을 수행할 때 커널은 실행을 위해 다른 스레드를 예약할 수 있다.
+
+![Many-to-Many Model two-level model](https://user-images.githubusercontent.com/24274424/122660041-c25d1580-d1b8-11eb-80ef-f1a780ab3f32.png)
+
+다대다 모델의 변형 모델은 많은 user-level 스레드를 더 작거나 같은 수의 kernel thread로 다중화 하지만, 한 user-level 스레드를 한 kernal thread에 바인딩할 수 있다. 이를 two-level model이라고 한다(그림 4.10)
+
+다대다 모델이 논의된 모델 중 가장 유연한 것처럼 보이지만 실제로 구현하긴 어렵다. 또한 대부분의 시스템에 나타나는 처리 코어 수가 증가함에 따라 커널 스레드 수를 제한하는 것이 덜 중요해졌다.
+
+결과적으로 대부분의 운영 체제는 이제 일대일 모델을 사용한다. 그러나 4.5절에서 볼 수 있듯이 일부 동시성 라이브러리는 개발자가 다대다 모델을 사용하여 스레드에 매핑되는 작업을 식별하도록 한다.
+
+## 4.4 Thread Libraries
+
+스레드 라이브러리는 프로그래머에게 스레드 생성 및 관리를 위한 API를 제공한다. 
+
+1. 커널 지원없이 사용자 공간에 라이브러리를 제공하는 것. 
+
+라이브러리의 모든 코드 및 데이터 구조는 사용자 공간에 존재한다. 즉, 라이브러리에서 함수를 호출하면 system call이 아닌 사용자 공간에서 로컬 function call이 발생한다.
+
+2. 운영 체제에서 직접 지원하는 kernel-level 라이브러리를 구현하는 것.
+
+라이브러리에 대한 코드 및 데이터 구조가 커널 공간에 존재한다. 라이브러리용 API에서 함수를 호출하면 커널에 system call이 발생한다.
+
+요즘은 POSIX Pthreads, Windows 및 Java 세 가지 주요 스레드 라이브러리가 사용된다. 
+
+**POSIX Pthreads**: POSIX 표준 thread의 확장판이다. kernel 수준의 library이다. UNIX와 Linux system에서는 Pthreads로 구현된다.
+
+**Win32 threads**: Windows system에서 제공되는 kernel 수준의 library이다.
+
+**Java threads**: Java는 JVM 위에서 돌아가므로, JVM이 실행되고 있는 OS와 hardware에 기반해서 구현된다.
+
+POSIX 및 Windows 스레딩의 경우 전역으로 선언된 모든 데이터 (즉, 함수 외부에서 선언 됨)는 동일한 프로세스에 속한 모든 스레드간에 공유된다. Java에는 전역 데이터에 대한 동등한 개념이 없기 때문에 공유 데이터에 대한 액세스는 스레드간에 명시적으로 나열되어야 한다.
+
+이 섹션의 나머지 부분에서는 세 개의 스레드 라이브러리를 사용하여 기본 스레드 생성에 대해 설명한다. 예시로, 잘 알려진 합산 함수를 사용하여 별도의 스레드에서 음이 아닌 정수의 합산을 수행하는 다중 스레드 프로그램을 설계한다.
+
+스레드 생성 예제를 진행하기 전에 다중 스레드 생성을 위한 두 가지 일반적인 전략인 비동기 스레딩과 동기 스레딩에 대해 알아보자. 
+
+**비동기 스레딩**을 사용하면 부모가 자식 스레드를 생성하면 부모가 실행을 재개하여 부모와 자식이 서로 독립적으로 동시 실행되도록 한다. 스레드는 독립적이기 때문에 일반적으로 스레드간에 데이터 공유가 거의 없다.
+
+**동기 스레딩은** 부모 스레드가 하나 이상의 자식을 만든 다음 다시 시작하기 전에 모든 자식이 종료될 때까지 기다려야 한다. 여기서 부모가 생성한 스레드는 동시에 작업을 수행하지만 작업이 완료될 때까지 부모는 진행될 수 없다. 각 스레드가 작업을 마치면 부모와 결합된다. 모든 하위가 결합된 후에만 상위가 실행을 재개할 수 있다.
+
+동기 스레딩에는 스레드간에 상당한 데이터 공유가 된다. 예를 들어, 부모 스레드는 다양한 자식이 계산한 결과를 결합할 수 있다.
+
+### 4.4.1 Pthreads
+
+Pthread는 스레드 생성 및 동기화를 위한 API를 정의하는 POSIX 표준 (IEEE 1003.1c)을 나타낸다. 구현이 아닌 스레드 동작에 대한 **사양(specification)**이다. 
+
+운영체제 설계자는 원하는 방식으로 사양을 구현할 수 있다. 수많은 시스템이 Pthreads 사양을 구현한다. 대부분은 Linux 및 macOS를 포함한 UNIX 유형 시스템이다. Windows는 기본적으로 Pthread를 지원하지 않지만 Windows용 third-party 구현을 사용할 수 있다.
+
+![Multithreaded C program using the Pthreads API](https://user-images.githubusercontent.com/24274424/122660560-634dcf80-d1bd-11eb-8b10-c587a2824f51.png)
+
+그림 4.11에 표시된 C 프로그램은 별도의 스레드에서 음이 아닌 정수의 합계를 계산하는 다중 스레드 프로그램을 구현한 기본 Pthreads API다. Pthreads 프로그램에서 개별 스레드는 지정된 함수에서 실행을 시작한다. 위의 그림에서는 `runner()` 함수에서 시작한다. 
+
+프로그램이 시작되면 단일 제어 스레드가 `main()`에서 시작된다. 초기화 후 `main()`은 `runner()` 함수에서 시작하는 두 번째 스레드를 만든다. 두 스레드 모두 글로벌 데이터 합을 공유한다.
+
+좀 더 자세히 살펴보면 모든 Pthreads 프로그램은 `pthread.h` 헤더 파일을 포함한다. `pthread_t tid` 문은 우리가 만들 스레드의 식별자를 선언합니다. 각 스레드에는 스택 크기 및 스케줄링 정보를 포함한 속성이 있다. `pthread_attr_t attr` 선언은 스레드의 속성을 나타낸다. `pthread_attr_init (& attr)`에서 속성을 설정한다. 
+
+명시적으로 속성을 설정하지 않으면 제공된 기본 속성을 사용한다. 별도의 스레드는 `pthread_create()` 함수 호출로 생성된다. 스레드 식별자 및 스레드 속성을 전달하는 것 외에도 새 스레드가 실행을 시작할 함수의 이름(이 경우 `runner()` 함수)도 전달한다. 마지막으로, command line에서 입력한 정수 매개 변수 `argv[1]`을 전달한다.
+
+이 시점에서 프로그램에는 `main()`의 초기(또는 부모) 스레드와 `runner()`함수에서 합계 연산을 수행하는 합계(또는 자식) 스레드의 두 스레드가 있다. 쓰레드 생성/조인 전략을 따르며, summation 쓰레드를 생성한 후 부모 쓰레드는 `pthread_join()` 함수를 호출하여 종료될 때까지 기다린다. summation 스레드는 `pthread_exit()` 함수를 호출할 때 종료된다. summation 스레드가 반환되면 부모 스레드는 공유 데이터 합의 값을 출력한다.
+
+이 예제 프로그램은 단일 스레드만 생성한다. 멀티 코어 시스템의 지배력이 증가함에 따라 여러 스레드를 포함하는 프로그램 작성이 점점 더 보편화되었다. `pthread_join()` 함수를 사용하여 여러 스레드를 기다리는 간단한 방법은 간단한 for 루프 내에 작업을 묶는 것이다. 예를 들어, 그림 4.12에 표시된 Pthread 코드를 사용하여 10개의 스레드를 결합할 수 있다.
+
+![Pthread code form joining ten threads](https://user-images.githubusercontent.com/24274424/122660767-de63b580-d1be-11eb-84bf-fb0f3f451af2.png)
