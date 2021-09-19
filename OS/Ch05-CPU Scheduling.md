@@ -73,3 +73,28 @@ context switch는 voluntary context switch와 nonvoluntary context switch로 나
 
 - voluntary context switch: 현재 사용 불가능한 자원을 요청했을 때 프로세스가 CPU 제어를 포기한 경우 발생
 - nonvoluntary context switch: time slice가 만료되었거나 우선순위가 더 높은 프로세스에 의해 선점되는 경우와 같이 CPU를 빼앗겼을 때 발생
+
+<details>
+<summary> 질문(2021.09.19) </summary>
+
+- 인터럽트에서 사용자모드?
+  - 사용자모드로 돌아갈 때 현재 사용 불가능한 자원을 요청했을 때 프로세스가 CPU 제어를 포기한 경우 발생
+  - 나를 입력하시오 i/o 기다리는 작업할 때 cpu를 사용해서 하지 않아도 됨
+  - cpu를 놓음 => 자식프로세스가 종료될 때까지 기다리거나 waiting 이런게 cpu 제어를 포기한 상태라고 함
+
+- dispatcher가 어떻게 움직어야 하는가? 
+  - context switch의 종류
+  - 스케쥴링 시간 주기에 의해서 강제적으로 contxt switch가 일어나는 경우와 스스로 cpu를 사용할 일이 없어져서 저게 되는경우가 voluntary context siwtch
+- 선점 비선점의 기준
+  - 비선점은 제어권을 뺏을 수 있고 선점은 아니다
+  - voluntary와 non voluntary, preemtive의 정의는 뺏어서 들어갈 수 있는가가 기준
+
+- 1, 4는 nonpreemtive 이고 2, 3은 preemptive 일 수도 있다
+  - 선점을 할 수 있는 케이스와 애초에 선점이 개입할 수 없는 케이스로 나눠놨다
+    - 선점을 허용하는 스케쥴링 기법, 허용하지 않는 스케쥴링 기법
+  - 스케쥴링 알고리즘 기법들을 하나하나 배우다보면 이해가 명확하다
+
+- 5.1장 마지막에 volutary, non voluntary 설명하는 부분에서 맨 마지막에 context switch 횟수 보여주면서 이야기 하는 부분은 무엇을 의미하는가?
+  - 통게치를 보여주는 명령어가 있다로 끝임
+
+</details>
